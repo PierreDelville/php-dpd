@@ -1,15 +1,18 @@
 {
-    "name": "providr-packages/package-10873",
+    "name": "weblinko/php-dpd",
     "description": "Package generated from https://e-station.cargonet.software/dpd-eprintwebservice/eprintwebservice.asmx?WSDL using wsdltophp/packagegenerator",
     "require": {
-        "php": ">=5.3.3",
-        "ext-soap": "*",
+        "php": ">=7.4",
+        "ext-dom": "*",
         "ext-mbstring": "*",
-        "wsdltophp/packagebase": "~2.0"
+        "ext-soap": "*",
+        "wsdltophp/packagebase": "~5.0"
     },
     "autoload": {
         "psr-4": {
-            "": "./src/"
+            "": "./src/",
         }
-    }
+    },
+    "type": "library",
+    "license": "MIT"
 }
