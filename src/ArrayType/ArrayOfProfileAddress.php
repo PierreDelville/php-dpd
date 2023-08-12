@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfProfileAddress extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\ProfileAddress[]
+     * @var \Dpd\StructType\ProfileAddress[]
      */
     public $ProfileAddress;
     /**
      * Constructor method for ArrayOfProfileAddress
      * @uses ArrayOfProfileAddress::setProfileAddress()
-     * @param \StructType\ProfileAddress[] $profileAddress
+     * @param \Dpd\StructType\ProfileAddress[] $profileAddress
      */
     public function __construct(array $profileAddress = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfProfileAddress extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\ProfileAddress[]|null
+     * @return \Dpd\StructType\ProfileAddress[]|null
      */
     public function getProfileAddress()
     {
@@ -52,12 +52,12 @@ class ArrayOfProfileAddress extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfProfileAddressProfileAddressItem) {
             // validation for constraint: itemType
-            if (!$arrayOfProfileAddressProfileAddressItem instanceof \StructType\ProfileAddress) {
+            if (!$arrayOfProfileAddressProfileAddressItem instanceof \Dpd\StructType\ProfileAddress) {
                 $invalidValues[] = is_object($arrayOfProfileAddressProfileAddressItem) ? get_class($arrayOfProfileAddressProfileAddressItem) : sprintf('%s(%s)', gettype($arrayOfProfileAddressProfileAddressItem), var_export($arrayOfProfileAddressProfileAddressItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ProfileAddress property can only contain items of type \StructType\ProfileAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ProfileAddress property can only contain items of type \Dpd\StructType\ProfileAddress, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfProfileAddress extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\ProfileAddress[] $profileAddress
-     * @return \ArrayType\ArrayOfProfileAddress
+     * @param \Dpd\StructType\ProfileAddress[] $profileAddress
+     * @return \Dpd\ArrayType\ArrayOfProfileAddress
      */
     public function setProfileAddress(array $profileAddress = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfProfileAddress extends AbstractStructArrayBase
     /**
      * Add item to ProfileAddress value
      * @throws \InvalidArgumentException
-     * @param \StructType\ProfileAddress $item
-     * @return \ArrayType\ArrayOfProfileAddress
+     * @param \Dpd\StructType\ProfileAddress $item
+     * @return \Dpd\ArrayType\ArrayOfProfileAddress
      */
-    public function addToProfileAddress(\StructType\ProfileAddress $item)
+    public function addToProfileAddress(\Dpd\StructType\ProfileAddress $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ProfileAddress) {
-            throw new \InvalidArgumentException(sprintf('The ProfileAddress property can only contain items of type \StructType\ProfileAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\ProfileAddress) {
+            throw new \InvalidArgumentException(sprintf('The ProfileAddress property can only contain items of type \Dpd\StructType\ProfileAddress, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ProfileAddress[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfProfileAddress extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\ProfileAddress|null
+     * @return \Dpd\StructType\ProfileAddress|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfProfileAddress extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\ProfileAddress|null
+     * @return \Dpd\StructType\ProfileAddress|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfProfileAddress extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\ProfileAddress|null
+     * @return \Dpd\StructType\ProfileAddress|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfProfileAddress extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\ProfileAddress|null
+     * @return \Dpd\StructType\ProfileAddress|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfProfileAddress extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\ProfileAddress|null
+     * @return \Dpd\StructType\ProfileAddress|null
      */
     public function offsetGet($offset)
     {

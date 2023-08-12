@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfClsTrace extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\ClsTrace[]
+     * @var \Dpd\StructType\ClsTrace[]
      */
     public $clsTrace;
     /**
      * Constructor method for ArrayOfClsTrace
      * @uses ArrayOfClsTrace::setClsTrace()
-     * @param \StructType\ClsTrace[] $clsTrace
+     * @param \Dpd\StructType\ClsTrace[] $clsTrace
      */
     public function __construct(array $clsTrace = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfClsTrace extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\ClsTrace[]|null
+     * @return \Dpd\StructType\ClsTrace[]|null
      */
     public function getClsTrace()
     {
@@ -52,12 +52,12 @@ class ArrayOfClsTrace extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfClsTraceClsTraceItem) {
             // validation for constraint: itemType
-            if (!$arrayOfClsTraceClsTraceItem instanceof \StructType\ClsTrace) {
+            if (!$arrayOfClsTraceClsTraceItem instanceof \Dpd\StructType\ClsTrace) {
                 $invalidValues[] = is_object($arrayOfClsTraceClsTraceItem) ? get_class($arrayOfClsTraceClsTraceItem) : sprintf('%s(%s)', gettype($arrayOfClsTraceClsTraceItem), var_export($arrayOfClsTraceClsTraceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The clsTrace property can only contain items of type \StructType\ClsTrace, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The clsTrace property can only contain items of type \Dpd\StructType\ClsTrace, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfClsTrace extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\ClsTrace[] $clsTrace
-     * @return \ArrayType\ArrayOfClsTrace
+     * @param \Dpd\StructType\ClsTrace[] $clsTrace
+     * @return \Dpd\ArrayType\ArrayOfClsTrace
      */
     public function setClsTrace(array $clsTrace = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfClsTrace extends AbstractStructArrayBase
     /**
      * Add item to clsTrace value
      * @throws \InvalidArgumentException
-     * @param \StructType\ClsTrace $item
-     * @return \ArrayType\ArrayOfClsTrace
+     * @param \Dpd\StructType\ClsTrace $item
+     * @return \Dpd\ArrayType\ArrayOfClsTrace
      */
-    public function addToClsTrace(\StructType\ClsTrace $item)
+    public function addToClsTrace(\Dpd\StructType\ClsTrace $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ClsTrace) {
-            throw new \InvalidArgumentException(sprintf('The clsTrace property can only contain items of type \StructType\ClsTrace, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\ClsTrace) {
+            throw new \InvalidArgumentException(sprintf('The clsTrace property can only contain items of type \Dpd\StructType\ClsTrace, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->clsTrace[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfClsTrace extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\ClsTrace|null
+     * @return \Dpd\StructType\ClsTrace|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfClsTrace extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\ClsTrace|null
+     * @return \Dpd\StructType\ClsTrace|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfClsTrace extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\ClsTrace|null
+     * @return \Dpd\StructType\ClsTrace|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfClsTrace extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\ClsTrace|null
+     * @return \Dpd\StructType\ClsTrace|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfClsTrace extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\ClsTrace|null
+     * @return \Dpd\StructType\ClsTrace|null
      */
     public function offsetGet($offset)
     {

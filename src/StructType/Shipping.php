@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -47,7 +47,7 @@ class Shipping extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AddressName
+     * @var \Dpd\StructType\AddressName
      */
     public $receiverAddress;
     /**
@@ -70,10 +70,10 @@ class Shipping extends AbstractStructBase
      * @param float $weight
      * @param string $shipment
      * @param string $barcodeId
-     * @param \StructType\AddressName $receiverAddress
+     * @param \Dpd\StructType\AddressName $receiverAddress
      * @param string $reference
      */
-    public function __construct($barcodeSource = null, $weight = null, $shipment = null, $barcodeId = null, \StructType\AddressName $receiverAddress = null, $reference = null)
+    public function __construct($barcodeSource = null, $weight = null, $shipment = null, $barcodeId = null, \Dpd\StructType\AddressName $receiverAddress = null, $reference = null)
     {
         $this
             ->setBarcodeSource($barcodeSource)
@@ -94,7 +94,7 @@ class Shipping extends AbstractStructBase
     /**
      * Set barcodeSource value
      * @param int $barcodeSource
-     * @return \StructType\Shipping
+     * @return \Dpd\StructType\Shipping
      */
     public function setBarcodeSource($barcodeSource = null)
     {
@@ -116,7 +116,7 @@ class Shipping extends AbstractStructBase
     /**
      * Set weight value
      * @param float $weight
-     * @return \StructType\Shipping
+     * @return \Dpd\StructType\Shipping
      */
     public function setWeight($weight = null)
     {
@@ -138,7 +138,7 @@ class Shipping extends AbstractStructBase
     /**
      * Set shipment value
      * @param string $shipment
-     * @return \StructType\Shipping
+     * @return \Dpd\StructType\Shipping
      */
     public function setShipment($shipment = null)
     {
@@ -160,7 +160,7 @@ class Shipping extends AbstractStructBase
     /**
      * Set barcodeId value
      * @param string $barcodeId
-     * @return \StructType\Shipping
+     * @return \Dpd\StructType\Shipping
      */
     public function setBarcodeId($barcodeId = null)
     {
@@ -173,7 +173,7 @@ class Shipping extends AbstractStructBase
     }
     /**
      * Get receiverAddress value
-     * @return \StructType\AddressName|null
+     * @return \Dpd\StructType\AddressName|null
      */
     public function getReceiverAddress()
     {
@@ -181,10 +181,10 @@ class Shipping extends AbstractStructBase
     }
     /**
      * Set receiverAddress value
-     * @param \StructType\AddressName $receiverAddress
-     * @return \StructType\Shipping
+     * @param \Dpd\StructType\AddressName $receiverAddress
+     * @return \Dpd\StructType\Shipping
      */
-    public function setReceiverAddress(\StructType\AddressName $receiverAddress = null)
+    public function setReceiverAddress(\Dpd\StructType\AddressName $receiverAddress = null)
     {
         $this->receiverAddress = $receiverAddress;
         return $this;
@@ -200,7 +200,7 @@ class Shipping extends AbstractStructBase
     /**
      * Set reference value
      * @param string $reference
-     * @return \StructType\Shipping
+     * @return \Dpd\StructType\Shipping
      */
     public function setReference($reference = null)
     {

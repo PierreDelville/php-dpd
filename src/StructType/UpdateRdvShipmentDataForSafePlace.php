@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class UpdateRdvShipmentDataForSafePlace extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\UpdateRdvShipmentDataForSafePlaceRequest
+     * @var \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceRequest
      */
     public $request;
     /**
      * Constructor method for UpdateRdvShipmentDataForSafePlace
      * @uses UpdateRdvShipmentDataForSafePlace::setRequest()
-     * @param \StructType\UpdateRdvShipmentDataForSafePlaceRequest $request
+     * @param \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceRequest $request
      */
-    public function __construct(\StructType\UpdateRdvShipmentDataForSafePlaceRequest $request = null)
+    public function __construct(\Dpd\StructType\UpdateRdvShipmentDataForSafePlaceRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\UpdateRdvShipmentDataForSafePlaceRequest|null
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class UpdateRdvShipmentDataForSafePlace extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\UpdateRdvShipmentDataForSafePlaceRequest $request
-     * @return \StructType\UpdateRdvShipmentDataForSafePlace
+     * @param \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceRequest $request
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForSafePlace
      */
-    public function setRequest(\StructType\UpdateRdvShipmentDataForSafePlaceRequest $request = null)
+    public function setRequest(\Dpd\StructType\UpdateRdvShipmentDataForSafePlaceRequest $request = null)
     {
         $this->request = $request;
         return $this;

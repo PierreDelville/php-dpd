@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -94,7 +94,7 @@ class ServiceEntry extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\ServiceEntry
+     * @return \Dpd\StructType\ServiceEntry
      */
     public function setName($name = null)
     {
@@ -116,7 +116,7 @@ class ServiceEntry extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\ServiceEntry
+     * @return \Dpd\StructType\ServiceEntry
      */
     public function setType($type = null)
     {
@@ -138,7 +138,7 @@ class ServiceEntry extends AbstractStructBase
     /**
      * Set Attribute value
      * @param string $attribute
-     * @return \StructType\ServiceEntry
+     * @return \Dpd\StructType\ServiceEntry
      */
     public function setAttribute($attribute = null)
     {
@@ -160,7 +160,7 @@ class ServiceEntry extends AbstractStructBase
     /**
      * Set Value value
      * @param string $value
-     * @return \StructType\ServiceEntry
+     * @return \Dpd\StructType\ServiceEntry
      */
     public function setValue($value = null)
     {
@@ -182,7 +182,7 @@ class ServiceEntry extends AbstractStructBase
     /**
      * Set Detail value
      * @param string $detail
-     * @return \StructType\ServiceEntry
+     * @return \Dpd\StructType\ServiceEntry
      */
     public function setDetail($detail = null)
     {
@@ -204,7 +204,7 @@ class ServiceEntry extends AbstractStructBase
     /**
      * Set Status value
      * @param string $status
-     * @return \StructType\ServiceEntry
+     * @return \Dpd\StructType\ServiceEntry
      */
     public function setStatus($status = null)
     {

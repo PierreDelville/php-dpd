@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class SendCNOTData extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CNOTData
+     * @var \Dpd\StructType\CNOTData
      */
     public $request;
     /**
      * Constructor method for SendCNOTData
      * @uses SendCNOTData::setRequest()
-     * @param \StructType\CNOTData $request
+     * @param \Dpd\StructType\CNOTData $request
      */
-    public function __construct(\StructType\CNOTData $request = null)
+    public function __construct(\Dpd\StructType\CNOTData $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\CNOTData|null
+     * @return \Dpd\StructType\CNOTData|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class SendCNOTData extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\CNOTData $request
-     * @return \StructType\SendCNOTData
+     * @param \Dpd\StructType\CNOTData $request
+     * @return \Dpd\StructType\SendCNOTData
      */
-    public function setRequest(\StructType\CNOTData $request = null)
+    public function setRequest(\Dpd\StructType\CNOTData $request = null)
     {
         $this->request = $request;
         return $this;

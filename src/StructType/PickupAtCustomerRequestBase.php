@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $shipperaddress;
     /**
@@ -23,7 +23,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $customer;
     /**
@@ -39,7 +39,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\PickupData
+     * @var \Dpd\StructType\PickupData
      */
     public $data;
     /**
@@ -48,12 +48,12 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
      * @uses PickupAtCustomerRequestBase::setCustomer()
      * @uses PickupAtCustomerRequestBase::setPick_date()
      * @uses PickupAtCustomerRequestBase::setData()
-     * @param \StructType\Address $shipperaddress
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Address $shipperaddress
+     * @param \Dpd\StructType\Customer $customer
      * @param string $pick_date
-     * @param \StructType\PickupData $data
+     * @param \Dpd\StructType\PickupData $data
      */
-    public function __construct(\StructType\Address $shipperaddress = null, \StructType\Customer $customer = null, $pick_date = null, \StructType\PickupData $data = null)
+    public function __construct(\Dpd\StructType\Address $shipperaddress = null, \Dpd\StructType\Customer $customer = null, $pick_date = null, \Dpd\StructType\PickupData $data = null)
     {
         $this
             ->setShipperaddress($shipperaddress)
@@ -63,7 +63,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
     /**
      * Get shipperaddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getShipperaddress()
     {
@@ -71,17 +71,17 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
     /**
      * Set shipperaddress value
-     * @param \StructType\Address $shipperaddress
-     * @return \StructType\PickupAtCustomerRequestBase
+     * @param \Dpd\StructType\Address $shipperaddress
+     * @return \Dpd\StructType\PickupAtCustomerRequestBase
      */
-    public function setShipperaddress(\StructType\Address $shipperaddress = null)
+    public function setShipperaddress(\Dpd\StructType\Address $shipperaddress = null)
     {
         $this->shipperaddress = $shipperaddress;
         return $this;
     }
     /**
      * Get customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -89,10 +89,10 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
     /**
      * Set customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\PickupAtCustomerRequestBase
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\PickupAtCustomerRequestBase
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->customer = $customer;
         return $this;
@@ -108,7 +108,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     /**
      * Set pick_date value
      * @param string $pick_date
-     * @return \StructType\PickupAtCustomerRequestBase
+     * @return \Dpd\StructType\PickupAtCustomerRequestBase
      */
     public function setPick_date($pick_date = null)
     {
@@ -121,7 +121,7 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
     /**
      * Get data value
-     * @return \StructType\PickupData|null
+     * @return \Dpd\StructType\PickupData|null
      */
     public function getData()
     {
@@ -129,10 +129,10 @@ class PickupAtCustomerRequestBase extends AbstractStructBase
     }
     /**
      * Set data value
-     * @param \StructType\PickupData $data
-     * @return \StructType\PickupAtCustomerRequestBase
+     * @param \Dpd\StructType\PickupData $data
+     * @return \Dpd\StructType\PickupAtCustomerRequestBase
      */
-    public function setData(\StructType\PickupData $data = null)
+    public function setData(\Dpd\StructType\PickupData $data = null)
     {
         $this->data = $data;
         return $this;

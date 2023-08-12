@@ -1,6 +1,6 @@
 <?php
 
-namespace EnumType;
+namespace Dpd\EnumType;
 
 use \WsdlToPhp\PackageBase\AbstractStructEnumBase;
 

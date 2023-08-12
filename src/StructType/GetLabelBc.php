@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetLabelBc extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ReceiveLabelBcRequest
+     * @var \Dpd\StructType\ReceiveLabelBcRequest
      */
     public $request;
     /**
      * Constructor method for GetLabelBc
      * @uses GetLabelBc::setRequest()
-     * @param \StructType\ReceiveLabelBcRequest $request
+     * @param \Dpd\StructType\ReceiveLabelBcRequest $request
      */
-    public function __construct(\StructType\ReceiveLabelBcRequest $request = null)
+    public function __construct(\Dpd\StructType\ReceiveLabelBcRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\ReceiveLabelBcRequest|null
+     * @return \Dpd\StructType\ReceiveLabelBcRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetLabelBc extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\ReceiveLabelBcRequest $request
-     * @return \StructType\GetLabelBc
+     * @param \Dpd\StructType\ReceiveLabelBcRequest $request
+     * @return \Dpd\StructType\GetLabelBc
      */
-    public function setRequest(\StructType\ReceiveLabelBcRequest $request = null)
+    public function setRequest(\Dpd\StructType\ReceiveLabelBcRequest $request = null)
     {
         $this->request = $request;
         return $this;

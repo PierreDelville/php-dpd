@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetLastTraceBaseResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ClsTrace
+     * @var \Dpd\StructType\ClsTrace
      */
     public $Trace;
     /**
      * Constructor method for GetLastTraceBaseResponse
      * @uses GetLastTraceBaseResponse::setTrace()
-     * @param \StructType\ClsTrace $trace
+     * @param \Dpd\StructType\ClsTrace $trace
      */
-    public function __construct(\StructType\ClsTrace $trace = null)
+    public function __construct(\Dpd\StructType\ClsTrace $trace = null)
     {
         $this
             ->setTrace($trace);
     }
     /**
      * Get Trace value
-     * @return \StructType\ClsTrace|null
+     * @return \Dpd\StructType\ClsTrace|null
      */
     public function getTrace()
     {
@@ -38,10 +38,10 @@ class GetLastTraceBaseResponse extends AbstractStructBase
     }
     /**
      * Set Trace value
-     * @param \StructType\ClsTrace $trace
-     * @return \StructType\GetLastTraceBaseResponse
+     * @param \Dpd\StructType\ClsTrace $trace
+     * @return \Dpd\StructType\GetLastTraceBaseResponse
      */
-    public function setTrace(\StructType\ClsTrace $trace = null)
+    public function setTrace(\Dpd\StructType\ClsTrace $trace = null)
     {
         $this->Trace = $trace;
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class RetourShipmentRequest extends RetourShipmentBaseRequest
     /**
      * Set countrycode value
      * @param string $countrycode
-     * @return \StructType\RetourShipmentRequest
+     * @return \Dpd\StructType\RetourShipmentRequest
      */
     public function setCountrycode($countrycode = null)
     {
@@ -83,7 +83,7 @@ class RetourShipmentRequest extends RetourShipmentBaseRequest
     /**
      * Set centernumber value
      * @param string $centernumber
-     * @return \StructType\RetourShipmentRequest
+     * @return \Dpd\StructType\RetourShipmentRequest
      */
     public function setCenternumber($centernumber = null)
     {
@@ -105,7 +105,7 @@ class RetourShipmentRequest extends RetourShipmentBaseRequest
     /**
      * Set original_parcelnumber value
      * @param string $original_parcelnumber
-     * @return \StructType\RetourShipmentRequest
+     * @return \Dpd\StructType\RetourShipmentRequest
      */
     public function setOriginal_parcelnumber($original_parcelnumber = null)
     {

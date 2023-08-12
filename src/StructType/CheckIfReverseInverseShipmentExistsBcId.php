@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CheckIfReverseInverseShipmentExistsBcId extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CheckIfReverseInverseShipmentExistsBcIdRequest
+     * @var \Dpd\StructType\CheckIfReverseInverseShipmentExistsBcIdRequest
      */
     public $request;
     /**
      * Constructor method for CheckIfReverseInverseShipmentExistsBcId
      * @uses CheckIfReverseInverseShipmentExistsBcId::setRequest()
-     * @param \StructType\CheckIfReverseInverseShipmentExistsBcIdRequest $request
+     * @param \Dpd\StructType\CheckIfReverseInverseShipmentExistsBcIdRequest $request
      */
-    public function __construct(\StructType\CheckIfReverseInverseShipmentExistsBcIdRequest $request = null)
+    public function __construct(\Dpd\StructType\CheckIfReverseInverseShipmentExistsBcIdRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\CheckIfReverseInverseShipmentExistsBcIdRequest|null
+     * @return \Dpd\StructType\CheckIfReverseInverseShipmentExistsBcIdRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class CheckIfReverseInverseShipmentExistsBcId extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\CheckIfReverseInverseShipmentExistsBcIdRequest $request
-     * @return \StructType\CheckIfReverseInverseShipmentExistsBcId
+     * @param \Dpd\StructType\CheckIfReverseInverseShipmentExistsBcIdRequest $request
+     * @return \Dpd\StructType\CheckIfReverseInverseShipmentExistsBcId
      */
-    public function setRequest(\StructType\CheckIfReverseInverseShipmentExistsBcIdRequest $request = null)
+    public function setRequest(\Dpd\StructType\CheckIfReverseInverseShipmentExistsBcIdRequest $request = null)
     {
         $this->request = $request;
         return $this;

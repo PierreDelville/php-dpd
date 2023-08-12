@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class RdvShipmentData extends RdvShipmentDataBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ParcelInfoSin
+     * @var \Dpd\StructType\ParcelInfoSin
      */
     public $Parcel;
     /**
@@ -39,11 +39,11 @@ class RdvShipmentData extends RdvShipmentDataBase
      * @uses RdvShipmentData::setParcel()
      * @uses RdvShipmentData::setShipmentSin()
      * @uses RdvShipmentData::setAvisDePassageSin()
-     * @param \StructType\ParcelInfoSin $parcel
+     * @param \Dpd\StructType\ParcelInfoSin $parcel
      * @param string $shipmentSin
      * @param string $avisDePassageSin
      */
-    public function __construct(\StructType\ParcelInfoSin $parcel = null, $shipmentSin = null, $avisDePassageSin = null)
+    public function __construct(\Dpd\StructType\ParcelInfoSin $parcel = null, $shipmentSin = null, $avisDePassageSin = null)
     {
         $this
             ->setParcel($parcel)
@@ -52,7 +52,7 @@ class RdvShipmentData extends RdvShipmentDataBase
     }
     /**
      * Get Parcel value
-     * @return \StructType\ParcelInfoSin|null
+     * @return \Dpd\StructType\ParcelInfoSin|null
      */
     public function getParcel()
     {
@@ -60,10 +60,10 @@ class RdvShipmentData extends RdvShipmentDataBase
     }
     /**
      * Set Parcel value
-     * @param \StructType\ParcelInfoSin $parcel
-     * @return \StructType\RdvShipmentData
+     * @param \Dpd\StructType\ParcelInfoSin $parcel
+     * @return \Dpd\StructType\RdvShipmentData
      */
-    public function setParcel(\StructType\ParcelInfoSin $parcel = null)
+    public function setParcel(\Dpd\StructType\ParcelInfoSin $parcel = null)
     {
         $this->Parcel = $parcel;
         return $this;
@@ -79,7 +79,7 @@ class RdvShipmentData extends RdvShipmentDataBase
     /**
      * Set ShipmentSin value
      * @param string $shipmentSin
-     * @return \StructType\RdvShipmentData
+     * @return \Dpd\StructType\RdvShipmentData
      */
     public function setShipmentSin($shipmentSin = null)
     {
@@ -101,7 +101,7 @@ class RdvShipmentData extends RdvShipmentDataBase
     /**
      * Set AvisDePassageSin value
      * @param string $avisDePassageSin
-     * @return \StructType\RdvShipmentData
+     * @return \Dpd\StructType\RdvShipmentData
      */
     public function setAvisDePassageSin($avisDePassageSin = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace Dpd\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -13,13 +13,13 @@ class Terminate extends AbstractSoapClientBase
     /**
      * Sets the UserCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \StructType\UserCredentials $userCredentials
+     * @param \Dpd\StructType\UserCredentials $userCredentials
      * @param string $nameSpace
      * @param bool $mustUnderstand
      * @param string $actor
      * @return bool
      */
-    public function setSoapHeaderUserCredentials(\StructType\UserCredentials $userCredentials, $nameSpace = 'http://www.cargonet.software', $mustUnderstand = false, $actor = null)
+    public function setSoapHeaderUserCredentials(\Dpd\StructType\UserCredentials $userCredentials, $nameSpace = 'http://www.cargonet.software', $mustUnderstand = false, $actor = null)
     {
         return $this->setSoapHeader($nameSpace, 'UserCredentials', $userCredentials, $mustUnderstand, $actor);
     }
@@ -28,16 +28,16 @@ class Terminate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\TerminateCollectionRequest $parameters
-     * @return \StructType\TerminateCollectionRequestResponse|bool
+     * @param \Dpd\StructType\TerminateCollectionRequest $parameters
+     * @return \Dpd\StructType\TerminateCollectionRequestResponse|bool
      */
-    public function TerminateCollectionRequest(\StructType\TerminateCollectionRequest $parameters)
+    public function TerminateCollectionRequest(\Dpd\StructType\TerminateCollectionRequest $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->TerminateCollectionRequest($parameters));
@@ -52,16 +52,16 @@ class Terminate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\TerminateCollectionRequestBc $parameters
-     * @return \StructType\TerminateCollectionRequestBcResponse|bool
+     * @param \Dpd\StructType\TerminateCollectionRequestBc $parameters
+     * @return \Dpd\StructType\TerminateCollectionRequestBcResponse|bool
      */
-    public function TerminateCollectionRequestBc(\StructType\TerminateCollectionRequestBc $parameters)
+    public function TerminateCollectionRequestBc(\Dpd\StructType\TerminateCollectionRequestBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->TerminateCollectionRequestBc($parameters));
@@ -76,16 +76,16 @@ class Terminate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\TerminateNumberRange $parameters
-     * @return \StructType\TerminateNumberRangeResponse|bool
+     * @param \Dpd\StructType\TerminateNumberRange $parameters
+     * @return \Dpd\StructType\TerminateNumberRangeResponse|bool
      */
-    public function TerminateNumberRange(\StructType\TerminateNumberRange $parameters)
+    public function TerminateNumberRange(\Dpd\StructType\TerminateNumberRange $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->TerminateNumberRange($parameters));
@@ -100,16 +100,16 @@ class Terminate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\TerminateNumberRangeBc $parameters
-     * @return \StructType\TerminateNumberRangeBcResponse|bool
+     * @param \Dpd\StructType\TerminateNumberRangeBc $parameters
+     * @return \Dpd\StructType\TerminateNumberRangeBcResponse|bool
      */
-    public function TerminateNumberRangeBc(\StructType\TerminateNumberRangeBc $parameters)
+    public function TerminateNumberRangeBc(\Dpd\StructType\TerminateNumberRangeBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->TerminateNumberRangeBc($parameters));
@@ -124,16 +124,16 @@ class Terminate extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\TerminateShipment $parameters
-     * @return \StructType\TerminateShipmentResponse|bool
+     * @param \Dpd\StructType\TerminateShipment $parameters
+     * @return \Dpd\StructType\TerminateShipmentResponse|bool
      */
-    public function TerminateShipment(\StructType\TerminateShipment $parameters)
+    public function TerminateShipment(\Dpd\StructType\TerminateShipment $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->TerminateShipment($parameters));
@@ -146,7 +146,7 @@ class Terminate extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\TerminateCollectionRequestBcResponse|\StructType\TerminateCollectionRequestResponse|\StructType\TerminateNumberRangeBcResponse|\StructType\TerminateNumberRangeResponse|\StructType\TerminateShipmentResponse
+     * @return \Dpd\StructType\TerminateCollectionRequestBcResponse|\Dpd\StructType\TerminateCollectionRequestResponse|\Dpd\StructType\TerminateNumberRangeBcResponse|\Dpd\StructType\TerminateNumberRangeResponse|\Dpd\StructType\TerminateShipmentResponse
      */
     public function getResult()
     {

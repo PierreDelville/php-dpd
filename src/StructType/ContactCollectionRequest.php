@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class ContactCollectionRequest extends Contact
     /**
      * Set shipper_email value
      * @param string $shipper_email
-     * @return \StructType\ContactCollectionRequest
+     * @return \Dpd\StructType\ContactCollectionRequest
      */
     public function setShipper_email($shipper_email = null)
     {
@@ -72,7 +72,7 @@ class ContactCollectionRequest extends Contact
     /**
      * Set shipper_mobil value
      * @param string $shipper_mobil
-     * @return \StructType\ContactCollectionRequest
+     * @return \Dpd\StructType\ContactCollectionRequest
      */
     public function setShipper_mobil($shipper_mobil = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ReverseInverseServices extends ServiceBaseList
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ExtraInsurance
+     * @var \Dpd\StructType\ExtraInsurance
      */
     public $extraInsurance;
     /**
@@ -23,17 +23,17 @@ class ReverseInverseServices extends ServiceBaseList
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Contact
+     * @var \Dpd\StructType\Contact
      */
     public $contact;
     /**
      * Constructor method for ReverseInverseServices
      * @uses ReverseInverseServices::setExtraInsurance()
      * @uses ReverseInverseServices::setContact()
-     * @param \StructType\ExtraInsurance $extraInsurance
-     * @param \StructType\Contact $contact
+     * @param \Dpd\StructType\ExtraInsurance $extraInsurance
+     * @param \Dpd\StructType\Contact $contact
      */
-    public function __construct(\StructType\ExtraInsurance $extraInsurance = null, \StructType\Contact $contact = null)
+    public function __construct(\Dpd\StructType\ExtraInsurance $extraInsurance = null, \Dpd\StructType\Contact $contact = null)
     {
         $this
             ->setExtraInsurance($extraInsurance)
@@ -41,7 +41,7 @@ class ReverseInverseServices extends ServiceBaseList
     }
     /**
      * Get extraInsurance value
-     * @return \StructType\ExtraInsurance|null
+     * @return \Dpd\StructType\ExtraInsurance|null
      */
     public function getExtraInsurance()
     {
@@ -49,17 +49,17 @@ class ReverseInverseServices extends ServiceBaseList
     }
     /**
      * Set extraInsurance value
-     * @param \StructType\ExtraInsurance $extraInsurance
-     * @return \StructType\ReverseInverseServices
+     * @param \Dpd\StructType\ExtraInsurance $extraInsurance
+     * @return \Dpd\StructType\ReverseInverseServices
      */
-    public function setExtraInsurance(\StructType\ExtraInsurance $extraInsurance = null)
+    public function setExtraInsurance(\Dpd\StructType\ExtraInsurance $extraInsurance = null)
     {
         $this->extraInsurance = $extraInsurance;
         return $this;
     }
     /**
      * Get contact value
-     * @return \StructType\Contact|null
+     * @return \Dpd\StructType\Contact|null
      */
     public function getContact()
     {
@@ -67,10 +67,10 @@ class ReverseInverseServices extends ServiceBaseList
     }
     /**
      * Set contact value
-     * @param \StructType\Contact $contact
-     * @return \StructType\ReverseInverseServices
+     * @param \Dpd\StructType\Contact $contact
+     * @return \Dpd\StructType\ReverseInverseServices
      */
-    public function setContact(\StructType\Contact $contact = null)
+    public function setContact(\Dpd\StructType\Contact $contact = null)
     {
         $this->contact = $contact;
         return $this;

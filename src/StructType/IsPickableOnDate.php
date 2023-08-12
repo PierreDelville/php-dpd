@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class IsPickableOnDate extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\IsPickableRequest
+     * @var \Dpd\StructType\IsPickableRequest
      */
     public $request;
     /**
      * Constructor method for IsPickableOnDate
      * @uses IsPickableOnDate::setRequest()
-     * @param \StructType\IsPickableRequest $request
+     * @param \Dpd\StructType\IsPickableRequest $request
      */
-    public function __construct(\StructType\IsPickableRequest $request = null)
+    public function __construct(\Dpd\StructType\IsPickableRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\IsPickableRequest|null
+     * @return \Dpd\StructType\IsPickableRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class IsPickableOnDate extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\IsPickableRequest $request
-     * @return \StructType\IsPickableOnDate
+     * @param \Dpd\StructType\IsPickableRequest $request
+     * @return \Dpd\StructType\IsPickableOnDate
      */
-    public function setRequest(\StructType\IsPickableRequest $request = null)
+    public function setRequest(\Dpd\StructType\IsPickableRequest $request = null)
     {
         $this->request = $request;
         return $this;

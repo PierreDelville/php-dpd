@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class UpdateRdvShipmentDataForAgencyPickup extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\UpdateRdvShipmentDataForAgencyPickupRequest
+     * @var \Dpd\StructType\UpdateRdvShipmentDataForAgencyPickupRequest
      */
     public $request;
     /**
      * Constructor method for UpdateRdvShipmentDataForAgencyPickup
      * @uses UpdateRdvShipmentDataForAgencyPickup::setRequest()
-     * @param \StructType\UpdateRdvShipmentDataForAgencyPickupRequest $request
+     * @param \Dpd\StructType\UpdateRdvShipmentDataForAgencyPickupRequest $request
      */
-    public function __construct(\StructType\UpdateRdvShipmentDataForAgencyPickupRequest $request = null)
+    public function __construct(\Dpd\StructType\UpdateRdvShipmentDataForAgencyPickupRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\UpdateRdvShipmentDataForAgencyPickupRequest|null
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForAgencyPickupRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class UpdateRdvShipmentDataForAgencyPickup extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\UpdateRdvShipmentDataForAgencyPickupRequest $request
-     * @return \StructType\UpdateRdvShipmentDataForAgencyPickup
+     * @param \Dpd\StructType\UpdateRdvShipmentDataForAgencyPickupRequest $request
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForAgencyPickup
      */
-    public function setRequest(\StructType\UpdateRdvShipmentDataForAgencyPickupRequest $request = null)
+    public function setRequest(\Dpd\StructType\UpdateRdvShipmentDataForAgencyPickupRequest $request = null)
     {
         $this->request = $request;
         return $this;

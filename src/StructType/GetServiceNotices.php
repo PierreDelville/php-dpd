@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetServiceNotices extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ServiceNoticeRequest
+     * @var \Dpd\StructType\ServiceNoticeRequest
      */
     public $request;
     /**
      * Constructor method for GetServiceNotices
      * @uses GetServiceNotices::setRequest()
-     * @param \StructType\ServiceNoticeRequest $request
+     * @param \Dpd\StructType\ServiceNoticeRequest $request
      */
-    public function __construct(\StructType\ServiceNoticeRequest $request = null)
+    public function __construct(\Dpd\StructType\ServiceNoticeRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\ServiceNoticeRequest|null
+     * @return \Dpd\StructType\ServiceNoticeRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetServiceNotices extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\ServiceNoticeRequest $request
-     * @return \StructType\GetServiceNotices
+     * @param \Dpd\StructType\ServiceNoticeRequest $request
+     * @return \Dpd\StructType\GetServiceNotices
      */
-    public function setRequest(\StructType\ServiceNoticeRequest $request = null)
+    public function setRequest(\Dpd\StructType\ServiceNoticeRequest $request = null)
     {
         $this->request = $request;
         return $this;

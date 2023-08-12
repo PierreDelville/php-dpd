@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace Dpd\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -13,13 +13,13 @@ class Check extends AbstractSoapClientBase
     /**
      * Sets the UserCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \StructType\UserCredentials $userCredentials
+     * @param \Dpd\StructType\UserCredentials $userCredentials
      * @param string $nameSpace
      * @param bool $mustUnderstand
      * @param string $actor
      * @return bool
      */
-    public function setSoapHeaderUserCredentials(\StructType\UserCredentials $userCredentials, $nameSpace = 'http://www.cargonet.software', $mustUnderstand = false, $actor = null)
+    public function setSoapHeaderUserCredentials(\Dpd\StructType\UserCredentials $userCredentials, $nameSpace = 'http://www.cargonet.software', $mustUnderstand = false, $actor = null)
     {
         return $this->setSoapHeader($nameSpace, 'UserCredentials', $userCredentials, $mustUnderstand, $actor);
     }
@@ -29,16 +29,16 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CheckIfReverseInverseShipmentExists $parameters
-     * @return \StructType\CheckIfReverseInverseShipmentExistsResponse|bool
+     * @param \Dpd\StructType\CheckIfReverseInverseShipmentExists $parameters
+     * @return \Dpd\StructType\CheckIfReverseInverseShipmentExistsResponse|bool
      */
-    public function CheckIfReverseInverseShipmentExists(\StructType\CheckIfReverseInverseShipmentExists $parameters)
+    public function CheckIfReverseInverseShipmentExists(\Dpd\StructType\CheckIfReverseInverseShipmentExists $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CheckIfReverseInverseShipmentExists($parameters));
@@ -54,16 +54,16 @@ class Check extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CheckIfReverseInverseShipmentExistsBcId $parameters
-     * @return \StructType\CheckIfReverseInverseShipmentExistsBcIdResponse|bool
+     * @param \Dpd\StructType\CheckIfReverseInverseShipmentExistsBcId $parameters
+     * @return \Dpd\StructType\CheckIfReverseInverseShipmentExistsBcIdResponse|bool
      */
-    public function CheckIfReverseInverseShipmentExistsBcId(\StructType\CheckIfReverseInverseShipmentExistsBcId $parameters)
+    public function CheckIfReverseInverseShipmentExistsBcId(\Dpd\StructType\CheckIfReverseInverseShipmentExistsBcId $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CheckIfReverseInverseShipmentExistsBcId($parameters));
@@ -76,7 +76,7 @@ class Check extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\CheckIfReverseInverseShipmentExistsBcIdResponse|\StructType\CheckIfReverseInverseShipmentExistsResponse
+     * @return \Dpd\StructType\CheckIfReverseInverseShipmentExistsBcIdResponse|\Dpd\StructType\CheckIfReverseInverseShipmentExistsResponse
      */
     public function getResult()
     {

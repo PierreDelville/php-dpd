@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,17 +38,17 @@ class LabelType extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\ELabelType::valueIsValid()
-     * @uses \EnumType\ELabelType::getValidValues()
+     * @uses \Dpd\EnumType\ELabelType::valueIsValid()
+     * @uses \Dpd\EnumType\ELabelType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\LabelType
+     * @return \Dpd\StructType\LabelType
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ELabelType::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\ELabelType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\ELabelType::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\ELabelType::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\ELabelType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Dpd\EnumType\ELabelType::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;

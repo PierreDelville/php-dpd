@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetNumberRangeBcResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\NumberRangeBcResponse
+     * @var \Dpd\StructType\NumberRangeBcResponse
      */
     public $GetNumberRangeBcResult;
     /**
      * Constructor method for GetNumberRangeBcResponse
      * @uses GetNumberRangeBcResponse::setGetNumberRangeBcResult()
-     * @param \StructType\NumberRangeBcResponse $getNumberRangeBcResult
+     * @param \Dpd\StructType\NumberRangeBcResponse $getNumberRangeBcResult
      */
-    public function __construct(\StructType\NumberRangeBcResponse $getNumberRangeBcResult = null)
+    public function __construct(\Dpd\StructType\NumberRangeBcResponse $getNumberRangeBcResult = null)
     {
         $this
             ->setGetNumberRangeBcResult($getNumberRangeBcResult);
     }
     /**
      * Get GetNumberRangeBcResult value
-     * @return \StructType\NumberRangeBcResponse|null
+     * @return \Dpd\StructType\NumberRangeBcResponse|null
      */
     public function getGetNumberRangeBcResult()
     {
@@ -38,10 +38,10 @@ class GetNumberRangeBcResponse extends AbstractStructBase
     }
     /**
      * Set GetNumberRangeBcResult value
-     * @param \StructType\NumberRangeBcResponse $getNumberRangeBcResult
-     * @return \StructType\GetNumberRangeBcResponse
+     * @param \Dpd\StructType\NumberRangeBcResponse $getNumberRangeBcResult
+     * @return \Dpd\StructType\GetNumberRangeBcResponse
      */
-    public function setGetNumberRangeBcResult(\StructType\NumberRangeBcResponse $getNumberRangeBcResult = null)
+    public function setGetNumberRangeBcResult(\Dpd\StructType\NumberRangeBcResponse $getNumberRangeBcResult = null)
     {
         $this->GetNumberRangeBcResult = $getNumberRangeBcResult;
         return $this;

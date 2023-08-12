@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -71,17 +71,17 @@ class Contact extends DefaultService
     }
     /**
      * Set type value
-     * @uses \EnumType\EtypeContact::valueIsValid()
-     * @uses \EnumType\EtypeContact::getValidValues()
+     * @uses \Dpd\EnumType\EtypeContact::valueIsValid()
+     * @uses \Dpd\EnumType\EtypeContact::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Contact
+     * @return \Dpd\StructType\Contact
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\EtypeContact::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\EtypeContact', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\EtypeContact::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\EtypeContact::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\EtypeContact', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Dpd\EnumType\EtypeContact::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -97,7 +97,7 @@ class Contact extends DefaultService
     /**
      * Set sms value
      * @param string $sms
-     * @return \StructType\Contact
+     * @return \Dpd\StructType\Contact
      */
     public function setSms($sms = null)
     {
@@ -119,7 +119,7 @@ class Contact extends DefaultService
     /**
      * Set email value
      * @param string $email
-     * @return \StructType\Contact
+     * @return \Dpd\StructType\Contact
      */
     public function setEmail($email = null)
     {
@@ -141,7 +141,7 @@ class Contact extends DefaultService
     /**
      * Set autoText value
      * @param string $autoText
-     * @return \StructType\Contact
+     * @return \Dpd\StructType\Contact
      */
     public function setAutoText($autoText = null)
     {

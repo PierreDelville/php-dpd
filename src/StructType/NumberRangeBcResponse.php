@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class NumberRangeBcResponse extends NumberRangeBaseResponse
     /**
      * Set BarcodeSource value
      * @param int $barcodeSource
-     * @return \StructType\NumberRangeBcResponse
+     * @return \Dpd\StructType\NumberRangeBcResponse
      */
     public function setBarcodeSource($barcodeSource = null)
     {
@@ -72,7 +72,7 @@ class NumberRangeBcResponse extends NumberRangeBaseResponse
     /**
      * Set Domain value
      * @param string $domain
-     * @return \StructType\NumberRangeBcResponse
+     * @return \Dpd\StructType\NumberRangeBcResponse
      */
     public function setDomain($domain = null)
     {

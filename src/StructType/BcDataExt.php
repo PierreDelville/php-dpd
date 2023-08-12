@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class BcDataExt extends BcData
     /**
      * Set BarCode value
      * @param string $barCode
-     * @return \StructType\BcDataExt
+     * @return \Dpd\StructType\BcDataExt
      */
     public function setBarCode($barCode = null)
     {

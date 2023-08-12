@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class SetAlive extends AbstractStructBase
     /**
      * Set value value
      * @param bool $value
-     * @return \StructType\SetAlive
+     * @return \Dpd\StructType\SetAlive
      */
     public function setValue($value = null)
     {

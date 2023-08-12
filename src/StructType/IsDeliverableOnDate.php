@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class IsDeliverableOnDate extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\IsDeliverableRequest
+     * @var \Dpd\StructType\IsDeliverableRequest
      */
     public $request;
     /**
      * Constructor method for IsDeliverableOnDate
      * @uses IsDeliverableOnDate::setRequest()
-     * @param \StructType\IsDeliverableRequest $request
+     * @param \Dpd\StructType\IsDeliverableRequest $request
      */
-    public function __construct(\StructType\IsDeliverableRequest $request = null)
+    public function __construct(\Dpd\StructType\IsDeliverableRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\IsDeliverableRequest|null
+     * @return \Dpd\StructType\IsDeliverableRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class IsDeliverableOnDate extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\IsDeliverableRequest $request
-     * @return \StructType\IsDeliverableOnDate
+     * @param \Dpd\StructType\IsDeliverableRequest $request
+     * @return \Dpd\StructType\IsDeliverableOnDate
      */
-    public function setRequest(\StructType\IsDeliverableRequest $request = null)
+    public function setRequest(\Dpd\StructType\IsDeliverableRequest $request = null)
     {
         $this->request = $request;
         return $this;

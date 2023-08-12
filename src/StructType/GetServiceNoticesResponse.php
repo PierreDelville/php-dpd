@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetServiceNoticesResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ServiceNoticeResponse
+     * @var \Dpd\StructType\ServiceNoticeResponse
      */
     public $GetServiceNoticesResult;
     /**
      * Constructor method for GetServiceNoticesResponse
      * @uses GetServiceNoticesResponse::setGetServiceNoticesResult()
-     * @param \StructType\ServiceNoticeResponse $getServiceNoticesResult
+     * @param \Dpd\StructType\ServiceNoticeResponse $getServiceNoticesResult
      */
-    public function __construct(\StructType\ServiceNoticeResponse $getServiceNoticesResult = null)
+    public function __construct(\Dpd\StructType\ServiceNoticeResponse $getServiceNoticesResult = null)
     {
         $this
             ->setGetServiceNoticesResult($getServiceNoticesResult);
     }
     /**
      * Get GetServiceNoticesResult value
-     * @return \StructType\ServiceNoticeResponse|null
+     * @return \Dpd\StructType\ServiceNoticeResponse|null
      */
     public function getGetServiceNoticesResult()
     {
@@ -38,10 +38,10 @@ class GetServiceNoticesResponse extends AbstractStructBase
     }
     /**
      * Set GetServiceNoticesResult value
-     * @param \StructType\ServiceNoticeResponse $getServiceNoticesResult
-     * @return \StructType\GetServiceNoticesResponse
+     * @param \Dpd\StructType\ServiceNoticeResponse $getServiceNoticesResult
+     * @return \Dpd\StructType\GetServiceNoticesResponse
      */
-    public function setGetServiceNoticesResult(\StructType\ServiceNoticeResponse $getServiceNoticesResult = null)
+    public function setGetServiceNoticesResult(\Dpd\StructType\ServiceNoticeResponse $getServiceNoticesResult = null)
     {
         $this->GetServiceNoticesResult = $getServiceNoticesResult;
         return $this;

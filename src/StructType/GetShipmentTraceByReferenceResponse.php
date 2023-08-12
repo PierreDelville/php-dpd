@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetShipmentTraceByReferenceResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfShipmentTrace
+     * @var \Dpd\ArrayType\ArrayOfShipmentTrace
      */
     public $GetShipmentTraceByReferenceResult;
     /**
      * Constructor method for GetShipmentTraceByReferenceResponse
      * @uses GetShipmentTraceByReferenceResponse::setGetShipmentTraceByReferenceResult()
-     * @param \ArrayType\ArrayOfShipmentTrace $getShipmentTraceByReferenceResult
+     * @param \Dpd\ArrayType\ArrayOfShipmentTrace $getShipmentTraceByReferenceResult
      */
-    public function __construct(\ArrayType\ArrayOfShipmentTrace $getShipmentTraceByReferenceResult = null)
+    public function __construct(\Dpd\ArrayType\ArrayOfShipmentTrace $getShipmentTraceByReferenceResult = null)
     {
         $this
             ->setGetShipmentTraceByReferenceResult($getShipmentTraceByReferenceResult);
     }
     /**
      * Get GetShipmentTraceByReferenceResult value
-     * @return \ArrayType\ArrayOfShipmentTrace|null
+     * @return \Dpd\ArrayType\ArrayOfShipmentTrace|null
      */
     public function getGetShipmentTraceByReferenceResult()
     {
@@ -38,10 +38,10 @@ class GetShipmentTraceByReferenceResponse extends AbstractStructBase
     }
     /**
      * Set GetShipmentTraceByReferenceResult value
-     * @param \ArrayType\ArrayOfShipmentTrace $getShipmentTraceByReferenceResult
-     * @return \StructType\GetShipmentTraceByReferenceResponse
+     * @param \Dpd\ArrayType\ArrayOfShipmentTrace $getShipmentTraceByReferenceResult
+     * @return \Dpd\StructType\GetShipmentTraceByReferenceResponse
      */
-    public function setGetShipmentTraceByReferenceResult(\ArrayType\ArrayOfShipmentTrace $getShipmentTraceByReferenceResult = null)
+    public function setGetShipmentTraceByReferenceResult(\Dpd\ArrayType\ArrayOfShipmentTrace $getShipmentTraceByReferenceResult = null)
     {
         $this->GetShipmentTraceByReferenceResult = $getShipmentTraceByReferenceResult;
         return $this;

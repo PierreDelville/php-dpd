@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class StdServices extends StdServicesBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ExtraInsurance
+     * @var \Dpd\StructType\ExtraInsurance
      */
     public $extraInsurance;
     /**
@@ -23,7 +23,7 @@ class StdServices extends StdServicesBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Contact
+     * @var \Dpd\StructType\Contact
      */
     public $contact;
     /**
@@ -31,7 +31,7 @@ class StdServices extends StdServicesBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ParcelShop
+     * @var \Dpd\StructType\ParcelShop
      */
     public $parcelshop;
     /**
@@ -39,7 +39,7 @@ class StdServices extends StdServicesBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Reverse
+     * @var \Dpd\StructType\Reverse
      */
     public $reverse;
     /**
@@ -47,7 +47,7 @@ class StdServices extends StdServicesBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ReverseInverseReturn
+     * @var \Dpd\StructType\ReverseInverseReturn
      */
     public $reverseInverseReturn;
     /**
@@ -55,7 +55,7 @@ class StdServices extends StdServicesBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ReverseInverseReturnBc
+     * @var \Dpd\StructType\ReverseInverseReturnBc
      */
     public $reversInverseBcReturn;
     /**
@@ -63,7 +63,7 @@ class StdServices extends StdServicesBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AutoConsolidation
+     * @var \Dpd\StructType\AutoConsolidation
      */
     public $autoConsolidation;
     /**
@@ -71,7 +71,7 @@ class StdServices extends StdServicesBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\PickupData
+     * @var \Dpd\StructType\PickupData
      */
     public $pickupAtCustomer;
     /**
@@ -79,7 +79,7 @@ class StdServices extends StdServicesBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Bic3
+     * @var \Dpd\StructType\Bic3
      */
     public $bic3;
     /**
@@ -87,7 +87,7 @@ class StdServices extends StdServicesBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Sameday
+     * @var \Dpd\StructType\Sameday
      */
     public $sameday;
     /**
@@ -102,18 +102,18 @@ class StdServices extends StdServicesBase
      * @uses StdServices::setPickupAtCustomer()
      * @uses StdServices::setBic3()
      * @uses StdServices::setSameday()
-     * @param \StructType\ExtraInsurance $extraInsurance
-     * @param \StructType\Contact $contact
-     * @param \StructType\ParcelShop $parcelshop
-     * @param \StructType\Reverse $reverse
-     * @param \StructType\ReverseInverseReturn $reverseInverseReturn
-     * @param \StructType\ReverseInverseReturnBc $reversInverseBcReturn
-     * @param \StructType\AutoConsolidation $autoConsolidation
-     * @param \StructType\PickupData $pickupAtCustomer
-     * @param \StructType\Bic3 $bic3
-     * @param \StructType\Sameday $sameday
+     * @param \Dpd\StructType\ExtraInsurance $extraInsurance
+     * @param \Dpd\StructType\Contact $contact
+     * @param \Dpd\StructType\ParcelShop $parcelshop
+     * @param \Dpd\StructType\Reverse $reverse
+     * @param \Dpd\StructType\ReverseInverseReturn $reverseInverseReturn
+     * @param \Dpd\StructType\ReverseInverseReturnBc $reversInverseBcReturn
+     * @param \Dpd\StructType\AutoConsolidation $autoConsolidation
+     * @param \Dpd\StructType\PickupData $pickupAtCustomer
+     * @param \Dpd\StructType\Bic3 $bic3
+     * @param \Dpd\StructType\Sameday $sameday
      */
-    public function __construct(\StructType\ExtraInsurance $extraInsurance = null, \StructType\Contact $contact = null, \StructType\ParcelShop $parcelshop = null, \StructType\Reverse $reverse = null, \StructType\ReverseInverseReturn $reverseInverseReturn = null, \StructType\ReverseInverseReturnBc $reversInverseBcReturn = null, \StructType\AutoConsolidation $autoConsolidation = null, \StructType\PickupData $pickupAtCustomer = null, \StructType\Bic3 $bic3 = null, \StructType\Sameday $sameday = null)
+    public function __construct(\Dpd\StructType\ExtraInsurance $extraInsurance = null, \Dpd\StructType\Contact $contact = null, \Dpd\StructType\ParcelShop $parcelshop = null, \Dpd\StructType\Reverse $reverse = null, \Dpd\StructType\ReverseInverseReturn $reverseInverseReturn = null, \Dpd\StructType\ReverseInverseReturnBc $reversInverseBcReturn = null, \Dpd\StructType\AutoConsolidation $autoConsolidation = null, \Dpd\StructType\PickupData $pickupAtCustomer = null, \Dpd\StructType\Bic3 $bic3 = null, \Dpd\StructType\Sameday $sameday = null)
     {
         $this
             ->setExtraInsurance($extraInsurance)
@@ -129,7 +129,7 @@ class StdServices extends StdServicesBase
     }
     /**
      * Get extraInsurance value
-     * @return \StructType\ExtraInsurance|null
+     * @return \Dpd\StructType\ExtraInsurance|null
      */
     public function getExtraInsurance()
     {
@@ -137,17 +137,17 @@ class StdServices extends StdServicesBase
     }
     /**
      * Set extraInsurance value
-     * @param \StructType\ExtraInsurance $extraInsurance
-     * @return \StructType\StdServices
+     * @param \Dpd\StructType\ExtraInsurance $extraInsurance
+     * @return \Dpd\StructType\StdServices
      */
-    public function setExtraInsurance(\StructType\ExtraInsurance $extraInsurance = null)
+    public function setExtraInsurance(\Dpd\StructType\ExtraInsurance $extraInsurance = null)
     {
         $this->extraInsurance = $extraInsurance;
         return $this;
     }
     /**
      * Get contact value
-     * @return \StructType\Contact|null
+     * @return \Dpd\StructType\Contact|null
      */
     public function getContact()
     {
@@ -155,17 +155,17 @@ class StdServices extends StdServicesBase
     }
     /**
      * Set contact value
-     * @param \StructType\Contact $contact
-     * @return \StructType\StdServices
+     * @param \Dpd\StructType\Contact $contact
+     * @return \Dpd\StructType\StdServices
      */
-    public function setContact(\StructType\Contact $contact = null)
+    public function setContact(\Dpd\StructType\Contact $contact = null)
     {
         $this->contact = $contact;
         return $this;
     }
     /**
      * Get parcelshop value
-     * @return \StructType\ParcelShop|null
+     * @return \Dpd\StructType\ParcelShop|null
      */
     public function getParcelshop()
     {
@@ -173,17 +173,17 @@ class StdServices extends StdServicesBase
     }
     /**
      * Set parcelshop value
-     * @param \StructType\ParcelShop $parcelshop
-     * @return \StructType\StdServices
+     * @param \Dpd\StructType\ParcelShop $parcelshop
+     * @return \Dpd\StructType\StdServices
      */
-    public function setParcelshop(\StructType\ParcelShop $parcelshop = null)
+    public function setParcelshop(\Dpd\StructType\ParcelShop $parcelshop = null)
     {
         $this->parcelshop = $parcelshop;
         return $this;
     }
     /**
      * Get reverse value
-     * @return \StructType\Reverse|null
+     * @return \Dpd\StructType\Reverse|null
      */
     public function getReverse()
     {
@@ -191,17 +191,17 @@ class StdServices extends StdServicesBase
     }
     /**
      * Set reverse value
-     * @param \StructType\Reverse $reverse
-     * @return \StructType\StdServices
+     * @param \Dpd\StructType\Reverse $reverse
+     * @return \Dpd\StructType\StdServices
      */
-    public function setReverse(\StructType\Reverse $reverse = null)
+    public function setReverse(\Dpd\StructType\Reverse $reverse = null)
     {
         $this->reverse = $reverse;
         return $this;
     }
     /**
      * Get reverseInverseReturn value
-     * @return \StructType\ReverseInverseReturn|null
+     * @return \Dpd\StructType\ReverseInverseReturn|null
      */
     public function getReverseInverseReturn()
     {
@@ -209,17 +209,17 @@ class StdServices extends StdServicesBase
     }
     /**
      * Set reverseInverseReturn value
-     * @param \StructType\ReverseInverseReturn $reverseInverseReturn
-     * @return \StructType\StdServices
+     * @param \Dpd\StructType\ReverseInverseReturn $reverseInverseReturn
+     * @return \Dpd\StructType\StdServices
      */
-    public function setReverseInverseReturn(\StructType\ReverseInverseReturn $reverseInverseReturn = null)
+    public function setReverseInverseReturn(\Dpd\StructType\ReverseInverseReturn $reverseInverseReturn = null)
     {
         $this->reverseInverseReturn = $reverseInverseReturn;
         return $this;
     }
     /**
      * Get reversInverseBcReturn value
-     * @return \StructType\ReverseInverseReturnBc|null
+     * @return \Dpd\StructType\ReverseInverseReturnBc|null
      */
     public function getReversInverseBcReturn()
     {
@@ -227,17 +227,17 @@ class StdServices extends StdServicesBase
     }
     /**
      * Set reversInverseBcReturn value
-     * @param \StructType\ReverseInverseReturnBc $reversInverseBcReturn
-     * @return \StructType\StdServices
+     * @param \Dpd\StructType\ReverseInverseReturnBc $reversInverseBcReturn
+     * @return \Dpd\StructType\StdServices
      */
-    public function setReversInverseBcReturn(\StructType\ReverseInverseReturnBc $reversInverseBcReturn = null)
+    public function setReversInverseBcReturn(\Dpd\StructType\ReverseInverseReturnBc $reversInverseBcReturn = null)
     {
         $this->reversInverseBcReturn = $reversInverseBcReturn;
         return $this;
     }
     /**
      * Get autoConsolidation value
-     * @return \StructType\AutoConsolidation|null
+     * @return \Dpd\StructType\AutoConsolidation|null
      */
     public function getAutoConsolidation()
     {
@@ -245,17 +245,17 @@ class StdServices extends StdServicesBase
     }
     /**
      * Set autoConsolidation value
-     * @param \StructType\AutoConsolidation $autoConsolidation
-     * @return \StructType\StdServices
+     * @param \Dpd\StructType\AutoConsolidation $autoConsolidation
+     * @return \Dpd\StructType\StdServices
      */
-    public function setAutoConsolidation(\StructType\AutoConsolidation $autoConsolidation = null)
+    public function setAutoConsolidation(\Dpd\StructType\AutoConsolidation $autoConsolidation = null)
     {
         $this->autoConsolidation = $autoConsolidation;
         return $this;
     }
     /**
      * Get pickupAtCustomer value
-     * @return \StructType\PickupData|null
+     * @return \Dpd\StructType\PickupData|null
      */
     public function getPickupAtCustomer()
     {
@@ -263,17 +263,17 @@ class StdServices extends StdServicesBase
     }
     /**
      * Set pickupAtCustomer value
-     * @param \StructType\PickupData $pickupAtCustomer
-     * @return \StructType\StdServices
+     * @param \Dpd\StructType\PickupData $pickupAtCustomer
+     * @return \Dpd\StructType\StdServices
      */
-    public function setPickupAtCustomer(\StructType\PickupData $pickupAtCustomer = null)
+    public function setPickupAtCustomer(\Dpd\StructType\PickupData $pickupAtCustomer = null)
     {
         $this->pickupAtCustomer = $pickupAtCustomer;
         return $this;
     }
     /**
      * Get bic3 value
-     * @return \StructType\Bic3|null
+     * @return \Dpd\StructType\Bic3|null
      */
     public function getBic3()
     {
@@ -281,17 +281,17 @@ class StdServices extends StdServicesBase
     }
     /**
      * Set bic3 value
-     * @param \StructType\Bic3 $bic3
-     * @return \StructType\StdServices
+     * @param \Dpd\StructType\Bic3 $bic3
+     * @return \Dpd\StructType\StdServices
      */
-    public function setBic3(\StructType\Bic3 $bic3 = null)
+    public function setBic3(\Dpd\StructType\Bic3 $bic3 = null)
     {
         $this->bic3 = $bic3;
         return $this;
     }
     /**
      * Get sameday value
-     * @return \StructType\Sameday|null
+     * @return \Dpd\StructType\Sameday|null
      */
     public function getSameday()
     {
@@ -299,10 +299,10 @@ class StdServices extends StdServicesBase
     }
     /**
      * Set sameday value
-     * @param \StructType\Sameday $sameday
-     * @return \StructType\StdServices
+     * @param \Dpd\StructType\Sameday $sameday
+     * @return \Dpd\StructType\StdServices
      */
-    public function setSameday(\StructType\Sameday $sameday = null)
+    public function setSameday(\Dpd\StructType\Sameday $sameday = null)
     {
         $this->sameday = $sameday;
         return $this;

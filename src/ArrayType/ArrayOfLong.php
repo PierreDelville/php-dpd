@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -62,7 +62,7 @@ class ArrayOfLong extends AbstractStructArrayBase
      * Set long value
      * @throws \InvalidArgumentException
      * @param int[] $long
-     * @return \ArrayType\ArrayOfLong
+     * @return \Dpd\ArrayType\ArrayOfLong
      */
     public function setLong(array $long = array())
     {
@@ -77,7 +77,7 @@ class ArrayOfLong extends AbstractStructArrayBase
      * Add item to long value
      * @throws \InvalidArgumentException
      * @param int $item
-     * @return \ArrayType\ArrayOfLong
+     * @return \Dpd\ArrayType\ArrayOfLong
      */
     public function addToLong($item)
     {

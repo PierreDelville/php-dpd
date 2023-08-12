@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetOptionValue extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetOptionRequest
+     * @var \Dpd\StructType\GetOptionRequest
      */
     public $request;
     /**
      * Constructor method for GetOptionValue
      * @uses GetOptionValue::setRequest()
-     * @param \StructType\GetOptionRequest $request
+     * @param \Dpd\StructType\GetOptionRequest $request
      */
-    public function __construct(\StructType\GetOptionRequest $request = null)
+    public function __construct(\Dpd\StructType\GetOptionRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetOptionRequest|null
+     * @return \Dpd\StructType\GetOptionRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetOptionValue extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetOptionRequest $request
-     * @return \StructType\GetOptionValue
+     * @param \Dpd\StructType\GetOptionRequest $request
+     * @return \Dpd\StructType\GetOptionValue
      */
-    public function setRequest(\StructType\GetOptionRequest $request = null)
+    public function setRequest(\Dpd\StructType\GetOptionRequest $request = null)
     {
         $this->request = $request;
         return $this;

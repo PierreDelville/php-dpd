@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class PickupAtCustomerBcRequest extends PickupAtCustomerRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfString
+     * @var \Dpd\ArrayType\ArrayOfString
      */
     public $shipments;
     /**
      * Constructor method for PickupAtCustomerBcRequest
      * @uses PickupAtCustomerBcRequest::setShipments()
-     * @param \ArrayType\ArrayOfString $shipments
+     * @param \Dpd\ArrayType\ArrayOfString $shipments
      */
-    public function __construct(\ArrayType\ArrayOfString $shipments = null)
+    public function __construct(\Dpd\ArrayType\ArrayOfString $shipments = null)
     {
         $this
             ->setShipments($shipments);
     }
     /**
      * Get shipments value
-     * @return \ArrayType\ArrayOfString|null
+     * @return \Dpd\ArrayType\ArrayOfString|null
      */
     public function getShipments()
     {
@@ -38,10 +38,10 @@ class PickupAtCustomerBcRequest extends PickupAtCustomerRequestBase
     }
     /**
      * Set shipments value
-     * @param \ArrayType\ArrayOfString $shipments
-     * @return \StructType\PickupAtCustomerBcRequest
+     * @param \Dpd\ArrayType\ArrayOfString $shipments
+     * @return \Dpd\StructType\PickupAtCustomerBcRequest
      */
-    public function setShipments(\ArrayType\ArrayOfString $shipments = null)
+    public function setShipments(\Dpd\ArrayType\ArrayOfString $shipments = null)
     {
         $this->shipments = $shipments;
         return $this;

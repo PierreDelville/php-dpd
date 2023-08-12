@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class GetReverseOnDemandModeResponse extends AbstractStructBase
     /**
      * Set GetReverseOnDemandModeResult value
      * @param int $getReverseOnDemandModeResult
-     * @return \StructType\GetReverseOnDemandModeResponse
+     * @return \Dpd\StructType\GetReverseOnDemandModeResponse
      */
     public function setGetReverseOnDemandModeResult($getReverseOnDemandModeResult = null)
     {

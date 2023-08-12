@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class LabelBcResponse extends LabelBaseResponse
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\BcDataExt
+     * @var \Dpd\StructType\BcDataExt
      */
     public $shipment;
     /**
      * Constructor method for LabelBcResponse
      * @uses LabelBcResponse::setShipment()
-     * @param \StructType\BcDataExt $shipment
+     * @param \Dpd\StructType\BcDataExt $shipment
      */
-    public function __construct(\StructType\BcDataExt $shipment = null)
+    public function __construct(\Dpd\StructType\BcDataExt $shipment = null)
     {
         $this
             ->setShipment($shipment);
     }
     /**
      * Get shipment value
-     * @return \StructType\BcDataExt|null
+     * @return \Dpd\StructType\BcDataExt|null
      */
     public function getShipment()
     {
@@ -38,10 +38,10 @@ class LabelBcResponse extends LabelBaseResponse
     }
     /**
      * Set shipment value
-     * @param \StructType\BcDataExt $shipment
-     * @return \StructType\LabelBcResponse
+     * @param \Dpd\StructType\BcDataExt $shipment
+     * @return \Dpd\StructType\LabelBcResponse
      */
-    public function setShipment(\StructType\BcDataExt $shipment = null)
+    public function setShipment(\Dpd\StructType\BcDataExt $shipment = null)
     {
         $this->shipment = $shipment;
         return $this;

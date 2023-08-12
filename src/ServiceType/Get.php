@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace Dpd\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -13,13 +13,13 @@ class Get extends AbstractSoapClientBase
     /**
      * Sets the UserCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \StructType\UserCredentials $userCredentials
+     * @param \Dpd\StructType\UserCredentials $userCredentials
      * @param string $nameSpace
      * @param bool $mustUnderstand
      * @param string $actor
      * @return bool
      */
-    public function setSoapHeaderUserCredentials(\StructType\UserCredentials $userCredentials, $nameSpace = 'http://www.cargonet.software', $mustUnderstand = false, $actor = null)
+    public function setSoapHeaderUserCredentials(\Dpd\StructType\UserCredentials $userCredentials, $nameSpace = 'http://www.cargonet.software', $mustUnderstand = false, $actor = null)
     {
         return $this->setSoapHeader($nameSpace, 'UserCredentials', $userCredentials, $mustUnderstand, $actor);
     }
@@ -28,16 +28,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetServiceNoticeAnswers $parameters
-     * @return \StructType\GetServiceNoticeAnswersResponse|bool
+     * @param \Dpd\StructType\GetServiceNoticeAnswers $parameters
+     * @return \Dpd\StructType\GetServiceNoticeAnswersResponse|bool
      */
-    public function GetServiceNoticeAnswers(\StructType\GetServiceNoticeAnswers $parameters)
+    public function GetServiceNoticeAnswers(\Dpd\StructType\GetServiceNoticeAnswers $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetServiceNoticeAnswers($parameters));
@@ -52,16 +52,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetServiceNotices $parameters
-     * @return \StructType\GetServiceNoticesResponse|bool
+     * @param \Dpd\StructType\GetServiceNotices $parameters
+     * @return \Dpd\StructType\GetServiceNoticesResponse|bool
      */
-    public function GetServiceNotices(\StructType\GetServiceNotices $parameters)
+    public function GetServiceNotices(\Dpd\StructType\GetServiceNotices $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetServiceNotices($parameters));
@@ -76,16 +76,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetAllServiceNotices $parameters
-     * @return \StructType\GetAllServiceNoticesResponse|bool
+     * @param \Dpd\StructType\GetAllServiceNotices $parameters
+     * @return \Dpd\StructType\GetAllServiceNoticesResponse|bool
      */
-    public function GetAllServiceNotices(\StructType\GetAllServiceNotices $parameters)
+    public function GetAllServiceNotices(\Dpd\StructType\GetAllServiceNotices $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetAllServiceNotices($parameters));
@@ -100,16 +100,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetBic3 $parameters
-     * @return \StructType\GetBic3Response|bool
+     * @param \Dpd\StructType\GetBic3 $parameters
+     * @return \Dpd\StructType\GetBic3Response|bool
      */
-    public function GetBic3(\StructType\GetBic3 $parameters)
+    public function GetBic3(\Dpd\StructType\GetBic3 $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetBic3($parameters));
@@ -124,16 +124,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetBic3Routing $parameters
-     * @return \StructType\GetBic3RoutingResponse|bool
+     * @param \Dpd\StructType\GetBic3Routing $parameters
+     * @return \Dpd\StructType\GetBic3RoutingResponse|bool
      */
-    public function GetBic3Routing(\StructType\GetBic3Routing $parameters)
+    public function GetBic3Routing(\Dpd\StructType\GetBic3Routing $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetBic3Routing($parameters));
@@ -148,16 +148,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetGeoRouting $parameters
-     * @return \StructType\GetGeoRoutingResponse|bool
+     * @param \Dpd\StructType\GetGeoRouting $parameters
+     * @return \Dpd\StructType\GetGeoRoutingResponse|bool
      */
-    public function GetGeoRouting(\StructType\GetGeoRouting $parameters)
+    public function GetGeoRouting(\Dpd\StructType\GetGeoRouting $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetGeoRouting($parameters));
@@ -172,16 +172,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetRetourShipmentData $parameters
-     * @return \StructType\GetRetourShipmentDataResponse|bool
+     * @param \Dpd\StructType\GetRetourShipmentData $parameters
+     * @return \Dpd\StructType\GetRetourShipmentDataResponse|bool
      */
-    public function GetRetourShipmentData(\StructType\GetRetourShipmentData $parameters)
+    public function GetRetourShipmentData(\Dpd\StructType\GetRetourShipmentData $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetRetourShipmentData($parameters));
@@ -196,16 +196,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetRetourShipmentDataBc $parameters
-     * @return \StructType\GetRetourShipmentDataBcResponse|bool
+     * @param \Dpd\StructType\GetRetourShipmentDataBc $parameters
+     * @return \Dpd\StructType\GetRetourShipmentDataBcResponse|bool
      */
-    public function GetRetourShipmentDataBc(\StructType\GetRetourShipmentDataBc $parameters)
+    public function GetRetourShipmentDataBc(\Dpd\StructType\GetRetourShipmentDataBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetRetourShipmentDataBc($parameters));
@@ -220,16 +220,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetLabel $parameters
-     * @return \StructType\GetLabelResponse|bool
+     * @param \Dpd\StructType\GetLabel $parameters
+     * @return \Dpd\StructType\GetLabelResponse|bool
      */
-    public function GetLabel(\StructType\GetLabel $parameters)
+    public function GetLabel(\Dpd\StructType\GetLabel $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetLabel($parameters));
@@ -244,16 +244,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetLabelBc $parameters
-     * @return \StructType\GetLabelBcResponse|bool
+     * @param \Dpd\StructType\GetLabelBc $parameters
+     * @return \Dpd\StructType\GetLabelBcResponse|bool
      */
-    public function GetLabelBc(\StructType\GetLabelBc $parameters)
+    public function GetLabelBc(\Dpd\StructType\GetLabelBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetLabelBc($parameters));
@@ -268,16 +268,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetLabelData $parameters
-     * @return \StructType\GetLabelDataResponse|bool
+     * @param \Dpd\StructType\GetLabelData $parameters
+     * @return \Dpd\StructType\GetLabelDataResponse|bool
      */
-    public function GetLabelData(\StructType\GetLabelData $parameters)
+    public function GetLabelData(\Dpd\StructType\GetLabelData $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetLabelData($parameters));
@@ -292,16 +292,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetRetourLabel $parameters
-     * @return \StructType\GetRetourLabelResponse|bool
+     * @param \Dpd\StructType\GetRetourLabel $parameters
+     * @return \Dpd\StructType\GetRetourLabelResponse|bool
      */
-    public function GetRetourLabel(\StructType\GetRetourLabel $parameters)
+    public function GetRetourLabel(\Dpd\StructType\GetRetourLabel $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetRetourLabel($parameters));
@@ -316,16 +316,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetRetourLabelBc $parameters
-     * @return \StructType\GetRetourLabelBcResponse|bool
+     * @param \Dpd\StructType\GetRetourLabelBc $parameters
+     * @return \Dpd\StructType\GetRetourLabelBcResponse|bool
      */
-    public function GetRetourLabelBc(\StructType\GetRetourLabelBc $parameters)
+    public function GetRetourLabelBc(\Dpd\StructType\GetRetourLabelBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetRetourLabelBc($parameters));
@@ -340,16 +340,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetShipment $parameters
-     * @return \StructType\GetShipmentResponse|bool
+     * @param \Dpd\StructType\GetShipment $parameters
+     * @return \Dpd\StructType\GetShipmentResponse|bool
      */
-    public function GetShipment(\StructType\GetShipment $parameters)
+    public function GetShipment(\Dpd\StructType\GetShipment $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetShipment($parameters));
@@ -364,16 +364,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetShipmentBc $parameters
-     * @return \StructType\GetShipmentBcResponse|bool
+     * @param \Dpd\StructType\GetShipmentBc $parameters
+     * @return \Dpd\StructType\GetShipmentBcResponse|bool
      */
-    public function GetShipmentBc(\StructType\GetShipmentBc $parameters)
+    public function GetShipmentBc(\Dpd\StructType\GetShipmentBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetShipmentBc($parameters));
@@ -388,16 +388,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetShipmentBcMulti $parameters
-     * @return \StructType\GetShipmentBcMultiResponse|bool
+     * @param \Dpd\StructType\GetShipmentBcMulti $parameters
+     * @return \Dpd\StructType\GetShipmentBcMultiResponse|bool
      */
-    public function GetShipmentBcMulti(\StructType\GetShipmentBcMulti $parameters)
+    public function GetShipmentBcMulti(\Dpd\StructType\GetShipmentBcMulti $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetShipmentBcMulti($parameters));
@@ -412,16 +412,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetReverseOnDemandMode $parameters
-     * @return \StructType\GetReverseOnDemandModeResponse|bool
+     * @param \Dpd\StructType\GetReverseOnDemandMode $parameters
+     * @return \Dpd\StructType\GetReverseOnDemandModeResponse|bool
      */
-    public function GetReverseOnDemandMode(\StructType\GetReverseOnDemandMode $parameters)
+    public function GetReverseOnDemandMode(\Dpd\StructType\GetReverseOnDemandMode $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetReverseOnDemandMode($parameters));
@@ -436,16 +436,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetLastNumber $parameters
-     * @return \StructType\GetLastNumberResponse|bool
+     * @param \Dpd\StructType\GetLastNumber $parameters
+     * @return \Dpd\StructType\GetLastNumberResponse|bool
      */
-    public function GetLastNumber(\StructType\GetLastNumber $parameters)
+    public function GetLastNumber(\Dpd\StructType\GetLastNumber $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetLastNumber($parameters));
@@ -460,16 +460,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetNationalTransitTime $parameters
-     * @return \StructType\GetNationalTransitTimeResponse|bool
+     * @param \Dpd\StructType\GetNationalTransitTime $parameters
+     * @return \Dpd\StructType\GetNationalTransitTimeResponse|bool
      */
-    public function GetNationalTransitTime(\StructType\GetNationalTransitTime $parameters)
+    public function GetNationalTransitTime(\Dpd\StructType\GetNationalTransitTime $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetNationalTransitTime($parameters));
@@ -484,16 +484,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetRdvShipmentData $parameters
-     * @return \StructType\GetRdvShipmentDataResponse|bool
+     * @param \Dpd\StructType\GetRdvShipmentData $parameters
+     * @return \Dpd\StructType\GetRdvShipmentDataResponse|bool
      */
-    public function GetRdvShipmentData(\StructType\GetRdvShipmentData $parameters)
+    public function GetRdvShipmentData(\Dpd\StructType\GetRdvShipmentData $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetRdvShipmentData($parameters));
@@ -508,16 +508,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetSafePlaceData $parameters
-     * @return \StructType\GetSafePlaceDataResponse|bool
+     * @param \Dpd\StructType\GetSafePlaceData $parameters
+     * @return \Dpd\StructType\GetSafePlaceDataResponse|bool
      */
-    public function GetSafePlaceData(\StructType\GetSafePlaceData $parameters)
+    public function GetSafePlaceData(\Dpd\StructType\GetSafePlaceData $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetSafePlaceData($parameters));
@@ -532,16 +532,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetCustomerAddress $parameters
-     * @return \StructType\GetCustomerAddressResponse|bool
+     * @param \Dpd\StructType\GetCustomerAddress $parameters
+     * @return \Dpd\StructType\GetCustomerAddressResponse|bool
      */
-    public function GetCustomerAddress(\StructType\GetCustomerAddress $parameters)
+    public function GetCustomerAddress(\Dpd\StructType\GetCustomerAddress $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetCustomerAddress($parameters));
@@ -556,16 +556,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetNumberRange $parameters
-     * @return \StructType\GetNumberRangeResponse|bool
+     * @param \Dpd\StructType\GetNumberRange $parameters
+     * @return \Dpd\StructType\GetNumberRangeResponse|bool
      */
-    public function GetNumberRange(\StructType\GetNumberRange $parameters)
+    public function GetNumberRange(\Dpd\StructType\GetNumberRange $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetNumberRange($parameters));
@@ -580,16 +580,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetNumberRangeBc $parameters
-     * @return \StructType\GetNumberRangeBcResponse|bool
+     * @param \Dpd\StructType\GetNumberRangeBc $parameters
+     * @return \Dpd\StructType\GetNumberRangeBcResponse|bool
      */
-    public function GetNumberRangeBc(\StructType\GetNumberRangeBc $parameters)
+    public function GetNumberRangeBc(\Dpd\StructType\GetNumberRangeBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetNumberRangeBc($parameters));
@@ -604,16 +604,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetCustomerProfile $parameters
-     * @return \StructType\GetCustomerProfileResponse|bool
+     * @param \Dpd\StructType\GetCustomerProfile $parameters
+     * @return \Dpd\StructType\GetCustomerProfileResponse|bool
      */
-    public function GetCustomerProfile(\StructType\GetCustomerProfile $parameters)
+    public function GetCustomerProfile(\Dpd\StructType\GetCustomerProfile $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetCustomerProfile($parameters));
@@ -628,16 +628,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetProperties $parameters
-     * @return \StructType\GetPropertiesResponse|bool
+     * @param \Dpd\StructType\GetProperties $parameters
+     * @return \Dpd\StructType\GetPropertiesResponse|bool
      */
-    public function GetProperties(\StructType\GetProperties $parameters)
+    public function GetProperties(\Dpd\StructType\GetProperties $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetProperties($parameters));
@@ -652,16 +652,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetOptionValue $parameters
-     * @return \StructType\GetOptionValueResponse|bool
+     * @param \Dpd\StructType\GetOptionValue $parameters
+     * @return \Dpd\StructType\GetOptionValueResponse|bool
      */
-    public function GetOptionValue(\StructType\GetOptionValue $parameters)
+    public function GetOptionValue(\Dpd\StructType\GetOptionValue $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetOptionValue($parameters));
@@ -676,16 +676,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetOptionValues $parameters
-     * @return \StructType\GetOptionValuesResponse|bool
+     * @param \Dpd\StructType\GetOptionValues $parameters
+     * @return \Dpd\StructType\GetOptionValuesResponse|bool
      */
-    public function GetOptionValues(\StructType\GetOptionValues $parameters)
+    public function GetOptionValues(\Dpd\StructType\GetOptionValues $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetOptionValues($parameters));
@@ -700,16 +700,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetShipping $parameters
-     * @return \StructType\GetShippingResponse|bool
+     * @param \Dpd\StructType\GetShipping $parameters
+     * @return \Dpd\StructType\GetShippingResponse|bool
      */
-    public function GetShipping(\StructType\GetShipping $parameters)
+    public function GetShipping(\Dpd\StructType\GetShipping $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->GetShipping($parameters));
@@ -724,16 +724,16 @@ class Get extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetInfo $parameters
-     * @return \StructType\GetInfoResponse|bool
+     * @param \Dpd\StructType\GetInfo $parameters
+     * @return \Dpd\StructType\GetInfoResponse|bool
      */
-    public function getInfo(\StructType\GetInfo $parameters)
+    public function getInfo(\Dpd\StructType\GetInfo $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->getInfo($parameters));
@@ -746,7 +746,7 @@ class Get extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\GetAllServiceNoticesResponse|\StructType\GetBic3Response|\StructType\GetBic3RoutingResponse|\StructType\GetCustomerAddressResponse|\StructType\GetCustomerProfileResponse|\StructType\GetGeoRoutingResponse|\StructType\GetInfoResponse|\StructType\GetLabelBcResponse|\StructType\GetLabelDataResponse|\StructType\GetLabelResponse|\StructType\GetLastNumberResponse|\StructType\GetNationalTransitTimeResponse|\StructType\GetNumberRangeBcResponse|\StructType\GetNumberRangeResponse|\StructType\GetOptionValueResponse|\StructType\GetOptionValuesResponse|\StructType\GetPropertiesResponse|\StructType\GetRdvShipmentDataResponse|\StructType\GetRetourLabelBcResponse|\StructType\GetRetourLabelResponse|\StructType\GetRetourShipmentDataBcResponse|\StructType\GetRetourShipmentDataResponse|\StructType\GetReverseOnDemandModeResponse|\StructType\GetSafePlaceDataResponse|\StructType\GetServiceNoticeAnswersResponse|\StructType\GetServiceNoticesResponse|\StructType\GetShipmentBcMultiResponse|\StructType\GetShipmentBcResponse|\StructType\GetShipmentResponse|\StructType\GetShippingResponse
+     * @return \Dpd\StructType\GetAllServiceNoticesResponse|\Dpd\StructType\GetBic3Response|\Dpd\StructType\GetBic3RoutingResponse|\Dpd\StructType\GetCustomerAddressResponse|\Dpd\StructType\GetCustomerProfileResponse|\Dpd\StructType\GetGeoRoutingResponse|\Dpd\StructType\GetInfoResponse|\Dpd\StructType\GetLabelBcResponse|\Dpd\StructType\GetLabelDataResponse|\Dpd\StructType\GetLabelResponse|\Dpd\StructType\GetLastNumberResponse|\Dpd\StructType\GetNationalTransitTimeResponse|\Dpd\StructType\GetNumberRangeBcResponse|\Dpd\StructType\GetNumberRangeResponse|\Dpd\StructType\GetOptionValueResponse|\Dpd\StructType\GetOptionValuesResponse|\Dpd\StructType\GetPropertiesResponse|\Dpd\StructType\GetRdvShipmentDataResponse|\Dpd\StructType\GetRetourLabelBcResponse|\Dpd\StructType\GetRetourLabelResponse|\Dpd\StructType\GetRetourShipmentDataBcResponse|\Dpd\StructType\GetRetourShipmentDataResponse|\Dpd\StructType\GetReverseOnDemandModeResponse|\Dpd\StructType\GetSafePlaceDataResponse|\Dpd\StructType\GetServiceNoticeAnswersResponse|\Dpd\StructType\GetServiceNoticesResponse|\Dpd\StructType\GetShipmentBcMultiResponse|\Dpd\StructType\GetShipmentBcResponse|\Dpd\StructType\GetShipmentResponse|\Dpd\StructType\GetShippingResponse
      */
     public function getResult()
     {

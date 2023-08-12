@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class RdvEsnInfo extends AbstractStructBase
     /**
      * Set CreateEsn value
      * @param bool $createEsn
-     * @return \StructType\RdvEsnInfo
+     * @return \Dpd\StructType\RdvEsnInfo
      */
     public function setCreateEsn($createEsn = null)
     {
@@ -72,7 +72,7 @@ class RdvEsnInfo extends AbstractStructBase
     /**
      * Set EsnDirective value
      * @param string $esnDirective
-     * @return \StructType\RdvEsnInfo
+     * @return \Dpd\StructType\RdvEsnInfo
      */
     public function setEsnDirective($esnDirective = null)
     {

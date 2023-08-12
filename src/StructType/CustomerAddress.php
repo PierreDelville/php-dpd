@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -248,7 +248,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set CountryCode value
      * @param int $countryCode
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setCountryCode($countryCode = null)
     {
@@ -270,7 +270,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set CustomerCenterNumber value
      * @param int $customerCenterNumber
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setCustomerCenterNumber($customerCenterNumber = null)
     {
@@ -292,7 +292,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set CustomerNumber value
      * @param int $customerNumber
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setCustomerNumber($customerNumber = null)
     {
@@ -314,7 +314,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set Title value
      * @param string $title
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setTitle($title = null)
     {
@@ -336,7 +336,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set Name0 value
      * @param string $name0
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setName0($name0 = null)
     {
@@ -358,7 +358,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set Name1 value
      * @param string $name1
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setName1($name1 = null)
     {
@@ -380,7 +380,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set Name2 value
      * @param string $name2
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setName2($name2 = null)
     {
@@ -402,7 +402,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set Name3 value
      * @param string $name3
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setName3($name3 = null)
     {
@@ -424,7 +424,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set CountryPrefix value
      * @param string $countryPrefix
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setCountryPrefix($countryPrefix = null)
     {
@@ -446,7 +446,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set ZipCode value
      * @param string $zipCode
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setZipCode($zipCode = null)
     {
@@ -468,7 +468,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set City value
      * @param string $city
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setCity($city = null)
     {
@@ -490,7 +490,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set Street value
      * @param string $street
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setStreet($street = null)
     {
@@ -512,7 +512,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set HouseNumber value
      * @param string $houseNumber
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setHouseNumber($houseNumber = null)
     {
@@ -534,7 +534,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set HouseNumberExtension value
      * @param string $houseNumberExtension
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setHouseNumberExtension($houseNumberExtension = null)
     {
@@ -556,7 +556,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set Floor value
      * @param string $floor
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setFloor($floor = null)
     {
@@ -578,7 +578,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set PostOfficeBox value
      * @param string $postOfficeBox
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setPostOfficeBox($postOfficeBox = null)
     {
@@ -600,7 +600,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set PhoneNumber value
      * @param string $phoneNumber
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setPhoneNumber($phoneNumber = null)
     {
@@ -622,7 +622,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set FaxNumber value
      * @param string $faxNumber
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setFaxNumber($faxNumber = null)
     {
@@ -644,7 +644,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set MobileNumber value
      * @param string $mobileNumber
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setMobileNumber($mobileNumber = null)
     {
@@ -666,7 +666,7 @@ class CustomerAddress extends AbstractStructBase
     /**
      * Set Email value
      * @param string $email
-     * @return \StructType\CustomerAddress
+     * @return \Dpd\StructType\CustomerAddress
      */
     public function setEmail($email = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfImage extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Image[]
+     * @var \Dpd\StructType\Image[]
      */
     public $Image;
     /**
      * Constructor method for ArrayOfImage
      * @uses ArrayOfImage::setImage()
-     * @param \StructType\Image[] $image
+     * @param \Dpd\StructType\Image[] $image
      */
     public function __construct(array $image = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfImage extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Image[]|null
+     * @return \Dpd\StructType\Image[]|null
      */
     public function getImage()
     {
@@ -52,12 +52,12 @@ class ArrayOfImage extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfImageImageItem) {
             // validation for constraint: itemType
-            if (!$arrayOfImageImageItem instanceof \StructType\Image) {
+            if (!$arrayOfImageImageItem instanceof \Dpd\StructType\Image) {
                 $invalidValues[] = is_object($arrayOfImageImageItem) ? get_class($arrayOfImageImageItem) : sprintf('%s(%s)', gettype($arrayOfImageImageItem), var_export($arrayOfImageImageItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Image property can only contain items of type \StructType\Image, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Image property can only contain items of type \Dpd\StructType\Image, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfImage extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Image[] $image
-     * @return \ArrayType\ArrayOfImage
+     * @param \Dpd\StructType\Image[] $image
+     * @return \Dpd\ArrayType\ArrayOfImage
      */
     public function setImage(array $image = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfImage extends AbstractStructArrayBase
     /**
      * Add item to Image value
      * @throws \InvalidArgumentException
-     * @param \StructType\Image $item
-     * @return \ArrayType\ArrayOfImage
+     * @param \Dpd\StructType\Image $item
+     * @return \Dpd\ArrayType\ArrayOfImage
      */
-    public function addToImage(\StructType\Image $item)
+    public function addToImage(\Dpd\StructType\Image $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Image) {
-            throw new \InvalidArgumentException(sprintf('The Image property can only contain items of type \StructType\Image, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\Image) {
+            throw new \InvalidArgumentException(sprintf('The Image property can only contain items of type \Dpd\StructType\Image, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Image[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfImage extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Image|null
+     * @return \Dpd\StructType\Image|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfImage extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Image|null
+     * @return \Dpd\StructType\Image|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfImage extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Image|null
+     * @return \Dpd\StructType\Image|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfImage extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Image|null
+     * @return \Dpd\StructType\Image|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfImage extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Image|null
+     * @return \Dpd\StructType\Image|null
      */
     public function offsetGet($offset)
     {

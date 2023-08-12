@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class GetBic3Request extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $customer;
     /**
@@ -31,9 +31,9 @@ class GetBic3Request extends AbstractStructBase
      * @uses GetBic3Request::setCenternumber()
      * @uses GetBic3Request::setCustomer()
      * @param int $centernumber
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      */
-    public function __construct($centernumber = null, \StructType\Customer $customer = null)
+    public function __construct($centernumber = null, \Dpd\StructType\Customer $customer = null)
     {
         $this
             ->setCenternumber($centernumber)
@@ -50,7 +50,7 @@ class GetBic3Request extends AbstractStructBase
     /**
      * Set centernumber value
      * @param int $centernumber
-     * @return \StructType\GetBic3Request
+     * @return \Dpd\StructType\GetBic3Request
      */
     public function setCenternumber($centernumber = null)
     {
@@ -63,7 +63,7 @@ class GetBic3Request extends AbstractStructBase
     }
     /**
      * Get customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -71,10 +71,10 @@ class GetBic3Request extends AbstractStructBase
     }
     /**
      * Set customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\GetBic3Request
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\GetBic3Request
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->customer = $customer;
         return $this;

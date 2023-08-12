@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,17 +38,17 @@ class ReferenceInBarcode extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\EReferenceType::valueIsValid()
-     * @uses \EnumType\EReferenceType::getValidValues()
+     * @uses \Dpd\EnumType\EReferenceType::valueIsValid()
+     * @uses \Dpd\EnumType\EReferenceType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\ReferenceInBarcode
+     * @return \Dpd\StructType\ReferenceInBarcode
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\EReferenceType::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\EReferenceType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\EReferenceType::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\EReferenceType::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\EReferenceType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Dpd\EnumType\EReferenceType::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;

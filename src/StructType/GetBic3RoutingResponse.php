@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class GetBic3RoutingResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetBic3RoutingResponse
+     * @var \Dpd\StructType\GetBic3RoutingResponse
      */
     public $GetBic3RoutingResult;
     /**
@@ -31,7 +31,7 @@ class GetBic3RoutingResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GeoRouting
+     * @var \Dpd\StructType\GeoRouting
      */
     public $route;
     /**
@@ -40,10 +40,10 @@ class GetBic3RoutingResponse extends AbstractStructBase
      * @uses GetBic3RoutingResponse::setGetBic3RoutingResult()
      * @uses GetBic3RoutingResponse::setRoute()
      * @param int $bic3
-     * @param \StructType\GetBic3RoutingResponse $getBic3RoutingResult
-     * @param \StructType\GeoRouting $route
+     * @param \Dpd\StructType\GetBic3RoutingResponse $getBic3RoutingResult
+     * @param \Dpd\StructType\GeoRouting $route
      */
-    public function __construct($bic3 = null, \StructType\GetBic3RoutingResponse $getBic3RoutingResult = null, \StructType\GeoRouting $route = null)
+    public function __construct($bic3 = null, \Dpd\StructType\GetBic3RoutingResponse $getBic3RoutingResult = null, \Dpd\StructType\GeoRouting $route = null)
     {
         $this
             ->setBic3($bic3)
@@ -61,7 +61,7 @@ class GetBic3RoutingResponse extends AbstractStructBase
     /**
      * Set bic3 value
      * @param int $bic3
-     * @return \StructType\GetBic3RoutingResponse
+     * @return \Dpd\StructType\GetBic3RoutingResponse
      */
     public function setBic3($bic3 = null)
     {
@@ -74,7 +74,7 @@ class GetBic3RoutingResponse extends AbstractStructBase
     }
     /**
      * Get GetBic3RoutingResult value
-     * @return \StructType\GetBic3RoutingResponse|null
+     * @return \Dpd\StructType\GetBic3RoutingResponse|null
      */
     public function getGetBic3RoutingResult()
     {
@@ -82,17 +82,17 @@ class GetBic3RoutingResponse extends AbstractStructBase
     }
     /**
      * Set GetBic3RoutingResult value
-     * @param \StructType\GetBic3RoutingResponse $getBic3RoutingResult
-     * @return \StructType\GetBic3RoutingResponse
+     * @param \Dpd\StructType\GetBic3RoutingResponse $getBic3RoutingResult
+     * @return \Dpd\StructType\GetBic3RoutingResponse
      */
-    public function setGetBic3RoutingResult(\StructType\GetBic3RoutingResponse $getBic3RoutingResult = null)
+    public function setGetBic3RoutingResult(\Dpd\StructType\GetBic3RoutingResponse $getBic3RoutingResult = null)
     {
         $this->GetBic3RoutingResult = $getBic3RoutingResult;
         return $this;
     }
     /**
      * Get route value
-     * @return \StructType\GeoRouting|null
+     * @return \Dpd\StructType\GeoRouting|null
      */
     public function getRoute()
     {
@@ -100,10 +100,10 @@ class GetBic3RoutingResponse extends AbstractStructBase
     }
     /**
      * Set route value
-     * @param \StructType\GeoRouting $route
-     * @return \StructType\GetBic3RoutingResponse
+     * @param \Dpd\StructType\GeoRouting $route
+     * @return \Dpd\StructType\GetBic3RoutingResponse
      */
-    public function setRoute(\StructType\GeoRouting $route = null)
+    public function setRoute(\Dpd\StructType\GeoRouting $route = null)
     {
         $this->route = $route;
         return $this;

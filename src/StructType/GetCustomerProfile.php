@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetCustomerProfile extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetCustomerProfileRequest
+     * @var \Dpd\StructType\GetCustomerProfileRequest
      */
     public $request;
     /**
      * Constructor method for GetCustomerProfile
      * @uses GetCustomerProfile::setRequest()
-     * @param \StructType\GetCustomerProfileRequest $request
+     * @param \Dpd\StructType\GetCustomerProfileRequest $request
      */
-    public function __construct(\StructType\GetCustomerProfileRequest $request = null)
+    public function __construct(\Dpd\StructType\GetCustomerProfileRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetCustomerProfileRequest|null
+     * @return \Dpd\StructType\GetCustomerProfileRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetCustomerProfile extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetCustomerProfileRequest $request
-     * @return \StructType\GetCustomerProfile
+     * @param \Dpd\StructType\GetCustomerProfileRequest $request
+     * @return \Dpd\StructType\GetCustomerProfile
      */
-    public function setRequest(\StructType\GetCustomerProfileRequest $request = null)
+    public function setRequest(\Dpd\StructType\GetCustomerProfileRequest $request = null)
     {
         $this->request = $request;
         return $this;

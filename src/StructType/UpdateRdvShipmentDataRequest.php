@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RdvAddress
+     * @var \Dpd\StructType\RdvAddress
      */
     public $Address;
     /**
@@ -23,7 +23,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RdvDeliveryInfo
+     * @var \Dpd\StructType\RdvDeliveryInfo
      */
     public $DeliveryInfo;
     /**
@@ -31,7 +31,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RdvEsnInfo
+     * @var \Dpd\StructType\RdvEsnInfo
      */
     public $EsnInfo;
     /**
@@ -39,7 +39,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RdvData
+     * @var \Dpd\StructType\RdvData
      */
     public $AdditionalData;
     /**
@@ -48,12 +48,12 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
      * @uses UpdateRdvShipmentDataRequest::setDeliveryInfo()
      * @uses UpdateRdvShipmentDataRequest::setEsnInfo()
      * @uses UpdateRdvShipmentDataRequest::setAdditionalData()
-     * @param \StructType\RdvAddress $address
-     * @param \StructType\RdvDeliveryInfo $deliveryInfo
-     * @param \StructType\RdvEsnInfo $esnInfo
-     * @param \StructType\RdvData $additionalData
+     * @param \Dpd\StructType\RdvAddress $address
+     * @param \Dpd\StructType\RdvDeliveryInfo $deliveryInfo
+     * @param \Dpd\StructType\RdvEsnInfo $esnInfo
+     * @param \Dpd\StructType\RdvData $additionalData
      */
-    public function __construct(\StructType\RdvAddress $address = null, \StructType\RdvDeliveryInfo $deliveryInfo = null, \StructType\RdvEsnInfo $esnInfo = null, \StructType\RdvData $additionalData = null)
+    public function __construct(\Dpd\StructType\RdvAddress $address = null, \Dpd\StructType\RdvDeliveryInfo $deliveryInfo = null, \Dpd\StructType\RdvEsnInfo $esnInfo = null, \Dpd\StructType\RdvData $additionalData = null)
     {
         $this
             ->setAddress($address)
@@ -63,7 +63,7 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
     /**
      * Get Address value
-     * @return \StructType\RdvAddress|null
+     * @return \Dpd\StructType\RdvAddress|null
      */
     public function getAddress()
     {
@@ -71,17 +71,17 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
     /**
      * Set Address value
-     * @param \StructType\RdvAddress $address
-     * @return \StructType\UpdateRdvShipmentDataRequest
+     * @param \Dpd\StructType\RdvAddress $address
+     * @return \Dpd\StructType\UpdateRdvShipmentDataRequest
      */
-    public function setAddress(\StructType\RdvAddress $address = null)
+    public function setAddress(\Dpd\StructType\RdvAddress $address = null)
     {
         $this->Address = $address;
         return $this;
     }
     /**
      * Get DeliveryInfo value
-     * @return \StructType\RdvDeliveryInfo|null
+     * @return \Dpd\StructType\RdvDeliveryInfo|null
      */
     public function getDeliveryInfo()
     {
@@ -89,17 +89,17 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
     /**
      * Set DeliveryInfo value
-     * @param \StructType\RdvDeliveryInfo $deliveryInfo
-     * @return \StructType\UpdateRdvShipmentDataRequest
+     * @param \Dpd\StructType\RdvDeliveryInfo $deliveryInfo
+     * @return \Dpd\StructType\UpdateRdvShipmentDataRequest
      */
-    public function setDeliveryInfo(\StructType\RdvDeliveryInfo $deliveryInfo = null)
+    public function setDeliveryInfo(\Dpd\StructType\RdvDeliveryInfo $deliveryInfo = null)
     {
         $this->DeliveryInfo = $deliveryInfo;
         return $this;
     }
     /**
      * Get EsnInfo value
-     * @return \StructType\RdvEsnInfo|null
+     * @return \Dpd\StructType\RdvEsnInfo|null
      */
     public function getEsnInfo()
     {
@@ -107,17 +107,17 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
     /**
      * Set EsnInfo value
-     * @param \StructType\RdvEsnInfo $esnInfo
-     * @return \StructType\UpdateRdvShipmentDataRequest
+     * @param \Dpd\StructType\RdvEsnInfo $esnInfo
+     * @return \Dpd\StructType\UpdateRdvShipmentDataRequest
      */
-    public function setEsnInfo(\StructType\RdvEsnInfo $esnInfo = null)
+    public function setEsnInfo(\Dpd\StructType\RdvEsnInfo $esnInfo = null)
     {
         $this->EsnInfo = $esnInfo;
         return $this;
     }
     /**
      * Get AdditionalData value
-     * @return \StructType\RdvData|null
+     * @return \Dpd\StructType\RdvData|null
      */
     public function getAdditionalData()
     {
@@ -125,10 +125,10 @@ class UpdateRdvShipmentDataRequest extends UpdateRdvShipmentData
     }
     /**
      * Set AdditionalData value
-     * @param \StructType\RdvData $additionalData
-     * @return \StructType\UpdateRdvShipmentDataRequest
+     * @param \Dpd\StructType\RdvData $additionalData
+     * @return \Dpd\StructType\UpdateRdvShipmentDataRequest
      */
-    public function setAdditionalData(\StructType\RdvData $additionalData = null)
+    public function setAdditionalData(\Dpd\StructType\RdvData $additionalData = null)
     {
         $this->AdditionalData = $additionalData;
         return $this;

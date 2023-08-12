@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetProperties extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetPropertiesRequest
+     * @var \Dpd\StructType\GetPropertiesRequest
      */
     public $request;
     /**
      * Constructor method for GetProperties
      * @uses GetProperties::setRequest()
-     * @param \StructType\GetPropertiesRequest $request
+     * @param \Dpd\StructType\GetPropertiesRequest $request
      */
-    public function __construct(\StructType\GetPropertiesRequest $request = null)
+    public function __construct(\Dpd\StructType\GetPropertiesRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetPropertiesRequest|null
+     * @return \Dpd\StructType\GetPropertiesRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetProperties extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetPropertiesRequest $request
-     * @return \StructType\GetProperties
+     * @param \Dpd\StructType\GetPropertiesRequest $request
+     * @return \Dpd\StructType\GetProperties
      */
-    public function setRequest(\StructType\GetPropertiesRequest $request = null)
+    public function setRequest(\Dpd\StructType\GetPropertiesRequest $request = null)
     {
         $this->request = $request;
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -32,7 +32,7 @@ class ShipmentDetailRequest extends ShipmentBaseRequest
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Options
+     * @var \Dpd\StructType\Options
      */
     public $Options;
     /**
@@ -42,9 +42,9 @@ class ShipmentDetailRequest extends ShipmentBaseRequest
      * @uses ShipmentDetailRequest::setOptions()
      * @param string $expandContainerMode
      * @param bool $getImages
-     * @param \StructType\Options $options
+     * @param \Dpd\StructType\Options $options
      */
-    public function __construct($expandContainerMode = null, $getImages = null, \StructType\Options $options = null)
+    public function __construct($expandContainerMode = null, $getImages = null, \Dpd\StructType\Options $options = null)
     {
         $this
             ->setExpandContainerMode($expandContainerMode)
@@ -61,17 +61,17 @@ class ShipmentDetailRequest extends ShipmentBaseRequest
     }
     /**
      * Set ExpandContainerMode value
-     * @uses \EnumType\ExpandContainerModeType::valueIsValid()
-     * @uses \EnumType\ExpandContainerModeType::getValidValues()
+     * @uses \Dpd\EnumType\ExpandContainerModeType::valueIsValid()
+     * @uses \Dpd\EnumType\ExpandContainerModeType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $expandContainerMode
-     * @return \StructType\ShipmentDetailRequest
+     * @return \Dpd\StructType\ShipmentDetailRequest
      */
     public function setExpandContainerMode($expandContainerMode = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ExpandContainerModeType::valueIsValid($expandContainerMode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\ExpandContainerModeType', is_array($expandContainerMode) ? implode(', ', $expandContainerMode) : var_export($expandContainerMode, true), implode(', ', \EnumType\ExpandContainerModeType::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\ExpandContainerModeType::valueIsValid($expandContainerMode)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\ExpandContainerModeType', is_array($expandContainerMode) ? implode(', ', $expandContainerMode) : var_export($expandContainerMode, true), implode(', ', \Dpd\EnumType\ExpandContainerModeType::getValidValues())), __LINE__);
         }
         $this->ExpandContainerMode = $expandContainerMode;
         return $this;
@@ -87,7 +87,7 @@ class ShipmentDetailRequest extends ShipmentBaseRequest
     /**
      * Set GetImages value
      * @param bool $getImages
-     * @return \StructType\ShipmentDetailRequest
+     * @return \Dpd\StructType\ShipmentDetailRequest
      */
     public function setGetImages($getImages = null)
     {
@@ -100,7 +100,7 @@ class ShipmentDetailRequest extends ShipmentBaseRequest
     }
     /**
      * Get Options value
-     * @return \StructType\Options|null
+     * @return \Dpd\StructType\Options|null
      */
     public function getOptions()
     {
@@ -108,10 +108,10 @@ class ShipmentDetailRequest extends ShipmentBaseRequest
     }
     /**
      * Set Options value
-     * @param \StructType\Options $options
-     * @return \StructType\ShipmentDetailRequest
+     * @param \Dpd\StructType\Options $options
+     * @return \Dpd\StructType\ShipmentDetailRequest
      */
-    public function setOptions(\StructType\Options $options = null)
+    public function setOptions(\Dpd\StructType\Options $options = null)
     {
         $this->Options = $options;
         return $this;

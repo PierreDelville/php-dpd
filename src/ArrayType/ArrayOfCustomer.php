@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfCustomer extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Customer[]
+     * @var \Dpd\StructType\Customer[]
      */
     public $Customer;
     /**
      * Constructor method for ArrayOfCustomer
      * @uses ArrayOfCustomer::setCustomer()
-     * @param \StructType\Customer[] $customer
+     * @param \Dpd\StructType\Customer[] $customer
      */
     public function __construct(array $customer = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfCustomer extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Customer[]|null
+     * @return \Dpd\StructType\Customer[]|null
      */
     public function getCustomer()
     {
@@ -52,12 +52,12 @@ class ArrayOfCustomer extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfCustomerCustomerItem) {
             // validation for constraint: itemType
-            if (!$arrayOfCustomerCustomerItem instanceof \StructType\Customer) {
+            if (!$arrayOfCustomerCustomerItem instanceof \Dpd\StructType\Customer) {
                 $invalidValues[] = is_object($arrayOfCustomerCustomerItem) ? get_class($arrayOfCustomerCustomerItem) : sprintf('%s(%s)', gettype($arrayOfCustomerCustomerItem), var_export($arrayOfCustomerCustomerItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Customer property can only contain items of type \StructType\Customer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Customer property can only contain items of type \Dpd\StructType\Customer, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfCustomer extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Customer[] $customer
-     * @return \ArrayType\ArrayOfCustomer
+     * @param \Dpd\StructType\Customer[] $customer
+     * @return \Dpd\ArrayType\ArrayOfCustomer
      */
     public function setCustomer(array $customer = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfCustomer extends AbstractStructArrayBase
     /**
      * Add item to Customer value
      * @throws \InvalidArgumentException
-     * @param \StructType\Customer $item
-     * @return \ArrayType\ArrayOfCustomer
+     * @param \Dpd\StructType\Customer $item
+     * @return \Dpd\ArrayType\ArrayOfCustomer
      */
-    public function addToCustomer(\StructType\Customer $item)
+    public function addToCustomer(\Dpd\StructType\Customer $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Customer) {
-            throw new \InvalidArgumentException(sprintf('The Customer property can only contain items of type \StructType\Customer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\Customer) {
+            throw new \InvalidArgumentException(sprintf('The Customer property can only contain items of type \Dpd\StructType\Customer, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Customer[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfCustomer extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfCustomer extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfCustomer extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfCustomer extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfCustomer extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function offsetGet($offset)
     {

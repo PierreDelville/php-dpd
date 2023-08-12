@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -68,7 +68,7 @@ class ArrayOfBase64Binary extends AbstractStructArrayBase
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
      * @param string[] $base64Binary
-     * @return \ArrayType\ArrayOfBase64Binary
+     * @return \Dpd\ArrayType\ArrayOfBase64Binary
      */
     public function setBase64Binary(array $base64Binary = array())
     {
@@ -87,7 +87,7 @@ class ArrayOfBase64Binary extends AbstractStructArrayBase
      * Add item to base64Binary value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \ArrayType\ArrayOfBase64Binary
+     * @return \Dpd\ArrayType\ArrayOfBase64Binary
      */
     public function addToBase64Binary($item)
     {

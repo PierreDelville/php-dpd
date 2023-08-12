@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,17 +38,17 @@ class Bic3LabelData extends AbstractStructBase
     }
     /**
      * Set mode value
-     * @uses \EnumType\EBic3Mode::valueIsValid()
-     * @uses \EnumType\EBic3Mode::getValidValues()
+     * @uses \Dpd\EnumType\EBic3Mode::valueIsValid()
+     * @uses \Dpd\EnumType\EBic3Mode::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $mode
-     * @return \StructType\Bic3LabelData
+     * @return \Dpd\StructType\Bic3LabelData
      */
     public function setMode($mode = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\EBic3Mode::valueIsValid($mode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\EBic3Mode', is_array($mode) ? implode(', ', $mode) : var_export($mode, true), implode(', ', \EnumType\EBic3Mode::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\EBic3Mode::valueIsValid($mode)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\EBic3Mode', is_array($mode) ? implode(', ', $mode) : var_export($mode, true), implode(', ', \Dpd\EnumType\EBic3Mode::getValidValues())), __LINE__);
         }
         $this->mode = $mode;
         return $this;

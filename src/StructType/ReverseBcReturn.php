@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class ReverseBcReturn extends ReverseReturnBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\BcData
+     * @var \Dpd\StructType\BcData
      */
     public $original_parcel;
     /**
      * Constructor method for ReverseBcReturn
      * @uses ReverseBcReturn::setOriginal_parcel()
-     * @param \StructType\BcData $original_parcel
+     * @param \Dpd\StructType\BcData $original_parcel
      */
-    public function __construct(\StructType\BcData $original_parcel = null)
+    public function __construct(\Dpd\StructType\BcData $original_parcel = null)
     {
         $this
             ->setOriginal_parcel($original_parcel);
     }
     /**
      * Get original_parcel value
-     * @return \StructType\BcData|null
+     * @return \Dpd\StructType\BcData|null
      */
     public function getOriginal_parcel()
     {
@@ -38,10 +38,10 @@ class ReverseBcReturn extends ReverseReturnBase
     }
     /**
      * Set original_parcel value
-     * @param \StructType\BcData $original_parcel
-     * @return \StructType\ReverseBcReturn
+     * @param \Dpd\StructType\BcData $original_parcel
+     * @return \Dpd\StructType\ReverseBcReturn
      */
-    public function setOriginal_parcel(\StructType\BcData $original_parcel = null)
+    public function setOriginal_parcel(\Dpd\StructType\BcData $original_parcel = null)
     {
         $this->original_parcel = $original_parcel;
         return $this;

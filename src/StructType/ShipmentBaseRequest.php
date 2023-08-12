@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class ShipmentBaseRequest extends RequestShipmentBase
     /**
      * Set ShipmentNumber value
      * @param string $shipmentNumber
-     * @return \StructType\ShipmentBaseRequest
+     * @return \Dpd\StructType\ShipmentBaseRequest
      */
     public function setShipmentNumber($shipmentNumber = null)
     {

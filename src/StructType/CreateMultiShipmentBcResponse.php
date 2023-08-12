@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreateMultiShipmentBcResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\MultiShipmentBc
+     * @var \Dpd\StructType\MultiShipmentBc
      */
     public $CreateMultiShipmentBcResult;
     /**
      * Constructor method for CreateMultiShipmentBcResponse
      * @uses CreateMultiShipmentBcResponse::setCreateMultiShipmentBcResult()
-     * @param \StructType\MultiShipmentBc $createMultiShipmentBcResult
+     * @param \Dpd\StructType\MultiShipmentBc $createMultiShipmentBcResult
      */
-    public function __construct(\StructType\MultiShipmentBc $createMultiShipmentBcResult = null)
+    public function __construct(\Dpd\StructType\MultiShipmentBc $createMultiShipmentBcResult = null)
     {
         $this
             ->setCreateMultiShipmentBcResult($createMultiShipmentBcResult);
     }
     /**
      * Get CreateMultiShipmentBcResult value
-     * @return \StructType\MultiShipmentBc|null
+     * @return \Dpd\StructType\MultiShipmentBc|null
      */
     public function getCreateMultiShipmentBcResult()
     {
@@ -38,10 +38,10 @@ class CreateMultiShipmentBcResponse extends AbstractStructBase
     }
     /**
      * Set CreateMultiShipmentBcResult value
-     * @param \StructType\MultiShipmentBc $createMultiShipmentBcResult
-     * @return \StructType\CreateMultiShipmentBcResponse
+     * @param \Dpd\StructType\MultiShipmentBc $createMultiShipmentBcResult
+     * @return \Dpd\StructType\CreateMultiShipmentBcResponse
      */
-    public function setCreateMultiShipmentBcResult(\StructType\MultiShipmentBc $createMultiShipmentBcResult = null)
+    public function setCreateMultiShipmentBcResult(\Dpd\StructType\MultiShipmentBc $createMultiShipmentBcResult = null)
     {
         $this->CreateMultiShipmentBcResult = $createMultiShipmentBcResult;
         return $this;

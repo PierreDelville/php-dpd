@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class ShopAddress extends Address
     /**
      * Set shopid value
      * @param string $shopid
-     * @return \StructType\ShopAddress
+     * @return \Dpd\StructType\ShopAddress
      */
     public function setShopid($shopid = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetRetourShipmentDataBc extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RetourShipmentBcRequest
+     * @var \Dpd\StructType\RetourShipmentBcRequest
      */
     public $request;
     /**
      * Constructor method for GetRetourShipmentDataBc
      * @uses GetRetourShipmentDataBc::setRequest()
-     * @param \StructType\RetourShipmentBcRequest $request
+     * @param \Dpd\StructType\RetourShipmentBcRequest $request
      */
-    public function __construct(\StructType\RetourShipmentBcRequest $request = null)
+    public function __construct(\Dpd\StructType\RetourShipmentBcRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\RetourShipmentBcRequest|null
+     * @return \Dpd\StructType\RetourShipmentBcRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetRetourShipmentDataBc extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\RetourShipmentBcRequest $request
-     * @return \StructType\GetRetourShipmentDataBc
+     * @param \Dpd\StructType\RetourShipmentBcRequest $request
+     * @return \Dpd\StructType\GetRetourShipmentDataBc
      */
-    public function setRequest(\StructType\RetourShipmentBcRequest $request = null)
+    public function setRequest(\Dpd\StructType\RetourShipmentBcRequest $request = null)
     {
         $this->request = $request;
         return $this;

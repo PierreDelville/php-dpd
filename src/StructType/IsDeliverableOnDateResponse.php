@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class IsDeliverableOnDateResponse extends AbstractStructBase
     /**
      * Set IsDeliverableOnDateResult value
      * @param bool $isDeliverableOnDateResult
-     * @return \StructType\IsDeliverableOnDateResponse
+     * @return \Dpd\StructType\IsDeliverableOnDateResponse
      */
     public function setIsDeliverableOnDateResult($isDeliverableOnDateResult = null)
     {

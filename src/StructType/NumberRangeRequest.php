@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -94,7 +94,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     /**
      * Set CountryCode value
      * @param int $countryCode
-     * @return \StructType\NumberRangeRequest
+     * @return \Dpd\StructType\NumberRangeRequest
      */
     public function setCountryCode($countryCode = null)
     {
@@ -116,7 +116,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     /**
      * Set ShippingCenterNumber value
      * @param string $shippingCenterNumber
-     * @return \StructType\NumberRangeRequest
+     * @return \Dpd\StructType\NumberRangeRequest
      */
     public function setShippingCenterNumber($shippingCenterNumber = null)
     {
@@ -138,7 +138,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     /**
      * Set NumberRangeFrom value
      * @param string $numberRangeFrom
-     * @return \StructType\NumberRangeRequest
+     * @return \Dpd\StructType\NumberRangeRequest
      */
     public function setNumberRangeFrom($numberRangeFrom = null)
     {
@@ -160,7 +160,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     /**
      * Set NumberRangeTo value
      * @param string $numberRangeTo
-     * @return \StructType\NumberRangeRequest
+     * @return \Dpd\StructType\NumberRangeRequest
      */
     public function setNumberRangeTo($numberRangeTo = null)
     {
@@ -182,7 +182,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     /**
      * Set NumberRangeFree value
      * @param string $numberRangeFree
-     * @return \StructType\NumberRangeRequest
+     * @return \Dpd\StructType\NumberRangeRequest
      */
     public function setNumberRangeFree($numberRangeFree = null)
     {
@@ -204,7 +204,7 @@ class NumberRangeRequest extends NumberRangeBaseRequest
     /**
      * Set NumberType value
      * @param string $numberType
-     * @return \StructType\NumberRangeRequest
+     * @return \Dpd\StructType\NumberRangeRequest
      */
     public function setNumberType($numberType = null)
     {

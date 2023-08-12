@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class ShipmentBc extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\BcDataExt
+     * @var \Dpd\StructType\BcDataExt
      */
     public $Shipment;
     /**
@@ -31,9 +31,9 @@ class ShipmentBc extends AbstractStructBase
      * @uses ShipmentBc::setType()
      * @uses ShipmentBc::setShipment()
      * @param string $type
-     * @param \StructType\BcDataExt $shipment
+     * @param \Dpd\StructType\BcDataExt $shipment
      */
-    public function __construct($type = null, \StructType\BcDataExt $shipment = null)
+    public function __construct($type = null, \Dpd\StructType\BcDataExt $shipment = null)
     {
         $this
             ->setType($type)
@@ -49,24 +49,24 @@ class ShipmentBc extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @uses \EnumType\Etype::valueIsValid()
-     * @uses \EnumType\Etype::getValidValues()
+     * @uses \Dpd\EnumType\Etype::valueIsValid()
+     * @uses \Dpd\EnumType\Etype::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\ShipmentBc
+     * @return \Dpd\StructType\ShipmentBc
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\Etype::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\Etype', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\Etype::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\Etype::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\Etype', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Dpd\EnumType\Etype::getValidValues())), __LINE__);
         }
         $this->Type = $type;
         return $this;
     }
     /**
      * Get Shipment value
-     * @return \StructType\BcDataExt|null
+     * @return \Dpd\StructType\BcDataExt|null
      */
     public function getShipment()
     {
@@ -74,10 +74,10 @@ class ShipmentBc extends AbstractStructBase
     }
     /**
      * Set Shipment value
-     * @param \StructType\BcDataExt $shipment
-     * @return \StructType\ShipmentBc
+     * @param \Dpd\StructType\BcDataExt $shipment
+     * @return \Dpd\StructType\ShipmentBc
      */
-    public function setShipment(\StructType\BcDataExt $shipment = null)
+    public function setShipment(\Dpd\StructType\BcDataExt $shipment = null)
     {
         $this->Shipment = $shipment;
         return $this;

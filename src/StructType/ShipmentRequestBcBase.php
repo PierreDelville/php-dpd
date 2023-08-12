@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -62,7 +62,7 @@ class ShipmentRequestBcBase extends GetShipmentRequestBase
     /**
      * Set BarcodeSource value
      * @param int $barcodeSource
-     * @return \StructType\ShipmentRequestBcBase
+     * @return \Dpd\StructType\ShipmentRequestBcBase
      */
     public function setBarcodeSource($barcodeSource = null)
     {
@@ -84,7 +84,7 @@ class ShipmentRequestBcBase extends GetShipmentRequestBase
     /**
      * Set Barcode value
      * @param string $barcode
-     * @return \StructType\ShipmentRequestBcBase
+     * @return \Dpd\StructType\ShipmentRequestBcBase
      */
     public function setBarcode($barcode = null)
     {
@@ -106,7 +106,7 @@ class ShipmentRequestBcBase extends GetShipmentRequestBase
     /**
      * Set BarcodeId value
      * @param string $barcodeId
-     * @return \StructType\ShipmentRequestBcBase
+     * @return \Dpd\StructType\ShipmentRequestBcBase
      */
     public function setBarcodeId($barcodeId = null)
     {

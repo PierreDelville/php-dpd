@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfTask extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Task[]
+     * @var \Dpd\StructType\Task[]
      */
     public $Task;
     /**
      * Constructor method for ArrayOfTask
      * @uses ArrayOfTask::setTask()
-     * @param \StructType\Task[] $task
+     * @param \Dpd\StructType\Task[] $task
      */
     public function __construct(array $task = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfTask extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Task[]|null
+     * @return \Dpd\StructType\Task[]|null
      */
     public function getTask()
     {
@@ -52,12 +52,12 @@ class ArrayOfTask extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfTaskTaskItem) {
             // validation for constraint: itemType
-            if (!$arrayOfTaskTaskItem instanceof \StructType\Task) {
+            if (!$arrayOfTaskTaskItem instanceof \Dpd\StructType\Task) {
                 $invalidValues[] = is_object($arrayOfTaskTaskItem) ? get_class($arrayOfTaskTaskItem) : sprintf('%s(%s)', gettype($arrayOfTaskTaskItem), var_export($arrayOfTaskTaskItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Task property can only contain items of type \StructType\Task, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Task property can only contain items of type \Dpd\StructType\Task, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfTask extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Task[] $task
-     * @return \ArrayType\ArrayOfTask
+     * @param \Dpd\StructType\Task[] $task
+     * @return \Dpd\ArrayType\ArrayOfTask
      */
     public function setTask(array $task = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfTask extends AbstractStructArrayBase
     /**
      * Add item to Task value
      * @throws \InvalidArgumentException
-     * @param \StructType\Task $item
-     * @return \ArrayType\ArrayOfTask
+     * @param \Dpd\StructType\Task $item
+     * @return \Dpd\ArrayType\ArrayOfTask
      */
-    public function addToTask(\StructType\Task $item)
+    public function addToTask(\Dpd\StructType\Task $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Task) {
-            throw new \InvalidArgumentException(sprintf('The Task property can only contain items of type \StructType\Task, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\Task) {
+            throw new \InvalidArgumentException(sprintf('The Task property can only contain items of type \Dpd\StructType\Task, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Task[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfTask extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Task|null
+     * @return \Dpd\StructType\Task|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfTask extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Task|null
+     * @return \Dpd\StructType\Task|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfTask extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Task|null
+     * @return \Dpd\StructType\Task|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfTask extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Task|null
+     * @return \Dpd\StructType\Task|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfTask extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Task|null
+     * @return \Dpd\StructType\Task|null
      */
     public function offsetGet($offset)
     {

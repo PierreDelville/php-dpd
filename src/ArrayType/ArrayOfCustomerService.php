@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfCustomerService extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\CustomerService[]
+     * @var \Dpd\StructType\CustomerService[]
      */
     public $CustomerService;
     /**
      * Constructor method for ArrayOfCustomerService
      * @uses ArrayOfCustomerService::setCustomerService()
-     * @param \StructType\CustomerService[] $customerService
+     * @param \Dpd\StructType\CustomerService[] $customerService
      */
     public function __construct(array $customerService = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfCustomerService extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\CustomerService[]|null
+     * @return \Dpd\StructType\CustomerService[]|null
      */
     public function getCustomerService()
     {
@@ -52,12 +52,12 @@ class ArrayOfCustomerService extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfCustomerServiceCustomerServiceItem) {
             // validation for constraint: itemType
-            if (!$arrayOfCustomerServiceCustomerServiceItem instanceof \StructType\CustomerService) {
+            if (!$arrayOfCustomerServiceCustomerServiceItem instanceof \Dpd\StructType\CustomerService) {
                 $invalidValues[] = is_object($arrayOfCustomerServiceCustomerServiceItem) ? get_class($arrayOfCustomerServiceCustomerServiceItem) : sprintf('%s(%s)', gettype($arrayOfCustomerServiceCustomerServiceItem), var_export($arrayOfCustomerServiceCustomerServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CustomerService property can only contain items of type \StructType\CustomerService, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CustomerService property can only contain items of type \Dpd\StructType\CustomerService, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfCustomerService extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\CustomerService[] $customerService
-     * @return \ArrayType\ArrayOfCustomerService
+     * @param \Dpd\StructType\CustomerService[] $customerService
+     * @return \Dpd\ArrayType\ArrayOfCustomerService
      */
     public function setCustomerService(array $customerService = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfCustomerService extends AbstractStructArrayBase
     /**
      * Add item to CustomerService value
      * @throws \InvalidArgumentException
-     * @param \StructType\CustomerService $item
-     * @return \ArrayType\ArrayOfCustomerService
+     * @param \Dpd\StructType\CustomerService $item
+     * @return \Dpd\ArrayType\ArrayOfCustomerService
      */
-    public function addToCustomerService(\StructType\CustomerService $item)
+    public function addToCustomerService(\Dpd\StructType\CustomerService $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\CustomerService) {
-            throw new \InvalidArgumentException(sprintf('The CustomerService property can only contain items of type \StructType\CustomerService, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\CustomerService) {
+            throw new \InvalidArgumentException(sprintf('The CustomerService property can only contain items of type \Dpd\StructType\CustomerService, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CustomerService[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfCustomerService extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\CustomerService|null
+     * @return \Dpd\StructType\CustomerService|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfCustomerService extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\CustomerService|null
+     * @return \Dpd\StructType\CustomerService|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfCustomerService extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\CustomerService|null
+     * @return \Dpd\StructType\CustomerService|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfCustomerService extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\CustomerService|null
+     * @return \Dpd\StructType\CustomerService|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfCustomerService extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\CustomerService|null
+     * @return \Dpd\StructType\CustomerService|null
      */
     public function offsetGet($offset)
     {

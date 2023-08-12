@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class RunAction extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RunActionRequest
+     * @var \Dpd\StructType\RunActionRequest
      */
     public $request;
     /**
      * Constructor method for runAction
      * @uses RunAction::setRequest()
-     * @param \StructType\RunActionRequest $request
+     * @param \Dpd\StructType\RunActionRequest $request
      */
-    public function __construct(\StructType\RunActionRequest $request = null)
+    public function __construct(\Dpd\StructType\RunActionRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\RunActionRequest|null
+     * @return \Dpd\StructType\RunActionRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class RunAction extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\RunActionRequest $request
-     * @return \StructType\RunAction
+     * @param \Dpd\StructType\RunActionRequest $request
+     * @return \Dpd\StructType\RunAction
      */
-    public function setRequest(\StructType\RunActionRequest $request = null)
+    public function setRequest(\Dpd\StructType\RunActionRequest $request = null)
     {
         $this->request = $request;
         return $this;

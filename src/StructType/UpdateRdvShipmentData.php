@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\UpdateRdvShipmentDataRequest
+     * @var \Dpd\StructType\UpdateRdvShipmentDataRequest
      */
     public $request;
     /**
@@ -51,9 +51,9 @@ class UpdateRdvShipmentData extends AbstractStructBase
      * @param string $sin
      * @param string $receiver_EmailAddress
      * @param string $user
-     * @param \StructType\UpdateRdvShipmentDataRequest $request
+     * @param \Dpd\StructType\UpdateRdvShipmentDataRequest $request
      */
-    public function __construct($sin = null, $receiver_EmailAddress = null, $user = null, \StructType\UpdateRdvShipmentDataRequest $request = null)
+    public function __construct($sin = null, $receiver_EmailAddress = null, $user = null, \Dpd\StructType\UpdateRdvShipmentDataRequest $request = null)
     {
         $this
             ->setSin($sin)
@@ -72,7 +72,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
     /**
      * Set Sin value
      * @param string $sin
-     * @return \StructType\UpdateRdvShipmentData
+     * @return \Dpd\StructType\UpdateRdvShipmentData
      */
     public function setSin($sin = null)
     {
@@ -94,7 +94,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
     /**
      * Set Receiver_EmailAddress value
      * @param string $receiver_EmailAddress
-     * @return \StructType\UpdateRdvShipmentData
+     * @return \Dpd\StructType\UpdateRdvShipmentData
      */
     public function setReceiver_EmailAddress($receiver_EmailAddress = null)
     {
@@ -116,7 +116,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
     /**
      * Set User value
      * @param string $user
-     * @return \StructType\UpdateRdvShipmentData
+     * @return \Dpd\StructType\UpdateRdvShipmentData
      */
     public function setUser($user = null)
     {
@@ -129,7 +129,7 @@ class UpdateRdvShipmentData extends AbstractStructBase
     }
     /**
      * Get request value
-     * @return \StructType\UpdateRdvShipmentDataRequest|null
+     * @return \Dpd\StructType\UpdateRdvShipmentDataRequest|null
      */
     public function getRequest()
     {
@@ -137,10 +137,10 @@ class UpdateRdvShipmentData extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\UpdateRdvShipmentDataRequest $request
-     * @return \StructType\UpdateRdvShipmentData
+     * @param \Dpd\StructType\UpdateRdvShipmentDataRequest $request
+     * @return \Dpd\StructType\UpdateRdvShipmentData
      */
-    public function setRequest(\StructType\UpdateRdvShipmentDataRequest $request = null)
+    public function setRequest(\Dpd\StructType\UpdateRdvShipmentDataRequest $request = null)
     {
         $this->request = $request;
         return $this;

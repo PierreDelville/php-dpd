@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class ReferenceBaseRequest extends RequestBase
     /**
      * Set Reference value
      * @param string $reference
-     * @return \StructType\ReferenceBaseRequest
+     * @return \Dpd\StructType\ReferenceBaseRequest
      */
     public function setReference($reference = null)
     {
@@ -72,7 +72,7 @@ class ReferenceBaseRequest extends RequestBase
     /**
      * Set ShippingDate value
      * @param string $shippingDate
-     * @return \StructType\ReferenceBaseRequest
+     * @return \Dpd\StructType\ReferenceBaseRequest
      */
     public function setShippingDate($shippingDate = null)
     {

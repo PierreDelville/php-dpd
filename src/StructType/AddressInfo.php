@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -127,7 +127,7 @@ class AddressInfo extends AbstractStructBase
     /**
      * Set contact value
      * @param string $contact
-     * @return \StructType\AddressInfo
+     * @return \Dpd\StructType\AddressInfo
      */
     public function setContact($contact = null)
     {
@@ -149,7 +149,7 @@ class AddressInfo extends AbstractStructBase
     /**
      * Set name2 value
      * @param string $name2
-     * @return \StructType\AddressInfo
+     * @return \Dpd\StructType\AddressInfo
      */
     public function setName2($name2 = null)
     {
@@ -171,7 +171,7 @@ class AddressInfo extends AbstractStructBase
     /**
      * Set name3 value
      * @param string $name3
-     * @return \StructType\AddressInfo
+     * @return \Dpd\StructType\AddressInfo
      */
     public function setName3($name3 = null)
     {
@@ -193,7 +193,7 @@ class AddressInfo extends AbstractStructBase
     /**
      * Set name4 value
      * @param string $name4
-     * @return \StructType\AddressInfo
+     * @return \Dpd\StructType\AddressInfo
      */
     public function setName4($name4 = null)
     {
@@ -215,7 +215,7 @@ class AddressInfo extends AbstractStructBase
     /**
      * Set digicode1 value
      * @param string $digicode1
-     * @return \StructType\AddressInfo
+     * @return \Dpd\StructType\AddressInfo
      */
     public function setDigicode1($digicode1 = null)
     {
@@ -237,7 +237,7 @@ class AddressInfo extends AbstractStructBase
     /**
      * Set digicode2 value
      * @param string $digicode2
-     * @return \StructType\AddressInfo
+     * @return \Dpd\StructType\AddressInfo
      */
     public function setDigicode2($digicode2 = null)
     {
@@ -259,7 +259,7 @@ class AddressInfo extends AbstractStructBase
     /**
      * Set intercomid value
      * @param string $intercomid
-     * @return \StructType\AddressInfo
+     * @return \Dpd\StructType\AddressInfo
      */
     public function setIntercomid($intercomid = null)
     {
@@ -281,7 +281,7 @@ class AddressInfo extends AbstractStructBase
     /**
      * Set vinfo1 value
      * @param string $vinfo1
-     * @return \StructType\AddressInfo
+     * @return \Dpd\StructType\AddressInfo
      */
     public function setVinfo1($vinfo1 = null)
     {
@@ -303,7 +303,7 @@ class AddressInfo extends AbstractStructBase
     /**
      * Set vinfo2 value
      * @param string $vinfo2
-     * @return \StructType\AddressInfo
+     * @return \Dpd\StructType\AddressInfo
      */
     public function setVinfo2($vinfo2 = null)
     {

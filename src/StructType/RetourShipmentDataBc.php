@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class RetourShipmentDataBc extends ShipmentDataBc
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RetourServices
+     * @var \Dpd\StructType\RetourServices
      */
     public $services;
     /**
      * Constructor method for RetourShipmentDataBc
      * @uses RetourShipmentDataBc::setServices()
-     * @param \StructType\RetourServices $services
+     * @param \Dpd\StructType\RetourServices $services
      */
-    public function __construct(\StructType\RetourServices $services = null)
+    public function __construct(\Dpd\StructType\RetourServices $services = null)
     {
         $this
             ->setServices($services);
     }
     /**
      * Get services value
-     * @return \StructType\RetourServices|null
+     * @return \Dpd\StructType\RetourServices|null
      */
     public function getServices()
     {
@@ -38,10 +38,10 @@ class RetourShipmentDataBc extends ShipmentDataBc
     }
     /**
      * Set services value
-     * @param \StructType\RetourServices $services
-     * @return \StructType\RetourShipmentDataBc
+     * @param \Dpd\StructType\RetourServices $services
+     * @return \Dpd\StructType\RetourShipmentDataBc
      */
-    public function setServices(\StructType\RetourServices $services = null)
+    public function setServices(\Dpd\StructType\RetourServices $services = null)
     {
         $this->services = $services;
         return $this;

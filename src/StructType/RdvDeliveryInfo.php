@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class RdvDeliveryInfo extends RdvDeliveryInfoSmall
     /**
      * Set Date value
      * @param string $date
-     * @return \StructType\RdvDeliveryInfo
+     * @return \Dpd\StructType\RdvDeliveryInfo
      */
     public function setDate($date = null)
     {
@@ -83,7 +83,7 @@ class RdvDeliveryInfo extends RdvDeliveryInfoSmall
     /**
      * Set TimeFrom value
      * @param string $timeFrom
-     * @return \StructType\RdvDeliveryInfo
+     * @return \Dpd\StructType\RdvDeliveryInfo
      */
     public function setTimeFrom($timeFrom = null)
     {
@@ -105,7 +105,7 @@ class RdvDeliveryInfo extends RdvDeliveryInfoSmall
     /**
      * Set TimeTo value
      * @param string $timeTo
-     * @return \StructType\RdvDeliveryInfo
+     * @return \Dpd\StructType\RdvDeliveryInfo
      */
     public function setTimeTo($timeTo = null)
     {

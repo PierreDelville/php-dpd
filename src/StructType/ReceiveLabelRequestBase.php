@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $overrideShipperLabelAddress;
     /**
@@ -31,7 +31,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ReferenceInBarcode
+     * @var \Dpd\StructType\ReferenceInBarcode
      */
     public $referenceInBarcode;
     /**
@@ -39,7 +39,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Bic3LabelData
+     * @var \Dpd\StructType\Bic3LabelData
      */
     public $bic3data;
     /**
@@ -47,7 +47,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\LabelType
+     * @var \Dpd\StructType\LabelType
      */
     public $labelType;
     /**
@@ -57,13 +57,13 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
      * @uses ReceiveLabelRequestBase::setReferenceInBarcode()
      * @uses ReceiveLabelRequestBase::setBic3data()
      * @uses ReceiveLabelRequestBase::setLabelType()
-     * @param \StructType\Address $overrideShipperLabelAddress
+     * @param \Dpd\StructType\Address $overrideShipperLabelAddress
      * @param bool $refnrasbarcode
-     * @param \StructType\ReferenceInBarcode $referenceInBarcode
-     * @param \StructType\Bic3LabelData $bic3data
-     * @param \StructType\LabelType $labelType
+     * @param \Dpd\StructType\ReferenceInBarcode $referenceInBarcode
+     * @param \Dpd\StructType\Bic3LabelData $bic3data
+     * @param \Dpd\StructType\LabelType $labelType
      */
-    public function __construct(\StructType\Address $overrideShipperLabelAddress = null, $refnrasbarcode = null, \StructType\ReferenceInBarcode $referenceInBarcode = null, \StructType\Bic3LabelData $bic3data = null, \StructType\LabelType $labelType = null)
+    public function __construct(\Dpd\StructType\Address $overrideShipperLabelAddress = null, $refnrasbarcode = null, \Dpd\StructType\ReferenceInBarcode $referenceInBarcode = null, \Dpd\StructType\Bic3LabelData $bic3data = null, \Dpd\StructType\LabelType $labelType = null)
     {
         $this
             ->setOverrideShipperLabelAddress($overrideShipperLabelAddress)
@@ -74,7 +74,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
     /**
      * Get overrideShipperLabelAddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getOverrideShipperLabelAddress()
     {
@@ -82,10 +82,10 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
     /**
      * Set overrideShipperLabelAddress value
-     * @param \StructType\Address $overrideShipperLabelAddress
-     * @return \StructType\ReceiveLabelRequestBase
+     * @param \Dpd\StructType\Address $overrideShipperLabelAddress
+     * @return \Dpd\StructType\ReceiveLabelRequestBase
      */
-    public function setOverrideShipperLabelAddress(\StructType\Address $overrideShipperLabelAddress = null)
+    public function setOverrideShipperLabelAddress(\Dpd\StructType\Address $overrideShipperLabelAddress = null)
     {
         $this->overrideShipperLabelAddress = $overrideShipperLabelAddress;
         return $this;
@@ -101,7 +101,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     /**
      * Set refnrasbarcode value
      * @param bool $refnrasbarcode
-     * @return \StructType\ReceiveLabelRequestBase
+     * @return \Dpd\StructType\ReceiveLabelRequestBase
      */
     public function setRefnrasbarcode($refnrasbarcode = null)
     {
@@ -114,7 +114,7 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
     /**
      * Get referenceInBarcode value
-     * @return \StructType\ReferenceInBarcode|null
+     * @return \Dpd\StructType\ReferenceInBarcode|null
      */
     public function getReferenceInBarcode()
     {
@@ -122,17 +122,17 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
     /**
      * Set referenceInBarcode value
-     * @param \StructType\ReferenceInBarcode $referenceInBarcode
-     * @return \StructType\ReceiveLabelRequestBase
+     * @param \Dpd\StructType\ReferenceInBarcode $referenceInBarcode
+     * @return \Dpd\StructType\ReceiveLabelRequestBase
      */
-    public function setReferenceInBarcode(\StructType\ReferenceInBarcode $referenceInBarcode = null)
+    public function setReferenceInBarcode(\Dpd\StructType\ReferenceInBarcode $referenceInBarcode = null)
     {
         $this->referenceInBarcode = $referenceInBarcode;
         return $this;
     }
     /**
      * Get bic3data value
-     * @return \StructType\Bic3LabelData|null
+     * @return \Dpd\StructType\Bic3LabelData|null
      */
     public function getBic3data()
     {
@@ -140,17 +140,17 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
     /**
      * Set bic3data value
-     * @param \StructType\Bic3LabelData $bic3data
-     * @return \StructType\ReceiveLabelRequestBase
+     * @param \Dpd\StructType\Bic3LabelData $bic3data
+     * @return \Dpd\StructType\ReceiveLabelRequestBase
      */
-    public function setBic3data(\StructType\Bic3LabelData $bic3data = null)
+    public function setBic3data(\Dpd\StructType\Bic3LabelData $bic3data = null)
     {
         $this->bic3data = $bic3data;
         return $this;
     }
     /**
      * Get labelType value
-     * @return \StructType\LabelType|null
+     * @return \Dpd\StructType\LabelType|null
      */
     public function getLabelType()
     {
@@ -158,10 +158,10 @@ abstract class ReceiveLabelRequestBase extends AbstractStructBase
     }
     /**
      * Set labelType value
-     * @param \StructType\LabelType $labelType
-     * @return \StructType\ReceiveLabelRequestBase
+     * @param \Dpd\StructType\LabelType $labelType
+     * @return \Dpd\StructType\ReceiveLabelRequestBase
      */
-    public function setLabelType(\StructType\LabelType $labelType = null)
+    public function setLabelType(\Dpd\StructType\LabelType $labelType = null)
     {
         $this->labelType = $labelType;
         return $this;

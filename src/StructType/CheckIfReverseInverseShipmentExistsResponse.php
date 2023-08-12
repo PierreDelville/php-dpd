@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,17 +38,17 @@ class CheckIfReverseInverseShipmentExistsResponse extends AbstractStructBase
     }
     /**
      * Set CheckIfReverseInverseShipmentExistsResult value
-     * @uses \EnumType\CheckReverseInverseShipmentReturn::valueIsValid()
-     * @uses \EnumType\CheckReverseInverseShipmentReturn::getValidValues()
+     * @uses \Dpd\EnumType\CheckReverseInverseShipmentReturn::valueIsValid()
+     * @uses \Dpd\EnumType\CheckReverseInverseShipmentReturn::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $checkIfReverseInverseShipmentExistsResult
-     * @return \StructType\CheckIfReverseInverseShipmentExistsResponse
+     * @return \Dpd\StructType\CheckIfReverseInverseShipmentExistsResponse
      */
     public function setCheckIfReverseInverseShipmentExistsResult($checkIfReverseInverseShipmentExistsResult = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CheckReverseInverseShipmentReturn::valueIsValid($checkIfReverseInverseShipmentExistsResult)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\CheckReverseInverseShipmentReturn', is_array($checkIfReverseInverseShipmentExistsResult) ? implode(', ', $checkIfReverseInverseShipmentExistsResult) : var_export($checkIfReverseInverseShipmentExistsResult, true), implode(', ', \EnumType\CheckReverseInverseShipmentReturn::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\CheckReverseInverseShipmentReturn::valueIsValid($checkIfReverseInverseShipmentExistsResult)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\CheckReverseInverseShipmentReturn', is_array($checkIfReverseInverseShipmentExistsResult) ? implode(', ', $checkIfReverseInverseShipmentExistsResult) : var_export($checkIfReverseInverseShipmentExistsResult, true), implode(', ', \Dpd\EnumType\CheckReverseInverseShipmentReturn::getValidValues())), __LINE__);
         }
         $this->CheckIfReverseInverseShipmentExistsResult = $checkIfReverseInverseShipmentExistsResult;
         return $this;

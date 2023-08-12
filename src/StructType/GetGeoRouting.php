@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetGeoRouting extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GeoRoutingRequest
+     * @var \Dpd\StructType\GeoRoutingRequest
      */
     public $request;
     /**
      * Constructor method for GetGeoRouting
      * @uses GetGeoRouting::setRequest()
-     * @param \StructType\GeoRoutingRequest $request
+     * @param \Dpd\StructType\GeoRoutingRequest $request
      */
-    public function __construct(\StructType\GeoRoutingRequest $request = null)
+    public function __construct(\Dpd\StructType\GeoRoutingRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GeoRoutingRequest|null
+     * @return \Dpd\StructType\GeoRoutingRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetGeoRouting extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GeoRoutingRequest $request
-     * @return \StructType\GetGeoRouting
+     * @param \Dpd\StructType\GeoRoutingRequest $request
+     * @return \Dpd\StructType\GetGeoRouting
      */
-    public function setRequest(\StructType\GeoRoutingRequest $request = null)
+    public function setRequest(\Dpd\StructType\GeoRoutingRequest $request = null)
     {
         $this->request = $request;
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,17 +49,17 @@ class Image extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\ImageType::valueIsValid()
-     * @uses \EnumType\ImageType::getValidValues()
+     * @uses \Dpd\EnumType\ImageType::valueIsValid()
+     * @uses \Dpd\EnumType\ImageType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Image
+     * @return \Dpd\StructType\Image
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ImageType::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\ImageType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\ImageType::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\ImageType::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\ImageType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Dpd\EnumType\ImageType::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -75,7 +75,7 @@ class Image extends AbstractStructBase
     /**
      * Set image value
      * @param string $image
-     * @return \StructType\Image
+     * @return \Dpd\StructType\Image
      */
     public function setImage($image = null)
     {

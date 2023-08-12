@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RetourServices
+     * @var \Dpd\StructType\RetourServices
      */
     public $services;
     /**
@@ -31,7 +31,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $shipperaddress;
     /**
@@ -39,7 +39,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $receiveraddress;
     /**
@@ -57,13 +57,13 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
      * @uses ReceiveRetourLabelRequestBase::setShipperaddress()
      * @uses ReceiveRetourLabelRequestBase::setReceiveraddress()
      * @uses ReceiveRetourLabelRequestBase::setCustomLabelText()
-     * @param \StructType\RetourServices $services
+     * @param \Dpd\StructType\RetourServices $services
      * @param string $weight
-     * @param \StructType\Address $shipperaddress
-     * @param \StructType\Address $receiveraddress
+     * @param \Dpd\StructType\Address $shipperaddress
+     * @param \Dpd\StructType\Address $receiveraddress
      * @param string $customLabelText
      */
-    public function __construct(\StructType\RetourServices $services = null, $weight = null, \StructType\Address $shipperaddress = null, \StructType\Address $receiveraddress = null, $customLabelText = null)
+    public function __construct(\Dpd\StructType\RetourServices $services = null, $weight = null, \Dpd\StructType\Address $shipperaddress = null, \Dpd\StructType\Address $receiveraddress = null, $customLabelText = null)
     {
         $this
             ->setServices($services)
@@ -74,7 +74,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
     /**
      * Get services value
-     * @return \StructType\RetourServices|null
+     * @return \Dpd\StructType\RetourServices|null
      */
     public function getServices()
     {
@@ -82,10 +82,10 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
     /**
      * Set services value
-     * @param \StructType\RetourServices $services
-     * @return \StructType\ReceiveRetourLabelRequestBase
+     * @param \Dpd\StructType\RetourServices $services
+     * @return \Dpd\StructType\ReceiveRetourLabelRequestBase
      */
-    public function setServices(\StructType\RetourServices $services = null)
+    public function setServices(\Dpd\StructType\RetourServices $services = null)
     {
         $this->services = $services;
         return $this;
@@ -101,7 +101,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     /**
      * Set weight value
      * @param string $weight
-     * @return \StructType\ReceiveRetourLabelRequestBase
+     * @return \Dpd\StructType\ReceiveRetourLabelRequestBase
      */
     public function setWeight($weight = null)
     {
@@ -114,7 +114,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
     /**
      * Get shipperaddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getShipperaddress()
     {
@@ -122,17 +122,17 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
     /**
      * Set shipperaddress value
-     * @param \StructType\Address $shipperaddress
-     * @return \StructType\ReceiveRetourLabelRequestBase
+     * @param \Dpd\StructType\Address $shipperaddress
+     * @return \Dpd\StructType\ReceiveRetourLabelRequestBase
      */
-    public function setShipperaddress(\StructType\Address $shipperaddress = null)
+    public function setShipperaddress(\Dpd\StructType\Address $shipperaddress = null)
     {
         $this->shipperaddress = $shipperaddress;
         return $this;
     }
     /**
      * Get receiveraddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getReceiveraddress()
     {
@@ -140,10 +140,10 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     }
     /**
      * Set receiveraddress value
-     * @param \StructType\Address $receiveraddress
-     * @return \StructType\ReceiveRetourLabelRequestBase
+     * @param \Dpd\StructType\Address $receiveraddress
+     * @return \Dpd\StructType\ReceiveRetourLabelRequestBase
      */
-    public function setReceiveraddress(\StructType\Address $receiveraddress = null)
+    public function setReceiveraddress(\Dpd\StructType\Address $receiveraddress = null)
     {
         $this->receiveraddress = $receiveraddress;
         return $this;
@@ -159,7 +159,7 @@ abstract class ReceiveRetourLabelRequestBase extends ReceiveLabelRequestBase
     /**
      * Set customLabelText value
      * @param string $customLabelText
-     * @return \StructType\ReceiveRetourLabelRequestBase
+     * @return \Dpd\StructType\ReceiveRetourLabelRequestBase
      */
     public function setCustomLabelText($customLabelText = null)
     {

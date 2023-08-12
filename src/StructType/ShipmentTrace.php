@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class ShipmentTrace extends ClsShipmentTraceBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfImage
+     * @var \Dpd\ArrayType\ArrayOfImage
      */
     public $images;
     /**
      * Constructor method for ShipmentTrace
      * @uses ShipmentTrace::setImages()
-     * @param \ArrayType\ArrayOfImage $images
+     * @param \Dpd\ArrayType\ArrayOfImage $images
      */
-    public function __construct(\ArrayType\ArrayOfImage $images = null)
+    public function __construct(\Dpd\ArrayType\ArrayOfImage $images = null)
     {
         $this
             ->setImages($images);
     }
     /**
      * Get images value
-     * @return \ArrayType\ArrayOfImage|null
+     * @return \Dpd\ArrayType\ArrayOfImage|null
      */
     public function getImages()
     {
@@ -38,10 +38,10 @@ class ShipmentTrace extends ClsShipmentTraceBase
     }
     /**
      * Set images value
-     * @param \ArrayType\ArrayOfImage $images
-     * @return \StructType\ShipmentTrace
+     * @param \Dpd\ArrayType\ArrayOfImage $images
+     * @return \Dpd\StructType\ShipmentTrace
      */
-    public function setImages(\ArrayType\ArrayOfImage $images = null)
+    public function setImages(\Dpd\ArrayType\ArrayOfImage $images = null)
     {
         $this->images = $images;
         return $this;

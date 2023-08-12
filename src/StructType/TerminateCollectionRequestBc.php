@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class TerminateCollectionRequestBc extends TerminateCollectionRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TerminateCollectionRequestBc
+     * @var \Dpd\StructType\TerminateCollectionRequestBc
      */
     public $request;
     /**
@@ -30,10 +30,10 @@ class TerminateCollectionRequestBc extends TerminateCollectionRequestBase
      * Constructor method for TerminateCollectionRequestBc
      * @uses TerminateCollectionRequestBc::setRequest()
      * @uses TerminateCollectionRequestBc::setBarcode()
-     * @param \StructType\TerminateCollectionRequestBc $request
+     * @param \Dpd\StructType\TerminateCollectionRequestBc $request
      * @param string $barcode
      */
-    public function __construct(\StructType\TerminateCollectionRequestBc $request = null, $barcode = null)
+    public function __construct(\Dpd\StructType\TerminateCollectionRequestBc $request = null, $barcode = null)
     {
         $this
             ->setRequest($request)
@@ -41,7 +41,7 @@ class TerminateCollectionRequestBc extends TerminateCollectionRequestBase
     }
     /**
      * Get request value
-     * @return \StructType\TerminateCollectionRequestBc|null
+     * @return \Dpd\StructType\TerminateCollectionRequestBc|null
      */
     public function getRequest()
     {
@@ -49,10 +49,10 @@ class TerminateCollectionRequestBc extends TerminateCollectionRequestBase
     }
     /**
      * Set request value
-     * @param \StructType\TerminateCollectionRequestBc $request
-     * @return \StructType\TerminateCollectionRequestBc
+     * @param \Dpd\StructType\TerminateCollectionRequestBc $request
+     * @return \Dpd\StructType\TerminateCollectionRequestBc
      */
-    public function setRequest(\StructType\TerminateCollectionRequestBc $request = null)
+    public function setRequest(\Dpd\StructType\TerminateCollectionRequestBc $request = null)
     {
         $this->request = $request;
         return $this;
@@ -68,7 +68,7 @@ class TerminateCollectionRequestBc extends TerminateCollectionRequestBase
     /**
      * Set barcode value
      * @param string $barcode
-     * @return \StructType\TerminateCollectionRequestBc
+     * @return \Dpd\StructType\TerminateCollectionRequestBc
      */
     public function setBarcode($barcode = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class RunActionResponse_1 extends AbstractStructBase
     /**
      * Set Response value
      * @param string $response
-     * @return \StructType\RunActionResponse_1
+     * @return \Dpd\StructType\RunActionResponse_1
      */
     public function setResponse($response = null)
     {

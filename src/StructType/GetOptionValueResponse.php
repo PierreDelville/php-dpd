@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetOptionValueResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetOptionResponse
+     * @var \Dpd\StructType\GetOptionResponse
      */
     public $GetOptionValueResult;
     /**
      * Constructor method for GetOptionValueResponse
      * @uses GetOptionValueResponse::setGetOptionValueResult()
-     * @param \StructType\GetOptionResponse $getOptionValueResult
+     * @param \Dpd\StructType\GetOptionResponse $getOptionValueResult
      */
-    public function __construct(\StructType\GetOptionResponse $getOptionValueResult = null)
+    public function __construct(\Dpd\StructType\GetOptionResponse $getOptionValueResult = null)
     {
         $this
             ->setGetOptionValueResult($getOptionValueResult);
     }
     /**
      * Get GetOptionValueResult value
-     * @return \StructType\GetOptionResponse|null
+     * @return \Dpd\StructType\GetOptionResponse|null
      */
     public function getGetOptionValueResult()
     {
@@ -38,10 +38,10 @@ class GetOptionValueResponse extends AbstractStructBase
     }
     /**
      * Set GetOptionValueResult value
-     * @param \StructType\GetOptionResponse $getOptionValueResult
-     * @return \StructType\GetOptionValueResponse
+     * @param \Dpd\StructType\GetOptionResponse $getOptionValueResult
+     * @return \Dpd\StructType\GetOptionValueResponse
      */
-    public function setGetOptionValueResult(\StructType\GetOptionResponse $getOptionValueResult = null)
+    public function setGetOptionValueResult(\Dpd\StructType\GetOptionResponse $getOptionValueResult = null)
     {
         $this->GetOptionValueResult = $getOptionValueResult;
         return $this;

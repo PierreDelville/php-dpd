@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -47,7 +47,7 @@ class ShipmentDataExtendedBc extends ShipmentDataExtendedBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfServiceEntry
+     * @var \Dpd\ArrayType\ArrayOfServiceEntry
      */
     public $Services;
     /**
@@ -61,9 +61,9 @@ class ShipmentDataExtendedBc extends ShipmentDataExtendedBase
      * @param string $barcode
      * @param string $barcodeSource
      * @param string $barcodeId
-     * @param \ArrayType\ArrayOfServiceEntry $services
+     * @param \Dpd\ArrayType\ArrayOfServiceEntry $services
      */
-    public function __construct($sin = null, $barcode = null, $barcodeSource = null, $barcodeId = null, \ArrayType\ArrayOfServiceEntry $services = null)
+    public function __construct($sin = null, $barcode = null, $barcodeSource = null, $barcodeId = null, \Dpd\ArrayType\ArrayOfServiceEntry $services = null)
     {
         $this
             ->setSin($sin)
@@ -83,7 +83,7 @@ class ShipmentDataExtendedBc extends ShipmentDataExtendedBase
     /**
      * Set Sin value
      * @param int $sin
-     * @return \StructType\ShipmentDataExtendedBc
+     * @return \Dpd\StructType\ShipmentDataExtendedBc
      */
     public function setSin($sin = null)
     {
@@ -105,7 +105,7 @@ class ShipmentDataExtendedBc extends ShipmentDataExtendedBase
     /**
      * Set Barcode value
      * @param string $barcode
-     * @return \StructType\ShipmentDataExtendedBc
+     * @return \Dpd\StructType\ShipmentDataExtendedBc
      */
     public function setBarcode($barcode = null)
     {
@@ -127,7 +127,7 @@ class ShipmentDataExtendedBc extends ShipmentDataExtendedBase
     /**
      * Set BarcodeSource value
      * @param string $barcodeSource
-     * @return \StructType\ShipmentDataExtendedBc
+     * @return \Dpd\StructType\ShipmentDataExtendedBc
      */
     public function setBarcodeSource($barcodeSource = null)
     {
@@ -149,7 +149,7 @@ class ShipmentDataExtendedBc extends ShipmentDataExtendedBase
     /**
      * Set BarcodeId value
      * @param string $barcodeId
-     * @return \StructType\ShipmentDataExtendedBc
+     * @return \Dpd\StructType\ShipmentDataExtendedBc
      */
     public function setBarcodeId($barcodeId = null)
     {
@@ -162,7 +162,7 @@ class ShipmentDataExtendedBc extends ShipmentDataExtendedBase
     }
     /**
      * Get Services value
-     * @return \ArrayType\ArrayOfServiceEntry|null
+     * @return \Dpd\ArrayType\ArrayOfServiceEntry|null
      */
     public function getServices()
     {
@@ -170,10 +170,10 @@ class ShipmentDataExtendedBc extends ShipmentDataExtendedBase
     }
     /**
      * Set Services value
-     * @param \ArrayType\ArrayOfServiceEntry $services
-     * @return \StructType\ShipmentDataExtendedBc
+     * @param \Dpd\ArrayType\ArrayOfServiceEntry $services
+     * @return \Dpd\StructType\ShipmentDataExtendedBc
      */
-    public function setServices(\ArrayType\ArrayOfServiceEntry $services = null)
+    public function setServices(\Dpd\ArrayType\ArrayOfServiceEntry $services = null)
     {
         $this->Services = $services;
         return $this;

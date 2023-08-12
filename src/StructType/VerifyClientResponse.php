@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class VerifyClientResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\VerifyResponse
+     * @var \Dpd\StructType\VerifyResponse
      */
     public $VerifyClientResult;
     /**
      * Constructor method for VerifyClientResponse
      * @uses VerifyClientResponse::setVerifyClientResult()
-     * @param \StructType\VerifyResponse $verifyClientResult
+     * @param \Dpd\StructType\VerifyResponse $verifyClientResult
      */
-    public function __construct(\StructType\VerifyResponse $verifyClientResult = null)
+    public function __construct(\Dpd\StructType\VerifyResponse $verifyClientResult = null)
     {
         $this
             ->setVerifyClientResult($verifyClientResult);
     }
     /**
      * Get VerifyClientResult value
-     * @return \StructType\VerifyResponse|null
+     * @return \Dpd\StructType\VerifyResponse|null
      */
     public function getVerifyClientResult()
     {
@@ -38,10 +38,10 @@ class VerifyClientResponse extends AbstractStructBase
     }
     /**
      * Set VerifyClientResult value
-     * @param \StructType\VerifyResponse $verifyClientResult
-     * @return \StructType\VerifyClientResponse
+     * @param \Dpd\StructType\VerifyResponse $verifyClientResult
+     * @return \Dpd\StructType\VerifyClientResponse
      */
-    public function setVerifyClientResult(\StructType\VerifyResponse $verifyClientResult = null)
+    public function setVerifyClientResult(\Dpd\StructType\VerifyResponse $verifyClientResult = null)
     {
         $this->VerifyClientResult = $verifyClientResult;
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetShipmentTraceByReference extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ReferenceDetailRequest
+     * @var \Dpd\StructType\ReferenceDetailRequest
      */
     public $request;
     /**
      * Constructor method for GetShipmentTraceByReference
      * @uses GetShipmentTraceByReference::setRequest()
-     * @param \StructType\ReferenceDetailRequest $request
+     * @param \Dpd\StructType\ReferenceDetailRequest $request
      */
-    public function __construct(\StructType\ReferenceDetailRequest $request = null)
+    public function __construct(\Dpd\StructType\ReferenceDetailRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\ReferenceDetailRequest|null
+     * @return \Dpd\StructType\ReferenceDetailRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetShipmentTraceByReference extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\ReferenceDetailRequest $request
-     * @return \StructType\GetShipmentTraceByReference
+     * @param \Dpd\StructType\ReferenceDetailRequest $request
+     * @return \Dpd\StructType\GetShipmentTraceByReference
      */
-    public function setRequest(\StructType\ReferenceDetailRequest $request = null)
+    public function setRequest(\Dpd\StructType\ReferenceDetailRequest $request = null)
     {
         $this->request = $request;
         return $this;

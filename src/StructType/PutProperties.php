@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class PutProperties extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\PutPropertiesRequest
+     * @var \Dpd\StructType\PutPropertiesRequest
      */
     public $request;
     /**
      * Constructor method for PutProperties
      * @uses PutProperties::setRequest()
-     * @param \StructType\PutPropertiesRequest $request
+     * @param \Dpd\StructType\PutPropertiesRequest $request
      */
-    public function __construct(\StructType\PutPropertiesRequest $request = null)
+    public function __construct(\Dpd\StructType\PutPropertiesRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\PutPropertiesRequest|null
+     * @return \Dpd\StructType\PutPropertiesRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class PutProperties extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\PutPropertiesRequest $request
-     * @return \StructType\PutProperties
+     * @param \Dpd\StructType\PutPropertiesRequest $request
+     * @return \Dpd\StructType\PutProperties
      */
-    public function setRequest(\StructType\PutPropertiesRequest $request = null)
+    public function setRequest(\Dpd\StructType\PutPropertiesRequest $request = null)
     {
         $this->request = $request;
         return $this;

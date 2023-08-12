@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class TerminateCollectionRequest extends TerminateCollectionRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TerminateCollectionRequest
+     * @var \Dpd\StructType\TerminateCollectionRequest
      */
     public $request;
     /**
@@ -23,17 +23,17 @@ class TerminateCollectionRequest extends TerminateCollectionRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Parcel
+     * @var \Dpd\StructType\Parcel
      */
     public $parcel;
     /**
      * Constructor method for TerminateCollectionRequest
      * @uses TerminateCollectionRequest::setRequest()
      * @uses TerminateCollectionRequest::setParcel()
-     * @param \StructType\TerminateCollectionRequest $request
-     * @param \StructType\Parcel $parcel
+     * @param \Dpd\StructType\TerminateCollectionRequest $request
+     * @param \Dpd\StructType\Parcel $parcel
      */
-    public function __construct(\StructType\TerminateCollectionRequest $request = null, \StructType\Parcel $parcel = null)
+    public function __construct(\Dpd\StructType\TerminateCollectionRequest $request = null, \Dpd\StructType\Parcel $parcel = null)
     {
         $this
             ->setRequest($request)
@@ -41,7 +41,7 @@ class TerminateCollectionRequest extends TerminateCollectionRequestBase
     }
     /**
      * Get request value
-     * @return \StructType\TerminateCollectionRequest|null
+     * @return \Dpd\StructType\TerminateCollectionRequest|null
      */
     public function getRequest()
     {
@@ -49,17 +49,17 @@ class TerminateCollectionRequest extends TerminateCollectionRequestBase
     }
     /**
      * Set request value
-     * @param \StructType\TerminateCollectionRequest $request
-     * @return \StructType\TerminateCollectionRequest
+     * @param \Dpd\StructType\TerminateCollectionRequest $request
+     * @return \Dpd\StructType\TerminateCollectionRequest
      */
-    public function setRequest(\StructType\TerminateCollectionRequest $request = null)
+    public function setRequest(\Dpd\StructType\TerminateCollectionRequest $request = null)
     {
         $this->request = $request;
         return $this;
     }
     /**
      * Get parcel value
-     * @return \StructType\Parcel|null
+     * @return \Dpd\StructType\Parcel|null
      */
     public function getParcel()
     {
@@ -67,10 +67,10 @@ class TerminateCollectionRequest extends TerminateCollectionRequestBase
     }
     /**
      * Set parcel value
-     * @param \StructType\Parcel $parcel
-     * @return \StructType\TerminateCollectionRequest
+     * @param \Dpd\StructType\Parcel $parcel
+     * @return \Dpd\StructType\TerminateCollectionRequest
      */
-    public function setParcel(\StructType\Parcel $parcel = null)
+    public function setParcel(\Dpd\StructType\Parcel $parcel = null)
     {
         $this->parcel = $parcel;
         return $this;

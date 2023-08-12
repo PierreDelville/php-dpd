@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfLocation extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Location[]
+     * @var \Dpd\StructType\Location[]
      */
     public $Location;
     /**
      * Constructor method for ArrayOfLocation
      * @uses ArrayOfLocation::setLocation()
-     * @param \StructType\Location[] $location
+     * @param \Dpd\StructType\Location[] $location
      */
     public function __construct(array $location = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfLocation extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Location[]|null
+     * @return \Dpd\StructType\Location[]|null
      */
     public function getLocation()
     {
@@ -52,12 +52,12 @@ class ArrayOfLocation extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfLocationLocationItem) {
             // validation for constraint: itemType
-            if (!$arrayOfLocationLocationItem instanceof \StructType\Location) {
+            if (!$arrayOfLocationLocationItem instanceof \Dpd\StructType\Location) {
                 $invalidValues[] = is_object($arrayOfLocationLocationItem) ? get_class($arrayOfLocationLocationItem) : sprintf('%s(%s)', gettype($arrayOfLocationLocationItem), var_export($arrayOfLocationLocationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Location property can only contain items of type \StructType\Location, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Location property can only contain items of type \Dpd\StructType\Location, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfLocation extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Location[] $location
-     * @return \ArrayType\ArrayOfLocation
+     * @param \Dpd\StructType\Location[] $location
+     * @return \Dpd\ArrayType\ArrayOfLocation
      */
     public function setLocation(array $location = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfLocation extends AbstractStructArrayBase
     /**
      * Add item to Location value
      * @throws \InvalidArgumentException
-     * @param \StructType\Location $item
-     * @return \ArrayType\ArrayOfLocation
+     * @param \Dpd\StructType\Location $item
+     * @return \Dpd\ArrayType\ArrayOfLocation
      */
-    public function addToLocation(\StructType\Location $item)
+    public function addToLocation(\Dpd\StructType\Location $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Location) {
-            throw new \InvalidArgumentException(sprintf('The Location property can only contain items of type \StructType\Location, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\Location) {
+            throw new \InvalidArgumentException(sprintf('The Location property can only contain items of type \Dpd\StructType\Location, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Location[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfLocation extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Location|null
+     * @return \Dpd\StructType\Location|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfLocation extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Location|null
+     * @return \Dpd\StructType\Location|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfLocation extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Location|null
+     * @return \Dpd\StructType\Location|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfLocation extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Location|null
+     * @return \Dpd\StructType\Location|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfLocation extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Location|null
+     * @return \Dpd\StructType\Location|null
      */
     public function offsetGet($offset)
     {

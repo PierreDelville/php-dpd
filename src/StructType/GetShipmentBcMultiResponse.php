@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetShipmentBcMultiResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetShipmentBcMultiResponse
+     * @var \Dpd\StructType\GetShipmentBcMultiResponse
      */
     public $GetShipmentBcMultiResult;
     /**
@@ -23,17 +23,17 @@ class GetShipmentBcMultiResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfGetShipmentEntry
+     * @var \Dpd\ArrayType\ArrayOfGetShipmentEntry
      */
     public $Shipments;
     /**
      * Constructor method for GetShipmentBcMultiResponse
      * @uses GetShipmentBcMultiResponse::setGetShipmentBcMultiResult()
      * @uses GetShipmentBcMultiResponse::setShipments()
-     * @param \StructType\GetShipmentBcMultiResponse $getShipmentBcMultiResult
-     * @param \ArrayType\ArrayOfGetShipmentEntry $shipments
+     * @param \Dpd\StructType\GetShipmentBcMultiResponse $getShipmentBcMultiResult
+     * @param \Dpd\ArrayType\ArrayOfGetShipmentEntry $shipments
      */
-    public function __construct(\StructType\GetShipmentBcMultiResponse $getShipmentBcMultiResult = null, \ArrayType\ArrayOfGetShipmentEntry $shipments = null)
+    public function __construct(\Dpd\StructType\GetShipmentBcMultiResponse $getShipmentBcMultiResult = null, \Dpd\ArrayType\ArrayOfGetShipmentEntry $shipments = null)
     {
         $this
             ->setGetShipmentBcMultiResult($getShipmentBcMultiResult)
@@ -41,7 +41,7 @@ class GetShipmentBcMultiResponse extends AbstractStructBase
     }
     /**
      * Get GetShipmentBcMultiResult value
-     * @return \StructType\GetShipmentBcMultiResponse|null
+     * @return \Dpd\StructType\GetShipmentBcMultiResponse|null
      */
     public function getGetShipmentBcMultiResult()
     {
@@ -49,17 +49,17 @@ class GetShipmentBcMultiResponse extends AbstractStructBase
     }
     /**
      * Set GetShipmentBcMultiResult value
-     * @param \StructType\GetShipmentBcMultiResponse $getShipmentBcMultiResult
-     * @return \StructType\GetShipmentBcMultiResponse
+     * @param \Dpd\StructType\GetShipmentBcMultiResponse $getShipmentBcMultiResult
+     * @return \Dpd\StructType\GetShipmentBcMultiResponse
      */
-    public function setGetShipmentBcMultiResult(\StructType\GetShipmentBcMultiResponse $getShipmentBcMultiResult = null)
+    public function setGetShipmentBcMultiResult(\Dpd\StructType\GetShipmentBcMultiResponse $getShipmentBcMultiResult = null)
     {
         $this->GetShipmentBcMultiResult = $getShipmentBcMultiResult;
         return $this;
     }
     /**
      * Get Shipments value
-     * @return \ArrayType\ArrayOfGetShipmentEntry|null
+     * @return \Dpd\ArrayType\ArrayOfGetShipmentEntry|null
      */
     public function getShipments()
     {
@@ -67,10 +67,10 @@ class GetShipmentBcMultiResponse extends AbstractStructBase
     }
     /**
      * Set Shipments value
-     * @param \ArrayType\ArrayOfGetShipmentEntry $shipments
-     * @return \StructType\GetShipmentBcMultiResponse
+     * @param \Dpd\ArrayType\ArrayOfGetShipmentEntry $shipments
+     * @return \Dpd\StructType\GetShipmentBcMultiResponse
      */
-    public function setShipments(\ArrayType\ArrayOfGetShipmentEntry $shipments = null)
+    public function setShipments(\Dpd\ArrayType\ArrayOfGetShipmentEntry $shipments = null)
     {
         $this->Shipments = $shipments;
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Bic3LabelData
+     * @var \Dpd\StructType\Bic3LabelData
      */
     public $bic3data;
     /**
@@ -23,7 +23,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $overrideShipperLabelAddress;
     /**
@@ -39,7 +39,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ReferenceInBarcode
+     * @var \Dpd\StructType\ReferenceInBarcode
      */
     public $referenceInBarcode;
     /**
@@ -48,12 +48,12 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
      * @uses StdShipmentLabelRequest::setOverrideShipperLabelAddress()
      * @uses StdShipmentLabelRequest::setRefnrasbarcode()
      * @uses StdShipmentLabelRequest::setReferenceInBarcode()
-     * @param \StructType\Bic3LabelData $bic3data
-     * @param \StructType\Address $overrideShipperLabelAddress
+     * @param \Dpd\StructType\Bic3LabelData $bic3data
+     * @param \Dpd\StructType\Address $overrideShipperLabelAddress
      * @param bool $refnrasbarcode
-     * @param \StructType\ReferenceInBarcode $referenceInBarcode
+     * @param \Dpd\StructType\ReferenceInBarcode $referenceInBarcode
      */
-    public function __construct(\StructType\Bic3LabelData $bic3data = null, \StructType\Address $overrideShipperLabelAddress = null, $refnrasbarcode = null, \StructType\ReferenceInBarcode $referenceInBarcode = null)
+    public function __construct(\Dpd\StructType\Bic3LabelData $bic3data = null, \Dpd\StructType\Address $overrideShipperLabelAddress = null, $refnrasbarcode = null, \Dpd\StructType\ReferenceInBarcode $referenceInBarcode = null)
     {
         $this
             ->setBic3data($bic3data)
@@ -63,7 +63,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
     /**
      * Get bic3data value
-     * @return \StructType\Bic3LabelData|null
+     * @return \Dpd\StructType\Bic3LabelData|null
      */
     public function getBic3data()
     {
@@ -71,17 +71,17 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
     /**
      * Set bic3data value
-     * @param \StructType\Bic3LabelData $bic3data
-     * @return \StructType\StdShipmentLabelRequest
+     * @param \Dpd\StructType\Bic3LabelData $bic3data
+     * @return \Dpd\StructType\StdShipmentLabelRequest
      */
-    public function setBic3data(\StructType\Bic3LabelData $bic3data = null)
+    public function setBic3data(\Dpd\StructType\Bic3LabelData $bic3data = null)
     {
         $this->bic3data = $bic3data;
         return $this;
     }
     /**
      * Get overrideShipperLabelAddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getOverrideShipperLabelAddress()
     {
@@ -89,10 +89,10 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
     /**
      * Set overrideShipperLabelAddress value
-     * @param \StructType\Address $overrideShipperLabelAddress
-     * @return \StructType\StdShipmentLabelRequest
+     * @param \Dpd\StructType\Address $overrideShipperLabelAddress
+     * @return \Dpd\StructType\StdShipmentLabelRequest
      */
-    public function setOverrideShipperLabelAddress(\StructType\Address $overrideShipperLabelAddress = null)
+    public function setOverrideShipperLabelAddress(\Dpd\StructType\Address $overrideShipperLabelAddress = null)
     {
         $this->overrideShipperLabelAddress = $overrideShipperLabelAddress;
         return $this;
@@ -108,7 +108,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     /**
      * Set refnrasbarcode value
      * @param bool $refnrasbarcode
-     * @return \StructType\StdShipmentLabelRequest
+     * @return \Dpd\StructType\StdShipmentLabelRequest
      */
     public function setRefnrasbarcode($refnrasbarcode = null)
     {
@@ -121,7 +121,7 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
     /**
      * Get referenceInBarcode value
-     * @return \StructType\ReferenceInBarcode|null
+     * @return \Dpd\StructType\ReferenceInBarcode|null
      */
     public function getReferenceInBarcode()
     {
@@ -129,10 +129,10 @@ class StdShipmentLabelRequest extends StdShipmentLabelBaseRequest
     }
     /**
      * Set referenceInBarcode value
-     * @param \StructType\ReferenceInBarcode $referenceInBarcode
-     * @return \StructType\StdShipmentLabelRequest
+     * @param \Dpd\StructType\ReferenceInBarcode $referenceInBarcode
+     * @return \Dpd\StructType\StdShipmentLabelRequest
      */
-    public function setReferenceInBarcode(\StructType\ReferenceInBarcode $referenceInBarcode = null)
+    public function setReferenceInBarcode(\Dpd\StructType\ReferenceInBarcode $referenceInBarcode = null)
     {
         $this->referenceInBarcode = $referenceInBarcode;
         return $this;

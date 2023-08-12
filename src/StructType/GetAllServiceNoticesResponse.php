@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetAllServiceNoticesResponse
+     * @var \Dpd\StructType\GetAllServiceNoticesResponse
      */
     public $GetAllServiceNoticesResult;
     /**
@@ -31,7 +31,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfServiceNoticeEntry
+     * @var \Dpd\ArrayType\ArrayOfServiceNoticeEntry
      */
     public $ServiceNotices;
     /**
@@ -49,11 +49,11 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
      * @uses GetAllServiceNoticesResponse::setServiceNotices()
      * @uses GetAllServiceNoticesResponse::setLastKey()
      * @param bool $dataComplete
-     * @param \StructType\GetAllServiceNoticesResponse $getAllServiceNoticesResult
-     * @param \ArrayType\ArrayOfServiceNoticeEntry $serviceNotices
+     * @param \Dpd\StructType\GetAllServiceNoticesResponse $getAllServiceNoticesResult
+     * @param \Dpd\ArrayType\ArrayOfServiceNoticeEntry $serviceNotices
      * @param string $lastKey
      */
-    public function __construct($dataComplete = null, \StructType\GetAllServiceNoticesResponse $getAllServiceNoticesResult = null, \ArrayType\ArrayOfServiceNoticeEntry $serviceNotices = null, $lastKey = null)
+    public function __construct($dataComplete = null, \Dpd\StructType\GetAllServiceNoticesResponse $getAllServiceNoticesResult = null, \Dpd\ArrayType\ArrayOfServiceNoticeEntry $serviceNotices = null, $lastKey = null)
     {
         $this
             ->setDataComplete($dataComplete)
@@ -72,7 +72,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     /**
      * Set DataComplete value
      * @param bool $dataComplete
-     * @return \StructType\GetAllServiceNoticesResponse
+     * @return \Dpd\StructType\GetAllServiceNoticesResponse
      */
     public function setDataComplete($dataComplete = null)
     {
@@ -85,7 +85,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     }
     /**
      * Get GetAllServiceNoticesResult value
-     * @return \StructType\GetAllServiceNoticesResponse|null
+     * @return \Dpd\StructType\GetAllServiceNoticesResponse|null
      */
     public function getGetAllServiceNoticesResult()
     {
@@ -93,17 +93,17 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     }
     /**
      * Set GetAllServiceNoticesResult value
-     * @param \StructType\GetAllServiceNoticesResponse $getAllServiceNoticesResult
-     * @return \StructType\GetAllServiceNoticesResponse
+     * @param \Dpd\StructType\GetAllServiceNoticesResponse $getAllServiceNoticesResult
+     * @return \Dpd\StructType\GetAllServiceNoticesResponse
      */
-    public function setGetAllServiceNoticesResult(\StructType\GetAllServiceNoticesResponse $getAllServiceNoticesResult = null)
+    public function setGetAllServiceNoticesResult(\Dpd\StructType\GetAllServiceNoticesResponse $getAllServiceNoticesResult = null)
     {
         $this->GetAllServiceNoticesResult = $getAllServiceNoticesResult;
         return $this;
     }
     /**
      * Get ServiceNotices value
-     * @return \ArrayType\ArrayOfServiceNoticeEntry|null
+     * @return \Dpd\ArrayType\ArrayOfServiceNoticeEntry|null
      */
     public function getServiceNotices()
     {
@@ -111,10 +111,10 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     }
     /**
      * Set ServiceNotices value
-     * @param \ArrayType\ArrayOfServiceNoticeEntry $serviceNotices
-     * @return \StructType\GetAllServiceNoticesResponse
+     * @param \Dpd\ArrayType\ArrayOfServiceNoticeEntry $serviceNotices
+     * @return \Dpd\StructType\GetAllServiceNoticesResponse
      */
-    public function setServiceNotices(\ArrayType\ArrayOfServiceNoticeEntry $serviceNotices = null)
+    public function setServiceNotices(\Dpd\ArrayType\ArrayOfServiceNoticeEntry $serviceNotices = null)
     {
         $this->ServiceNotices = $serviceNotices;
         return $this;
@@ -130,7 +130,7 @@ class GetAllServiceNoticesResponse extends AbstractStructBase
     /**
      * Set LastKey value
      * @param string $lastKey
-     * @return \StructType\GetAllServiceNoticesResponse
+     * @return \Dpd\StructType\GetAllServiceNoticesResponse
      */
     public function setLastKey($lastKey = null)
     {

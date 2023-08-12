@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class VerifyClient extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\VerifyRequest
+     * @var \Dpd\StructType\VerifyRequest
      */
     public $request;
     /**
      * Constructor method for VerifyClient
      * @uses VerifyClient::setRequest()
-     * @param \StructType\VerifyRequest $request
+     * @param \Dpd\StructType\VerifyRequest $request
      */
-    public function __construct(\StructType\VerifyRequest $request = null)
+    public function __construct(\Dpd\StructType\VerifyRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\VerifyRequest|null
+     * @return \Dpd\StructType\VerifyRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class VerifyClient extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\VerifyRequest $request
-     * @return \StructType\VerifyClient
+     * @param \Dpd\StructType\VerifyRequest $request
+     * @return \Dpd\StructType\VerifyClient
      */
-    public function setRequest(\StructType\VerifyRequest $request = null)
+    public function setRequest(\Dpd\StructType\VerifyRequest $request = null)
     {
         $this->request = $request;
         return $this;

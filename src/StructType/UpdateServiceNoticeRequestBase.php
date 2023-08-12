@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -31,7 +31,7 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $customer;
     /**
@@ -41,9 +41,9 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
      * @uses UpdateServiceNoticeRequestBase::setCustomer()
      * @param string $barcodeId
      * @param string $barcodeSource
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      */
-    public function __construct($barcodeId = null, $barcodeSource = null, \StructType\Customer $customer = null)
+    public function __construct($barcodeId = null, $barcodeSource = null, \Dpd\StructType\Customer $customer = null)
     {
         $this
             ->setBarcodeId($barcodeId)
@@ -61,7 +61,7 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
     /**
      * Set BarcodeId value
      * @param string $barcodeId
-     * @return \StructType\UpdateServiceNoticeRequestBase
+     * @return \Dpd\StructType\UpdateServiceNoticeRequestBase
      */
     public function setBarcodeId($barcodeId = null)
     {
@@ -83,7 +83,7 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
     /**
      * Set BarcodeSource value
      * @param string $barcodeSource
-     * @return \StructType\UpdateServiceNoticeRequestBase
+     * @return \Dpd\StructType\UpdateServiceNoticeRequestBase
      */
     public function setBarcodeSource($barcodeSource = null)
     {
@@ -96,7 +96,7 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
     }
     /**
      * Get customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -104,10 +104,10 @@ class UpdateServiceNoticeRequestBase extends AbstractStructBase
     }
     /**
      * Set customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\UpdateServiceNoticeRequestBase
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\UpdateServiceNoticeRequestBase
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->customer = $customer;
         return $this;

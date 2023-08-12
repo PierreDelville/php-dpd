@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -55,7 +55,7 @@ class CNOTData extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfTask
+     * @var \Dpd\ArrayType\ArrayOfTask
      */
     public $Tasks;
     /**
@@ -63,7 +63,7 @@ class CNOTData extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfLocation
+     * @var \Dpd\ArrayType\ArrayOfLocation
      */
     public $Locations;
     /**
@@ -71,7 +71,7 @@ class CNOTData extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfPhoneCall
+     * @var \Dpd\ArrayType\ArrayOfPhoneCall
      */
     public $PhoneCalls;
     /**
@@ -89,11 +89,11 @@ class CNOTData extends AbstractStructBase
      * @param string $hardwareId
      * @param string $tourNumber
      * @param string $status
-     * @param \ArrayType\ArrayOfTask $tasks
-     * @param \ArrayType\ArrayOfLocation $locations
-     * @param \ArrayType\ArrayOfPhoneCall $phoneCalls
+     * @param \Dpd\ArrayType\ArrayOfTask $tasks
+     * @param \Dpd\ArrayType\ArrayOfLocation $locations
+     * @param \Dpd\ArrayType\ArrayOfPhoneCall $phoneCalls
      */
-    public function __construct($depot = null, $timeStamp = null, $hardwareId = null, $tourNumber = null, $status = null, \ArrayType\ArrayOfTask $tasks = null, \ArrayType\ArrayOfLocation $locations = null, \ArrayType\ArrayOfPhoneCall $phoneCalls = null)
+    public function __construct($depot = null, $timeStamp = null, $hardwareId = null, $tourNumber = null, $status = null, \Dpd\ArrayType\ArrayOfTask $tasks = null, \Dpd\ArrayType\ArrayOfLocation $locations = null, \Dpd\ArrayType\ArrayOfPhoneCall $phoneCalls = null)
     {
         $this
             ->setDepot($depot)
@@ -116,7 +116,7 @@ class CNOTData extends AbstractStructBase
     /**
      * Set Depot value
      * @param int $depot
-     * @return \StructType\CNOTData
+     * @return \Dpd\StructType\CNOTData
      */
     public function setDepot($depot = null)
     {
@@ -138,7 +138,7 @@ class CNOTData extends AbstractStructBase
     /**
      * Set TimeStamp value
      * @param string $timeStamp
-     * @return \StructType\CNOTData
+     * @return \Dpd\StructType\CNOTData
      */
     public function setTimeStamp($timeStamp = null)
     {
@@ -160,7 +160,7 @@ class CNOTData extends AbstractStructBase
     /**
      * Set HardwareId value
      * @param string $hardwareId
-     * @return \StructType\CNOTData
+     * @return \Dpd\StructType\CNOTData
      */
     public function setHardwareId($hardwareId = null)
     {
@@ -182,7 +182,7 @@ class CNOTData extends AbstractStructBase
     /**
      * Set TourNumber value
      * @param string $tourNumber
-     * @return \StructType\CNOTData
+     * @return \Dpd\StructType\CNOTData
      */
     public function setTourNumber($tourNumber = null)
     {
@@ -204,7 +204,7 @@ class CNOTData extends AbstractStructBase
     /**
      * Set Status value
      * @param string $status
-     * @return \StructType\CNOTData
+     * @return \Dpd\StructType\CNOTData
      */
     public function setStatus($status = null)
     {
@@ -217,7 +217,7 @@ class CNOTData extends AbstractStructBase
     }
     /**
      * Get Tasks value
-     * @return \ArrayType\ArrayOfTask|null
+     * @return \Dpd\ArrayType\ArrayOfTask|null
      */
     public function getTasks()
     {
@@ -225,17 +225,17 @@ class CNOTData extends AbstractStructBase
     }
     /**
      * Set Tasks value
-     * @param \ArrayType\ArrayOfTask $tasks
-     * @return \StructType\CNOTData
+     * @param \Dpd\ArrayType\ArrayOfTask $tasks
+     * @return \Dpd\StructType\CNOTData
      */
-    public function setTasks(\ArrayType\ArrayOfTask $tasks = null)
+    public function setTasks(\Dpd\ArrayType\ArrayOfTask $tasks = null)
     {
         $this->Tasks = $tasks;
         return $this;
     }
     /**
      * Get Locations value
-     * @return \ArrayType\ArrayOfLocation|null
+     * @return \Dpd\ArrayType\ArrayOfLocation|null
      */
     public function getLocations()
     {
@@ -243,17 +243,17 @@ class CNOTData extends AbstractStructBase
     }
     /**
      * Set Locations value
-     * @param \ArrayType\ArrayOfLocation $locations
-     * @return \StructType\CNOTData
+     * @param \Dpd\ArrayType\ArrayOfLocation $locations
+     * @return \Dpd\StructType\CNOTData
      */
-    public function setLocations(\ArrayType\ArrayOfLocation $locations = null)
+    public function setLocations(\Dpd\ArrayType\ArrayOfLocation $locations = null)
     {
         $this->Locations = $locations;
         return $this;
     }
     /**
      * Get PhoneCalls value
-     * @return \ArrayType\ArrayOfPhoneCall|null
+     * @return \Dpd\ArrayType\ArrayOfPhoneCall|null
      */
     public function getPhoneCalls()
     {
@@ -261,10 +261,10 @@ class CNOTData extends AbstractStructBase
     }
     /**
      * Set PhoneCalls value
-     * @param \ArrayType\ArrayOfPhoneCall $phoneCalls
-     * @return \StructType\CNOTData
+     * @param \Dpd\ArrayType\ArrayOfPhoneCall $phoneCalls
+     * @return \Dpd\StructType\CNOTData
      */
-    public function setPhoneCalls(\ArrayType\ArrayOfPhoneCall $phoneCalls = null)
+    public function setPhoneCalls(\Dpd\ArrayType\ArrayOfPhoneCall $phoneCalls = null)
     {
         $this->PhoneCalls = $phoneCalls;
         return $this;

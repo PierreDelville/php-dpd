@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\UpdateRdvShipmentDataForSafePlaceResponse
+     * @var \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceResponse
      */
     public $UpdateRdvShipmentDataForSafePlaceResult;
     /**
@@ -39,11 +39,11 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
      * @uses UpdateRdvShipmentDataForSafePlaceResponse::setUpdateRdvShipmentDataForSafePlaceResult()
      * @uses UpdateRdvShipmentDataForSafePlaceResponse::setCode()
      * @uses UpdateRdvShipmentDataForSafePlaceResponse::setBarcode()
-     * @param \StructType\UpdateRdvShipmentDataForSafePlaceResponse $updateRdvShipmentDataForSafePlaceResult
+     * @param \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceResponse $updateRdvShipmentDataForSafePlaceResult
      * @param string $code
      * @param string $barcode
      */
-    public function __construct(\StructType\UpdateRdvShipmentDataForSafePlaceResponse $updateRdvShipmentDataForSafePlaceResult = null, $code = null, $barcode = null)
+    public function __construct(\Dpd\StructType\UpdateRdvShipmentDataForSafePlaceResponse $updateRdvShipmentDataForSafePlaceResult = null, $code = null, $barcode = null)
     {
         $this
             ->setUpdateRdvShipmentDataForSafePlaceResult($updateRdvShipmentDataForSafePlaceResult)
@@ -52,7 +52,7 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
     }
     /**
      * Get UpdateRdvShipmentDataForSafePlaceResult value
-     * @return \StructType\UpdateRdvShipmentDataForSafePlaceResponse|null
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceResponse|null
      */
     public function getUpdateRdvShipmentDataForSafePlaceResult()
     {
@@ -60,10 +60,10 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
     }
     /**
      * Set UpdateRdvShipmentDataForSafePlaceResult value
-     * @param \StructType\UpdateRdvShipmentDataForSafePlaceResponse $updateRdvShipmentDataForSafePlaceResult
-     * @return \StructType\UpdateRdvShipmentDataForSafePlaceResponse
+     * @param \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceResponse $updateRdvShipmentDataForSafePlaceResult
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceResponse
      */
-    public function setUpdateRdvShipmentDataForSafePlaceResult(\StructType\UpdateRdvShipmentDataForSafePlaceResponse $updateRdvShipmentDataForSafePlaceResult = null)
+    public function setUpdateRdvShipmentDataForSafePlaceResult(\Dpd\StructType\UpdateRdvShipmentDataForSafePlaceResponse $updateRdvShipmentDataForSafePlaceResult = null)
     {
         $this->UpdateRdvShipmentDataForSafePlaceResult = $updateRdvShipmentDataForSafePlaceResult;
         return $this;
@@ -79,7 +79,7 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
     /**
      * Set Code value
      * @param string $code
-     * @return \StructType\UpdateRdvShipmentDataForSafePlaceResponse
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceResponse
      */
     public function setCode($code = null)
     {
@@ -101,7 +101,7 @@ class UpdateRdvShipmentDataForSafePlaceResponse extends UpdateRdvShipmentDataRes
     /**
      * Set Barcode value
      * @param string $barcode
-     * @return \StructType\UpdateRdvShipmentDataForSafePlaceResponse
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceResponse
      */
     public function setBarcode($barcode = null)
     {

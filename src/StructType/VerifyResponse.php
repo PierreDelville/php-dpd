@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class VerifyResponse extends AbstractStructBase
     /**
      * Set Data value
      * @param string $data
-     * @return \StructType\VerifyResponse
+     * @return \Dpd\StructType\VerifyResponse
      */
     public function setData($data = null)
     {

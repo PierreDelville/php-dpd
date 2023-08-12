@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class ServiceNoticeAnswersResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfText
+     * @var \Dpd\ArrayType\ArrayOfText
      */
     public $answers;
     /**
      * Constructor method for ServiceNoticeAnswersResponse
      * @uses ServiceNoticeAnswersResponse::setAnswers()
-     * @param \ArrayType\ArrayOfText $answers
+     * @param \Dpd\ArrayType\ArrayOfText $answers
      */
-    public function __construct(\ArrayType\ArrayOfText $answers = null)
+    public function __construct(\Dpd\ArrayType\ArrayOfText $answers = null)
     {
         $this
             ->setAnswers($answers);
     }
     /**
      * Get answers value
-     * @return \ArrayType\ArrayOfText|null
+     * @return \Dpd\ArrayType\ArrayOfText|null
      */
     public function getAnswers()
     {
@@ -38,10 +38,10 @@ class ServiceNoticeAnswersResponse extends AbstractStructBase
     }
     /**
      * Set answers value
-     * @param \ArrayType\ArrayOfText $answers
-     * @return \StructType\ServiceNoticeAnswersResponse
+     * @param \Dpd\ArrayType\ArrayOfText $answers
+     * @return \Dpd\StructType\ServiceNoticeAnswersResponse
      */
-    public function setAnswers(\ArrayType\ArrayOfText $answers = null)
+    public function setAnswers(\Dpd\ArrayType\ArrayOfText $answers = null)
     {
         $this->answers = $answers;
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class Options extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\Options
+     * @return \Dpd\StructType\Options
      */
     public function setType($type = null)
     {
@@ -72,7 +72,7 @@ class Options extends AbstractStructBase
     /**
      * Set CenterType value
      * @param string $centerType
-     * @return \StructType\Options
+     * @return \Dpd\StructType\Options
      */
     public function setCenterType($centerType = null)
     {

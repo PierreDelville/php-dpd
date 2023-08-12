@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class GetNationalTransitTimeResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetNationalTransitTimeResponse
+     * @var \Dpd\StructType\GetNationalTransitTimeResponse
      */
     public $GetNationalTransitTimeResult;
     /**
@@ -31,9 +31,9 @@ class GetNationalTransitTimeResponse extends AbstractStructBase
      * @uses GetNationalTransitTimeResponse::setTransitTime()
      * @uses GetNationalTransitTimeResponse::setGetNationalTransitTimeResult()
      * @param int $transitTime
-     * @param \StructType\GetNationalTransitTimeResponse $getNationalTransitTimeResult
+     * @param \Dpd\StructType\GetNationalTransitTimeResponse $getNationalTransitTimeResult
      */
-    public function __construct($transitTime = null, \StructType\GetNationalTransitTimeResponse $getNationalTransitTimeResult = null)
+    public function __construct($transitTime = null, \Dpd\StructType\GetNationalTransitTimeResponse $getNationalTransitTimeResult = null)
     {
         $this
             ->setTransitTime($transitTime)
@@ -50,7 +50,7 @@ class GetNationalTransitTimeResponse extends AbstractStructBase
     /**
      * Set TransitTime value
      * @param int $transitTime
-     * @return \StructType\GetNationalTransitTimeResponse
+     * @return \Dpd\StructType\GetNationalTransitTimeResponse
      */
     public function setTransitTime($transitTime = null)
     {
@@ -63,7 +63,7 @@ class GetNationalTransitTimeResponse extends AbstractStructBase
     }
     /**
      * Get GetNationalTransitTimeResult value
-     * @return \StructType\GetNationalTransitTimeResponse|null
+     * @return \Dpd\StructType\GetNationalTransitTimeResponse|null
      */
     public function getGetNationalTransitTimeResult()
     {
@@ -71,10 +71,10 @@ class GetNationalTransitTimeResponse extends AbstractStructBase
     }
     /**
      * Set GetNationalTransitTimeResult value
-     * @param \StructType\GetNationalTransitTimeResponse $getNationalTransitTimeResult
-     * @return \StructType\GetNationalTransitTimeResponse
+     * @param \Dpd\StructType\GetNationalTransitTimeResponse $getNationalTransitTimeResult
+     * @return \Dpd\StructType\GetNationalTransitTimeResponse
      */
-    public function setGetNationalTransitTimeResult(\StructType\GetNationalTransitTimeResponse $getNationalTransitTimeResult = null)
+    public function setGetNationalTransitTimeResult(\Dpd\StructType\GetNationalTransitTimeResponse $getNationalTransitTimeResult = null)
     {
         $this->GetNationalTransitTimeResult = $getNationalTransitTimeResult;
         return $this;

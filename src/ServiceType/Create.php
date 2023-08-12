@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace Dpd\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -13,13 +13,13 @@ class Create extends AbstractSoapClientBase
     /**
      * Sets the UserCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \StructType\UserCredentials $userCredentials
+     * @param \Dpd\StructType\UserCredentials $userCredentials
      * @param string $nameSpace
      * @param bool $mustUnderstand
      * @param string $actor
      * @return bool
      */
-    public function setSoapHeaderUserCredentials(\StructType\UserCredentials $userCredentials, $nameSpace = 'http://www.cargonet.software', $mustUnderstand = false, $actor = null)
+    public function setSoapHeaderUserCredentials(\Dpd\StructType\UserCredentials $userCredentials, $nameSpace = 'http://www.cargonet.software', $mustUnderstand = false, $actor = null)
     {
         return $this->setSoapHeader($nameSpace, 'UserCredentials', $userCredentials, $mustUnderstand, $actor);
     }
@@ -28,16 +28,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateShipment $parameters
-     * @return \StructType\CreateShipmentResponse|bool
+     * @param \Dpd\StructType\CreateShipment $parameters
+     * @return \Dpd\StructType\CreateShipmentResponse|bool
      */
-    public function CreateShipment(\StructType\CreateShipment $parameters)
+    public function CreateShipment(\Dpd\StructType\CreateShipment $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreateShipment($parameters));
@@ -52,16 +52,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateShipmentBc $parameters
-     * @return \StructType\CreateShipmentBcResponse|bool
+     * @param \Dpd\StructType\CreateShipmentBc $parameters
+     * @return \Dpd\StructType\CreateShipmentBcResponse|bool
      */
-    public function CreateShipmentBc(\StructType\CreateShipmentBc $parameters)
+    public function CreateShipmentBc(\Dpd\StructType\CreateShipmentBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreateShipmentBc($parameters));
@@ -76,16 +76,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateShipmentWithLabels $parameters
-     * @return \StructType\CreateShipmentWithLabelsResponse|bool
+     * @param \Dpd\StructType\CreateShipmentWithLabels $parameters
+     * @return \Dpd\StructType\CreateShipmentWithLabelsResponse|bool
      */
-    public function CreateShipmentWithLabels(\StructType\CreateShipmentWithLabels $parameters)
+    public function CreateShipmentWithLabels(\Dpd\StructType\CreateShipmentWithLabels $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreateShipmentWithLabels($parameters));
@@ -100,16 +100,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateShipmentWithLabelsBc $parameters
-     * @return \StructType\CreateShipmentWithLabelsBcResponse|bool
+     * @param \Dpd\StructType\CreateShipmentWithLabelsBc $parameters
+     * @return \Dpd\StructType\CreateShipmentWithLabelsBcResponse|bool
      */
-    public function CreateShipmentWithLabelsBc(\StructType\CreateShipmentWithLabelsBc $parameters)
+    public function CreateShipmentWithLabelsBc(\Dpd\StructType\CreateShipmentWithLabelsBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreateShipmentWithLabelsBc($parameters));
@@ -124,16 +124,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateMultiShipment $parameters
-     * @return \StructType\CreateMultiShipmentResponse|bool
+     * @param \Dpd\StructType\CreateMultiShipment $parameters
+     * @return \Dpd\StructType\CreateMultiShipmentResponse|bool
      */
-    public function CreateMultiShipment(\StructType\CreateMultiShipment $parameters)
+    public function CreateMultiShipment(\Dpd\StructType\CreateMultiShipment $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreateMultiShipment($parameters));
@@ -148,16 +148,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateMultiShipmentBc $parameters
-     * @return \StructType\CreateMultiShipmentBcResponse|bool
+     * @param \Dpd\StructType\CreateMultiShipmentBc $parameters
+     * @return \Dpd\StructType\CreateMultiShipmentBcResponse|bool
      */
-    public function CreateMultiShipmentBc(\StructType\CreateMultiShipmentBc $parameters)
+    public function CreateMultiShipmentBc(\Dpd\StructType\CreateMultiShipmentBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreateMultiShipmentBc($parameters));
@@ -172,16 +172,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateReverseInverseShipment $parameters
-     * @return \StructType\CreateReverseInverseShipmentResponse|bool
+     * @param \Dpd\StructType\CreateReverseInverseShipment $parameters
+     * @return \Dpd\StructType\CreateReverseInverseShipmentResponse|bool
      */
-    public function CreateReverseInverseShipment(\StructType\CreateReverseInverseShipment $parameters)
+    public function CreateReverseInverseShipment(\Dpd\StructType\CreateReverseInverseShipment $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreateReverseInverseShipment($parameters));
@@ -196,16 +196,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateReverseInverseShipmentBc $parameters
-     * @return \StructType\CreateReverseInverseShipmentBcResponse|bool
+     * @param \Dpd\StructType\CreateReverseInverseShipmentBc $parameters
+     * @return \Dpd\StructType\CreateReverseInverseShipmentBcResponse|bool
      */
-    public function CreateReverseInverseShipmentBc(\StructType\CreateReverseInverseShipmentBc $parameters)
+    public function CreateReverseInverseShipmentBc(\Dpd\StructType\CreateReverseInverseShipmentBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreateReverseInverseShipmentBc($parameters));
@@ -221,16 +221,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateReverseInverseShipmentWithLabels $parameters
-     * @return \StructType\CreateReverseInverseShipmentWithLabelsResponse|bool
+     * @param \Dpd\StructType\CreateReverseInverseShipmentWithLabels $parameters
+     * @return \Dpd\StructType\CreateReverseInverseShipmentWithLabelsResponse|bool
      */
-    public function CreateReverseInverseShipmentWithLabels(\StructType\CreateReverseInverseShipmentWithLabels $parameters)
+    public function CreateReverseInverseShipmentWithLabels(\Dpd\StructType\CreateReverseInverseShipmentWithLabels $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreateReverseInverseShipmentWithLabels($parameters));
@@ -246,16 +246,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateReverseInverseShipmentWithLabelsBc $parameters
-     * @return \StructType\CreateReverseInverseShipmentWithLabelsBcResponse|bool
+     * @param \Dpd\StructType\CreateReverseInverseShipmentWithLabelsBc $parameters
+     * @return \Dpd\StructType\CreateReverseInverseShipmentWithLabelsBcResponse|bool
      */
-    public function CreateReverseInverseShipmentWithLabelsBc(\StructType\CreateReverseInverseShipmentWithLabelsBc $parameters)
+    public function CreateReverseInverseShipmentWithLabelsBc(\Dpd\StructType\CreateReverseInverseShipmentWithLabelsBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreateReverseInverseShipmentWithLabelsBc($parameters));
@@ -270,16 +270,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateCollectionRequest $parameters
-     * @return \StructType\CreateCollectionRequestResponse|bool
+     * @param \Dpd\StructType\CreateCollectionRequest $parameters
+     * @return \Dpd\StructType\CreateCollectionRequestResponse|bool
      */
-    public function CreateCollectionRequest(\StructType\CreateCollectionRequest $parameters)
+    public function CreateCollectionRequest(\Dpd\StructType\CreateCollectionRequest $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreateCollectionRequest($parameters));
@@ -294,16 +294,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateCollectionRequestBc $parameters
-     * @return \StructType\CreateCollectionRequestBcResponse|bool
+     * @param \Dpd\StructType\CreateCollectionRequestBc $parameters
+     * @return \Dpd\StructType\CreateCollectionRequestBcResponse|bool
      */
-    public function CreateCollectionRequestBc(\StructType\CreateCollectionRequestBc $parameters)
+    public function CreateCollectionRequestBc(\Dpd\StructType\CreateCollectionRequestBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreateCollectionRequestBc($parameters));
@@ -318,16 +318,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreatePickupAtCustomer $parameters
-     * @return \StructType\CreatePickupAtCustomerResponse|bool
+     * @param \Dpd\StructType\CreatePickupAtCustomer $parameters
+     * @return \Dpd\StructType\CreatePickupAtCustomerResponse|bool
      */
-    public function CreatePickupAtCustomer(\StructType\CreatePickupAtCustomer $parameters)
+    public function CreatePickupAtCustomer(\Dpd\StructType\CreatePickupAtCustomer $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreatePickupAtCustomer($parameters));
@@ -342,16 +342,16 @@ class Create extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreatePickupAtCustomerBc $parameters
-     * @return \StructType\CreatePickupAtCustomerBcResponse|bool
+     * @param \Dpd\StructType\CreatePickupAtCustomerBc $parameters
+     * @return \Dpd\StructType\CreatePickupAtCustomerBcResponse|bool
      */
-    public function CreatePickupAtCustomerBc(\StructType\CreatePickupAtCustomerBc $parameters)
+    public function CreatePickupAtCustomerBc(\Dpd\StructType\CreatePickupAtCustomerBc $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->CreatePickupAtCustomerBc($parameters));
@@ -364,7 +364,7 @@ class Create extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\CreateCollectionRequestBcResponse|\StructType\CreateCollectionRequestResponse|\StructType\CreateMultiShipmentBcResponse|\StructType\CreateMultiShipmentResponse|\StructType\CreatePickupAtCustomerBcResponse|\StructType\CreatePickupAtCustomerResponse|\StructType\CreateReverseInverseShipmentBcResponse|\StructType\CreateReverseInverseShipmentResponse|\StructType\CreateReverseInverseShipmentWithLabelsBcResponse|\StructType\CreateReverseInverseShipmentWithLabelsResponse|\StructType\CreateShipmentBcResponse|\StructType\CreateShipmentResponse|\StructType\CreateShipmentWithLabelsBcResponse|\StructType\CreateShipmentWithLabelsResponse
+     * @return \Dpd\StructType\CreateCollectionRequestBcResponse|\Dpd\StructType\CreateCollectionRequestResponse|\Dpd\StructType\CreateMultiShipmentBcResponse|\Dpd\StructType\CreateMultiShipmentResponse|\Dpd\StructType\CreatePickupAtCustomerBcResponse|\Dpd\StructType\CreatePickupAtCustomerResponse|\Dpd\StructType\CreateReverseInverseShipmentBcResponse|\Dpd\StructType\CreateReverseInverseShipmentResponse|\Dpd\StructType\CreateReverseInverseShipmentWithLabelsBcResponse|\Dpd\StructType\CreateReverseInverseShipmentWithLabelsResponse|\Dpd\StructType\CreateShipmentBcResponse|\Dpd\StructType\CreateShipmentResponse|\Dpd\StructType\CreateShipmentWithLabelsBcResponse|\Dpd\StructType\CreateShipmentWithLabelsResponse
      */
     public function getResult()
     {

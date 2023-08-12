@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class ReceiveLabelBcRequest extends ReceiveLabelRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $customer;
     /**
@@ -31,9 +31,9 @@ class ReceiveLabelBcRequest extends ReceiveLabelRequestBase
      * @uses ReceiveLabelBcRequest::setShipmentNumber()
      * @uses ReceiveLabelBcRequest::setCustomer()
      * @param string $shipmentNumber
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      */
-    public function __construct($shipmentNumber = null, \StructType\Customer $customer = null)
+    public function __construct($shipmentNumber = null, \Dpd\StructType\Customer $customer = null)
     {
         $this
             ->setShipmentNumber($shipmentNumber)
@@ -50,7 +50,7 @@ class ReceiveLabelBcRequest extends ReceiveLabelRequestBase
     /**
      * Set shipmentNumber value
      * @param string $shipmentNumber
-     * @return \StructType\ReceiveLabelBcRequest
+     * @return \Dpd\StructType\ReceiveLabelBcRequest
      */
     public function setShipmentNumber($shipmentNumber = null)
     {
@@ -63,7 +63,7 @@ class ReceiveLabelBcRequest extends ReceiveLabelRequestBase
     }
     /**
      * Get customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -71,10 +71,10 @@ class ReceiveLabelBcRequest extends ReceiveLabelRequestBase
     }
     /**
      * Set customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\ReceiveLabelBcRequest
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\ReceiveLabelBcRequest
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->customer = $customer;
         return $this;

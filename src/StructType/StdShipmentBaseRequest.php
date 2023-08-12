@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -83,7 +83,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     /**
      * Set weight value
      * @param string $weight
-     * @return \StructType\StdShipmentBaseRequest
+     * @return \Dpd\StructType\StdShipmentBaseRequest
      */
     public function setWeight($weight = null)
     {
@@ -105,7 +105,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     /**
      * Set referencenumber value
      * @param string $referencenumber
-     * @return \StructType\StdShipmentBaseRequest
+     * @return \Dpd\StructType\StdShipmentBaseRequest
      */
     public function setReferencenumber($referencenumber = null)
     {
@@ -127,7 +127,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     /**
      * Set reference2 value
      * @param string $reference2
-     * @return \StructType\StdShipmentBaseRequest
+     * @return \Dpd\StructType\StdShipmentBaseRequest
      */
     public function setReference2($reference2 = null)
     {
@@ -149,7 +149,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     /**
      * Set reference3 value
      * @param string $reference3
-     * @return \StructType\StdShipmentBaseRequest
+     * @return \Dpd\StructType\StdShipmentBaseRequest
      */
     public function setReference3($reference3 = null)
     {
@@ -171,7 +171,7 @@ class StdShipmentBaseRequest extends ShipmentRequestDefaultData
     /**
      * Set reference4 value
      * @param string $reference4
-     * @return \StructType\StdShipmentBaseRequest
+     * @return \Dpd\StructType\StdShipmentBaseRequest
      */
     public function setReference4($reference4 = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreateShipmentResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfShipment
+     * @var \Dpd\ArrayType\ArrayOfShipment
      */
     public $CreateShipmentResult;
     /**
      * Constructor method for CreateShipmentResponse
      * @uses CreateShipmentResponse::setCreateShipmentResult()
-     * @param \ArrayType\ArrayOfShipment $createShipmentResult
+     * @param \Dpd\ArrayType\ArrayOfShipment $createShipmentResult
      */
-    public function __construct(\ArrayType\ArrayOfShipment $createShipmentResult = null)
+    public function __construct(\Dpd\ArrayType\ArrayOfShipment $createShipmentResult = null)
     {
         $this
             ->setCreateShipmentResult($createShipmentResult);
     }
     /**
      * Get CreateShipmentResult value
-     * @return \ArrayType\ArrayOfShipment|null
+     * @return \Dpd\ArrayType\ArrayOfShipment|null
      */
     public function getCreateShipmentResult()
     {
@@ -38,10 +38,10 @@ class CreateShipmentResponse extends AbstractStructBase
     }
     /**
      * Set CreateShipmentResult value
-     * @param \ArrayType\ArrayOfShipment $createShipmentResult
-     * @return \StructType\CreateShipmentResponse
+     * @param \Dpd\ArrayType\ArrayOfShipment $createShipmentResult
+     * @return \Dpd\StructType\CreateShipmentResponse
      */
-    public function setCreateShipmentResult(\ArrayType\ArrayOfShipment $createShipmentResult = null)
+    public function setCreateShipmentResult(\Dpd\ArrayType\ArrayOfShipment $createShipmentResult = null)
     {
         $this->CreateShipmentResult = $createShipmentResult;
         return $this;

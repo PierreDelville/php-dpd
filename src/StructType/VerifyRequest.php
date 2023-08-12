@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class VerifyRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $Customer;
     /**
@@ -31,9 +31,9 @@ class VerifyRequest extends AbstractStructBase
      * @uses VerifyRequest::setTimeStamp()
      * @uses VerifyRequest::setCustomer()
      * @param int $timeStamp
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      */
-    public function __construct($timeStamp = null, \StructType\Customer $customer = null)
+    public function __construct($timeStamp = null, \Dpd\StructType\Customer $customer = null)
     {
         $this
             ->setTimeStamp($timeStamp)
@@ -50,7 +50,7 @@ class VerifyRequest extends AbstractStructBase
     /**
      * Set TimeStamp value
      * @param int $timeStamp
-     * @return \StructType\VerifyRequest
+     * @return \Dpd\StructType\VerifyRequest
      */
     public function setTimeStamp($timeStamp = null)
     {
@@ -63,7 +63,7 @@ class VerifyRequest extends AbstractStructBase
     }
     /**
      * Get Customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -71,10 +71,10 @@ class VerifyRequest extends AbstractStructBase
     }
     /**
      * Set Customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\VerifyRequest
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\VerifyRequest
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->Customer = $customer;
         return $this;

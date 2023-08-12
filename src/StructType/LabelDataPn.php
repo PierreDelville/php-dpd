@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -94,7 +94,7 @@ class LabelDataPn extends LabelDataBase
     /**
      * Set DutiableHint value
      * @param string $dutiableHint
-     * @return \StructType\LabelDataPn
+     * @return \Dpd\StructType\LabelDataPn
      */
     public function setDutiableHint($dutiableHint = null)
     {
@@ -116,7 +116,7 @@ class LabelDataPn extends LabelDataBase
     /**
      * Set Hint value
      * @param string $hint
-     * @return \StructType\LabelDataPn
+     * @return \Dpd\StructType\LabelDataPn
      */
     public function setHint($hint = null)
     {
@@ -138,7 +138,7 @@ class LabelDataPn extends LabelDataBase
     /**
      * Set Routingtext value
      * @param string $routingtext
-     * @return \StructType\LabelDataPn
+     * @return \Dpd\StructType\LabelDataPn
      */
     public function setRoutingtext($routingtext = null)
     {
@@ -160,7 +160,7 @@ class LabelDataPn extends LabelDataBase
     /**
      * Set Servicetext value
      * @param string $servicetext
-     * @return \StructType\LabelDataPn
+     * @return \Dpd\StructType\LabelDataPn
      */
     public function setServicetext($servicetext = null)
     {
@@ -182,7 +182,7 @@ class LabelDataPn extends LabelDataBase
     /**
      * Set ServiceMark value
      * @param string $serviceMark
-     * @return \StructType\LabelDataPn
+     * @return \Dpd\StructType\LabelDataPn
      */
     public function setServiceMark($serviceMark = null)
     {
@@ -204,7 +204,7 @@ class LabelDataPn extends LabelDataBase
     /**
      * Set ReceiverCenterLine value
      * @param string $receiverCenterLine
-     * @return \StructType\LabelDataPn
+     * @return \Dpd\StructType\LabelDataPn
      */
     public function setReceiverCenterLine($receiverCenterLine = null)
     {

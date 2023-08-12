@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -72,7 +72,7 @@ class ParcelDimension extends AbstractStructBase
     /**
      * Set Length value
      * @param string $length
-     * @return \StructType\ParcelDimension
+     * @return \Dpd\StructType\ParcelDimension
      */
     public function setLength($length = null)
     {
@@ -94,7 +94,7 @@ class ParcelDimension extends AbstractStructBase
     /**
      * Set Width value
      * @param string $width
-     * @return \StructType\ParcelDimension
+     * @return \Dpd\StructType\ParcelDimension
      */
     public function setWidth($width = null)
     {
@@ -116,7 +116,7 @@ class ParcelDimension extends AbstractStructBase
     /**
      * Set Height value
      * @param string $height
-     * @return \StructType\ParcelDimension
+     * @return \Dpd\StructType\ParcelDimension
      */
     public function setHeight($height = null)
     {
@@ -138,7 +138,7 @@ class ParcelDimension extends AbstractStructBase
     /**
      * Set Girth value
      * @param string $girth
-     * @return \StructType\ParcelDimension
+     * @return \Dpd\StructType\ParcelDimension
      */
     public function setGirth($girth = null)
     {

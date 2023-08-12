@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -72,7 +72,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     /**
      * Set destinationDepot value
      * @param int $destinationDepot
-     * @return \StructType\GeoRoutingBaseRequest
+     * @return \Dpd\StructType\GeoRoutingBaseRequest
      */
     public function setDestinationDepot($destinationDepot = null)
     {
@@ -94,7 +94,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     /**
      * Set countryPrefix value
      * @param string $countryPrefix
-     * @return \StructType\GeoRoutingBaseRequest
+     * @return \Dpd\StructType\GeoRoutingBaseRequest
      */
     public function setCountryPrefix($countryPrefix = null)
     {
@@ -116,7 +116,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \StructType\GeoRoutingBaseRequest
+     * @return \Dpd\StructType\GeoRoutingBaseRequest
      */
     public function setZipCode($zipCode = null)
     {
@@ -138,7 +138,7 @@ class GeoRoutingBaseRequest extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\GeoRoutingBaseRequest
+     * @return \Dpd\StructType\GeoRoutingBaseRequest
      */
     public function setDate($date = null)
     {

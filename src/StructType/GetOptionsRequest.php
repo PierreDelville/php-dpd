@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetOptionsRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $Customer;
     /**
@@ -47,7 +47,7 @@ class GetOptionsRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfString
+     * @var \Dpd\ArrayType\ArrayOfString
      */
     public $Options;
     /**
@@ -57,13 +57,13 @@ class GetOptionsRequest extends AbstractStructBase
      * @uses GetOptionsRequest::setHardwareId()
      * @uses GetOptionsRequest::setGroup()
      * @uses GetOptionsRequest::setOptions()
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      * @param string $productType
      * @param string $hardwareId
      * @param string $group
-     * @param \ArrayType\ArrayOfString $options
+     * @param \Dpd\ArrayType\ArrayOfString $options
      */
-    public function __construct(\StructType\Customer $customer = null, $productType = null, $hardwareId = null, $group = null, \ArrayType\ArrayOfString $options = null)
+    public function __construct(\Dpd\StructType\Customer $customer = null, $productType = null, $hardwareId = null, $group = null, \Dpd\ArrayType\ArrayOfString $options = null)
     {
         $this
             ->setCustomer($customer)
@@ -74,7 +74,7 @@ class GetOptionsRequest extends AbstractStructBase
     }
     /**
      * Get Customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -82,10 +82,10 @@ class GetOptionsRequest extends AbstractStructBase
     }
     /**
      * Set Customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\GetOptionsRequest
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\GetOptionsRequest
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->Customer = $customer;
         return $this;
@@ -101,7 +101,7 @@ class GetOptionsRequest extends AbstractStructBase
     /**
      * Set ProductType value
      * @param string $productType
-     * @return \StructType\GetOptionsRequest
+     * @return \Dpd\StructType\GetOptionsRequest
      */
     public function setProductType($productType = null)
     {
@@ -123,7 +123,7 @@ class GetOptionsRequest extends AbstractStructBase
     /**
      * Set HardwareId value
      * @param string $hardwareId
-     * @return \StructType\GetOptionsRequest
+     * @return \Dpd\StructType\GetOptionsRequest
      */
     public function setHardwareId($hardwareId = null)
     {
@@ -145,7 +145,7 @@ class GetOptionsRequest extends AbstractStructBase
     /**
      * Set Group value
      * @param string $group
-     * @return \StructType\GetOptionsRequest
+     * @return \Dpd\StructType\GetOptionsRequest
      */
     public function setGroup($group = null)
     {
@@ -158,7 +158,7 @@ class GetOptionsRequest extends AbstractStructBase
     }
     /**
      * Get Options value
-     * @return \ArrayType\ArrayOfString|null
+     * @return \Dpd\ArrayType\ArrayOfString|null
      */
     public function getOptions()
     {
@@ -166,10 +166,10 @@ class GetOptionsRequest extends AbstractStructBase
     }
     /**
      * Set Options value
-     * @param \ArrayType\ArrayOfString $options
-     * @return \StructType\GetOptionsRequest
+     * @param \Dpd\ArrayType\ArrayOfString $options
+     * @return \Dpd\StructType\GetOptionsRequest
      */
-    public function setOptions(\ArrayType\ArrayOfString $options = null)
+    public function setOptions(\Dpd\ArrayType\ArrayOfString $options = null)
     {
         $this->Options = $options;
         return $this;

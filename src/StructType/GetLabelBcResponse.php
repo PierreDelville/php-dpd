@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetLabelBcResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\LabelBcResponse
+     * @var \Dpd\StructType\LabelBcResponse
      */
     public $GetLabelBcResult;
     /**
      * Constructor method for GetLabelBcResponse
      * @uses GetLabelBcResponse::setGetLabelBcResult()
-     * @param \StructType\LabelBcResponse $getLabelBcResult
+     * @param \Dpd\StructType\LabelBcResponse $getLabelBcResult
      */
-    public function __construct(\StructType\LabelBcResponse $getLabelBcResult = null)
+    public function __construct(\Dpd\StructType\LabelBcResponse $getLabelBcResult = null)
     {
         $this
             ->setGetLabelBcResult($getLabelBcResult);
     }
     /**
      * Get GetLabelBcResult value
-     * @return \StructType\LabelBcResponse|null
+     * @return \Dpd\StructType\LabelBcResponse|null
      */
     public function getGetLabelBcResult()
     {
@@ -38,10 +38,10 @@ class GetLabelBcResponse extends AbstractStructBase
     }
     /**
      * Set GetLabelBcResult value
-     * @param \StructType\LabelBcResponse $getLabelBcResult
-     * @return \StructType\GetLabelBcResponse
+     * @param \Dpd\StructType\LabelBcResponse $getLabelBcResult
+     * @return \Dpd\StructType\GetLabelBcResponse
      */
-    public function setGetLabelBcResult(\StructType\LabelBcResponse $getLabelBcResult = null)
+    public function setGetLabelBcResult(\Dpd\StructType\LabelBcResponse $getLabelBcResult = null)
     {
         $this->GetLabelBcResult = $getLabelBcResult;
         return $this;

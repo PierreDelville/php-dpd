@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetSafePlaceData extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetSafePlaceDataRequest
+     * @var \Dpd\StructType\GetSafePlaceDataRequest
      */
     public $request;
     /**
      * Constructor method for GetSafePlaceData
      * @uses GetSafePlaceData::setRequest()
-     * @param \StructType\GetSafePlaceDataRequest $request
+     * @param \Dpd\StructType\GetSafePlaceDataRequest $request
      */
-    public function __construct(\StructType\GetSafePlaceDataRequest $request = null)
+    public function __construct(\Dpd\StructType\GetSafePlaceDataRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetSafePlaceDataRequest|null
+     * @return \Dpd\StructType\GetSafePlaceDataRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetSafePlaceData extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetSafePlaceDataRequest $request
-     * @return \StructType\GetSafePlaceData
+     * @param \Dpd\StructType\GetSafePlaceDataRequest $request
+     * @return \Dpd\StructType\GetSafePlaceData
      */
-    public function setRequest(\StructType\GetSafePlaceDataRequest $request = null)
+    public function setRequest(\Dpd\StructType\GetSafePlaceDataRequest $request = null)
     {
         $this->request = $request;
         return $this;

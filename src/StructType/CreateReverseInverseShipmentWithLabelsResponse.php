@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreateReverseInverseShipmentWithLabelsResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ShipmentWithLabels
+     * @var \Dpd\StructType\ShipmentWithLabels
      */
     public $CreateReverseInverseShipmentWithLabelsResult;
     /**
      * Constructor method for CreateReverseInverseShipmentWithLabelsResponse
      * @uses CreateReverseInverseShipmentWithLabelsResponse::setCreateReverseInverseShipmentWithLabelsResult()
-     * @param \StructType\ShipmentWithLabels $createReverseInverseShipmentWithLabelsResult
+     * @param \Dpd\StructType\ShipmentWithLabels $createReverseInverseShipmentWithLabelsResult
      */
-    public function __construct(\StructType\ShipmentWithLabels $createReverseInverseShipmentWithLabelsResult = null)
+    public function __construct(\Dpd\StructType\ShipmentWithLabels $createReverseInverseShipmentWithLabelsResult = null)
     {
         $this
             ->setCreateReverseInverseShipmentWithLabelsResult($createReverseInverseShipmentWithLabelsResult);
     }
     /**
      * Get CreateReverseInverseShipmentWithLabelsResult value
-     * @return \StructType\ShipmentWithLabels|null
+     * @return \Dpd\StructType\ShipmentWithLabels|null
      */
     public function getCreateReverseInverseShipmentWithLabelsResult()
     {
@@ -38,10 +38,10 @@ class CreateReverseInverseShipmentWithLabelsResponse extends AbstractStructBase
     }
     /**
      * Set CreateReverseInverseShipmentWithLabelsResult value
-     * @param \StructType\ShipmentWithLabels $createReverseInverseShipmentWithLabelsResult
-     * @return \StructType\CreateReverseInverseShipmentWithLabelsResponse
+     * @param \Dpd\StructType\ShipmentWithLabels $createReverseInverseShipmentWithLabelsResult
+     * @return \Dpd\StructType\CreateReverseInverseShipmentWithLabelsResponse
      */
-    public function setCreateReverseInverseShipmentWithLabelsResult(\StructType\ShipmentWithLabels $createReverseInverseShipmentWithLabelsResult = null)
+    public function setCreateReverseInverseShipmentWithLabelsResult(\Dpd\StructType\ShipmentWithLabels $createReverseInverseShipmentWithLabelsResult = null)
     {
         $this->CreateReverseInverseShipmentWithLabelsResult = $createReverseInverseShipmentWithLabelsResult;
         return $this;

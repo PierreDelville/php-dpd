@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreateShipmentWithLabelsResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ShipmentsWithLabels
+     * @var \Dpd\StructType\ShipmentsWithLabels
      */
     public $CreateShipmentWithLabelsResult;
     /**
      * Constructor method for CreateShipmentWithLabelsResponse
      * @uses CreateShipmentWithLabelsResponse::setCreateShipmentWithLabelsResult()
-     * @param \StructType\ShipmentsWithLabels $createShipmentWithLabelsResult
+     * @param \Dpd\StructType\ShipmentsWithLabels $createShipmentWithLabelsResult
      */
-    public function __construct(\StructType\ShipmentsWithLabels $createShipmentWithLabelsResult = null)
+    public function __construct(\Dpd\StructType\ShipmentsWithLabels $createShipmentWithLabelsResult = null)
     {
         $this
             ->setCreateShipmentWithLabelsResult($createShipmentWithLabelsResult);
     }
     /**
      * Get CreateShipmentWithLabelsResult value
-     * @return \StructType\ShipmentsWithLabels|null
+     * @return \Dpd\StructType\ShipmentsWithLabels|null
      */
     public function getCreateShipmentWithLabelsResult()
     {
@@ -38,10 +38,10 @@ class CreateShipmentWithLabelsResponse extends AbstractStructBase
     }
     /**
      * Set CreateShipmentWithLabelsResult value
-     * @param \StructType\ShipmentsWithLabels $createShipmentWithLabelsResult
-     * @return \StructType\CreateShipmentWithLabelsResponse
+     * @param \Dpd\StructType\ShipmentsWithLabels $createShipmentWithLabelsResult
+     * @return \Dpd\StructType\CreateShipmentWithLabelsResponse
      */
-    public function setCreateShipmentWithLabelsResult(\StructType\ShipmentsWithLabels $createShipmentWithLabelsResult = null)
+    public function setCreateShipmentWithLabelsResult(\Dpd\StructType\ShipmentsWithLabels $createShipmentWithLabelsResult = null)
     {
         $this->CreateShipmentWithLabelsResult = $createShipmentWithLabelsResult;
         return $this;

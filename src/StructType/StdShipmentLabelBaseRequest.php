@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class StdShipmentLabelBaseRequest extends StdShipmentRequest
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\LabelType
+     * @var \Dpd\StructType\LabelType
      */
     public $labelType;
     /**
@@ -31,9 +31,9 @@ class StdShipmentLabelBaseRequest extends StdShipmentRequest
      * @uses StdShipmentLabelBaseRequest::setCustomLabelText()
      * @uses StdShipmentLabelBaseRequest::setLabelType()
      * @param string $customLabelText
-     * @param \StructType\LabelType $labelType
+     * @param \Dpd\StructType\LabelType $labelType
      */
-    public function __construct($customLabelText = null, \StructType\LabelType $labelType = null)
+    public function __construct($customLabelText = null, \Dpd\StructType\LabelType $labelType = null)
     {
         $this
             ->setCustomLabelText($customLabelText)
@@ -50,7 +50,7 @@ class StdShipmentLabelBaseRequest extends StdShipmentRequest
     /**
      * Set customLabelText value
      * @param string $customLabelText
-     * @return \StructType\StdShipmentLabelBaseRequest
+     * @return \Dpd\StructType\StdShipmentLabelBaseRequest
      */
     public function setCustomLabelText($customLabelText = null)
     {
@@ -63,7 +63,7 @@ class StdShipmentLabelBaseRequest extends StdShipmentRequest
     }
     /**
      * Get labelType value
-     * @return \StructType\LabelType|null
+     * @return \Dpd\StructType\LabelType|null
      */
     public function getLabelType()
     {
@@ -71,10 +71,10 @@ class StdShipmentLabelBaseRequest extends StdShipmentRequest
     }
     /**
      * Set labelType value
-     * @param \StructType\LabelType $labelType
-     * @return \StructType\StdShipmentLabelBaseRequest
+     * @param \Dpd\StructType\LabelType $labelType
+     * @return \Dpd\StructType\StdShipmentLabelBaseRequest
      */
-    public function setLabelType(\StructType\LabelType $labelType = null)
+    public function setLabelType(\Dpd\StructType\LabelType $labelType = null)
     {
         $this->labelType = $labelType;
         return $this;

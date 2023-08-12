@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class SlaveServices extends ServiceBaseList
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ExtraInsurance
+     * @var \Dpd\StructType\ExtraInsurance
      */
     public $extraInsurance;
     /**
      * Constructor method for SlaveServices
      * @uses SlaveServices::setExtraInsurance()
-     * @param \StructType\ExtraInsurance $extraInsurance
+     * @param \Dpd\StructType\ExtraInsurance $extraInsurance
      */
-    public function __construct(\StructType\ExtraInsurance $extraInsurance = null)
+    public function __construct(\Dpd\StructType\ExtraInsurance $extraInsurance = null)
     {
         $this
             ->setExtraInsurance($extraInsurance);
     }
     /**
      * Get extraInsurance value
-     * @return \StructType\ExtraInsurance|null
+     * @return \Dpd\StructType\ExtraInsurance|null
      */
     public function getExtraInsurance()
     {
@@ -38,10 +38,10 @@ class SlaveServices extends ServiceBaseList
     }
     /**
      * Set extraInsurance value
-     * @param \StructType\ExtraInsurance $extraInsurance
-     * @return \StructType\SlaveServices
+     * @param \Dpd\StructType\ExtraInsurance $extraInsurance
+     * @return \Dpd\StructType\SlaveServices
      */
-    public function setExtraInsurance(\StructType\ExtraInsurance $extraInsurance = null)
+    public function setExtraInsurance(\Dpd\StructType\ExtraInsurance $extraInsurance = null)
     {
         $this->extraInsurance = $extraInsurance;
         return $this;

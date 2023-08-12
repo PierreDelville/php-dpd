@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetRetourShipmentDataResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RetourShipmentData
+     * @var \Dpd\StructType\RetourShipmentData
      */
     public $GetRetourShipmentDataResult;
     /**
      * Constructor method for GetRetourShipmentDataResponse
      * @uses GetRetourShipmentDataResponse::setGetRetourShipmentDataResult()
-     * @param \StructType\RetourShipmentData $getRetourShipmentDataResult
+     * @param \Dpd\StructType\RetourShipmentData $getRetourShipmentDataResult
      */
-    public function __construct(\StructType\RetourShipmentData $getRetourShipmentDataResult = null)
+    public function __construct(\Dpd\StructType\RetourShipmentData $getRetourShipmentDataResult = null)
     {
         $this
             ->setGetRetourShipmentDataResult($getRetourShipmentDataResult);
     }
     /**
      * Get GetRetourShipmentDataResult value
-     * @return \StructType\RetourShipmentData|null
+     * @return \Dpd\StructType\RetourShipmentData|null
      */
     public function getGetRetourShipmentDataResult()
     {
@@ -38,10 +38,10 @@ class GetRetourShipmentDataResponse extends AbstractStructBase
     }
     /**
      * Set GetRetourShipmentDataResult value
-     * @param \StructType\RetourShipmentData $getRetourShipmentDataResult
-     * @return \StructType\GetRetourShipmentDataResponse
+     * @param \Dpd\StructType\RetourShipmentData $getRetourShipmentDataResult
+     * @return \Dpd\StructType\GetRetourShipmentDataResponse
      */
-    public function setGetRetourShipmentDataResult(\StructType\RetourShipmentData $getRetourShipmentDataResult = null)
+    public function setGetRetourShipmentDataResult(\Dpd\StructType\RetourShipmentData $getRetourShipmentDataResult = null)
     {
         $this->GetRetourShipmentDataResult = $getRetourShipmentDataResult;
         return $this;

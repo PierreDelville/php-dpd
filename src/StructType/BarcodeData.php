@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -71,17 +71,17 @@ class BarcodeData extends AbstractStructBase
     }
     /**
      * Set Identifier value
-     * @uses \EnumType\BcIdentifier::valueIsValid()
-     * @uses \EnumType\BcIdentifier::getValidValues()
+     * @uses \Dpd\EnumType\BcIdentifier::valueIsValid()
+     * @uses \Dpd\EnumType\BcIdentifier::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $identifier
-     * @return \StructType\BarcodeData
+     * @return \Dpd\StructType\BarcodeData
      */
     public function setIdentifier($identifier = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\BcIdentifier::valueIsValid($identifier)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\BcIdentifier', is_array($identifier) ? implode(', ', $identifier) : var_export($identifier, true), implode(', ', \EnumType\BcIdentifier::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\BcIdentifier::valueIsValid($identifier)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\BcIdentifier', is_array($identifier) ? implode(', ', $identifier) : var_export($identifier, true), implode(', ', \Dpd\EnumType\BcIdentifier::getValidValues())), __LINE__);
         }
         $this->Identifier = $identifier;
         return $this;
@@ -97,7 +97,7 @@ class BarcodeData extends AbstractStructBase
     /**
      * Set BarcodeValue value
      * @param string $barcodeValue
-     * @return \StructType\BarcodeData
+     * @return \Dpd\StructType\BarcodeData
      */
     public function setBarcodeValue($barcodeValue = null)
     {
@@ -119,7 +119,7 @@ class BarcodeData extends AbstractStructBase
     /**
      * Set BarcodeText value
      * @param string $barcodeText
-     * @return \StructType\BarcodeData
+     * @return \Dpd\StructType\BarcodeData
      */
     public function setBarcodeText($barcodeText = null)
     {
@@ -141,7 +141,7 @@ class BarcodeData extends AbstractStructBase
     /**
      * Set bcImage value
      * @param string $bcImage
-     * @return \StructType\BarcodeData
+     * @return \Dpd\StructType\BarcodeData
      */
     public function setBcImage($bcImage = null)
     {

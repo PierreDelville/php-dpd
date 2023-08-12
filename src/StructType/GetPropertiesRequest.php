@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class GetPropertiesRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $Customer;
     /**
@@ -40,10 +40,10 @@ class GetPropertiesRequest extends AbstractStructBase
      * @uses GetPropertiesRequest::setCustomer()
      * @uses GetPropertiesRequest::setProduct()
      * @param string $hardwareId
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      * @param string $product
      */
-    public function __construct($hardwareId = null, \StructType\Customer $customer = null, $product = null)
+    public function __construct($hardwareId = null, \Dpd\StructType\Customer $customer = null, $product = null)
     {
         $this
             ->setHardwareId($hardwareId)
@@ -61,7 +61,7 @@ class GetPropertiesRequest extends AbstractStructBase
     /**
      * Set HardwareId value
      * @param string $hardwareId
-     * @return \StructType\GetPropertiesRequest
+     * @return \Dpd\StructType\GetPropertiesRequest
      */
     public function setHardwareId($hardwareId = null)
     {
@@ -74,7 +74,7 @@ class GetPropertiesRequest extends AbstractStructBase
     }
     /**
      * Get Customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -82,10 +82,10 @@ class GetPropertiesRequest extends AbstractStructBase
     }
     /**
      * Set Customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\GetPropertiesRequest
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\GetPropertiesRequest
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->Customer = $customer;
         return $this;
@@ -101,7 +101,7 @@ class GetPropertiesRequest extends AbstractStructBase
     /**
      * Set Product value
      * @param string $product
-     * @return \StructType\GetPropertiesRequest
+     * @return \Dpd\StructType\GetPropertiesRequest
      */
     public function setProduct($product = null)
     {

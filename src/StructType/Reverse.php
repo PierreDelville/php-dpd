@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -31,7 +31,7 @@ class Reverse extends DefaultService
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $retour_receiver;
     /**
@@ -41,9 +41,9 @@ class Reverse extends DefaultService
      * @uses Reverse::setRetour_receiver()
      * @param int $expireOffset
      * @param string $type
-     * @param \StructType\Address $retour_receiver
+     * @param \Dpd\StructType\Address $retour_receiver
      */
-    public function __construct($expireOffset = null, $type = null, \StructType\Address $retour_receiver = null)
+    public function __construct($expireOffset = null, $type = null, \Dpd\StructType\Address $retour_receiver = null)
     {
         $this
             ->setExpireOffset($expireOffset)
@@ -61,7 +61,7 @@ class Reverse extends DefaultService
     /**
      * Set expireOffset value
      * @param int $expireOffset
-     * @return \StructType\Reverse
+     * @return \Dpd\StructType\Reverse
      */
     public function setExpireOffset($expireOffset = null)
     {
@@ -82,24 +82,24 @@ class Reverse extends DefaultService
     }
     /**
      * Set type value
-     * @uses \EnumType\EtypeReverse::valueIsValid()
-     * @uses \EnumType\EtypeReverse::getValidValues()
+     * @uses \Dpd\EnumType\EtypeReverse::valueIsValid()
+     * @uses \Dpd\EnumType\EtypeReverse::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Reverse
+     * @return \Dpd\StructType\Reverse
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\EtypeReverse::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\EtypeReverse', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\EtypeReverse::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\EtypeReverse::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\EtypeReverse', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Dpd\EnumType\EtypeReverse::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
     }
     /**
      * Get retour_receiver value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getRetour_receiver()
     {
@@ -107,10 +107,10 @@ class Reverse extends DefaultService
     }
     /**
      * Set retour_receiver value
-     * @param \StructType\Address $retour_receiver
-     * @return \StructType\Reverse
+     * @param \Dpd\StructType\Address $retour_receiver
+     * @return \Dpd\StructType\Reverse
      */
-    public function setRetour_receiver(\StructType\Address $retour_receiver = null)
+    public function setRetour_receiver(\Dpd\StructType\Address $retour_receiver = null)
     {
         $this->retour_receiver = $retour_receiver;
         return $this;

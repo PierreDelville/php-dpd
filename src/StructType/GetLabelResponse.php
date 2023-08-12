@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetLabelResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\LabelResponse
+     * @var \Dpd\StructType\LabelResponse
      */
     public $GetLabelResult;
     /**
      * Constructor method for GetLabelResponse
      * @uses GetLabelResponse::setGetLabelResult()
-     * @param \StructType\LabelResponse $getLabelResult
+     * @param \Dpd\StructType\LabelResponse $getLabelResult
      */
-    public function __construct(\StructType\LabelResponse $getLabelResult = null)
+    public function __construct(\Dpd\StructType\LabelResponse $getLabelResult = null)
     {
         $this
             ->setGetLabelResult($getLabelResult);
     }
     /**
      * Get GetLabelResult value
-     * @return \StructType\LabelResponse|null
+     * @return \Dpd\StructType\LabelResponse|null
      */
     public function getGetLabelResult()
     {
@@ -38,10 +38,10 @@ class GetLabelResponse extends AbstractStructBase
     }
     /**
      * Set GetLabelResult value
-     * @param \StructType\LabelResponse $getLabelResult
-     * @return \StructType\GetLabelResponse
+     * @param \Dpd\StructType\LabelResponse $getLabelResult
+     * @return \Dpd\StructType\GetLabelResponse
      */
-    public function setGetLabelResult(\StructType\LabelResponse $getLabelResult = null)
+    public function setGetLabelResult(\Dpd\StructType\LabelResponse $getLabelResult = null)
     {
         $this->GetLabelResult = $getLabelResult;
         return $this;

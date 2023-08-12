@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,17 +38,17 @@ class GetLabelDataRequest extends ShipmentRequestBcBase
     }
     /**
      * Set Options value
-     * @uses \EnumType\ELabelDataOptions::valueIsValid()
-     * @uses \EnumType\ELabelDataOptions::getValidValues()
+     * @uses \Dpd\EnumType\ELabelDataOptions::valueIsValid()
+     * @uses \Dpd\EnumType\ELabelDataOptions::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $options
-     * @return \StructType\GetLabelDataRequest
+     * @return \Dpd\StructType\GetLabelDataRequest
      */
     public function setOptions($options = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ELabelDataOptions::valueIsValid($options)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\ELabelDataOptions', is_array($options) ? implode(', ', $options) : var_export($options, true), implode(', ', \EnumType\ELabelDataOptions::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\ELabelDataOptions::valueIsValid($options)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\ELabelDataOptions', is_array($options) ? implode(', ', $options) : var_export($options, true), implode(', ', \Dpd\EnumType\ELabelDataOptions::getValidValues())), __LINE__);
         }
         $this->Options = $options;
         return $this;

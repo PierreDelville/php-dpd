@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreateReverseInverseShipmentResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Shipment
+     * @var \Dpd\StructType\Shipment
      */
     public $CreateReverseInverseShipmentResult;
     /**
      * Constructor method for CreateReverseInverseShipmentResponse
      * @uses CreateReverseInverseShipmentResponse::setCreateReverseInverseShipmentResult()
-     * @param \StructType\Shipment $createReverseInverseShipmentResult
+     * @param \Dpd\StructType\Shipment $createReverseInverseShipmentResult
      */
-    public function __construct(\StructType\Shipment $createReverseInverseShipmentResult = null)
+    public function __construct(\Dpd\StructType\Shipment $createReverseInverseShipmentResult = null)
     {
         $this
             ->setCreateReverseInverseShipmentResult($createReverseInverseShipmentResult);
     }
     /**
      * Get CreateReverseInverseShipmentResult value
-     * @return \StructType\Shipment|null
+     * @return \Dpd\StructType\Shipment|null
      */
     public function getCreateReverseInverseShipmentResult()
     {
@@ -38,10 +38,10 @@ class CreateReverseInverseShipmentResponse extends AbstractStructBase
     }
     /**
      * Set CreateReverseInverseShipmentResult value
-     * @param \StructType\Shipment $createReverseInverseShipmentResult
-     * @return \StructType\CreateReverseInverseShipmentResponse
+     * @param \Dpd\StructType\Shipment $createReverseInverseShipmentResult
+     * @return \Dpd\StructType\CreateReverseInverseShipmentResponse
      */
-    public function setCreateReverseInverseShipmentResult(\StructType\Shipment $createReverseInverseShipmentResult = null)
+    public function setCreateReverseInverseShipmentResult(\Dpd\StructType\Shipment $createReverseInverseShipmentResult = null)
     {
         $this->CreateReverseInverseShipmentResult = $createReverseInverseShipmentResult;
         return $this;

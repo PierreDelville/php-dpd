@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -161,7 +161,7 @@ class CNOTParcel extends AbstractStructBase
     /**
      * Set BcSrc value
      * @param int $bcSrc
-     * @return \StructType\CNOTParcel
+     * @return \Dpd\StructType\CNOTParcel
      */
     public function setBcSrc($bcSrc = null)
     {
@@ -183,7 +183,7 @@ class CNOTParcel extends AbstractStructBase
     /**
      * Set Prio value
      * @param bool $prio
-     * @return \StructType\CNOTParcel
+     * @return \Dpd\StructType\CNOTParcel
      */
     public function setPrio($prio = null)
     {
@@ -205,7 +205,7 @@ class CNOTParcel extends AbstractStructBase
     /**
      * Set DeliveryRecordPosition value
      * @param int $deliveryRecordPosition
-     * @return \StructType\CNOTParcel
+     * @return \Dpd\StructType\CNOTParcel
      */
     public function setDeliveryRecordPosition($deliveryRecordPosition = null)
     {
@@ -227,7 +227,7 @@ class CNOTParcel extends AbstractStructBase
     /**
      * Set OnTourAppended value
      * @param bool $onTourAppended
-     * @return \StructType\CNOTParcel
+     * @return \Dpd\StructType\CNOTParcel
      */
     public function setOnTourAppended($onTourAppended = null)
     {
@@ -249,7 +249,7 @@ class CNOTParcel extends AbstractStructBase
     /**
      * Set TDVHit value
      * @param bool $tDVHit
-     * @return \StructType\CNOTParcel
+     * @return \Dpd\StructType\CNOTParcel
      */
     public function setTDVHit($tDVHit = null)
     {
@@ -271,7 +271,7 @@ class CNOTParcel extends AbstractStructBase
     /**
      * Set BcId value
      * @param string $bcId
-     * @return \StructType\CNOTParcel
+     * @return \Dpd\StructType\CNOTParcel
      */
     public function setBcId($bcId = null)
     {
@@ -293,7 +293,7 @@ class CNOTParcel extends AbstractStructBase
     /**
      * Set Barcode value
      * @param string $barcode
-     * @return \StructType\CNOTParcel
+     * @return \Dpd\StructType\CNOTParcel
      */
     public function setBarcode($barcode = null)
     {
@@ -315,7 +315,7 @@ class CNOTParcel extends AbstractStructBase
     /**
      * Set DeliveryNotificationNumber value
      * @param string $deliveryNotificationNumber
-     * @return \StructType\CNOTParcel
+     * @return \Dpd\StructType\CNOTParcel
      */
     public function setDeliveryNotificationNumber($deliveryNotificationNumber = null)
     {
@@ -337,7 +337,7 @@ class CNOTParcel extends AbstractStructBase
     /**
      * Set Comment value
      * @param string $comment
-     * @return \StructType\CNOTParcel
+     * @return \Dpd\StructType\CNOTParcel
      */
     public function setComment($comment = null)
     {
@@ -359,7 +359,7 @@ class CNOTParcel extends AbstractStructBase
     /**
      * Set TimeWindowFrom value
      * @param string $timeWindowFrom
-     * @return \StructType\CNOTParcel
+     * @return \Dpd\StructType\CNOTParcel
      */
     public function setTimeWindowFrom($timeWindowFrom = null)
     {
@@ -381,7 +381,7 @@ class CNOTParcel extends AbstractStructBase
     /**
      * Set TimeWindowTo value
      * @param string $timeWindowTo
-     * @return \StructType\CNOTParcel
+     * @return \Dpd\StructType\CNOTParcel
      */
     public function setTimeWindowTo($timeWindowTo = null)
     {
@@ -403,7 +403,7 @@ class CNOTParcel extends AbstractStructBase
     /**
      * Set TDVAddressRef value
      * @param string $tDVAddressRef
-     * @return \StructType\CNOTParcel
+     * @return \Dpd\StructType\CNOTParcel
      */
     public function setTDVAddressRef($tDVAddressRef = null)
     {

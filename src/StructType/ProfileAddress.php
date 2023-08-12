@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -258,17 +258,17 @@ class ProfileAddress extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @uses \EnumType\AddressType::valueIsValid()
-     * @uses \EnumType\AddressType::getValidValues()
+     * @uses \Dpd\EnumType\AddressType::valueIsValid()
+     * @uses \Dpd\EnumType\AddressType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\AddressType::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\AddressType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\AddressType::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\AddressType::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\AddressType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Dpd\EnumType\AddressType::getValidValues())), __LINE__);
         }
         $this->Type = $type;
         return $this;
@@ -284,7 +284,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set Priority value
      * @param int $priority
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setPriority($priority = null)
     {
@@ -306,7 +306,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set Title value
      * @param string $title
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setTitle($title = null)
     {
@@ -328,7 +328,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set Name0 value
      * @param string $name0
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setName0($name0 = null)
     {
@@ -350,7 +350,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set Name1 value
      * @param string $name1
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setName1($name1 = null)
     {
@@ -372,7 +372,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set Name2 value
      * @param string $name2
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setName2($name2 = null)
     {
@@ -394,7 +394,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set Name3 value
      * @param string $name3
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setName3($name3 = null)
     {
@@ -416,7 +416,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set CountryPrefix value
      * @param string $countryPrefix
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setCountryPrefix($countryPrefix = null)
     {
@@ -438,7 +438,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set ZipCode value
      * @param string $zipCode
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setZipCode($zipCode = null)
     {
@@ -460,7 +460,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set City value
      * @param string $city
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setCity($city = null)
     {
@@ -482,7 +482,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set Street value
      * @param string $street
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setStreet($street = null)
     {
@@ -504,7 +504,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set HouseNumber value
      * @param string $houseNumber
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setHouseNumber($houseNumber = null)
     {
@@ -526,7 +526,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set HouseNumberExtension value
      * @param string $houseNumberExtension
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setHouseNumberExtension($houseNumberExtension = null)
     {
@@ -548,7 +548,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set Floor value
      * @param string $floor
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setFloor($floor = null)
     {
@@ -570,7 +570,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set PostOfficeBox value
      * @param string $postOfficeBox
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setPostOfficeBox($postOfficeBox = null)
     {
@@ -592,7 +592,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set PhoneNumber value
      * @param string $phoneNumber
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setPhoneNumber($phoneNumber = null)
     {
@@ -614,7 +614,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set FaxNumber value
      * @param string $faxNumber
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setFaxNumber($faxNumber = null)
     {
@@ -636,7 +636,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set MobileNumber value
      * @param string $mobileNumber
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setMobileNumber($mobileNumber = null)
     {
@@ -658,7 +658,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set Email value
      * @param string $email
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setEmail($email = null)
     {
@@ -680,7 +680,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set GeoX value
      * @param string $geoX
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setGeoX($geoX = null)
     {
@@ -702,7 +702,7 @@ class ProfileAddress extends AbstractStructBase
     /**
      * Set GeoY value
      * @param string $geoY
-     * @return \StructType\ProfileAddress
+     * @return \Dpd\StructType\ProfileAddress
      */
     public function setGeoY($geoY = null)
     {

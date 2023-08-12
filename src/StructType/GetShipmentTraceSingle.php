@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetShipmentTraceSingle extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ShipmentDetailRequest
+     * @var \Dpd\StructType\ShipmentDetailRequest
      */
     public $request;
     /**
      * Constructor method for GetShipmentTraceSingle
      * @uses GetShipmentTraceSingle::setRequest()
-     * @param \StructType\ShipmentDetailRequest $request
+     * @param \Dpd\StructType\ShipmentDetailRequest $request
      */
-    public function __construct(\StructType\ShipmentDetailRequest $request = null)
+    public function __construct(\Dpd\StructType\ShipmentDetailRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\ShipmentDetailRequest|null
+     * @return \Dpd\StructType\ShipmentDetailRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetShipmentTraceSingle extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\ShipmentDetailRequest $request
-     * @return \StructType\GetShipmentTraceSingle
+     * @param \Dpd\StructType\ShipmentDetailRequest $request
+     * @return \Dpd\StructType\GetShipmentTraceSingle
      */
-    public function setRequest(\StructType\ShipmentDetailRequest $request = null)
+    public function setRequest(\Dpd\StructType\ShipmentDetailRequest $request = null)
     {
         $this->request = $request;
         return $this;

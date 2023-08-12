@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetNationalTransitTime extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetNationalTransitTimeRequest
+     * @var \Dpd\StructType\GetNationalTransitTimeRequest
      */
     public $request;
     /**
      * Constructor method for GetNationalTransitTime
      * @uses GetNationalTransitTime::setRequest()
-     * @param \StructType\GetNationalTransitTimeRequest $request
+     * @param \Dpd\StructType\GetNationalTransitTimeRequest $request
      */
-    public function __construct(\StructType\GetNationalTransitTimeRequest $request = null)
+    public function __construct(\Dpd\StructType\GetNationalTransitTimeRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetNationalTransitTimeRequest|null
+     * @return \Dpd\StructType\GetNationalTransitTimeRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetNationalTransitTime extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetNationalTransitTimeRequest $request
-     * @return \StructType\GetNationalTransitTime
+     * @param \Dpd\StructType\GetNationalTransitTimeRequest $request
+     * @return \Dpd\StructType\GetNationalTransitTime
      */
-    public function setRequest(\StructType\GetNationalTransitTimeRequest $request = null)
+    public function setRequest(\Dpd\StructType\GetNationalTransitTimeRequest $request = null)
     {
         $this->request = $request;
         return $this;

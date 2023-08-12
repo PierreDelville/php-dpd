@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -51,7 +51,7 @@ class ShipmentRequestBc extends ShipmentRequestBcBase
     /**
      * Set GetServices value
      * @param bool $getServices
-     * @return \StructType\ShipmentRequestBc
+     * @return \Dpd\StructType\ShipmentRequestBc
      */
     public function setGetServices($getServices = null)
     {
@@ -73,7 +73,7 @@ class ShipmentRequestBc extends ShipmentRequestBcBase
     /**
      * Set Language value
      * @param string $language
-     * @return \StructType\ShipmentRequestBc
+     * @return \Dpd\StructType\ShipmentRequestBc
      */
     public function setLanguage($language = null)
     {

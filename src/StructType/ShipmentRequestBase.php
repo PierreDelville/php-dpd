@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class ShipmentRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $receiveraddress;
     /**
@@ -47,7 +47,7 @@ class ShipmentRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AddressInfo
+     * @var \Dpd\StructType\AddressInfo
      */
     public $receiverinfo;
     /**
@@ -55,7 +55,7 @@ class ShipmentRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $shipperaddress;
     /**
@@ -63,7 +63,7 @@ class ShipmentRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $retourAddress;
     /**
@@ -87,13 +87,13 @@ class ShipmentRequestBase extends AbstractStructBase
      * @param int $customer_countrycode
      * @param int $customer_centernumber
      * @param int $customer_number
-     * @param \StructType\Address $receiveraddress
-     * @param \StructType\AddressInfo $receiverinfo
-     * @param \StructType\Address $shipperaddress
-     * @param \StructType\Address $retourAddress
+     * @param \Dpd\StructType\Address $receiveraddress
+     * @param \Dpd\StructType\AddressInfo $receiverinfo
+     * @param \Dpd\StructType\Address $shipperaddress
+     * @param \Dpd\StructType\Address $retourAddress
      * @param string $shippingdate
      */
-    public function __construct($customer_countrycode = null, $customer_centernumber = null, $customer_number = null, \StructType\Address $receiveraddress = null, \StructType\AddressInfo $receiverinfo = null, \StructType\Address $shipperaddress = null, \StructType\Address $retourAddress = null, $shippingdate = null)
+    public function __construct($customer_countrycode = null, $customer_centernumber = null, $customer_number = null, \Dpd\StructType\Address $receiveraddress = null, \Dpd\StructType\AddressInfo $receiverinfo = null, \Dpd\StructType\Address $shipperaddress = null, \Dpd\StructType\Address $retourAddress = null, $shippingdate = null)
     {
         $this
             ->setCustomer_countrycode($customer_countrycode)
@@ -116,7 +116,7 @@ class ShipmentRequestBase extends AbstractStructBase
     /**
      * Set customer_countrycode value
      * @param int $customer_countrycode
-     * @return \StructType\ShipmentRequestBase
+     * @return \Dpd\StructType\ShipmentRequestBase
      */
     public function setCustomer_countrycode($customer_countrycode = null)
     {
@@ -138,7 +138,7 @@ class ShipmentRequestBase extends AbstractStructBase
     /**
      * Set customer_centernumber value
      * @param int $customer_centernumber
-     * @return \StructType\ShipmentRequestBase
+     * @return \Dpd\StructType\ShipmentRequestBase
      */
     public function setCustomer_centernumber($customer_centernumber = null)
     {
@@ -160,7 +160,7 @@ class ShipmentRequestBase extends AbstractStructBase
     /**
      * Set customer_number value
      * @param int $customer_number
-     * @return \StructType\ShipmentRequestBase
+     * @return \Dpd\StructType\ShipmentRequestBase
      */
     public function setCustomer_number($customer_number = null)
     {
@@ -173,7 +173,7 @@ class ShipmentRequestBase extends AbstractStructBase
     }
     /**
      * Get receiveraddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getReceiveraddress()
     {
@@ -181,17 +181,17 @@ class ShipmentRequestBase extends AbstractStructBase
     }
     /**
      * Set receiveraddress value
-     * @param \StructType\Address $receiveraddress
-     * @return \StructType\ShipmentRequestBase
+     * @param \Dpd\StructType\Address $receiveraddress
+     * @return \Dpd\StructType\ShipmentRequestBase
      */
-    public function setReceiveraddress(\StructType\Address $receiveraddress = null)
+    public function setReceiveraddress(\Dpd\StructType\Address $receiveraddress = null)
     {
         $this->receiveraddress = $receiveraddress;
         return $this;
     }
     /**
      * Get receiverinfo value
-     * @return \StructType\AddressInfo|null
+     * @return \Dpd\StructType\AddressInfo|null
      */
     public function getReceiverinfo()
     {
@@ -199,17 +199,17 @@ class ShipmentRequestBase extends AbstractStructBase
     }
     /**
      * Set receiverinfo value
-     * @param \StructType\AddressInfo $receiverinfo
-     * @return \StructType\ShipmentRequestBase
+     * @param \Dpd\StructType\AddressInfo $receiverinfo
+     * @return \Dpd\StructType\ShipmentRequestBase
      */
-    public function setReceiverinfo(\StructType\AddressInfo $receiverinfo = null)
+    public function setReceiverinfo(\Dpd\StructType\AddressInfo $receiverinfo = null)
     {
         $this->receiverinfo = $receiverinfo;
         return $this;
     }
     /**
      * Get shipperaddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getShipperaddress()
     {
@@ -217,17 +217,17 @@ class ShipmentRequestBase extends AbstractStructBase
     }
     /**
      * Set shipperaddress value
-     * @param \StructType\Address $shipperaddress
-     * @return \StructType\ShipmentRequestBase
+     * @param \Dpd\StructType\Address $shipperaddress
+     * @return \Dpd\StructType\ShipmentRequestBase
      */
-    public function setShipperaddress(\StructType\Address $shipperaddress = null)
+    public function setShipperaddress(\Dpd\StructType\Address $shipperaddress = null)
     {
         $this->shipperaddress = $shipperaddress;
         return $this;
     }
     /**
      * Get retourAddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getRetourAddress()
     {
@@ -235,10 +235,10 @@ class ShipmentRequestBase extends AbstractStructBase
     }
     /**
      * Set retourAddress value
-     * @param \StructType\Address $retourAddress
-     * @return \StructType\ShipmentRequestBase
+     * @param \Dpd\StructType\Address $retourAddress
+     * @return \Dpd\StructType\ShipmentRequestBase
      */
-    public function setRetourAddress(\StructType\Address $retourAddress = null)
+    public function setRetourAddress(\Dpd\StructType\Address $retourAddress = null)
     {
         $this->retourAddress = $retourAddress;
         return $this;
@@ -254,7 +254,7 @@ class ShipmentRequestBase extends AbstractStructBase
     /**
      * Set shippingdate value
      * @param string $shippingdate
-     * @return \StructType\ShipmentRequestBase
+     * @return \Dpd\StructType\ShipmentRequestBase
      */
     public function setShippingdate($shippingdate = null)
     {

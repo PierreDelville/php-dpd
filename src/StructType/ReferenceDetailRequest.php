@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -31,7 +31,7 @@ class ReferenceDetailRequest extends ReferenceBaseRequest
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Options
+     * @var \Dpd\StructType\Options
      */
     public $Options;
     /**
@@ -41,9 +41,9 @@ class ReferenceDetailRequest extends ReferenceBaseRequest
      * @uses ReferenceDetailRequest::setOptions()
      * @param string $searchmode
      * @param bool $getImages
-     * @param \StructType\Options $options
+     * @param \Dpd\StructType\Options $options
      */
-    public function __construct($searchmode = null, $getImages = null, \StructType\Options $options = null)
+    public function __construct($searchmode = null, $getImages = null, \Dpd\StructType\Options $options = null)
     {
         $this
             ->setSearchmode($searchmode)
@@ -60,17 +60,17 @@ class ReferenceDetailRequest extends ReferenceBaseRequest
     }
     /**
      * Set Searchmode value
-     * @uses \EnumType\ReferenceSearchMode::valueIsValid()
-     * @uses \EnumType\ReferenceSearchMode::getValidValues()
+     * @uses \Dpd\EnumType\ReferenceSearchMode::valueIsValid()
+     * @uses \Dpd\EnumType\ReferenceSearchMode::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $searchmode
-     * @return \StructType\ReferenceDetailRequest
+     * @return \Dpd\StructType\ReferenceDetailRequest
      */
     public function setSearchmode($searchmode = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ReferenceSearchMode::valueIsValid($searchmode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\ReferenceSearchMode', is_array($searchmode) ? implode(', ', $searchmode) : var_export($searchmode, true), implode(', ', \EnumType\ReferenceSearchMode::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\ReferenceSearchMode::valueIsValid($searchmode)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\ReferenceSearchMode', is_array($searchmode) ? implode(', ', $searchmode) : var_export($searchmode, true), implode(', ', \Dpd\EnumType\ReferenceSearchMode::getValidValues())), __LINE__);
         }
         $this->Searchmode = $searchmode;
         return $this;
@@ -86,7 +86,7 @@ class ReferenceDetailRequest extends ReferenceBaseRequest
     /**
      * Set GetImages value
      * @param bool $getImages
-     * @return \StructType\ReferenceDetailRequest
+     * @return \Dpd\StructType\ReferenceDetailRequest
      */
     public function setGetImages($getImages = null)
     {
@@ -99,7 +99,7 @@ class ReferenceDetailRequest extends ReferenceBaseRequest
     }
     /**
      * Get Options value
-     * @return \StructType\Options|null
+     * @return \Dpd\StructType\Options|null
      */
     public function getOptions()
     {
@@ -107,10 +107,10 @@ class ReferenceDetailRequest extends ReferenceBaseRequest
     }
     /**
      * Set Options value
-     * @param \StructType\Options $options
-     * @return \StructType\ReferenceDetailRequest
+     * @param \Dpd\StructType\Options $options
+     * @return \Dpd\StructType\ReferenceDetailRequest
      */
-    public function setOptions(\StructType\Options $options = null)
+    public function setOptions(\Dpd\StructType\Options $options = null)
     {
         $this->Options = $options;
         return $this;

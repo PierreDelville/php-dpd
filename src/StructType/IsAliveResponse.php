@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class IsAliveResponse extends AbstractStructBase
     /**
      * Set isAliveResult value
      * @param bool $isAliveResult
-     * @return \StructType\IsAliveResponse
+     * @return \Dpd\StructType\IsAliveResponse
      */
     public function setIsAliveResult($isAliveResult = null)
     {

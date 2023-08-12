@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfReason extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Reason[]
+     * @var \Dpd\StructType\Reason[]
      */
     public $Reason;
     /**
      * Constructor method for ArrayOfReason
      * @uses ArrayOfReason::setReason()
-     * @param \StructType\Reason[] $reason
+     * @param \Dpd\StructType\Reason[] $reason
      */
     public function __construct(array $reason = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfReason extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Reason[]|null
+     * @return \Dpd\StructType\Reason[]|null
      */
     public function getReason()
     {
@@ -52,12 +52,12 @@ class ArrayOfReason extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfReasonReasonItem) {
             // validation for constraint: itemType
-            if (!$arrayOfReasonReasonItem instanceof \StructType\Reason) {
+            if (!$arrayOfReasonReasonItem instanceof \Dpd\StructType\Reason) {
                 $invalidValues[] = is_object($arrayOfReasonReasonItem) ? get_class($arrayOfReasonReasonItem) : sprintf('%s(%s)', gettype($arrayOfReasonReasonItem), var_export($arrayOfReasonReasonItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Reason property can only contain items of type \StructType\Reason, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Reason property can only contain items of type \Dpd\StructType\Reason, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfReason extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Reason[] $reason
-     * @return \ArrayType\ArrayOfReason
+     * @param \Dpd\StructType\Reason[] $reason
+     * @return \Dpd\ArrayType\ArrayOfReason
      */
     public function setReason(array $reason = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfReason extends AbstractStructArrayBase
     /**
      * Add item to Reason value
      * @throws \InvalidArgumentException
-     * @param \StructType\Reason $item
-     * @return \ArrayType\ArrayOfReason
+     * @param \Dpd\StructType\Reason $item
+     * @return \Dpd\ArrayType\ArrayOfReason
      */
-    public function addToReason(\StructType\Reason $item)
+    public function addToReason(\Dpd\StructType\Reason $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Reason) {
-            throw new \InvalidArgumentException(sprintf('The Reason property can only contain items of type \StructType\Reason, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\Reason) {
+            throw new \InvalidArgumentException(sprintf('The Reason property can only contain items of type \Dpd\StructType\Reason, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Reason[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfReason extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Reason|null
+     * @return \Dpd\StructType\Reason|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfReason extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Reason|null
+     * @return \Dpd\StructType\Reason|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfReason extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Reason|null
+     * @return \Dpd\StructType\Reason|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfReason extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Reason|null
+     * @return \Dpd\StructType\Reason|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfReason extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Reason|null
+     * @return \Dpd\StructType\Reason|null
      */
     public function offsetGet($offset)
     {

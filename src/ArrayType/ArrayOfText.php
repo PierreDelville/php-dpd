@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfText extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Text[]
+     * @var \Dpd\StructType\Text[]
      */
     public $Text;
     /**
      * Constructor method for ArrayOfText
      * @uses ArrayOfText::setText()
-     * @param \StructType\Text[] $text
+     * @param \Dpd\StructType\Text[] $text
      */
     public function __construct(array $text = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfText extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Text[]|null
+     * @return \Dpd\StructType\Text[]|null
      */
     public function getText()
     {
@@ -52,12 +52,12 @@ class ArrayOfText extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfTextTextItem) {
             // validation for constraint: itemType
-            if (!$arrayOfTextTextItem instanceof \StructType\Text) {
+            if (!$arrayOfTextTextItem instanceof \Dpd\StructType\Text) {
                 $invalidValues[] = is_object($arrayOfTextTextItem) ? get_class($arrayOfTextTextItem) : sprintf('%s(%s)', gettype($arrayOfTextTextItem), var_export($arrayOfTextTextItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Text property can only contain items of type \StructType\Text, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Text property can only contain items of type \Dpd\StructType\Text, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfText extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Text[] $text
-     * @return \ArrayType\ArrayOfText
+     * @param \Dpd\StructType\Text[] $text
+     * @return \Dpd\ArrayType\ArrayOfText
      */
     public function setText(array $text = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfText extends AbstractStructArrayBase
     /**
      * Add item to Text value
      * @throws \InvalidArgumentException
-     * @param \StructType\Text $item
-     * @return \ArrayType\ArrayOfText
+     * @param \Dpd\StructType\Text $item
+     * @return \Dpd\ArrayType\ArrayOfText
      */
-    public function addToText(\StructType\Text $item)
+    public function addToText(\Dpd\StructType\Text $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Text) {
-            throw new \InvalidArgumentException(sprintf('The Text property can only contain items of type \StructType\Text, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\Text) {
+            throw new \InvalidArgumentException(sprintf('The Text property can only contain items of type \Dpd\StructType\Text, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Text[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfText extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Text|null
+     * @return \Dpd\StructType\Text|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfText extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Text|null
+     * @return \Dpd\StructType\Text|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfText extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Text|null
+     * @return \Dpd\StructType\Text|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfText extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Text|null
+     * @return \Dpd\StructType\Text|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfText extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Text|null
+     * @return \Dpd\StructType\Text|null
      */
     public function offsetGet($offset)
     {

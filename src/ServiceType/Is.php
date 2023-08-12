@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace Dpd\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -13,13 +13,13 @@ class Is extends AbstractSoapClientBase
     /**
      * Sets the UserCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \StructType\UserCredentials $userCredentials
+     * @param \Dpd\StructType\UserCredentials $userCredentials
      * @param string $nameSpace
      * @param bool $mustUnderstand
      * @param string $actor
      * @return bool
      */
-    public function setSoapHeaderUserCredentials(\StructType\UserCredentials $userCredentials, $nameSpace = 'http://www.cargonet.software', $mustUnderstand = false, $actor = null)
+    public function setSoapHeaderUserCredentials(\Dpd\StructType\UserCredentials $userCredentials, $nameSpace = 'http://www.cargonet.software', $mustUnderstand = false, $actor = null)
     {
         return $this->setSoapHeader($nameSpace, 'UserCredentials', $userCredentials, $mustUnderstand, $actor);
     }
@@ -29,10 +29,10 @@ class Is extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\IsAlive $parameters
-     * @return \StructType\IsAliveResponse|bool
+     * @param \Dpd\StructType\IsAlive $parameters
+     * @return \Dpd\StructType\IsAliveResponse|bool
      */
-    public function isAlive(\StructType\IsAlive $parameters)
+    public function isAlive(\Dpd\StructType\IsAlive $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->isAlive($parameters));
@@ -47,16 +47,16 @@ class Is extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\IsPickableOnDate $parameters
-     * @return \StructType\IsPickableOnDateResponse|bool
+     * @param \Dpd\StructType\IsPickableOnDate $parameters
+     * @return \Dpd\StructType\IsPickableOnDateResponse|bool
      */
-    public function IsPickableOnDate(\StructType\IsPickableOnDate $parameters)
+    public function IsPickableOnDate(\Dpd\StructType\IsPickableOnDate $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->IsPickableOnDate($parameters));
@@ -71,16 +71,16 @@ class Is extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\IsDeliverableOnDate $parameters
-     * @return \StructType\IsDeliverableOnDateResponse|bool
+     * @param \Dpd\StructType\IsDeliverableOnDate $parameters
+     * @return \Dpd\StructType\IsDeliverableOnDateResponse|bool
      */
-    public function IsDeliverableOnDate(\StructType\IsDeliverableOnDate $parameters)
+    public function IsDeliverableOnDate(\Dpd\StructType\IsDeliverableOnDate $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->IsDeliverableOnDate($parameters));
@@ -93,7 +93,7 @@ class Is extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\IsAliveResponse|\StructType\IsDeliverableOnDateResponse|\StructType\IsPickableOnDateResponse
+     * @return \Dpd\StructType\IsAliveResponse|\Dpd\StructType\IsDeliverableOnDateResponse|\Dpd\StructType\IsPickableOnDateResponse
      */
     public function getResult()
     {

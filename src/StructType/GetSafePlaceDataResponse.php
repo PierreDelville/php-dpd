@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetSafePlaceDataResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetSafePlaceDataResponse
+     * @var \Dpd\StructType\GetSafePlaceDataResponse
      */
     public $GetSafePlaceDataResult;
     /**
@@ -23,17 +23,17 @@ class GetSafePlaceDataResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfBase64Binary
+     * @var \Dpd\ArrayType\ArrayOfBase64Binary
      */
     public $Images;
     /**
      * Constructor method for GetSafePlaceDataResponse
      * @uses GetSafePlaceDataResponse::setGetSafePlaceDataResult()
      * @uses GetSafePlaceDataResponse::setImages()
-     * @param \StructType\GetSafePlaceDataResponse $getSafePlaceDataResult
-     * @param \ArrayType\ArrayOfBase64Binary $images
+     * @param \Dpd\StructType\GetSafePlaceDataResponse $getSafePlaceDataResult
+     * @param \Dpd\ArrayType\ArrayOfBase64Binary $images
      */
-    public function __construct(\StructType\GetSafePlaceDataResponse $getSafePlaceDataResult = null, \ArrayType\ArrayOfBase64Binary $images = null)
+    public function __construct(\Dpd\StructType\GetSafePlaceDataResponse $getSafePlaceDataResult = null, \Dpd\ArrayType\ArrayOfBase64Binary $images = null)
     {
         $this
             ->setGetSafePlaceDataResult($getSafePlaceDataResult)
@@ -41,7 +41,7 @@ class GetSafePlaceDataResponse extends AbstractStructBase
     }
     /**
      * Get GetSafePlaceDataResult value
-     * @return \StructType\GetSafePlaceDataResponse|null
+     * @return \Dpd\StructType\GetSafePlaceDataResponse|null
      */
     public function getGetSafePlaceDataResult()
     {
@@ -49,17 +49,17 @@ class GetSafePlaceDataResponse extends AbstractStructBase
     }
     /**
      * Set GetSafePlaceDataResult value
-     * @param \StructType\GetSafePlaceDataResponse $getSafePlaceDataResult
-     * @return \StructType\GetSafePlaceDataResponse
+     * @param \Dpd\StructType\GetSafePlaceDataResponse $getSafePlaceDataResult
+     * @return \Dpd\StructType\GetSafePlaceDataResponse
      */
-    public function setGetSafePlaceDataResult(\StructType\GetSafePlaceDataResponse $getSafePlaceDataResult = null)
+    public function setGetSafePlaceDataResult(\Dpd\StructType\GetSafePlaceDataResponse $getSafePlaceDataResult = null)
     {
         $this->GetSafePlaceDataResult = $getSafePlaceDataResult;
         return $this;
     }
     /**
      * Get Images value
-     * @return \ArrayType\ArrayOfBase64Binary|null
+     * @return \Dpd\ArrayType\ArrayOfBase64Binary|null
      */
     public function getImages()
     {
@@ -67,10 +67,10 @@ class GetSafePlaceDataResponse extends AbstractStructBase
     }
     /**
      * Set Images value
-     * @param \ArrayType\ArrayOfBase64Binary $images
-     * @return \StructType\GetSafePlaceDataResponse
+     * @param \Dpd\ArrayType\ArrayOfBase64Binary $images
+     * @return \Dpd\StructType\GetSafePlaceDataResponse
      */
-    public function setImages(\ArrayType\ArrayOfBase64Binary $images = null)
+    public function setImages(\Dpd\ArrayType\ArrayOfBase64Binary $images = null)
     {
         $this->Images = $images;
         return $this;

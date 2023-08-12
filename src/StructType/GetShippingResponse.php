@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetShippingResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetShippingResponse
+     * @var \Dpd\StructType\GetShippingResponse
      */
     public $GetShippingResult;
     /**
@@ -23,17 +23,17 @@ class GetShippingResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfShipping
+     * @var \Dpd\ArrayType\ArrayOfShipping
      */
     public $shippings;
     /**
      * Constructor method for GetShippingResponse
      * @uses GetShippingResponse::setGetShippingResult()
      * @uses GetShippingResponse::setShippings()
-     * @param \StructType\GetShippingResponse $getShippingResult
-     * @param \ArrayType\ArrayOfShipping $shippings
+     * @param \Dpd\StructType\GetShippingResponse $getShippingResult
+     * @param \Dpd\ArrayType\ArrayOfShipping $shippings
      */
-    public function __construct(\StructType\GetShippingResponse $getShippingResult = null, \ArrayType\ArrayOfShipping $shippings = null)
+    public function __construct(\Dpd\StructType\GetShippingResponse $getShippingResult = null, \Dpd\ArrayType\ArrayOfShipping $shippings = null)
     {
         $this
             ->setGetShippingResult($getShippingResult)
@@ -41,7 +41,7 @@ class GetShippingResponse extends AbstractStructBase
     }
     /**
      * Get GetShippingResult value
-     * @return \StructType\GetShippingResponse|null
+     * @return \Dpd\StructType\GetShippingResponse|null
      */
     public function getGetShippingResult()
     {
@@ -49,17 +49,17 @@ class GetShippingResponse extends AbstractStructBase
     }
     /**
      * Set GetShippingResult value
-     * @param \StructType\GetShippingResponse $getShippingResult
-     * @return \StructType\GetShippingResponse
+     * @param \Dpd\StructType\GetShippingResponse $getShippingResult
+     * @return \Dpd\StructType\GetShippingResponse
      */
-    public function setGetShippingResult(\StructType\GetShippingResponse $getShippingResult = null)
+    public function setGetShippingResult(\Dpd\StructType\GetShippingResponse $getShippingResult = null)
     {
         $this->GetShippingResult = $getShippingResult;
         return $this;
     }
     /**
      * Get shippings value
-     * @return \ArrayType\ArrayOfShipping|null
+     * @return \Dpd\ArrayType\ArrayOfShipping|null
      */
     public function getShippings()
     {
@@ -67,10 +67,10 @@ class GetShippingResponse extends AbstractStructBase
     }
     /**
      * Set shippings value
-     * @param \ArrayType\ArrayOfShipping $shippings
-     * @return \StructType\GetShippingResponse
+     * @param \Dpd\ArrayType\ArrayOfShipping $shippings
+     * @return \Dpd\StructType\GetShippingResponse
      */
-    public function setShippings(\ArrayType\ArrayOfShipping $shippings = null)
+    public function setShippings(\Dpd\ArrayType\ArrayOfShipping $shippings = null)
     {
         $this->shippings = $shippings;
         return $this;

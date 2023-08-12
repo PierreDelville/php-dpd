@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class NumberRangeResponse extends NumberRangeBaseResponse
     /**
      * Set CountryCode value
      * @param int $countryCode
-     * @return \StructType\NumberRangeResponse
+     * @return \Dpd\StructType\NumberRangeResponse
      */
     public function setCountryCode($countryCode = null)
     {
@@ -72,7 +72,7 @@ class NumberRangeResponse extends NumberRangeBaseResponse
     /**
      * Set CenterNumber value
      * @param int $centerNumber
-     * @return \StructType\NumberRangeResponse
+     * @return \Dpd\StructType\NumberRangeResponse
      */
     public function setCenterNumber($centerNumber = null)
     {

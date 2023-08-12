@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -87,7 +87,7 @@ class ClsTrace extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfClsTraceDetails
+     * @var \Dpd\ArrayType\ArrayOfClsTraceDetails
      */
     public $Details;
     /**
@@ -111,9 +111,9 @@ class ClsTrace extends AbstractStructBase
      * @param string $user
      * @param string $remark
      * @param string $info
-     * @param \ArrayType\ArrayOfClsTraceDetails $details
+     * @param \Dpd\ArrayType\ArrayOfClsTraceDetails $details
      */
-    public function __construct($statusNumber = null, $scanDate = null, $scanTime = null, $statusDescription = null, $centerName = null, $centerNumber = null, $user = null, $remark = null, $info = null, \ArrayType\ArrayOfClsTraceDetails $details = null)
+    public function __construct($statusNumber = null, $scanDate = null, $scanTime = null, $statusDescription = null, $centerName = null, $centerNumber = null, $user = null, $remark = null, $info = null, \Dpd\ArrayType\ArrayOfClsTraceDetails $details = null)
     {
         $this
             ->setStatusNumber($statusNumber)
@@ -138,7 +138,7 @@ class ClsTrace extends AbstractStructBase
     /**
      * Set StatusNumber value
      * @param int $statusNumber
-     * @return \StructType\ClsTrace
+     * @return \Dpd\StructType\ClsTrace
      */
     public function setStatusNumber($statusNumber = null)
     {
@@ -160,7 +160,7 @@ class ClsTrace extends AbstractStructBase
     /**
      * Set ScanDate value
      * @param string $scanDate
-     * @return \StructType\ClsTrace
+     * @return \Dpd\StructType\ClsTrace
      */
     public function setScanDate($scanDate = null)
     {
@@ -182,7 +182,7 @@ class ClsTrace extends AbstractStructBase
     /**
      * Set ScanTime value
      * @param string $scanTime
-     * @return \StructType\ClsTrace
+     * @return \Dpd\StructType\ClsTrace
      */
     public function setScanTime($scanTime = null)
     {
@@ -204,7 +204,7 @@ class ClsTrace extends AbstractStructBase
     /**
      * Set StatusDescription value
      * @param string $statusDescription
-     * @return \StructType\ClsTrace
+     * @return \Dpd\StructType\ClsTrace
      */
     public function setStatusDescription($statusDescription = null)
     {
@@ -226,7 +226,7 @@ class ClsTrace extends AbstractStructBase
     /**
      * Set CenterName value
      * @param string $centerName
-     * @return \StructType\ClsTrace
+     * @return \Dpd\StructType\ClsTrace
      */
     public function setCenterName($centerName = null)
     {
@@ -248,7 +248,7 @@ class ClsTrace extends AbstractStructBase
     /**
      * Set CenterNumber value
      * @param string $centerNumber
-     * @return \StructType\ClsTrace
+     * @return \Dpd\StructType\ClsTrace
      */
     public function setCenterNumber($centerNumber = null)
     {
@@ -270,7 +270,7 @@ class ClsTrace extends AbstractStructBase
     /**
      * Set User value
      * @param string $user
-     * @return \StructType\ClsTrace
+     * @return \Dpd\StructType\ClsTrace
      */
     public function setUser($user = null)
     {
@@ -292,7 +292,7 @@ class ClsTrace extends AbstractStructBase
     /**
      * Set Remark value
      * @param string $remark
-     * @return \StructType\ClsTrace
+     * @return \Dpd\StructType\ClsTrace
      */
     public function setRemark($remark = null)
     {
@@ -314,7 +314,7 @@ class ClsTrace extends AbstractStructBase
     /**
      * Set Info value
      * @param string $info
-     * @return \StructType\ClsTrace
+     * @return \Dpd\StructType\ClsTrace
      */
     public function setInfo($info = null)
     {
@@ -327,7 +327,7 @@ class ClsTrace extends AbstractStructBase
     }
     /**
      * Get Details value
-     * @return \ArrayType\ArrayOfClsTraceDetails|null
+     * @return \Dpd\ArrayType\ArrayOfClsTraceDetails|null
      */
     public function getDetails()
     {
@@ -335,10 +335,10 @@ class ClsTrace extends AbstractStructBase
     }
     /**
      * Set Details value
-     * @param \ArrayType\ArrayOfClsTraceDetails $details
-     * @return \StructType\ClsTrace
+     * @param \Dpd\ArrayType\ArrayOfClsTraceDetails $details
+     * @return \Dpd\StructType\ClsTrace
      */
-    public function setDetails(\ArrayType\ArrayOfClsTraceDetails $details = null)
+    public function setDetails(\Dpd\ArrayType\ArrayOfClsTraceDetails $details = null)
     {
         $this->Details = $details;
         return $this;

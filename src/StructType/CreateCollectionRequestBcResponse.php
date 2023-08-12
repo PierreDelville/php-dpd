@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreateCollectionRequestBcResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfShipmentBc
+     * @var \Dpd\ArrayType\ArrayOfShipmentBc
      */
     public $CreateCollectionRequestBcResult;
     /**
      * Constructor method for CreateCollectionRequestBcResponse
      * @uses CreateCollectionRequestBcResponse::setCreateCollectionRequestBcResult()
-     * @param \ArrayType\ArrayOfShipmentBc $createCollectionRequestBcResult
+     * @param \Dpd\ArrayType\ArrayOfShipmentBc $createCollectionRequestBcResult
      */
-    public function __construct(\ArrayType\ArrayOfShipmentBc $createCollectionRequestBcResult = null)
+    public function __construct(\Dpd\ArrayType\ArrayOfShipmentBc $createCollectionRequestBcResult = null)
     {
         $this
             ->setCreateCollectionRequestBcResult($createCollectionRequestBcResult);
     }
     /**
      * Get CreateCollectionRequestBcResult value
-     * @return \ArrayType\ArrayOfShipmentBc|null
+     * @return \Dpd\ArrayType\ArrayOfShipmentBc|null
      */
     public function getCreateCollectionRequestBcResult()
     {
@@ -38,10 +38,10 @@ class CreateCollectionRequestBcResponse extends AbstractStructBase
     }
     /**
      * Set CreateCollectionRequestBcResult value
-     * @param \ArrayType\ArrayOfShipmentBc $createCollectionRequestBcResult
-     * @return \StructType\CreateCollectionRequestBcResponse
+     * @param \Dpd\ArrayType\ArrayOfShipmentBc $createCollectionRequestBcResult
+     * @return \Dpd\StructType\CreateCollectionRequestBcResponse
      */
-    public function setCreateCollectionRequestBcResult(\ArrayType\ArrayOfShipmentBc $createCollectionRequestBcResult = null)
+    public function setCreateCollectionRequestBcResult(\Dpd\ArrayType\ArrayOfShipmentBc $createCollectionRequestBcResult = null)
     {
         $this->CreateCollectionRequestBcResult = $createCollectionRequestBcResult;
         return $this;

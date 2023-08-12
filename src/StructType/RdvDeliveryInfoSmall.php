@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -83,7 +83,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     /**
      * Set ContactName value
      * @param string $contactName
-     * @return \StructType\RdvDeliveryInfoSmall
+     * @return \Dpd\StructType\RdvDeliveryInfoSmall
      */
     public function setContactName($contactName = null)
     {
@@ -105,7 +105,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     /**
      * Set Digicode1 value
      * @param string $digicode1
-     * @return \StructType\RdvDeliveryInfoSmall
+     * @return \Dpd\StructType\RdvDeliveryInfoSmall
      */
     public function setDigicode1($digicode1 = null)
     {
@@ -127,7 +127,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     /**
      * Set Digicode2 value
      * @param string $digicode2
-     * @return \StructType\RdvDeliveryInfoSmall
+     * @return \Dpd\StructType\RdvDeliveryInfoSmall
      */
     public function setDigicode2($digicode2 = null)
     {
@@ -149,7 +149,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     /**
      * Set IntercomID value
      * @param string $intercomID
-     * @return \StructType\RdvDeliveryInfoSmall
+     * @return \Dpd\StructType\RdvDeliveryInfoSmall
      */
     public function setIntercomID($intercomID = null)
     {
@@ -171,7 +171,7 @@ class RdvDeliveryInfoSmall extends AbstractStructBase
     /**
      * Set Remark value
      * @param string $remark
-     * @return \StructType\RdvDeliveryInfoSmall
+     * @return \Dpd\StructType\RdvDeliveryInfoSmall
      */
     public function setRemark($remark = null)
     {

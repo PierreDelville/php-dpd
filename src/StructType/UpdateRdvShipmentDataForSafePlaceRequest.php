@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RdvDeliveryInfoSmall
+     * @var \Dpd\StructType\RdvDeliveryInfoSmall
      */
     public $DeliveryInfo;
     /**
@@ -23,7 +23,7 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RdvEsnInfo
+     * @var \Dpd\StructType\RdvEsnInfo
      */
     public $EsnInfo;
     /**
@@ -39,11 +39,11 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
      * @uses UpdateRdvShipmentDataForSafePlaceRequest::setDeliveryInfo()
      * @uses UpdateRdvShipmentDataForSafePlaceRequest::setEsnInfo()
      * @uses UpdateRdvShipmentDataForSafePlaceRequest::setImage()
-     * @param \StructType\RdvDeliveryInfoSmall $deliveryInfo
-     * @param \StructType\RdvEsnInfo $esnInfo
+     * @param \Dpd\StructType\RdvDeliveryInfoSmall $deliveryInfo
+     * @param \Dpd\StructType\RdvEsnInfo $esnInfo
      * @param string $image
      */
-    public function __construct(\StructType\RdvDeliveryInfoSmall $deliveryInfo = null, \StructType\RdvEsnInfo $esnInfo = null, $image = null)
+    public function __construct(\Dpd\StructType\RdvDeliveryInfoSmall $deliveryInfo = null, \Dpd\StructType\RdvEsnInfo $esnInfo = null, $image = null)
     {
         $this
             ->setDeliveryInfo($deliveryInfo)
@@ -52,7 +52,7 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
     }
     /**
      * Get DeliveryInfo value
-     * @return \StructType\RdvDeliveryInfoSmall|null
+     * @return \Dpd\StructType\RdvDeliveryInfoSmall|null
      */
     public function getDeliveryInfo()
     {
@@ -60,17 +60,17 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
     }
     /**
      * Set DeliveryInfo value
-     * @param \StructType\RdvDeliveryInfoSmall $deliveryInfo
-     * @return \StructType\UpdateRdvShipmentDataForSafePlaceRequest
+     * @param \Dpd\StructType\RdvDeliveryInfoSmall $deliveryInfo
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceRequest
      */
-    public function setDeliveryInfo(\StructType\RdvDeliveryInfoSmall $deliveryInfo = null)
+    public function setDeliveryInfo(\Dpd\StructType\RdvDeliveryInfoSmall $deliveryInfo = null)
     {
         $this->DeliveryInfo = $deliveryInfo;
         return $this;
     }
     /**
      * Get EsnInfo value
-     * @return \StructType\RdvEsnInfo|null
+     * @return \Dpd\StructType\RdvEsnInfo|null
      */
     public function getEsnInfo()
     {
@@ -78,10 +78,10 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
     }
     /**
      * Set EsnInfo value
-     * @param \StructType\RdvEsnInfo $esnInfo
-     * @return \StructType\UpdateRdvShipmentDataForSafePlaceRequest
+     * @param \Dpd\StructType\RdvEsnInfo $esnInfo
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceRequest
      */
-    public function setEsnInfo(\StructType\RdvEsnInfo $esnInfo = null)
+    public function setEsnInfo(\Dpd\StructType\RdvEsnInfo $esnInfo = null)
     {
         $this->EsnInfo = $esnInfo;
         return $this;
@@ -97,7 +97,7 @@ class UpdateRdvShipmentDataForSafePlaceRequest extends UpdateRdvShipmentData
     /**
      * Set Image value
      * @param string $image
-     * @return \StructType\UpdateRdvShipmentDataForSafePlaceRequest
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceRequest
      */
     public function setImage($image = null)
     {

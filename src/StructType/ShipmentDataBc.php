@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ShipmentDataBc extends ShipmentDataBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\BcDataExt
+     * @var \Dpd\StructType\BcDataExt
      */
     public $shipment;
     /**
@@ -23,17 +23,17 @@ class ShipmentDataBc extends ShipmentDataBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\BcDataExt
+     * @var \Dpd\StructType\BcDataExt
      */
     public $shipmentRetour;
     /**
      * Constructor method for ShipmentDataBc
      * @uses ShipmentDataBc::setShipment()
      * @uses ShipmentDataBc::setShipmentRetour()
-     * @param \StructType\BcDataExt $shipment
-     * @param \StructType\BcDataExt $shipmentRetour
+     * @param \Dpd\StructType\BcDataExt $shipment
+     * @param \Dpd\StructType\BcDataExt $shipmentRetour
      */
-    public function __construct(\StructType\BcDataExt $shipment = null, \StructType\BcDataExt $shipmentRetour = null)
+    public function __construct(\Dpd\StructType\BcDataExt $shipment = null, \Dpd\StructType\BcDataExt $shipmentRetour = null)
     {
         $this
             ->setShipment($shipment)
@@ -41,7 +41,7 @@ class ShipmentDataBc extends ShipmentDataBase
     }
     /**
      * Get shipment value
-     * @return \StructType\BcDataExt|null
+     * @return \Dpd\StructType\BcDataExt|null
      */
     public function getShipment()
     {
@@ -49,17 +49,17 @@ class ShipmentDataBc extends ShipmentDataBase
     }
     /**
      * Set shipment value
-     * @param \StructType\BcDataExt $shipment
-     * @return \StructType\ShipmentDataBc
+     * @param \Dpd\StructType\BcDataExt $shipment
+     * @return \Dpd\StructType\ShipmentDataBc
      */
-    public function setShipment(\StructType\BcDataExt $shipment = null)
+    public function setShipment(\Dpd\StructType\BcDataExt $shipment = null)
     {
         $this->shipment = $shipment;
         return $this;
     }
     /**
      * Get shipmentRetour value
-     * @return \StructType\BcDataExt|null
+     * @return \Dpd\StructType\BcDataExt|null
      */
     public function getShipmentRetour()
     {
@@ -67,10 +67,10 @@ class ShipmentDataBc extends ShipmentDataBase
     }
     /**
      * Set shipmentRetour value
-     * @param \StructType\BcDataExt $shipmentRetour
-     * @return \StructType\ShipmentDataBc
+     * @param \Dpd\StructType\BcDataExt $shipmentRetour
+     * @return \Dpd\StructType\ShipmentDataBc
      */
-    public function setShipmentRetour(\StructType\BcDataExt $shipmentRetour = null)
+    public function setShipmentRetour(\Dpd\StructType\BcDataExt $shipmentRetour = null)
     {
         $this->shipmentRetour = $shipmentRetour;
         return $this;

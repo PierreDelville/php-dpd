@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class ShipmentRequestDefaultData extends ShipmentRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\StdServices
+     * @var \Dpd\StructType\StdServices
      */
     public $services;
     /**
      * Constructor method for ShipmentRequestDefaultData
      * @uses ShipmentRequestDefaultData::setServices()
-     * @param \StructType\StdServices $services
+     * @param \Dpd\StructType\StdServices $services
      */
-    public function __construct(\StructType\StdServices $services = null)
+    public function __construct(\Dpd\StructType\StdServices $services = null)
     {
         $this
             ->setServices($services);
     }
     /**
      * Get services value
-     * @return \StructType\StdServices|null
+     * @return \Dpd\StructType\StdServices|null
      */
     public function getServices()
     {
@@ -38,10 +38,10 @@ class ShipmentRequestDefaultData extends ShipmentRequestBase
     }
     /**
      * Set services value
-     * @param \StructType\StdServices $services
-     * @return \StructType\ShipmentRequestDefaultData
+     * @param \Dpd\StructType\StdServices $services
+     * @return \Dpd\StructType\ShipmentRequestDefaultData
      */
-    public function setServices(\StructType\StdServices $services = null)
+    public function setServices(\Dpd\StructType\StdServices $services = null)
     {
         $this->services = $services;
         return $this;

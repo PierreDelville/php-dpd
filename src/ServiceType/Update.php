@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace Dpd\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -13,13 +13,13 @@ class Update extends AbstractSoapClientBase
     /**
      * Sets the UserCredentials SoapHeader param
      * @uses AbstractSoapClientBase::setSoapHeader()
-     * @param \StructType\UserCredentials $userCredentials
+     * @param \Dpd\StructType\UserCredentials $userCredentials
      * @param string $nameSpace
      * @param bool $mustUnderstand
      * @param string $actor
      * @return bool
      */
-    public function setSoapHeaderUserCredentials(\StructType\UserCredentials $userCredentials, $nameSpace = 'http://www.cargonet.software', $mustUnderstand = false, $actor = null)
+    public function setSoapHeaderUserCredentials(\Dpd\StructType\UserCredentials $userCredentials, $nameSpace = 'http://www.cargonet.software', $mustUnderstand = false, $actor = null)
     {
         return $this->setSoapHeader($nameSpace, 'UserCredentials', $userCredentials, $mustUnderstand, $actor);
     }
@@ -28,16 +28,16 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\UpdateServiceNotice $parameters
-     * @return \StructType\UpdateServiceNoticeResponse|bool
+     * @param \Dpd\StructType\UpdateServiceNotice $parameters
+     * @return \Dpd\StructType\UpdateServiceNoticeResponse|bool
      */
-    public function UpdateServiceNotice(\StructType\UpdateServiceNotice $parameters)
+    public function UpdateServiceNotice(\Dpd\StructType\UpdateServiceNotice $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->UpdateServiceNotice($parameters));
@@ -52,16 +52,16 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\UpdateRdvShipmentDataForShop $parameters
-     * @return \StructType\UpdateRdvShipmentDataForShopResponse|bool
+     * @param \Dpd\StructType\UpdateRdvShipmentDataForShop $parameters
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForShopResponse|bool
      */
-    public function UpdateRdvShipmentDataForShop(\StructType\UpdateRdvShipmentDataForShop $parameters)
+    public function UpdateRdvShipmentDataForShop(\Dpd\StructType\UpdateRdvShipmentDataForShop $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->UpdateRdvShipmentDataForShop($parameters));
@@ -77,16 +77,16 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\UpdateRdvShipmentDataForAgencyPickup $parameters
-     * @return \StructType\UpdateRdvShipmentDataForAgencyPickupResponse|bool
+     * @param \Dpd\StructType\UpdateRdvShipmentDataForAgencyPickup $parameters
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForAgencyPickupResponse|bool
      */
-    public function UpdateRdvShipmentDataForAgencyPickup(\StructType\UpdateRdvShipmentDataForAgencyPickup $parameters)
+    public function UpdateRdvShipmentDataForAgencyPickup(\Dpd\StructType\UpdateRdvShipmentDataForAgencyPickup $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->UpdateRdvShipmentDataForAgencyPickup($parameters));
@@ -101,16 +101,16 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\UpdateRdvShipmentData $parameters
-     * @return \StructType\UpdateRdvShipmentDataResponse|bool
+     * @param \Dpd\StructType\UpdateRdvShipmentData $parameters
+     * @return \Dpd\StructType\UpdateRdvShipmentDataResponse|bool
      */
-    public function UpdateRdvShipmentData(\StructType\UpdateRdvShipmentData $parameters)
+    public function UpdateRdvShipmentData(\Dpd\StructType\UpdateRdvShipmentData $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->UpdateRdvShipmentData($parameters));
@@ -125,16 +125,16 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\UpdateRdvShipmentDataForPredict $parameters
-     * @return \StructType\UpdateRdvShipmentDataForPredictResponse|bool
+     * @param \Dpd\StructType\UpdateRdvShipmentDataForPredict $parameters
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForPredictResponse|bool
      */
-    public function UpdateRdvShipmentDataForPredict(\StructType\UpdateRdvShipmentDataForPredict $parameters)
+    public function UpdateRdvShipmentDataForPredict(\Dpd\StructType\UpdateRdvShipmentDataForPredict $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->UpdateRdvShipmentDataForPredict($parameters));
@@ -149,16 +149,16 @@ class Update extends AbstractSoapClientBase
      * Meta information extracted from the WSDL
      * - SOAPHeaderNames: UserCredentials
      * - SOAPHeaderNamespaces: http://www.cargonet.software
-     * - SOAPHeaderTypes: \StructType\UserCredentials
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
      * - SOAPHeaders: required
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\UpdateRdvShipmentDataForSafePlace $parameters
-     * @return \StructType\UpdateRdvShipmentDataForSafePlaceResponse|bool
+     * @param \Dpd\StructType\UpdateRdvShipmentDataForSafePlace $parameters
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForSafePlaceResponse|bool
      */
-    public function UpdateRdvShipmentDataForSafePlace(\StructType\UpdateRdvShipmentDataForSafePlace $parameters)
+    public function UpdateRdvShipmentDataForSafePlace(\Dpd\StructType\UpdateRdvShipmentDataForSafePlace $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->UpdateRdvShipmentDataForSafePlace($parameters));
@@ -171,7 +171,7 @@ class Update extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\UpdateRdvShipmentDataForAgencyPickupResponse|\StructType\UpdateRdvShipmentDataForPredictResponse|\StructType\UpdateRdvShipmentDataForSafePlaceResponse|\StructType\UpdateRdvShipmentDataForShopResponse|\StructType\UpdateRdvShipmentDataResponse|\StructType\UpdateServiceNoticeResponse
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForAgencyPickupResponse|\Dpd\StructType\UpdateRdvShipmentDataForPredictResponse|\Dpd\StructType\UpdateRdvShipmentDataForSafePlaceResponse|\Dpd\StructType\UpdateRdvShipmentDataForShopResponse|\Dpd\StructType\UpdateRdvShipmentDataResponse|\Dpd\StructType\UpdateServiceNoticeResponse
      */
     public function getResult()
     {

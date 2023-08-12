@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class ReverseReturn extends ReverseReturnBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Parcel
+     * @var \Dpd\StructType\Parcel
      */
     public $original_parcel;
     /**
      * Constructor method for ReverseReturn
      * @uses ReverseReturn::setOriginal_parcel()
-     * @param \StructType\Parcel $original_parcel
+     * @param \Dpd\StructType\Parcel $original_parcel
      */
-    public function __construct(\StructType\Parcel $original_parcel = null)
+    public function __construct(\Dpd\StructType\Parcel $original_parcel = null)
     {
         $this
             ->setOriginal_parcel($original_parcel);
     }
     /**
      * Get original_parcel value
-     * @return \StructType\Parcel|null
+     * @return \Dpd\StructType\Parcel|null
      */
     public function getOriginal_parcel()
     {
@@ -38,10 +38,10 @@ class ReverseReturn extends ReverseReturnBase
     }
     /**
      * Set original_parcel value
-     * @param \StructType\Parcel $original_parcel
-     * @return \StructType\ReverseReturn
+     * @param \Dpd\StructType\Parcel $original_parcel
+     * @return \Dpd\StructType\ReverseReturn
      */
-    public function setOriginal_parcel(\StructType\Parcel $original_parcel = null)
+    public function setOriginal_parcel(\Dpd\StructType\Parcel $original_parcel = null)
     {
         $this->original_parcel = $original_parcel;
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetLabel extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ReceiveLabelRequest
+     * @var \Dpd\StructType\ReceiveLabelRequest
      */
     public $request;
     /**
      * Constructor method for GetLabel
      * @uses GetLabel::setRequest()
-     * @param \StructType\ReceiveLabelRequest $request
+     * @param \Dpd\StructType\ReceiveLabelRequest $request
      */
-    public function __construct(\StructType\ReceiveLabelRequest $request = null)
+    public function __construct(\Dpd\StructType\ReceiveLabelRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\ReceiveLabelRequest|null
+     * @return \Dpd\StructType\ReceiveLabelRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetLabel extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\ReceiveLabelRequest $request
-     * @return \StructType\GetLabel
+     * @param \Dpd\StructType\ReceiveLabelRequest $request
+     * @return \Dpd\StructType\GetLabel
      */
-    public function setRequest(\StructType\ReceiveLabelRequest $request = null)
+    public function setRequest(\Dpd\StructType\ReceiveLabelRequest $request = null)
     {
         $this->request = $request;
         return $this;

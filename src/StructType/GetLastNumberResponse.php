@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetLastNumberResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetLastNumberResponse
+     * @var \Dpd\StructType\GetLastNumberResponse
      */
     public $GetLastNumberResult;
     /**
@@ -23,17 +23,17 @@ class GetLastNumberResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfLong
+     * @var \Dpd\ArrayType\ArrayOfLong
      */
     public $entries;
     /**
      * Constructor method for GetLastNumberResponse
      * @uses GetLastNumberResponse::setGetLastNumberResult()
      * @uses GetLastNumberResponse::setEntries()
-     * @param \StructType\GetLastNumberResponse $getLastNumberResult
-     * @param \ArrayType\ArrayOfLong $entries
+     * @param \Dpd\StructType\GetLastNumberResponse $getLastNumberResult
+     * @param \Dpd\ArrayType\ArrayOfLong $entries
      */
-    public function __construct(\StructType\GetLastNumberResponse $getLastNumberResult = null, \ArrayType\ArrayOfLong $entries = null)
+    public function __construct(\Dpd\StructType\GetLastNumberResponse $getLastNumberResult = null, \Dpd\ArrayType\ArrayOfLong $entries = null)
     {
         $this
             ->setGetLastNumberResult($getLastNumberResult)
@@ -41,7 +41,7 @@ class GetLastNumberResponse extends AbstractStructBase
     }
     /**
      * Get GetLastNumberResult value
-     * @return \StructType\GetLastNumberResponse|null
+     * @return \Dpd\StructType\GetLastNumberResponse|null
      */
     public function getGetLastNumberResult()
     {
@@ -49,17 +49,17 @@ class GetLastNumberResponse extends AbstractStructBase
     }
     /**
      * Set GetLastNumberResult value
-     * @param \StructType\GetLastNumberResponse $getLastNumberResult
-     * @return \StructType\GetLastNumberResponse
+     * @param \Dpd\StructType\GetLastNumberResponse $getLastNumberResult
+     * @return \Dpd\StructType\GetLastNumberResponse
      */
-    public function setGetLastNumberResult(\StructType\GetLastNumberResponse $getLastNumberResult = null)
+    public function setGetLastNumberResult(\Dpd\StructType\GetLastNumberResponse $getLastNumberResult = null)
     {
         $this->GetLastNumberResult = $getLastNumberResult;
         return $this;
     }
     /**
      * Get entries value
-     * @return \ArrayType\ArrayOfLong|null
+     * @return \Dpd\ArrayType\ArrayOfLong|null
      */
     public function getEntries()
     {
@@ -67,10 +67,10 @@ class GetLastNumberResponse extends AbstractStructBase
     }
     /**
      * Set entries value
-     * @param \ArrayType\ArrayOfLong $entries
-     * @return \StructType\GetLastNumberResponse
+     * @param \Dpd\ArrayType\ArrayOfLong $entries
+     * @return \Dpd\StructType\GetLastNumberResponse
      */
-    public function setEntries(\ArrayType\ArrayOfLong $entries = null)
+    public function setEntries(\Dpd\ArrayType\ArrayOfLong $entries = null)
     {
         $this->entries = $entries;
         return $this;

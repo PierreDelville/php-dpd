@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class MultiServices extends ServiceBaseList
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Consolidation
+     * @var \Dpd\StructType\Consolidation
      */
     public $consolidation;
     /**
@@ -23,7 +23,7 @@ class MultiServices extends ServiceBaseList
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Contact
+     * @var \Dpd\StructType\Contact
      */
     public $contact;
     /**
@@ -31,7 +31,7 @@ class MultiServices extends ServiceBaseList
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\PickupData
+     * @var \Dpd\StructType\PickupData
      */
     public $pickupAtCustomer;
     /**
@@ -39,11 +39,11 @@ class MultiServices extends ServiceBaseList
      * @uses MultiServices::setConsolidation()
      * @uses MultiServices::setContact()
      * @uses MultiServices::setPickupAtCustomer()
-     * @param \StructType\Consolidation $consolidation
-     * @param \StructType\Contact $contact
-     * @param \StructType\PickupData $pickupAtCustomer
+     * @param \Dpd\StructType\Consolidation $consolidation
+     * @param \Dpd\StructType\Contact $contact
+     * @param \Dpd\StructType\PickupData $pickupAtCustomer
      */
-    public function __construct(\StructType\Consolidation $consolidation = null, \StructType\Contact $contact = null, \StructType\PickupData $pickupAtCustomer = null)
+    public function __construct(\Dpd\StructType\Consolidation $consolidation = null, \Dpd\StructType\Contact $contact = null, \Dpd\StructType\PickupData $pickupAtCustomer = null)
     {
         $this
             ->setConsolidation($consolidation)
@@ -52,7 +52,7 @@ class MultiServices extends ServiceBaseList
     }
     /**
      * Get consolidation value
-     * @return \StructType\Consolidation|null
+     * @return \Dpd\StructType\Consolidation|null
      */
     public function getConsolidation()
     {
@@ -60,17 +60,17 @@ class MultiServices extends ServiceBaseList
     }
     /**
      * Set consolidation value
-     * @param \StructType\Consolidation $consolidation
-     * @return \StructType\MultiServices
+     * @param \Dpd\StructType\Consolidation $consolidation
+     * @return \Dpd\StructType\MultiServices
      */
-    public function setConsolidation(\StructType\Consolidation $consolidation = null)
+    public function setConsolidation(\Dpd\StructType\Consolidation $consolidation = null)
     {
         $this->consolidation = $consolidation;
         return $this;
     }
     /**
      * Get contact value
-     * @return \StructType\Contact|null
+     * @return \Dpd\StructType\Contact|null
      */
     public function getContact()
     {
@@ -78,17 +78,17 @@ class MultiServices extends ServiceBaseList
     }
     /**
      * Set contact value
-     * @param \StructType\Contact $contact
-     * @return \StructType\MultiServices
+     * @param \Dpd\StructType\Contact $contact
+     * @return \Dpd\StructType\MultiServices
      */
-    public function setContact(\StructType\Contact $contact = null)
+    public function setContact(\Dpd\StructType\Contact $contact = null)
     {
         $this->contact = $contact;
         return $this;
     }
     /**
      * Get pickupAtCustomer value
-     * @return \StructType\PickupData|null
+     * @return \Dpd\StructType\PickupData|null
      */
     public function getPickupAtCustomer()
     {
@@ -96,10 +96,10 @@ class MultiServices extends ServiceBaseList
     }
     /**
      * Set pickupAtCustomer value
-     * @param \StructType\PickupData $pickupAtCustomer
-     * @return \StructType\MultiServices
+     * @param \Dpd\StructType\PickupData $pickupAtCustomer
+     * @return \Dpd\StructType\MultiServices
      */
-    public function setPickupAtCustomer(\StructType\PickupData $pickupAtCustomer = null)
+    public function setPickupAtCustomer(\Dpd\StructType\PickupData $pickupAtCustomer = null)
     {
         $this->pickupAtCustomer = $pickupAtCustomer;
         return $this;

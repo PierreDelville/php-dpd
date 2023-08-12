@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class Location extends AbstractStructBase
     /**
      * Set TimeStamp value
      * @param string $timeStamp
-     * @return \StructType\Location
+     * @return \Dpd\StructType\Location
      */
     public function setTimeStamp($timeStamp = null)
     {
@@ -83,7 +83,7 @@ class Location extends AbstractStructBase
     /**
      * Set Latitude value
      * @param float $latitude
-     * @return \StructType\Location
+     * @return \Dpd\StructType\Location
      */
     public function setLatitude($latitude = null)
     {
@@ -105,7 +105,7 @@ class Location extends AbstractStructBase
     /**
      * Set Longitude value
      * @param float $longitude
-     * @return \StructType\Location
+     * @return \Dpd\StructType\Location
      */
     public function setLongitude($longitude = null)
     {

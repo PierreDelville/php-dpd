@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetCustomerProfileRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfCustomer
+     * @var \Dpd\ArrayType\ArrayOfCustomer
      */
     public $Customers;
     /**
@@ -30,10 +30,10 @@ class GetCustomerProfileRequest extends AbstractStructBase
      * Constructor method for GetCustomerProfileRequest
      * @uses GetCustomerProfileRequest::setCustomers()
      * @uses GetCustomerProfileRequest::setLanguage()
-     * @param \ArrayType\ArrayOfCustomer $customers
+     * @param \Dpd\ArrayType\ArrayOfCustomer $customers
      * @param string $language
      */
-    public function __construct(\ArrayType\ArrayOfCustomer $customers = null, $language = null)
+    public function __construct(\Dpd\ArrayType\ArrayOfCustomer $customers = null, $language = null)
     {
         $this
             ->setCustomers($customers)
@@ -41,7 +41,7 @@ class GetCustomerProfileRequest extends AbstractStructBase
     }
     /**
      * Get Customers value
-     * @return \ArrayType\ArrayOfCustomer|null
+     * @return \Dpd\ArrayType\ArrayOfCustomer|null
      */
     public function getCustomers()
     {
@@ -49,10 +49,10 @@ class GetCustomerProfileRequest extends AbstractStructBase
     }
     /**
      * Set Customers value
-     * @param \ArrayType\ArrayOfCustomer $customers
-     * @return \StructType\GetCustomerProfileRequest
+     * @param \Dpd\ArrayType\ArrayOfCustomer $customers
+     * @return \Dpd\StructType\GetCustomerProfileRequest
      */
-    public function setCustomers(\ArrayType\ArrayOfCustomer $customers = null)
+    public function setCustomers(\Dpd\ArrayType\ArrayOfCustomer $customers = null)
     {
         $this->Customers = $customers;
         return $this;
@@ -68,7 +68,7 @@ class GetCustomerProfileRequest extends AbstractStructBase
     /**
      * Set Language value
      * @param string $language
-     * @return \StructType\GetCustomerProfileRequest
+     * @return \Dpd\StructType\GetCustomerProfileRequest
      */
     public function setLanguage($language = null)
     {

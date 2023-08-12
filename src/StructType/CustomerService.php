@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -108,7 +108,7 @@ class CustomerService extends AbstractStructBase
     /**
      * Set Type value
      * @param int $type
-     * @return \StructType\CustomerService
+     * @return \Dpd\StructType\CustomerService
      */
     public function setType($type = null)
     {
@@ -130,7 +130,7 @@ class CustomerService extends AbstractStructBase
     /**
      * Set Attribute value
      * @param int $attribute
-     * @return \StructType\CustomerService
+     * @return \Dpd\StructType\CustomerService
      */
     public function setAttribute($attribute = null)
     {
@@ -151,17 +151,17 @@ class CustomerService extends AbstractStructBase
     }
     /**
      * Set Export value
-     * @uses \EnumType\EExportService::valueIsValid()
-     * @uses \EnumType\EExportService::getValidValues()
+     * @uses \Dpd\EnumType\EExportService::valueIsValid()
+     * @uses \Dpd\EnumType\EExportService::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $export
-     * @return \StructType\CustomerService
+     * @return \Dpd\StructType\CustomerService
      */
     public function setExport($export = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\EExportService::valueIsValid($export)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\EExportService', is_array($export) ? implode(', ', $export) : var_export($export, true), implode(', ', \EnumType\EExportService::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\EExportService::valueIsValid($export)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\EExportService', is_array($export) ? implode(', ', $export) : var_export($export, true), implode(', ', \Dpd\EnumType\EExportService::getValidValues())), __LINE__);
         }
         $this->Export = $export;
         return $this;
@@ -176,17 +176,17 @@ class CustomerService extends AbstractStructBase
     }
     /**
      * Set LimitType value
-     * @uses \EnumType\ELimitTypeService::valueIsValid()
-     * @uses \EnumType\ELimitTypeService::getValidValues()
+     * @uses \Dpd\EnumType\ELimitTypeService::valueIsValid()
+     * @uses \Dpd\EnumType\ELimitTypeService::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $limitType
-     * @return \StructType\CustomerService
+     * @return \Dpd\StructType\CustomerService
      */
     public function setLimitType($limitType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ELimitTypeService::valueIsValid($limitType)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\ELimitTypeService', is_array($limitType) ? implode(', ', $limitType) : var_export($limitType, true), implode(', ', \EnumType\ELimitTypeService::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\ELimitTypeService::valueIsValid($limitType)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\ELimitTypeService', is_array($limitType) ? implode(', ', $limitType) : var_export($limitType, true), implode(', ', \Dpd\EnumType\ELimitTypeService::getValidValues())), __LINE__);
         }
         $this->LimitType = $limitType;
         return $this;
@@ -202,7 +202,7 @@ class CustomerService extends AbstractStructBase
     /**
      * Set LimitMin value
      * @param float $limitMin
-     * @return \StructType\CustomerService
+     * @return \Dpd\StructType\CustomerService
      */
     public function setLimitMin($limitMin = null)
     {
@@ -224,7 +224,7 @@ class CustomerService extends AbstractStructBase
     /**
      * Set LimitMax value
      * @param float $limitMax
-     * @return \StructType\CustomerService
+     * @return \Dpd\StructType\CustomerService
      */
     public function setLimitMax($limitMax = null)
     {
@@ -246,7 +246,7 @@ class CustomerService extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\CustomerService
+     * @return \Dpd\StructType\CustomerService
      */
     public function setName($name = null)
     {

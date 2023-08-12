@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetServiceNoticeAnswersResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ServiceNoticeAnswersResponse
+     * @var \Dpd\StructType\ServiceNoticeAnswersResponse
      */
     public $GetServiceNoticeAnswersResult;
     /**
      * Constructor method for GetServiceNoticeAnswersResponse
      * @uses GetServiceNoticeAnswersResponse::setGetServiceNoticeAnswersResult()
-     * @param \StructType\ServiceNoticeAnswersResponse $getServiceNoticeAnswersResult
+     * @param \Dpd\StructType\ServiceNoticeAnswersResponse $getServiceNoticeAnswersResult
      */
-    public function __construct(\StructType\ServiceNoticeAnswersResponse $getServiceNoticeAnswersResult = null)
+    public function __construct(\Dpd\StructType\ServiceNoticeAnswersResponse $getServiceNoticeAnswersResult = null)
     {
         $this
             ->setGetServiceNoticeAnswersResult($getServiceNoticeAnswersResult);
     }
     /**
      * Get GetServiceNoticeAnswersResult value
-     * @return \StructType\ServiceNoticeAnswersResponse|null
+     * @return \Dpd\StructType\ServiceNoticeAnswersResponse|null
      */
     public function getGetServiceNoticeAnswersResult()
     {
@@ -38,10 +38,10 @@ class GetServiceNoticeAnswersResponse extends AbstractStructBase
     }
     /**
      * Set GetServiceNoticeAnswersResult value
-     * @param \StructType\ServiceNoticeAnswersResponse $getServiceNoticeAnswersResult
-     * @return \StructType\GetServiceNoticeAnswersResponse
+     * @param \Dpd\StructType\ServiceNoticeAnswersResponse $getServiceNoticeAnswersResult
+     * @return \Dpd\StructType\GetServiceNoticeAnswersResponse
      */
-    public function setGetServiceNoticeAnswersResult(\StructType\ServiceNoticeAnswersResponse $getServiceNoticeAnswersResult = null)
+    public function setGetServiceNoticeAnswersResult(\Dpd\StructType\ServiceNoticeAnswersResponse $getServiceNoticeAnswersResult = null)
     {
         $this->GetServiceNoticeAnswersResult = $getServiceNoticeAnswersResult;
         return $this;

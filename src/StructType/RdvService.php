@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class RdvService extends AbstractStructBase
     /**
      * Set Type value
      * @param int $type
-     * @return \StructType\RdvService
+     * @return \Dpd\StructType\RdvService
      */
     public function setType($type = null)
     {
@@ -83,7 +83,7 @@ class RdvService extends AbstractStructBase
     /**
      * Set Attribute value
      * @param int $attribute
-     * @return \StructType\RdvService
+     * @return \Dpd\StructType\RdvService
      */
     public function setAttribute($attribute = null)
     {
@@ -105,7 +105,7 @@ class RdvService extends AbstractStructBase
     /**
      * Set Status value
      * @param int $status
-     * @return \StructType\RdvService
+     * @return \Dpd\StructType\RdvService
      */
     public function setStatus($status = null)
     {

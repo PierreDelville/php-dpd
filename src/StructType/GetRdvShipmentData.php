@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetRdvShipmentData extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetRdvShipmentDataRequest
+     * @var \Dpd\StructType\GetRdvShipmentDataRequest
      */
     public $request;
     /**
      * Constructor method for GetRdvShipmentData
      * @uses GetRdvShipmentData::setRequest()
-     * @param \StructType\GetRdvShipmentDataRequest $request
+     * @param \Dpd\StructType\GetRdvShipmentDataRequest $request
      */
-    public function __construct(\StructType\GetRdvShipmentDataRequest $request = null)
+    public function __construct(\Dpd\StructType\GetRdvShipmentDataRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetRdvShipmentDataRequest|null
+     * @return \Dpd\StructType\GetRdvShipmentDataRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetRdvShipmentData extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetRdvShipmentDataRequest $request
-     * @return \StructType\GetRdvShipmentData
+     * @param \Dpd\StructType\GetRdvShipmentDataRequest $request
+     * @return \Dpd\StructType\GetRdvShipmentData
      */
-    public function setRequest(\StructType\GetRdvShipmentDataRequest $request = null)
+    public function setRequest(\Dpd\StructType\GetRdvShipmentDataRequest $request = null)
     {
         $this->request = $request;
         return $this;

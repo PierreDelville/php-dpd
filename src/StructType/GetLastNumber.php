@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetLastNumber extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetLastNumberRequest
+     * @var \Dpd\StructType\GetLastNumberRequest
      */
     public $request;
     /**
      * Constructor method for GetLastNumber
      * @uses GetLastNumber::setRequest()
-     * @param \StructType\GetLastNumberRequest $request
+     * @param \Dpd\StructType\GetLastNumberRequest $request
      */
-    public function __construct(\StructType\GetLastNumberRequest $request = null)
+    public function __construct(\Dpd\StructType\GetLastNumberRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetLastNumberRequest|null
+     * @return \Dpd\StructType\GetLastNumberRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetLastNumber extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetLastNumberRequest $request
-     * @return \StructType\GetLastNumber
+     * @param \Dpd\StructType\GetLastNumberRequest $request
+     * @return \Dpd\StructType\GetLastNumber
      */
-    public function setRequest(\StructType\GetLastNumberRequest $request = null)
+    public function setRequest(\Dpd\StructType\GetLastNumberRequest $request = null)
     {
         $this->request = $request;
         return $this;

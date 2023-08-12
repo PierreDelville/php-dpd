@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -71,17 +71,17 @@ class Rendezvous extends AbstractStructBase
     }
     /**
      * Set Type value
-     * @uses \EnumType\ERendezvousType::valueIsValid()
-     * @uses \EnumType\ERendezvousType::getValidValues()
+     * @uses \Dpd\EnumType\ERendezvousType::valueIsValid()
+     * @uses \Dpd\EnumType\ERendezvousType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Rendezvous
+     * @return \Dpd\StructType\Rendezvous
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ERendezvousType::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\ERendezvousType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\ERendezvousType::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\ERendezvousType::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\ERendezvousType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Dpd\EnumType\ERendezvousType::getValidValues())), __LINE__);
         }
         $this->Type = $type;
         return $this;
@@ -97,7 +97,7 @@ class Rendezvous extends AbstractStructBase
     /**
      * Set From value
      * @param string $from
-     * @return \StructType\Rendezvous
+     * @return \Dpd\StructType\Rendezvous
      */
     public function setFrom($from = null)
     {
@@ -119,7 +119,7 @@ class Rendezvous extends AbstractStructBase
     /**
      * Set To value
      * @param string $to
-     * @return \StructType\Rendezvous
+     * @return \Dpd\StructType\Rendezvous
      */
     public function setTo($to = null)
     {
@@ -141,7 +141,7 @@ class Rendezvous extends AbstractStructBase
     /**
      * Set PredictChoice value
      * @param int $predictChoice
-     * @return \StructType\Rendezvous
+     * @return \Dpd\StructType\Rendezvous
      */
     public function setPredictChoice($predictChoice = null)
     {

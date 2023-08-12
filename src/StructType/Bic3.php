@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class Bic3 extends AppendOptionsBase
     /**
      * Set generateBic3 value
      * @param bool $generateBic3
-     * @return \StructType\Bic3
+     * @return \Dpd\StructType\Bic3
      */
     public function setGenerateBic3($generateBic3 = null)
     {

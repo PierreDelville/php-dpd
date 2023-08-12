@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfRdvService extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\RdvService[]
+     * @var \Dpd\StructType\RdvService[]
      */
     public $RdvService;
     /**
      * Constructor method for ArrayOfRdvService
      * @uses ArrayOfRdvService::setRdvService()
-     * @param \StructType\RdvService[] $rdvService
+     * @param \Dpd\StructType\RdvService[] $rdvService
      */
     public function __construct(array $rdvService = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfRdvService extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\RdvService[]|null
+     * @return \Dpd\StructType\RdvService[]|null
      */
     public function getRdvService()
     {
@@ -52,12 +52,12 @@ class ArrayOfRdvService extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfRdvServiceRdvServiceItem) {
             // validation for constraint: itemType
-            if (!$arrayOfRdvServiceRdvServiceItem instanceof \StructType\RdvService) {
+            if (!$arrayOfRdvServiceRdvServiceItem instanceof \Dpd\StructType\RdvService) {
                 $invalidValues[] = is_object($arrayOfRdvServiceRdvServiceItem) ? get_class($arrayOfRdvServiceRdvServiceItem) : sprintf('%s(%s)', gettype($arrayOfRdvServiceRdvServiceItem), var_export($arrayOfRdvServiceRdvServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The RdvService property can only contain items of type \StructType\RdvService, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The RdvService property can only contain items of type \Dpd\StructType\RdvService, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfRdvService extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\RdvService[] $rdvService
-     * @return \ArrayType\ArrayOfRdvService
+     * @param \Dpd\StructType\RdvService[] $rdvService
+     * @return \Dpd\ArrayType\ArrayOfRdvService
      */
     public function setRdvService(array $rdvService = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfRdvService extends AbstractStructArrayBase
     /**
      * Add item to RdvService value
      * @throws \InvalidArgumentException
-     * @param \StructType\RdvService $item
-     * @return \ArrayType\ArrayOfRdvService
+     * @param \Dpd\StructType\RdvService $item
+     * @return \Dpd\ArrayType\ArrayOfRdvService
      */
-    public function addToRdvService(\StructType\RdvService $item)
+    public function addToRdvService(\Dpd\StructType\RdvService $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RdvService) {
-            throw new \InvalidArgumentException(sprintf('The RdvService property can only contain items of type \StructType\RdvService, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\RdvService) {
+            throw new \InvalidArgumentException(sprintf('The RdvService property can only contain items of type \Dpd\StructType\RdvService, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->RdvService[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfRdvService extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\RdvService|null
+     * @return \Dpd\StructType\RdvService|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfRdvService extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\RdvService|null
+     * @return \Dpd\StructType\RdvService|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfRdvService extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\RdvService|null
+     * @return \Dpd\StructType\RdvService|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfRdvService extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\RdvService|null
+     * @return \Dpd\StructType\RdvService|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfRdvService extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\RdvService|null
+     * @return \Dpd\StructType\RdvService|null
      */
     public function offsetGet($offset)
     {

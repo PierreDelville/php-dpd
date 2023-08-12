@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class PropertyEntry extends AbstractStructBase
     /**
      * Set PropertyId value
      * @param int $propertyId
-     * @return \StructType\PropertyEntry
+     * @return \Dpd\StructType\PropertyEntry
      */
     public function setPropertyId($propertyId = null)
     {
@@ -72,7 +72,7 @@ class PropertyEntry extends AbstractStructBase
     /**
      * Set Value value
      * @param string $value
-     * @return \StructType\PropertyEntry
+     * @return \Dpd\StructType\PropertyEntry
      */
     public function setValue($value = null)
     {

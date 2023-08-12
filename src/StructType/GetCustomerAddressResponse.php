@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetCustomerAddressResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CustomerAddress
+     * @var \Dpd\StructType\CustomerAddress
      */
     public $GetCustomerAddressResult;
     /**
      * Constructor method for GetCustomerAddressResponse
      * @uses GetCustomerAddressResponse::setGetCustomerAddressResult()
-     * @param \StructType\CustomerAddress $getCustomerAddressResult
+     * @param \Dpd\StructType\CustomerAddress $getCustomerAddressResult
      */
-    public function __construct(\StructType\CustomerAddress $getCustomerAddressResult = null)
+    public function __construct(\Dpd\StructType\CustomerAddress $getCustomerAddressResult = null)
     {
         $this
             ->setGetCustomerAddressResult($getCustomerAddressResult);
     }
     /**
      * Get GetCustomerAddressResult value
-     * @return \StructType\CustomerAddress|null
+     * @return \Dpd\StructType\CustomerAddress|null
      */
     public function getGetCustomerAddressResult()
     {
@@ -38,10 +38,10 @@ class GetCustomerAddressResponse extends AbstractStructBase
     }
     /**
      * Set GetCustomerAddressResult value
-     * @param \StructType\CustomerAddress $getCustomerAddressResult
-     * @return \StructType\GetCustomerAddressResponse
+     * @param \Dpd\StructType\CustomerAddress $getCustomerAddressResult
+     * @return \Dpd\StructType\GetCustomerAddressResponse
      */
-    public function setGetCustomerAddressResult(\StructType\CustomerAddress $getCustomerAddressResult = null)
+    public function setGetCustomerAddressResult(\Dpd\StructType\CustomerAddress $getCustomerAddressResult = null)
     {
         $this->GetCustomerAddressResult = $getCustomerAddressResult;
         return $this;

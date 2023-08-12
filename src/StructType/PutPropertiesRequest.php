@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class PutPropertiesRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $Customer;
     /**
@@ -47,7 +47,7 @@ class PutPropertiesRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfPropertyEntry
+     * @var \Dpd\ArrayType\ArrayOfPropertyEntry
      */
     public $Properties;
     /**
@@ -67,13 +67,13 @@ class PutPropertiesRequest extends AbstractStructBase
      * @uses PutPropertiesRequest::setProperties()
      * @uses PutPropertiesRequest::setSum()
      * @param int $shipperNumber
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      * @param string $hardwareId
      * @param string $options
-     * @param \ArrayType\ArrayOfPropertyEntry $properties
+     * @param \Dpd\ArrayType\ArrayOfPropertyEntry $properties
      * @param string $sum
      */
-    public function __construct($shipperNumber = null, \StructType\Customer $customer = null, $hardwareId = null, $options = null, \ArrayType\ArrayOfPropertyEntry $properties = null, $sum = null)
+    public function __construct($shipperNumber = null, \Dpd\StructType\Customer $customer = null, $hardwareId = null, $options = null, \Dpd\ArrayType\ArrayOfPropertyEntry $properties = null, $sum = null)
     {
         $this
             ->setShipperNumber($shipperNumber)
@@ -94,7 +94,7 @@ class PutPropertiesRequest extends AbstractStructBase
     /**
      * Set ShipperNumber value
      * @param int $shipperNumber
-     * @return \StructType\PutPropertiesRequest
+     * @return \Dpd\StructType\PutPropertiesRequest
      */
     public function setShipperNumber($shipperNumber = null)
     {
@@ -107,7 +107,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
     /**
      * Get Customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -115,10 +115,10 @@ class PutPropertiesRequest extends AbstractStructBase
     }
     /**
      * Set Customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\PutPropertiesRequest
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\PutPropertiesRequest
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->Customer = $customer;
         return $this;
@@ -134,7 +134,7 @@ class PutPropertiesRequest extends AbstractStructBase
     /**
      * Set HardwareId value
      * @param string $hardwareId
-     * @return \StructType\PutPropertiesRequest
+     * @return \Dpd\StructType\PutPropertiesRequest
      */
     public function setHardwareId($hardwareId = null)
     {
@@ -156,7 +156,7 @@ class PutPropertiesRequest extends AbstractStructBase
     /**
      * Set Options value
      * @param string $options
-     * @return \StructType\PutPropertiesRequest
+     * @return \Dpd\StructType\PutPropertiesRequest
      */
     public function setOptions($options = null)
     {
@@ -169,7 +169,7 @@ class PutPropertiesRequest extends AbstractStructBase
     }
     /**
      * Get Properties value
-     * @return \ArrayType\ArrayOfPropertyEntry|null
+     * @return \Dpd\ArrayType\ArrayOfPropertyEntry|null
      */
     public function getProperties()
     {
@@ -177,10 +177,10 @@ class PutPropertiesRequest extends AbstractStructBase
     }
     /**
      * Set Properties value
-     * @param \ArrayType\ArrayOfPropertyEntry $properties
-     * @return \StructType\PutPropertiesRequest
+     * @param \Dpd\ArrayType\ArrayOfPropertyEntry $properties
+     * @return \Dpd\StructType\PutPropertiesRequest
      */
-    public function setProperties(\ArrayType\ArrayOfPropertyEntry $properties = null)
+    public function setProperties(\Dpd\ArrayType\ArrayOfPropertyEntry $properties = null)
     {
         $this->Properties = $properties;
         return $this;
@@ -196,7 +196,7 @@ class PutPropertiesRequest extends AbstractStructBase
     /**
      * Set Sum value
      * @param string $sum
-     * @return \StructType\PutPropertiesRequest
+     * @return \Dpd\StructType\PutPropertiesRequest
      */
     public function setSum($sum = null)
     {

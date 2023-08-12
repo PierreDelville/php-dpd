@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,17 +39,17 @@ class GetShipmentEntry extends ShipmentDataExtendedBc
     }
     /**
      * Set LinkedShipmentType value
-     * @uses \EnumType\ELinkedShipmentType::valueIsValid()
-     * @uses \EnumType\ELinkedShipmentType::getValidValues()
+     * @uses \Dpd\EnumType\ELinkedShipmentType::valueIsValid()
+     * @uses \Dpd\EnumType\ELinkedShipmentType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $linkedShipmentType
-     * @return \StructType\GetShipmentEntry
+     * @return \Dpd\StructType\GetShipmentEntry
      */
     public function setLinkedShipmentType($linkedShipmentType = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ELinkedShipmentType::valueIsValid($linkedShipmentType)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\ELinkedShipmentType', is_array($linkedShipmentType) ? implode(', ', $linkedShipmentType) : var_export($linkedShipmentType, true), implode(', ', \EnumType\ELinkedShipmentType::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\ELinkedShipmentType::valueIsValid($linkedShipmentType)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\ELinkedShipmentType', is_array($linkedShipmentType) ? implode(', ', $linkedShipmentType) : var_export($linkedShipmentType, true), implode(', ', \Dpd\EnumType\ELinkedShipmentType::getValidValues())), __LINE__);
         }
         $this->LinkedShipmentType = $linkedShipmentType;
         return $this;

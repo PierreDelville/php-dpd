@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -111,7 +111,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $shipperaddress;
     /**
@@ -119,7 +119,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $customeraddress;
     /**
@@ -127,7 +127,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $receiveraddress;
     /**
@@ -135,7 +135,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Contact
+     * @var \Dpd\StructType\Contact
      */
     public $receiver_contact;
     /**
@@ -159,7 +159,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AddressInfo
+     * @var \Dpd\StructType\AddressInfo
      */
     public $receiverinfo;
     /**
@@ -167,7 +167,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ParcelDimension
+     * @var \Dpd\StructType\ParcelDimension
      */
     public $Dimension;
     /**
@@ -204,16 +204,16 @@ class ShipmentDataExtendedBase extends AbstractStructBase
      * @param string $reference3
      * @param string $reference4
      * @param string $referenceInternational
-     * @param \StructType\Address $shipperaddress
-     * @param \StructType\Address $customeraddress
-     * @param \StructType\Address $receiveraddress
-     * @param \StructType\Contact $receiver_contact
+     * @param \Dpd\StructType\Address $shipperaddress
+     * @param \Dpd\StructType\Address $customeraddress
+     * @param \Dpd\StructType\Address $receiveraddress
+     * @param \Dpd\StructType\Contact $receiver_contact
      * @param string $pickup_remark
      * @param string $deliver_remark
-     * @param \StructType\AddressInfo $receiverinfo
-     * @param \StructType\ParcelDimension $dimension
+     * @param \Dpd\StructType\AddressInfo $receiverinfo
+     * @param \Dpd\StructType\ParcelDimension $dimension
      */
-    public function __construct($shipperCenter = null, $receiverCenter = null, $receiverTourNumber = null, $customer_centernumber = null, $customernumber = null, $weight = null, $shipping_date = null, $referencenumber = null, $reference2 = null, $reference3 = null, $reference4 = null, $referenceInternational = null, \StructType\Address $shipperaddress = null, \StructType\Address $customeraddress = null, \StructType\Address $receiveraddress = null, \StructType\Contact $receiver_contact = null, $pickup_remark = null, $deliver_remark = null, \StructType\AddressInfo $receiverinfo = null, \StructType\ParcelDimension $dimension = null)
+    public function __construct($shipperCenter = null, $receiverCenter = null, $receiverTourNumber = null, $customer_centernumber = null, $customernumber = null, $weight = null, $shipping_date = null, $referencenumber = null, $reference2 = null, $reference3 = null, $reference4 = null, $referenceInternational = null, \Dpd\StructType\Address $shipperaddress = null, \Dpd\StructType\Address $customeraddress = null, \Dpd\StructType\Address $receiveraddress = null, \Dpd\StructType\Contact $receiver_contact = null, $pickup_remark = null, $deliver_remark = null, \Dpd\StructType\AddressInfo $receiverinfo = null, \Dpd\StructType\ParcelDimension $dimension = null)
     {
         $this
             ->setShipperCenter($shipperCenter)
@@ -248,7 +248,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set shipperCenter value
      * @param int $shipperCenter
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setShipperCenter($shipperCenter = null)
     {
@@ -270,7 +270,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set receiverCenter value
      * @param int $receiverCenter
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setReceiverCenter($receiverCenter = null)
     {
@@ -292,7 +292,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set receiverTourNumber value
      * @param int $receiverTourNumber
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setReceiverTourNumber($receiverTourNumber = null)
     {
@@ -314,7 +314,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set customer_centernumber value
      * @param string $customer_centernumber
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setCustomer_centernumber($customer_centernumber = null)
     {
@@ -336,7 +336,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set customernumber value
      * @param string $customernumber
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setCustomernumber($customernumber = null)
     {
@@ -358,7 +358,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set weight value
      * @param string $weight
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setWeight($weight = null)
     {
@@ -380,7 +380,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set shipping_date value
      * @param string $shipping_date
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setShipping_date($shipping_date = null)
     {
@@ -402,7 +402,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set referencenumber value
      * @param string $referencenumber
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setReferencenumber($referencenumber = null)
     {
@@ -424,7 +424,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set reference2 value
      * @param string $reference2
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setReference2($reference2 = null)
     {
@@ -446,7 +446,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set reference3 value
      * @param string $reference3
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setReference3($reference3 = null)
     {
@@ -468,7 +468,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set reference4 value
      * @param string $reference4
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setReference4($reference4 = null)
     {
@@ -490,7 +490,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set referenceInternational value
      * @param string $referenceInternational
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setReferenceInternational($referenceInternational = null)
     {
@@ -503,7 +503,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
     /**
      * Get shipperaddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getShipperaddress()
     {
@@ -511,17 +511,17 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
     /**
      * Set shipperaddress value
-     * @param \StructType\Address $shipperaddress
-     * @return \StructType\ShipmentDataExtendedBase
+     * @param \Dpd\StructType\Address $shipperaddress
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
-    public function setShipperaddress(\StructType\Address $shipperaddress = null)
+    public function setShipperaddress(\Dpd\StructType\Address $shipperaddress = null)
     {
         $this->shipperaddress = $shipperaddress;
         return $this;
     }
     /**
      * Get customeraddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getCustomeraddress()
     {
@@ -529,17 +529,17 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
     /**
      * Set customeraddress value
-     * @param \StructType\Address $customeraddress
-     * @return \StructType\ShipmentDataExtendedBase
+     * @param \Dpd\StructType\Address $customeraddress
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
-    public function setCustomeraddress(\StructType\Address $customeraddress = null)
+    public function setCustomeraddress(\Dpd\StructType\Address $customeraddress = null)
     {
         $this->customeraddress = $customeraddress;
         return $this;
     }
     /**
      * Get receiveraddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getReceiveraddress()
     {
@@ -547,17 +547,17 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
     /**
      * Set receiveraddress value
-     * @param \StructType\Address $receiveraddress
-     * @return \StructType\ShipmentDataExtendedBase
+     * @param \Dpd\StructType\Address $receiveraddress
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
-    public function setReceiveraddress(\StructType\Address $receiveraddress = null)
+    public function setReceiveraddress(\Dpd\StructType\Address $receiveraddress = null)
     {
         $this->receiveraddress = $receiveraddress;
         return $this;
     }
     /**
      * Get receiver_contact value
-     * @return \StructType\Contact|null
+     * @return \Dpd\StructType\Contact|null
      */
     public function getReceiver_contact()
     {
@@ -565,10 +565,10 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
     /**
      * Set receiver_contact value
-     * @param \StructType\Contact $receiver_contact
-     * @return \StructType\ShipmentDataExtendedBase
+     * @param \Dpd\StructType\Contact $receiver_contact
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
-    public function setReceiver_contact(\StructType\Contact $receiver_contact = null)
+    public function setReceiver_contact(\Dpd\StructType\Contact $receiver_contact = null)
     {
         $this->receiver_contact = $receiver_contact;
         return $this;
@@ -584,7 +584,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set pickup_remark value
      * @param string $pickup_remark
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setPickup_remark($pickup_remark = null)
     {
@@ -606,7 +606,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     /**
      * Set deliver_remark value
      * @param string $deliver_remark
-     * @return \StructType\ShipmentDataExtendedBase
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
     public function setDeliver_remark($deliver_remark = null)
     {
@@ -619,7 +619,7 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
     /**
      * Get receiverinfo value
-     * @return \StructType\AddressInfo|null
+     * @return \Dpd\StructType\AddressInfo|null
      */
     public function getReceiverinfo()
     {
@@ -627,17 +627,17 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
     /**
      * Set receiverinfo value
-     * @param \StructType\AddressInfo $receiverinfo
-     * @return \StructType\ShipmentDataExtendedBase
+     * @param \Dpd\StructType\AddressInfo $receiverinfo
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
-    public function setReceiverinfo(\StructType\AddressInfo $receiverinfo = null)
+    public function setReceiverinfo(\Dpd\StructType\AddressInfo $receiverinfo = null)
     {
         $this->receiverinfo = $receiverinfo;
         return $this;
     }
     /**
      * Get Dimension value
-     * @return \StructType\ParcelDimension|null
+     * @return \Dpd\StructType\ParcelDimension|null
      */
     public function getDimension()
     {
@@ -645,10 +645,10 @@ class ShipmentDataExtendedBase extends AbstractStructBase
     }
     /**
      * Set Dimension value
-     * @param \StructType\ParcelDimension $dimension
-     * @return \StructType\ShipmentDataExtendedBase
+     * @param \Dpd\StructType\ParcelDimension $dimension
+     * @return \Dpd\StructType\ShipmentDataExtendedBase
      */
-    public function setDimension(\StructType\ParcelDimension $dimension = null)
+    public function setDimension(\Dpd\StructType\ParcelDimension $dimension = null)
     {
         $this->Dimension = $dimension;
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreateReverseInverseShipment extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ReverseShipmentRequest
+     * @var \Dpd\StructType\ReverseShipmentRequest
      */
     public $request;
     /**
      * Constructor method for CreateReverseInverseShipment
      * @uses CreateReverseInverseShipment::setRequest()
-     * @param \StructType\ReverseShipmentRequest $request
+     * @param \Dpd\StructType\ReverseShipmentRequest $request
      */
-    public function __construct(\StructType\ReverseShipmentRequest $request = null)
+    public function __construct(\Dpd\StructType\ReverseShipmentRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\ReverseShipmentRequest|null
+     * @return \Dpd\StructType\ReverseShipmentRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class CreateReverseInverseShipment extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\ReverseShipmentRequest $request
-     * @return \StructType\CreateReverseInverseShipment
+     * @param \Dpd\StructType\ReverseShipmentRequest $request
+     * @return \Dpd\StructType\CreateReverseInverseShipment
      */
-    public function setRequest(\StructType\ReverseShipmentRequest $request = null)
+    public function setRequest(\Dpd\StructType\ReverseShipmentRequest $request = null)
     {
         $this->request = $request;
         return $this;

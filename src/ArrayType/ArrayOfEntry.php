@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfEntry extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Entry[]
+     * @var \Dpd\StructType\Entry[]
      */
     public $Entry;
     /**
      * Constructor method for ArrayOfEntry
      * @uses ArrayOfEntry::setEntry()
-     * @param \StructType\Entry[] $entry
+     * @param \Dpd\StructType\Entry[] $entry
      */
     public function __construct(array $entry = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfEntry extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Entry[]|null
+     * @return \Dpd\StructType\Entry[]|null
      */
     public function getEntry()
     {
@@ -52,12 +52,12 @@ class ArrayOfEntry extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfEntryEntryItem) {
             // validation for constraint: itemType
-            if (!$arrayOfEntryEntryItem instanceof \StructType\Entry) {
+            if (!$arrayOfEntryEntryItem instanceof \Dpd\StructType\Entry) {
                 $invalidValues[] = is_object($arrayOfEntryEntryItem) ? get_class($arrayOfEntryEntryItem) : sprintf('%s(%s)', gettype($arrayOfEntryEntryItem), var_export($arrayOfEntryEntryItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Entry property can only contain items of type \StructType\Entry, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Entry property can only contain items of type \Dpd\StructType\Entry, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfEntry extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Entry[] $entry
-     * @return \ArrayType\ArrayOfEntry
+     * @param \Dpd\StructType\Entry[] $entry
+     * @return \Dpd\ArrayType\ArrayOfEntry
      */
     public function setEntry(array $entry = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfEntry extends AbstractStructArrayBase
     /**
      * Add item to Entry value
      * @throws \InvalidArgumentException
-     * @param \StructType\Entry $item
-     * @return \ArrayType\ArrayOfEntry
+     * @param \Dpd\StructType\Entry $item
+     * @return \Dpd\ArrayType\ArrayOfEntry
      */
-    public function addToEntry(\StructType\Entry $item)
+    public function addToEntry(\Dpd\StructType\Entry $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Entry) {
-            throw new \InvalidArgumentException(sprintf('The Entry property can only contain items of type \StructType\Entry, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\Entry) {
+            throw new \InvalidArgumentException(sprintf('The Entry property can only contain items of type \Dpd\StructType\Entry, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Entry[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfEntry extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Entry|null
+     * @return \Dpd\StructType\Entry|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfEntry extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Entry|null
+     * @return \Dpd\StructType\Entry|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfEntry extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Entry|null
+     * @return \Dpd\StructType\Entry|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfEntry extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Entry|null
+     * @return \Dpd\StructType\Entry|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfEntry extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Entry|null
+     * @return \Dpd\StructType\Entry|null
      */
     public function offsetGet($offset)
     {

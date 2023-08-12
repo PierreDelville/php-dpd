@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class Text extends AbstractStructBase
     /**
      * Set id value
      * @param int $id
-     * @return \StructType\Text
+     * @return \Dpd\StructType\Text
      */
     public function setId($id = null)
     {
@@ -72,7 +72,7 @@ class Text extends AbstractStructBase
     /**
      * Set text value
      * @param string $text
-     * @return \StructType\Text
+     * @return \Dpd\StructType\Text
      */
     public function setText($text = null)
     {

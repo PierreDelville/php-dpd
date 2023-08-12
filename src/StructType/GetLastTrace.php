@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetLastTrace extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetLastTraceRequest
+     * @var \Dpd\StructType\GetLastTraceRequest
      */
     public $request;
     /**
      * Constructor method for GetLastTrace
      * @uses GetLastTrace::setRequest()
-     * @param \StructType\GetLastTraceRequest $request
+     * @param \Dpd\StructType\GetLastTraceRequest $request
      */
-    public function __construct(\StructType\GetLastTraceRequest $request = null)
+    public function __construct(\Dpd\StructType\GetLastTraceRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetLastTraceRequest|null
+     * @return \Dpd\StructType\GetLastTraceRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetLastTrace extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetLastTraceRequest $request
-     * @return \StructType\GetLastTrace
+     * @param \Dpd\StructType\GetLastTraceRequest $request
+     * @return \Dpd\StructType\GetLastTrace
      */
-    public function setRequest(\StructType\GetLastTraceRequest $request = null)
+    public function setRequest(\Dpd\StructType\GetLastTraceRequest $request = null)
     {
         $this->request = $request;
         return $this;

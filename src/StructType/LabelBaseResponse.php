@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class LabelBaseResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfLabel
+     * @var \Dpd\ArrayType\ArrayOfLabel
      */
     public $labels;
     /**
      * Constructor method for LabelBaseResponse
      * @uses LabelBaseResponse::setLabels()
-     * @param \ArrayType\ArrayOfLabel $labels
+     * @param \Dpd\ArrayType\ArrayOfLabel $labels
      */
-    public function __construct(\ArrayType\ArrayOfLabel $labels = null)
+    public function __construct(\Dpd\ArrayType\ArrayOfLabel $labels = null)
     {
         $this
             ->setLabels($labels);
     }
     /**
      * Get labels value
-     * @return \ArrayType\ArrayOfLabel|null
+     * @return \Dpd\ArrayType\ArrayOfLabel|null
      */
     public function getLabels()
     {
@@ -38,10 +38,10 @@ class LabelBaseResponse extends AbstractStructBase
     }
     /**
      * Set labels value
-     * @param \ArrayType\ArrayOfLabel $labels
-     * @return \StructType\LabelBaseResponse
+     * @param \Dpd\ArrayType\ArrayOfLabel $labels
+     * @return \Dpd\StructType\LabelBaseResponse
      */
-    public function setLabels(\ArrayType\ArrayOfLabel $labels = null)
+    public function setLabels(\Dpd\ArrayType\ArrayOfLabel $labels = null)
     {
         $this->labels = $labels;
         return $this;

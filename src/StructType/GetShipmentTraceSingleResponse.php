@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetShipmentTraceSingleResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ShipmentTrace
+     * @var \Dpd\StructType\ShipmentTrace
      */
     public $GetShipmentTraceSingleResult;
     /**
      * Constructor method for GetShipmentTraceSingleResponse
      * @uses GetShipmentTraceSingleResponse::setGetShipmentTraceSingleResult()
-     * @param \StructType\ShipmentTrace $getShipmentTraceSingleResult
+     * @param \Dpd\StructType\ShipmentTrace $getShipmentTraceSingleResult
      */
-    public function __construct(\StructType\ShipmentTrace $getShipmentTraceSingleResult = null)
+    public function __construct(\Dpd\StructType\ShipmentTrace $getShipmentTraceSingleResult = null)
     {
         $this
             ->setGetShipmentTraceSingleResult($getShipmentTraceSingleResult);
     }
     /**
      * Get GetShipmentTraceSingleResult value
-     * @return \StructType\ShipmentTrace|null
+     * @return \Dpd\StructType\ShipmentTrace|null
      */
     public function getGetShipmentTraceSingleResult()
     {
@@ -38,10 +38,10 @@ class GetShipmentTraceSingleResponse extends AbstractStructBase
     }
     /**
      * Set GetShipmentTraceSingleResult value
-     * @param \StructType\ShipmentTrace $getShipmentTraceSingleResult
-     * @return \StructType\GetShipmentTraceSingleResponse
+     * @param \Dpd\StructType\ShipmentTrace $getShipmentTraceSingleResult
+     * @return \Dpd\StructType\GetShipmentTraceSingleResponse
      */
-    public function setGetShipmentTraceSingleResult(\StructType\ShipmentTrace $getShipmentTraceSingleResult = null)
+    public function setGetShipmentTraceSingleResult(\Dpd\StructType\ShipmentTrace $getShipmentTraceSingleResult = null)
     {
         $this->GetShipmentTraceSingleResult = $getShipmentTraceSingleResult;
         return $this;

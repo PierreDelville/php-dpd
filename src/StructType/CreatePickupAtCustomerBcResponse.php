@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreatePickupAtCustomerBcResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\PickupAtCustomerResponse
+     * @var \Dpd\StructType\PickupAtCustomerResponse
      */
     public $CreatePickupAtCustomerBcResult;
     /**
      * Constructor method for CreatePickupAtCustomerBcResponse
      * @uses CreatePickupAtCustomerBcResponse::setCreatePickupAtCustomerBcResult()
-     * @param \StructType\PickupAtCustomerResponse $createPickupAtCustomerBcResult
+     * @param \Dpd\StructType\PickupAtCustomerResponse $createPickupAtCustomerBcResult
      */
-    public function __construct(\StructType\PickupAtCustomerResponse $createPickupAtCustomerBcResult = null)
+    public function __construct(\Dpd\StructType\PickupAtCustomerResponse $createPickupAtCustomerBcResult = null)
     {
         $this
             ->setCreatePickupAtCustomerBcResult($createPickupAtCustomerBcResult);
     }
     /**
      * Get CreatePickupAtCustomerBcResult value
-     * @return \StructType\PickupAtCustomerResponse|null
+     * @return \Dpd\StructType\PickupAtCustomerResponse|null
      */
     public function getCreatePickupAtCustomerBcResult()
     {
@@ -38,10 +38,10 @@ class CreatePickupAtCustomerBcResponse extends AbstractStructBase
     }
     /**
      * Set CreatePickupAtCustomerBcResult value
-     * @param \StructType\PickupAtCustomerResponse $createPickupAtCustomerBcResult
-     * @return \StructType\CreatePickupAtCustomerBcResponse
+     * @param \Dpd\StructType\PickupAtCustomerResponse $createPickupAtCustomerBcResult
+     * @return \Dpd\StructType\CreatePickupAtCustomerBcResponse
      */
-    public function setCreatePickupAtCustomerBcResult(\StructType\PickupAtCustomerResponse $createPickupAtCustomerBcResult = null)
+    public function setCreatePickupAtCustomerBcResult(\Dpd\StructType\PickupAtCustomerResponse $createPickupAtCustomerBcResult = null)
     {
         $this->CreatePickupAtCustomerBcResult = $createPickupAtCustomerBcResult;
         return $this;

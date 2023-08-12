@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,17 +49,17 @@ class ServiceNoticeAnswersRequest extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\ServiceNoticeType::valueIsValid()
-     * @uses \EnumType\ServiceNoticeType::getValidValues()
+     * @uses \Dpd\EnumType\ServiceNoticeType::valueIsValid()
+     * @uses \Dpd\EnumType\ServiceNoticeType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\ServiceNoticeAnswersRequest
+     * @return \Dpd\StructType\ServiceNoticeAnswersRequest
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ServiceNoticeType::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\ServiceNoticeType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\ServiceNoticeType::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\ServiceNoticeType::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\ServiceNoticeType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Dpd\EnumType\ServiceNoticeType::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -75,7 +75,7 @@ class ServiceNoticeAnswersRequest extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \StructType\ServiceNoticeAnswersRequest
+     * @return \Dpd\StructType\ServiceNoticeAnswersRequest
      */
     public function setLanguage($language = null)
     {

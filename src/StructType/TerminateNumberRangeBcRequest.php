@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class TerminateNumberRangeBcRequest extends TerminateNumberRangeBaseRequest
     /**
      * Set BarcodecSource value
      * @param int $barcodecSource
-     * @return \StructType\TerminateNumberRangeBcRequest
+     * @return \Dpd\StructType\TerminateNumberRangeBcRequest
      */
     public function setBarcodecSource($barcodecSource = null)
     {
@@ -72,7 +72,7 @@ class TerminateNumberRangeBcRequest extends TerminateNumberRangeBaseRequest
     /**
      * Set Domain value
      * @param string $domain
-     * @return \StructType\TerminateNumberRangeBcRequest
+     * @return \Dpd\StructType\TerminateNumberRangeBcRequest
      */
     public function setDomain($domain = null)
     {

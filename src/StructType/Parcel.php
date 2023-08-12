@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class Parcel extends AbstractStructBase
     /**
      * Set countrycode value
      * @param int $countrycode
-     * @return \StructType\Parcel
+     * @return \Dpd\StructType\Parcel
      */
     public function setCountrycode($countrycode = null)
     {
@@ -83,7 +83,7 @@ class Parcel extends AbstractStructBase
     /**
      * Set centernumber value
      * @param int $centernumber
-     * @return \StructType\Parcel
+     * @return \Dpd\StructType\Parcel
      */
     public function setCenternumber($centernumber = null)
     {
@@ -105,7 +105,7 @@ class Parcel extends AbstractStructBase
     /**
      * Set parcelnumber value
      * @param int $parcelnumber
-     * @return \StructType\Parcel
+     * @return \Dpd\StructType\Parcel
      */
     public function setParcelnumber($parcelnumber = null)
     {

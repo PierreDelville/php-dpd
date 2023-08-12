@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -68,7 +68,7 @@ class ArrayOfString extends AbstractStructArrayBase
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
      * @param string[] $string
-     * @return \ArrayType\ArrayOfString
+     * @return \Dpd\ArrayType\ArrayOfString
      */
     public function setString(array $string = array())
     {
@@ -87,7 +87,7 @@ class ArrayOfString extends AbstractStructArrayBase
      * Add item to string value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \ArrayType\ArrayOfString
+     * @return \Dpd\ArrayType\ArrayOfString
      */
     public function addToString($item)
     {

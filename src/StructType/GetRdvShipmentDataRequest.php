@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,17 +49,17 @@ class GetRdvShipmentDataRequest extends AbstractStructBase
     }
     /**
      * Set SearchMode value
-     * @uses \EnumType\RdvShipmentDataSearchMode::valueIsValid()
-     * @uses \EnumType\RdvShipmentDataSearchMode::getValidValues()
+     * @uses \Dpd\EnumType\RdvShipmentDataSearchMode::valueIsValid()
+     * @uses \Dpd\EnumType\RdvShipmentDataSearchMode::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $searchMode
-     * @return \StructType\GetRdvShipmentDataRequest
+     * @return \Dpd\StructType\GetRdvShipmentDataRequest
      */
     public function setSearchMode($searchMode = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\RdvShipmentDataSearchMode::valueIsValid($searchMode)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\RdvShipmentDataSearchMode', is_array($searchMode) ? implode(', ', $searchMode) : var_export($searchMode, true), implode(', ', \EnumType\RdvShipmentDataSearchMode::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\RdvShipmentDataSearchMode::valueIsValid($searchMode)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\RdvShipmentDataSearchMode', is_array($searchMode) ? implode(', ', $searchMode) : var_export($searchMode, true), implode(', ', \Dpd\EnumType\RdvShipmentDataSearchMode::getValidValues())), __LINE__);
         }
         $this->SearchMode = $searchMode;
         return $this;
@@ -75,7 +75,7 @@ class GetRdvShipmentDataRequest extends AbstractStructBase
     /**
      * Set SearchString value
      * @param string $searchString
-     * @return \StructType\GetRdvShipmentDataRequest
+     * @return \Dpd\StructType\GetRdvShipmentDataRequest
      */
     public function setSearchString($searchString = null)
     {

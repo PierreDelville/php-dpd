@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class AddressName extends AddressMini
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\AddressName
+     * @return \Dpd\StructType\AddressName
      */
     public function setName($name = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -83,7 +83,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     /**
      * Set SC_CountryCode value
      * @param int $sC_CountryCode
-     * @return \StructType\GetNationalTransitTimeRequest
+     * @return \Dpd\StructType\GetNationalTransitTimeRequest
      */
     public function setSC_CountryCode($sC_CountryCode = null)
     {
@@ -105,7 +105,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     /**
      * Set SC_CenterNumber value
      * @param int $sC_CenterNumber
-     * @return \StructType\GetNationalTransitTimeRequest
+     * @return \Dpd\StructType\GetNationalTransitTimeRequest
      */
     public function setSC_CenterNumber($sC_CenterNumber = null)
     {
@@ -127,7 +127,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     /**
      * Set RC_CountryCode value
      * @param int $rC_CountryCode
-     * @return \StructType\GetNationalTransitTimeRequest
+     * @return \Dpd\StructType\GetNationalTransitTimeRequest
      */
     public function setRC_CountryCode($rC_CountryCode = null)
     {
@@ -149,7 +149,7 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     /**
      * Set RC_CenterNumber value
      * @param int $rC_CenterNumber
-     * @return \StructType\GetNationalTransitTimeRequest
+     * @return \Dpd\StructType\GetNationalTransitTimeRequest
      */
     public function setRC_CenterNumber($rC_CenterNumber = null)
     {
@@ -170,17 +170,17 @@ class GetNationalTransitTimeRequest extends AbstractStructBase
     }
     /**
      * Set TransitTime_Type value
-     * @uses \EnumType\TransitTimeType::valueIsValid()
-     * @uses \EnumType\TransitTimeType::getValidValues()
+     * @uses \Dpd\EnumType\TransitTimeType::valueIsValid()
+     * @uses \Dpd\EnumType\TransitTimeType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $transitTime_Type
-     * @return \StructType\GetNationalTransitTimeRequest
+     * @return \Dpd\StructType\GetNationalTransitTimeRequest
      */
     public function setTransitTime_Type($transitTime_Type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\TransitTimeType::valueIsValid($transitTime_Type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\TransitTimeType', is_array($transitTime_Type) ? implode(', ', $transitTime_Type) : var_export($transitTime_Type, true), implode(', ', \EnumType\TransitTimeType::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\TransitTimeType::valueIsValid($transitTime_Type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\TransitTimeType', is_array($transitTime_Type) ? implode(', ', $transitTime_Type) : var_export($transitTime_Type, true), implode(', ', \Dpd\EnumType\TransitTimeType::getValidValues())), __LINE__);
         }
         $this->TransitTime_Type = $transitTime_Type;
         return $this;

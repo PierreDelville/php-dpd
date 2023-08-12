@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class TerminateNumberRangeRequest extends TerminateNumberRangeBaseRequest
     /**
      * Set CountryCode value
      * @param int $countryCode
-     * @return \StructType\TerminateNumberRangeRequest
+     * @return \Dpd\StructType\TerminateNumberRangeRequest
      */
     public function setCountryCode($countryCode = null)
     {
@@ -72,7 +72,7 @@ class TerminateNumberRangeRequest extends TerminateNumberRangeBaseRequest
     /**
      * Set ShippingCenterNumber value
      * @param int $shippingCenterNumber
-     * @return \StructType\TerminateNumberRangeRequest
+     * @return \Dpd\StructType\TerminateNumberRangeRequest
      */
     public function setShippingCenterNumber($shippingCenterNumber = null)
     {

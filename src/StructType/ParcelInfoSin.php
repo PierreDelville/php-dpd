@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class ParcelInfoSin extends ParcelInfo
     /**
      * Set Sin value
      * @param string $sin
-     * @return \StructType\ParcelInfoSin
+     * @return \Dpd\StructType\ParcelInfoSin
      */
     public function setSin($sin = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class ParcelShop extends DefaultService
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ShopAddress
+     * @var \Dpd\StructType\ShopAddress
      */
     public $shopaddress;
     /**
      * Constructor method for ParcelShop
      * @uses ParcelShop::setShopaddress()
-     * @param \StructType\ShopAddress $shopaddress
+     * @param \Dpd\StructType\ShopAddress $shopaddress
      */
-    public function __construct(\StructType\ShopAddress $shopaddress = null)
+    public function __construct(\Dpd\StructType\ShopAddress $shopaddress = null)
     {
         $this
             ->setShopaddress($shopaddress);
     }
     /**
      * Get shopaddress value
-     * @return \StructType\ShopAddress|null
+     * @return \Dpd\StructType\ShopAddress|null
      */
     public function getShopaddress()
     {
@@ -38,10 +38,10 @@ class ParcelShop extends DefaultService
     }
     /**
      * Set shopaddress value
-     * @param \StructType\ShopAddress $shopaddress
-     * @return \StructType\ParcelShop
+     * @param \Dpd\StructType\ShopAddress $shopaddress
+     * @return \Dpd\StructType\ParcelShop
      */
-    public function setShopaddress(\StructType\ShopAddress $shopaddress = null)
+    public function setShopaddress(\Dpd\StructType\ShopAddress $shopaddress = null)
     {
         $this->shopaddress = $shopaddress;
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -178,7 +178,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\SdgiData
+     * @var \Dpd\StructType\SdgiData
      */
     public $DeliveryScheduled;
     /**
@@ -186,7 +186,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfClsTrace
+     * @var \Dpd\ArrayType\ArrayOfClsTrace
      */
     public $Traces;
     /**
@@ -278,15 +278,15 @@ class ClsShipmentTraceBase extends AbstractStructBase
      * @param string $reference2
      * @param string $reference3
      * @param string $reference4
-     * @param \StructType\SdgiData $deliveryScheduled
-     * @param \ArrayType\ArrayOfClsTrace $traces
+     * @param \Dpd\StructType\SdgiData $deliveryScheduled
+     * @param \Dpd\ArrayType\ArrayOfClsTrace $traces
      * @param string $reference_International
      * @param string $pointRelaisName
      * @param string $pointRelaisLink
      * @param string $shipmentNumber_Retour
      * @param string $barcodeId
      */
-    public function __construct($weight = null, $isB2C = null, $isRetour = null, $customerCenternumber = null, $customerNumber = null, $barcodeSource = null, $receiverDepotNumber = null, $receiverTourNumber = null, $deliveryRecordNumber = null, $deliveryRecordPosition = null, $shipmentNumber = null, $destinationCountry = null, $destinationZipcode = null, $shippingDate = null, $deliveryDate = null, $receiver = null, $reference = null, $reference2 = null, $reference3 = null, $reference4 = null, \StructType\SdgiData $deliveryScheduled = null, \ArrayType\ArrayOfClsTrace $traces = null, $reference_International = null, $pointRelaisName = null, $pointRelaisLink = null, $shipmentNumber_Retour = null, $barcodeId = null)
+    public function __construct($weight = null, $isB2C = null, $isRetour = null, $customerCenternumber = null, $customerNumber = null, $barcodeSource = null, $receiverDepotNumber = null, $receiverTourNumber = null, $deliveryRecordNumber = null, $deliveryRecordPosition = null, $shipmentNumber = null, $destinationCountry = null, $destinationZipcode = null, $shippingDate = null, $deliveryDate = null, $receiver = null, $reference = null, $reference2 = null, $reference3 = null, $reference4 = null, \Dpd\StructType\SdgiData $deliveryScheduled = null, \Dpd\ArrayType\ArrayOfClsTrace $traces = null, $reference_International = null, $pointRelaisName = null, $pointRelaisLink = null, $shipmentNumber_Retour = null, $barcodeId = null)
     {
         $this
             ->setWeight($weight)
@@ -328,7 +328,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set Weight value
      * @param float $weight
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setWeight($weight = null)
     {
@@ -350,7 +350,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set IsB2C value
      * @param bool $isB2C
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setIsB2C($isB2C = null)
     {
@@ -372,7 +372,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set IsRetour value
      * @param bool $isRetour
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setIsRetour($isRetour = null)
     {
@@ -394,7 +394,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set CustomerCenternumber value
      * @param int $customerCenternumber
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setCustomerCenternumber($customerCenternumber = null)
     {
@@ -416,7 +416,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set CustomerNumber value
      * @param int $customerNumber
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setCustomerNumber($customerNumber = null)
     {
@@ -438,7 +438,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set BarcodeSource value
      * @param int $barcodeSource
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setBarcodeSource($barcodeSource = null)
     {
@@ -460,7 +460,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set ReceiverDepotNumber value
      * @param int $receiverDepotNumber
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setReceiverDepotNumber($receiverDepotNumber = null)
     {
@@ -482,7 +482,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set ReceiverTourNumber value
      * @param int $receiverTourNumber
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setReceiverTourNumber($receiverTourNumber = null)
     {
@@ -504,7 +504,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set DeliveryRecordNumber value
      * @param int $deliveryRecordNumber
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setDeliveryRecordNumber($deliveryRecordNumber = null)
     {
@@ -526,7 +526,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set DeliveryRecordPosition value
      * @param int $deliveryRecordPosition
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setDeliveryRecordPosition($deliveryRecordPosition = null)
     {
@@ -548,7 +548,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set ShipmentNumber value
      * @param string $shipmentNumber
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setShipmentNumber($shipmentNumber = null)
     {
@@ -570,7 +570,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set DestinationCountry value
      * @param string $destinationCountry
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setDestinationCountry($destinationCountry = null)
     {
@@ -592,7 +592,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set DestinationZipcode value
      * @param string $destinationZipcode
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setDestinationZipcode($destinationZipcode = null)
     {
@@ -614,7 +614,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set ShippingDate value
      * @param string $shippingDate
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setShippingDate($shippingDate = null)
     {
@@ -636,7 +636,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set DeliveryDate value
      * @param string $deliveryDate
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setDeliveryDate($deliveryDate = null)
     {
@@ -658,7 +658,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set Receiver value
      * @param string $receiver
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setReceiver($receiver = null)
     {
@@ -680,7 +680,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set Reference value
      * @param string $reference
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setReference($reference = null)
     {
@@ -702,7 +702,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set Reference2 value
      * @param string $reference2
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setReference2($reference2 = null)
     {
@@ -724,7 +724,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set Reference3 value
      * @param string $reference3
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setReference3($reference3 = null)
     {
@@ -746,7 +746,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set Reference4 value
      * @param string $reference4
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setReference4($reference4 = null)
     {
@@ -759,7 +759,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     }
     /**
      * Get DeliveryScheduled value
-     * @return \StructType\SdgiData|null
+     * @return \Dpd\StructType\SdgiData|null
      */
     public function getDeliveryScheduled()
     {
@@ -767,17 +767,17 @@ class ClsShipmentTraceBase extends AbstractStructBase
     }
     /**
      * Set DeliveryScheduled value
-     * @param \StructType\SdgiData $deliveryScheduled
-     * @return \StructType\ClsShipmentTraceBase
+     * @param \Dpd\StructType\SdgiData $deliveryScheduled
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
-    public function setDeliveryScheduled(\StructType\SdgiData $deliveryScheduled = null)
+    public function setDeliveryScheduled(\Dpd\StructType\SdgiData $deliveryScheduled = null)
     {
         $this->DeliveryScheduled = $deliveryScheduled;
         return $this;
     }
     /**
      * Get Traces value
-     * @return \ArrayType\ArrayOfClsTrace|null
+     * @return \Dpd\ArrayType\ArrayOfClsTrace|null
      */
     public function getTraces()
     {
@@ -785,10 +785,10 @@ class ClsShipmentTraceBase extends AbstractStructBase
     }
     /**
      * Set Traces value
-     * @param \ArrayType\ArrayOfClsTrace $traces
-     * @return \StructType\ClsShipmentTraceBase
+     * @param \Dpd\ArrayType\ArrayOfClsTrace $traces
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
-    public function setTraces(\ArrayType\ArrayOfClsTrace $traces = null)
+    public function setTraces(\Dpd\ArrayType\ArrayOfClsTrace $traces = null)
     {
         $this->Traces = $traces;
         return $this;
@@ -804,7 +804,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set Reference_International value
      * @param string $reference_International
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setReference_International($reference_International = null)
     {
@@ -826,7 +826,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set PointRelaisName value
      * @param string $pointRelaisName
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setPointRelaisName($pointRelaisName = null)
     {
@@ -848,7 +848,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set PointRelaisLink value
      * @param string $pointRelaisLink
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setPointRelaisLink($pointRelaisLink = null)
     {
@@ -870,7 +870,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set ShipmentNumber_Retour value
      * @param string $shipmentNumber_Retour
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setShipmentNumber_Retour($shipmentNumber_Retour = null)
     {
@@ -892,7 +892,7 @@ class ClsShipmentTraceBase extends AbstractStructBase
     /**
      * Set BarcodeId value
      * @param string $barcodeId
-     * @return \StructType\ClsShipmentTraceBase
+     * @return \Dpd\StructType\ClsShipmentTraceBase
      */
     public function setBarcodeId($barcodeId = null)
     {

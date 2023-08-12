@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class TerminateShipment extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TerminateShipmentRequest
+     * @var \Dpd\StructType\TerminateShipmentRequest
      */
     public $request;
     /**
      * Constructor method for TerminateShipment
      * @uses TerminateShipment::setRequest()
-     * @param \StructType\TerminateShipmentRequest $request
+     * @param \Dpd\StructType\TerminateShipmentRequest $request
      */
-    public function __construct(\StructType\TerminateShipmentRequest $request = null)
+    public function __construct(\Dpd\StructType\TerminateShipmentRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\TerminateShipmentRequest|null
+     * @return \Dpd\StructType\TerminateShipmentRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class TerminateShipment extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\TerminateShipmentRequest $request
-     * @return \StructType\TerminateShipment
+     * @param \Dpd\StructType\TerminateShipmentRequest $request
+     * @return \Dpd\StructType\TerminateShipment
      */
-    public function setRequest(\StructType\TerminateShipmentRequest $request = null)
+    public function setRequest(\Dpd\StructType\TerminateShipmentRequest $request = null)
     {
         $this->request = $request;
         return $this;

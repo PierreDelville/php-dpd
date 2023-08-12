@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\LabelType
+     * @var \Dpd\StructType\LabelType
      */
     public $labelType;
     /**
@@ -51,9 +51,9 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
      * @param bool $refasbarcode
      * @param string $receiver_contact_name
      * @param string $customLabelText
-     * @param \StructType\LabelType $labelType
+     * @param \Dpd\StructType\LabelType $labelType
      */
-    public function __construct($refasbarcode = null, $receiver_contact_name = null, $customLabelText = null, \StructType\LabelType $labelType = null)
+    public function __construct($refasbarcode = null, $receiver_contact_name = null, $customLabelText = null, \Dpd\StructType\LabelType $labelType = null)
     {
         $this
             ->setRefasbarcode($refasbarcode)
@@ -72,7 +72,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     /**
      * Set refasbarcode value
      * @param bool $refasbarcode
-     * @return \StructType\ReverseShipmentLabelRequest
+     * @return \Dpd\StructType\ReverseShipmentLabelRequest
      */
     public function setRefasbarcode($refasbarcode = null)
     {
@@ -94,7 +94,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     /**
      * Set receiver_contact_name value
      * @param string $receiver_contact_name
-     * @return \StructType\ReverseShipmentLabelRequest
+     * @return \Dpd\StructType\ReverseShipmentLabelRequest
      */
     public function setReceiver_contact_name($receiver_contact_name = null)
     {
@@ -116,7 +116,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     /**
      * Set customLabelText value
      * @param string $customLabelText
-     * @return \StructType\ReverseShipmentLabelRequest
+     * @return \Dpd\StructType\ReverseShipmentLabelRequest
      */
     public function setCustomLabelText($customLabelText = null)
     {
@@ -129,7 +129,7 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     }
     /**
      * Get labelType value
-     * @return \StructType\LabelType|null
+     * @return \Dpd\StructType\LabelType|null
      */
     public function getLabelType()
     {
@@ -137,10 +137,10 @@ class ReverseShipmentLabelRequest extends ReverseShipmentRequest
     }
     /**
      * Set labelType value
-     * @param \StructType\LabelType $labelType
-     * @return \StructType\ReverseShipmentLabelRequest
+     * @param \Dpd\StructType\LabelType $labelType
+     * @return \Dpd\StructType\ReverseShipmentLabelRequest
      */
-    public function setLabelType(\StructType\LabelType $labelType = null)
+    public function setLabelType(\Dpd\StructType\LabelType $labelType = null)
     {
         $this->labelType = $labelType;
         return $this;

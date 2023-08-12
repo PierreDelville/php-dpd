@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class LabelData extends LabelDataPn
     /**
      * Set Bic3Depot value
      * @param string $bic3Depot
-     * @return \StructType\LabelData
+     * @return \Dpd\StructType\LabelData
      */
     public function setBic3Depot($bic3Depot = null)
     {
@@ -83,7 +83,7 @@ class LabelData extends LabelDataPn
     /**
      * Set Bic3Number value
      * @param string $bic3Number
-     * @return \StructType\LabelData
+     * @return \Dpd\StructType\LabelData
      */
     public function setBic3Number($bic3Number = null)
     {
@@ -105,7 +105,7 @@ class LabelData extends LabelDataPn
     /**
      * Set Bic3Checkdigit value
      * @param string $bic3Checkdigit
-     * @return \StructType\LabelData
+     * @return \Dpd\StructType\LabelData
      */
     public function setBic3Checkdigit($bic3Checkdigit = null)
     {

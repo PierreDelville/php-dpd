@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,17 +49,17 @@ class ExtraInsurance extends DefaultService
     }
     /**
      * Set type value
-     * @uses \EnumType\EtypeInsurance::valueIsValid()
-     * @uses \EnumType\EtypeInsurance::getValidValues()
+     * @uses \Dpd\EnumType\EtypeInsurance::valueIsValid()
+     * @uses \Dpd\EnumType\EtypeInsurance::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\ExtraInsurance
+     * @return \Dpd\StructType\ExtraInsurance
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\EtypeInsurance::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\EtypeInsurance', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\EtypeInsurance::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\EtypeInsurance::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\EtypeInsurance', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Dpd\EnumType\EtypeInsurance::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -75,7 +75,7 @@ class ExtraInsurance extends DefaultService
     /**
      * Set value value
      * @param string $value
-     * @return \StructType\ExtraInsurance
+     * @return \Dpd\StructType\ExtraInsurance
      */
     public function setValue($value = null)
     {

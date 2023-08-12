@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -116,7 +116,7 @@ class RdvAddress extends AbstractStructBase
     /**
      * Set Name value
      * @param string $name
-     * @return \StructType\RdvAddress
+     * @return \Dpd\StructType\RdvAddress
      */
     public function setName($name = null)
     {
@@ -138,7 +138,7 @@ class RdvAddress extends AbstractStructBase
     /**
      * Set CountryPrefix value
      * @param string $countryPrefix
-     * @return \StructType\RdvAddress
+     * @return \Dpd\StructType\RdvAddress
      */
     public function setCountryPrefix($countryPrefix = null)
     {
@@ -160,7 +160,7 @@ class RdvAddress extends AbstractStructBase
     /**
      * Set ZipCode value
      * @param string $zipCode
-     * @return \StructType\RdvAddress
+     * @return \Dpd\StructType\RdvAddress
      */
     public function setZipCode($zipCode = null)
     {
@@ -182,7 +182,7 @@ class RdvAddress extends AbstractStructBase
     /**
      * Set City value
      * @param string $city
-     * @return \StructType\RdvAddress
+     * @return \Dpd\StructType\RdvAddress
      */
     public function setCity($city = null)
     {
@@ -204,7 +204,7 @@ class RdvAddress extends AbstractStructBase
     /**
      * Set Street value
      * @param string $street
-     * @return \StructType\RdvAddress
+     * @return \Dpd\StructType\RdvAddress
      */
     public function setStreet($street = null)
     {
@@ -226,7 +226,7 @@ class RdvAddress extends AbstractStructBase
     /**
      * Set PhoneNumber value
      * @param string $phoneNumber
-     * @return \StructType\RdvAddress
+     * @return \Dpd\StructType\RdvAddress
      */
     public function setPhoneNumber($phoneNumber = null)
     {
@@ -248,7 +248,7 @@ class RdvAddress extends AbstractStructBase
     /**
      * Set GeoCoord_Y value
      * @param string $geoCoord_Y
-     * @return \StructType\RdvAddress
+     * @return \Dpd\StructType\RdvAddress
      */
     public function setGeoCoord_Y($geoCoord_Y = null)
     {
@@ -270,7 +270,7 @@ class RdvAddress extends AbstractStructBase
     /**
      * Set GeoCoord_X value
      * @param string $geoCoord_X
-     * @return \StructType\RdvAddress
+     * @return \Dpd\StructType\RdvAddress
      */
     public function setGeoCoord_X($geoCoord_X = null)
     {

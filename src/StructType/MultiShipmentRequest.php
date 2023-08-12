@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class MultiShipmentRequest extends ShipmentRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\MultiServices
+     * @var \Dpd\StructType\MultiServices
      */
     public $services;
     /**
@@ -23,17 +23,17 @@ class MultiShipmentRequest extends ShipmentRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfSlaveRequest
+     * @var \Dpd\ArrayType\ArrayOfSlaveRequest
      */
     public $slaves;
     /**
      * Constructor method for MultiShipmentRequest
      * @uses MultiShipmentRequest::setServices()
      * @uses MultiShipmentRequest::setSlaves()
-     * @param \StructType\MultiServices $services
-     * @param \ArrayType\ArrayOfSlaveRequest $slaves
+     * @param \Dpd\StructType\MultiServices $services
+     * @param \Dpd\ArrayType\ArrayOfSlaveRequest $slaves
      */
-    public function __construct(\StructType\MultiServices $services = null, \ArrayType\ArrayOfSlaveRequest $slaves = null)
+    public function __construct(\Dpd\StructType\MultiServices $services = null, \Dpd\ArrayType\ArrayOfSlaveRequest $slaves = null)
     {
         $this
             ->setServices($services)
@@ -41,7 +41,7 @@ class MultiShipmentRequest extends ShipmentRequestBase
     }
     /**
      * Get services value
-     * @return \StructType\MultiServices|null
+     * @return \Dpd\StructType\MultiServices|null
      */
     public function getServices()
     {
@@ -49,17 +49,17 @@ class MultiShipmentRequest extends ShipmentRequestBase
     }
     /**
      * Set services value
-     * @param \StructType\MultiServices $services
-     * @return \StructType\MultiShipmentRequest
+     * @param \Dpd\StructType\MultiServices $services
+     * @return \Dpd\StructType\MultiShipmentRequest
      */
-    public function setServices(\StructType\MultiServices $services = null)
+    public function setServices(\Dpd\StructType\MultiServices $services = null)
     {
         $this->services = $services;
         return $this;
     }
     /**
      * Get slaves value
-     * @return \ArrayType\ArrayOfSlaveRequest|null
+     * @return \Dpd\ArrayType\ArrayOfSlaveRequest|null
      */
     public function getSlaves()
     {
@@ -67,10 +67,10 @@ class MultiShipmentRequest extends ShipmentRequestBase
     }
     /**
      * Set slaves value
-     * @param \ArrayType\ArrayOfSlaveRequest $slaves
-     * @return \StructType\MultiShipmentRequest
+     * @param \Dpd\ArrayType\ArrayOfSlaveRequest $slaves
+     * @return \Dpd\StructType\MultiShipmentRequest
      */
-    public function setSlaves(\ArrayType\ArrayOfSlaveRequest $slaves = null)
+    public function setSlaves(\Dpd\ArrayType\ArrayOfSlaveRequest $slaves = null)
     {
         $this->slaves = $slaves;
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class ShipmentDataExtended extends ShipmentDataExtendedBase
     /**
      * Set countrycode value
      * @param string $countrycode
-     * @return \StructType\ShipmentDataExtended
+     * @return \Dpd\StructType\ShipmentDataExtended
      */
     public function setCountrycode($countrycode = null)
     {
@@ -83,7 +83,7 @@ class ShipmentDataExtended extends ShipmentDataExtendedBase
     /**
      * Set centernumber value
      * @param string $centernumber
-     * @return \StructType\ShipmentDataExtended
+     * @return \Dpd\StructType\ShipmentDataExtended
      */
     public function setCenternumber($centernumber = null)
     {
@@ -105,7 +105,7 @@ class ShipmentDataExtended extends ShipmentDataExtendedBase
     /**
      * Set parcelnumber value
      * @param string $parcelnumber
-     * @return \StructType\ShipmentDataExtended
+     * @return \Dpd\StructType\ShipmentDataExtended
      */
     public function setParcelnumber($parcelnumber = null)
     {

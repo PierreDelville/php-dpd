@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class UpdateRdvShipmentDataForAgencyPickupRequest extends UpdateRdvShipmentData
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RdvEsnInfo
+     * @var \Dpd\StructType\RdvEsnInfo
      */
     public $EsnInfo;
     /**
@@ -31,9 +31,9 @@ class UpdateRdvShipmentDataForAgencyPickupRequest extends UpdateRdvShipmentData
      * @uses UpdateRdvShipmentDataForAgencyPickupRequest::setDeliveryDate()
      * @uses UpdateRdvShipmentDataForAgencyPickupRequest::setEsnInfo()
      * @param string $deliveryDate
-     * @param \StructType\RdvEsnInfo $esnInfo
+     * @param \Dpd\StructType\RdvEsnInfo $esnInfo
      */
-    public function __construct($deliveryDate = null, \StructType\RdvEsnInfo $esnInfo = null)
+    public function __construct($deliveryDate = null, \Dpd\StructType\RdvEsnInfo $esnInfo = null)
     {
         $this
             ->setDeliveryDate($deliveryDate)
@@ -50,7 +50,7 @@ class UpdateRdvShipmentDataForAgencyPickupRequest extends UpdateRdvShipmentData
     /**
      * Set DeliveryDate value
      * @param string $deliveryDate
-     * @return \StructType\UpdateRdvShipmentDataForAgencyPickupRequest
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForAgencyPickupRequest
      */
     public function setDeliveryDate($deliveryDate = null)
     {
@@ -63,7 +63,7 @@ class UpdateRdvShipmentDataForAgencyPickupRequest extends UpdateRdvShipmentData
     }
     /**
      * Get EsnInfo value
-     * @return \StructType\RdvEsnInfo|null
+     * @return \Dpd\StructType\RdvEsnInfo|null
      */
     public function getEsnInfo()
     {
@@ -71,10 +71,10 @@ class UpdateRdvShipmentDataForAgencyPickupRequest extends UpdateRdvShipmentData
     }
     /**
      * Set EsnInfo value
-     * @param \StructType\RdvEsnInfo $esnInfo
-     * @return \StructType\UpdateRdvShipmentDataForAgencyPickupRequest
+     * @param \Dpd\StructType\RdvEsnInfo $esnInfo
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForAgencyPickupRequest
      */
-    public function setEsnInfo(\StructType\RdvEsnInfo $esnInfo = null)
+    public function setEsnInfo(\Dpd\StructType\RdvEsnInfo $esnInfo = null)
     {
         $this->EsnInfo = $esnInfo;
         return $this;

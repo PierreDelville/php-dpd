@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -237,7 +237,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set barcodeId value
      * @param string $barcodeId
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setBarcodeId($barcodeId = null)
     {
@@ -259,7 +259,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set barcodePostcode value
      * @param string $barcodePostcode
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setBarcodePostcode($barcodePostcode = null)
     {
@@ -281,7 +281,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set buAlphaStr value
      * @param string $buAlphaStr
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setBuAlphaStr($buAlphaStr = null)
     {
@@ -303,7 +303,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set buCode value
      * @param string $buCode
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setBuCode($buCode = null)
     {
@@ -325,7 +325,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set cSort value
      * @param string $cSort
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setCSort($cSort = null)
     {
@@ -347,7 +347,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set dCountry value
      * @param string $dCountry
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setDCountry($dCountry = null)
     {
@@ -369,7 +369,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set dDepot value
      * @param string $dDepot
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setDDepot($dDepot = null)
     {
@@ -391,7 +391,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set dDepotCountry value
      * @param string $dDepotCountry
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setDDepotCountry($dDepotCountry = null)
     {
@@ -413,7 +413,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set dDepotStr value
      * @param string $dDepotStr
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setDDepotStr($dDepotStr = null)
     {
@@ -435,7 +435,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set dSort value
      * @param string $dSort
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setDSort($dSort = null)
     {
@@ -457,7 +457,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set networkCode value
      * @param string $networkCode
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setNetworkCode($networkCode = null)
     {
@@ -479,7 +479,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set oSort value
      * @param string $oSort
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setOSort($oSort = null)
     {
@@ -501,7 +501,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set partnerCode value
      * @param string $partnerCode
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setPartnerCode($partnerCode = null)
     {
@@ -523,7 +523,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set routingText value
      * @param string $routingText
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setRoutingText($routingText = null)
     {
@@ -545,7 +545,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set sSort value
      * @param string $sSort
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setSSort($sSort = null)
     {
@@ -567,7 +567,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set serviceMark value
      * @param string $serviceMark
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setServiceMark($serviceMark = null)
     {
@@ -589,7 +589,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set serviceText value
      * @param string $serviceText
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setServiceText($serviceText = null)
     {
@@ -611,7 +611,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setVersion($version = null)
     {
@@ -633,7 +633,7 @@ class GeoRouting extends AbstractStructBase
     /**
      * Set soCode value
      * @param string $soCode
-     * @return \StructType\GeoRouting
+     * @return \Dpd\StructType\GeoRouting
      */
     public function setSoCode($soCode = null)
     {

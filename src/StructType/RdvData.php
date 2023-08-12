@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class RdvData extends AbstractStructBase
     /**
      * Set DayCheckDone value
      * @param bool $dayCheckDone
-     * @return \StructType\RdvData
+     * @return \Dpd\StructType\RdvData
      */
     public function setDayCheckDone($dayCheckDone = null)
     {

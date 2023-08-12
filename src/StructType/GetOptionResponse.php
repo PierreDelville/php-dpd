@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class GetOptionResponse extends AbstractStructBase
     /**
      * Set Value value
      * @param string $value
-     * @return \StructType\GetOptionResponse
+     * @return \Dpd\StructType\GetOptionResponse
      */
     public function setValue($value = null)
     {
@@ -72,7 +72,7 @@ class GetOptionResponse extends AbstractStructBase
     /**
      * Set Parameter value
      * @param string $parameter
-     * @return \StructType\GetOptionResponse
+     * @return \Dpd\StructType\GetOptionResponse
      */
     public function setParameter($parameter = null)
     {

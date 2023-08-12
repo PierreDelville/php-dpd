@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class MultiShipmentBc extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ShipmentBc
+     * @var \Dpd\StructType\ShipmentBc
      */
     public $mastershipment;
     /**
@@ -23,17 +23,17 @@ class MultiShipmentBc extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfShipmentBc
+     * @var \Dpd\ArrayType\ArrayOfShipmentBc
      */
     public $shipments;
     /**
      * Constructor method for MultiShipmentBc
      * @uses MultiShipmentBc::setMastershipment()
      * @uses MultiShipmentBc::setShipments()
-     * @param \StructType\ShipmentBc $mastershipment
-     * @param \ArrayType\ArrayOfShipmentBc $shipments
+     * @param \Dpd\StructType\ShipmentBc $mastershipment
+     * @param \Dpd\ArrayType\ArrayOfShipmentBc $shipments
      */
-    public function __construct(\StructType\ShipmentBc $mastershipment = null, \ArrayType\ArrayOfShipmentBc $shipments = null)
+    public function __construct(\Dpd\StructType\ShipmentBc $mastershipment = null, \Dpd\ArrayType\ArrayOfShipmentBc $shipments = null)
     {
         $this
             ->setMastershipment($mastershipment)
@@ -41,7 +41,7 @@ class MultiShipmentBc extends AbstractStructBase
     }
     /**
      * Get mastershipment value
-     * @return \StructType\ShipmentBc|null
+     * @return \Dpd\StructType\ShipmentBc|null
      */
     public function getMastershipment()
     {
@@ -49,17 +49,17 @@ class MultiShipmentBc extends AbstractStructBase
     }
     /**
      * Set mastershipment value
-     * @param \StructType\ShipmentBc $mastershipment
-     * @return \StructType\MultiShipmentBc
+     * @param \Dpd\StructType\ShipmentBc $mastershipment
+     * @return \Dpd\StructType\MultiShipmentBc
      */
-    public function setMastershipment(\StructType\ShipmentBc $mastershipment = null)
+    public function setMastershipment(\Dpd\StructType\ShipmentBc $mastershipment = null)
     {
         $this->mastershipment = $mastershipment;
         return $this;
     }
     /**
      * Get shipments value
-     * @return \ArrayType\ArrayOfShipmentBc|null
+     * @return \Dpd\ArrayType\ArrayOfShipmentBc|null
      */
     public function getShipments()
     {
@@ -67,10 +67,10 @@ class MultiShipmentBc extends AbstractStructBase
     }
     /**
      * Set shipments value
-     * @param \ArrayType\ArrayOfShipmentBc $shipments
-     * @return \StructType\MultiShipmentBc
+     * @param \Dpd\ArrayType\ArrayOfShipmentBc $shipments
+     * @return \Dpd\StructType\MultiShipmentBc
      */
-    public function setShipments(\ArrayType\ArrayOfShipmentBc $shipments = null)
+    public function setShipments(\Dpd\ArrayType\ArrayOfShipmentBc $shipments = null)
     {
         $this->shipments = $shipments;
         return $this;

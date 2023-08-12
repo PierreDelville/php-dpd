@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,7 +24,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $customer;
     /**
@@ -50,11 +50,11 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
      * @uses RetourShipmentBcRequest::setOriginalBarcode()
      * @uses RetourShipmentBcRequest::setOriginalBarcodeId()
      * @param int $originalBarcodeSource
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      * @param string $originalBarcode
      * @param string $originalBarcodeId
      */
-    public function __construct($originalBarcodeSource = null, \StructType\Customer $customer = null, $originalBarcode = null, $originalBarcodeId = null)
+    public function __construct($originalBarcodeSource = null, \Dpd\StructType\Customer $customer = null, $originalBarcode = null, $originalBarcodeId = null)
     {
         $this
             ->setOriginalBarcodeSource($originalBarcodeSource)
@@ -73,7 +73,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     /**
      * Set originalBarcodeSource value
      * @param int $originalBarcodeSource
-     * @return \StructType\RetourShipmentBcRequest
+     * @return \Dpd\StructType\RetourShipmentBcRequest
      */
     public function setOriginalBarcodeSource($originalBarcodeSource = null)
     {
@@ -86,7 +86,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     }
     /**
      * Get customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -94,10 +94,10 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     }
     /**
      * Set customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\RetourShipmentBcRequest
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\RetourShipmentBcRequest
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->customer = $customer;
         return $this;
@@ -113,7 +113,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     /**
      * Set originalBarcode value
      * @param string $originalBarcode
-     * @return \StructType\RetourShipmentBcRequest
+     * @return \Dpd\StructType\RetourShipmentBcRequest
      */
     public function setOriginalBarcode($originalBarcode = null)
     {
@@ -135,7 +135,7 @@ class RetourShipmentBcRequest extends RetourShipmentBaseRequest
     /**
      * Set originalBarcodeId value
      * @param string $originalBarcodeId
-     * @return \StructType\RetourShipmentBcRequest
+     * @return \Dpd\StructType\RetourShipmentBcRequest
      */
     public function setOriginalBarcodeId($originalBarcodeId = null)
     {

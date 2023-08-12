@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfLabel extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Label[]
+     * @var \Dpd\StructType\Label[]
      */
     public $Label;
     /**
      * Constructor method for ArrayOfLabel
      * @uses ArrayOfLabel::setLabel()
-     * @param \StructType\Label[] $label
+     * @param \Dpd\StructType\Label[] $label
      */
     public function __construct(array $label = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfLabel extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Label[]|null
+     * @return \Dpd\StructType\Label[]|null
      */
     public function getLabel()
     {
@@ -52,12 +52,12 @@ class ArrayOfLabel extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfLabelLabelItem) {
             // validation for constraint: itemType
-            if (!$arrayOfLabelLabelItem instanceof \StructType\Label) {
+            if (!$arrayOfLabelLabelItem instanceof \Dpd\StructType\Label) {
                 $invalidValues[] = is_object($arrayOfLabelLabelItem) ? get_class($arrayOfLabelLabelItem) : sprintf('%s(%s)', gettype($arrayOfLabelLabelItem), var_export($arrayOfLabelLabelItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Label property can only contain items of type \StructType\Label, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Label property can only contain items of type \Dpd\StructType\Label, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfLabel extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Label[] $label
-     * @return \ArrayType\ArrayOfLabel
+     * @param \Dpd\StructType\Label[] $label
+     * @return \Dpd\ArrayType\ArrayOfLabel
      */
     public function setLabel(array $label = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfLabel extends AbstractStructArrayBase
     /**
      * Add item to Label value
      * @throws \InvalidArgumentException
-     * @param \StructType\Label $item
-     * @return \ArrayType\ArrayOfLabel
+     * @param \Dpd\StructType\Label $item
+     * @return \Dpd\ArrayType\ArrayOfLabel
      */
-    public function addToLabel(\StructType\Label $item)
+    public function addToLabel(\Dpd\StructType\Label $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Label) {
-            throw new \InvalidArgumentException(sprintf('The Label property can only contain items of type \StructType\Label, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\Label) {
+            throw new \InvalidArgumentException(sprintf('The Label property can only contain items of type \Dpd\StructType\Label, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Label[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfLabel extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Label|null
+     * @return \Dpd\StructType\Label|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfLabel extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Label|null
+     * @return \Dpd\StructType\Label|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfLabel extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Label|null
+     * @return \Dpd\StructType\Label|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfLabel extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Label|null
+     * @return \Dpd\StructType\Label|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfLabel extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Label|null
+     * @return \Dpd\StructType\Label|null
      */
     public function offsetGet($offset)
     {

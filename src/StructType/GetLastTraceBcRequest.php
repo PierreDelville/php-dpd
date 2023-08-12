@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetLastTraceBcRequest extends GetLastTraceBaseRequest
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfString
+     * @var \Dpd\ArrayType\ArrayOfString
      */
     public $Parcels;
     /**
      * Constructor method for GetLastTraceBcRequest
      * @uses GetLastTraceBcRequest::setParcels()
-     * @param \ArrayType\ArrayOfString $parcels
+     * @param \Dpd\ArrayType\ArrayOfString $parcels
      */
-    public function __construct(\ArrayType\ArrayOfString $parcels = null)
+    public function __construct(\Dpd\ArrayType\ArrayOfString $parcels = null)
     {
         $this
             ->setParcels($parcels);
     }
     /**
      * Get Parcels value
-     * @return \ArrayType\ArrayOfString|null
+     * @return \Dpd\ArrayType\ArrayOfString|null
      */
     public function getParcels()
     {
@@ -38,10 +38,10 @@ class GetLastTraceBcRequest extends GetLastTraceBaseRequest
     }
     /**
      * Set Parcels value
-     * @param \ArrayType\ArrayOfString $parcels
-     * @return \StructType\GetLastTraceBcRequest
+     * @param \Dpd\ArrayType\ArrayOfString $parcels
+     * @return \Dpd\StructType\GetLastTraceBcRequest
      */
-    public function setParcels(\ArrayType\ArrayOfString $parcels = null)
+    public function setParcels(\Dpd\ArrayType\ArrayOfString $parcels = null)
     {
         $this->Parcels = $parcels;
         return $this;

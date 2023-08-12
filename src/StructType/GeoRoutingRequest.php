@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class GeoRoutingRequest extends GeoRoutingBaseRequest
     /**
      * Set serviceCode value
      * @param string $serviceCode
-     * @return \StructType\GeoRoutingRequest
+     * @return \Dpd\StructType\GeoRoutingRequest
      */
     public function setServiceCode($serviceCode = null)
     {

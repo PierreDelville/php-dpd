@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -94,7 +94,7 @@ class PropertyDefinition extends AbstractStructBase
     /**
      * Set Id value
      * @param int $id
-     * @return \StructType\PropertyDefinition
+     * @return \Dpd\StructType\PropertyDefinition
      */
     public function setId($id = null)
     {
@@ -116,7 +116,7 @@ class PropertyDefinition extends AbstractStructBase
     /**
      * Set PropertyType value
      * @param string $propertyType
-     * @return \StructType\PropertyDefinition
+     * @return \Dpd\StructType\PropertyDefinition
      */
     public function setPropertyType($propertyType = null)
     {
@@ -138,7 +138,7 @@ class PropertyDefinition extends AbstractStructBase
     /**
      * Set DataType value
      * @param string $dataType
-     * @return \StructType\PropertyDefinition
+     * @return \Dpd\StructType\PropertyDefinition
      */
     public function setDataType($dataType = null)
     {
@@ -160,7 +160,7 @@ class PropertyDefinition extends AbstractStructBase
     /**
      * Set Property value
      * @param string $property
-     * @return \StructType\PropertyDefinition
+     * @return \Dpd\StructType\PropertyDefinition
      */
     public function setProperty($property = null)
     {
@@ -182,7 +182,7 @@ class PropertyDefinition extends AbstractStructBase
     /**
      * Set Query value
      * @param string $query
-     * @return \StructType\PropertyDefinition
+     * @return \Dpd\StructType\PropertyDefinition
      */
     public function setQuery($query = null)
     {
@@ -204,7 +204,7 @@ class PropertyDefinition extends AbstractStructBase
     /**
      * Set Options value
      * @param string $options
-     * @return \StructType\PropertyDefinition
+     * @return \Dpd\StructType\PropertyDefinition
      */
     public function setOptions($options = null)
     {

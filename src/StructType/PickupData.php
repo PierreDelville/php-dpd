@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -84,7 +84,7 @@ class PickupData extends ServiceBaseList
     /**
      * Set dayCheckDone value
      * @param bool $dayCheckDone
-     * @return \StructType\PickupData
+     * @return \Dpd\StructType\PickupData
      */
     public function setDayCheckDone($dayCheckDone = null)
     {
@@ -106,7 +106,7 @@ class PickupData extends ServiceBaseList
     /**
      * Set time_from value
      * @param string $time_from
-     * @return \StructType\PickupData
+     * @return \Dpd\StructType\PickupData
      */
     public function setTime_from($time_from = null)
     {
@@ -128,7 +128,7 @@ class PickupData extends ServiceBaseList
     /**
      * Set time_to value
      * @param string $time_to
-     * @return \StructType\PickupData
+     * @return \Dpd\StructType\PickupData
      */
     public function setTime_to($time_to = null)
     {
@@ -150,7 +150,7 @@ class PickupData extends ServiceBaseList
     /**
      * Set remark value
      * @param string $remark
-     * @return \StructType\PickupData
+     * @return \Dpd\StructType\PickupData
      */
     public function setRemark($remark = null)
     {
@@ -172,7 +172,7 @@ class PickupData extends ServiceBaseList
     /**
      * Set pick_remark value
      * @param string $pick_remark
-     * @return \StructType\PickupData
+     * @return \Dpd\StructType\PickupData
      */
     public function setPick_remark($pick_remark = null)
     {

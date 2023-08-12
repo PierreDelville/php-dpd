@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -38,17 +38,17 @@ class Consolidation extends DefaultService
     }
     /**
      * Set type value
-     * @uses \EnumType\EtypeConsolidation::valueIsValid()
-     * @uses \EnumType\EtypeConsolidation::getValidValues()
+     * @uses \Dpd\EnumType\EtypeConsolidation::valueIsValid()
+     * @uses \Dpd\EnumType\EtypeConsolidation::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\Consolidation
+     * @return \Dpd\StructType\Consolidation
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\EtypeConsolidation::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\EtypeConsolidation', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\EtypeConsolidation::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\EtypeConsolidation::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\EtypeConsolidation', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Dpd\EnumType\EtypeConsolidation::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;

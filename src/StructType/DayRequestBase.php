@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class DayRequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AddressMini
+     * @var \Dpd\StructType\AddressMini
      */
     public $address;
     /**
@@ -30,10 +30,10 @@ class DayRequestBase extends AbstractStructBase
      * Constructor method for DayRequestBase
      * @uses DayRequestBase::setAddress()
      * @uses DayRequestBase::setDate()
-     * @param \StructType\AddressMini $address
+     * @param \Dpd\StructType\AddressMini $address
      * @param string $date
      */
-    public function __construct(\StructType\AddressMini $address = null, $date = null)
+    public function __construct(\Dpd\StructType\AddressMini $address = null, $date = null)
     {
         $this
             ->setAddress($address)
@@ -41,7 +41,7 @@ class DayRequestBase extends AbstractStructBase
     }
     /**
      * Get address value
-     * @return \StructType\AddressMini|null
+     * @return \Dpd\StructType\AddressMini|null
      */
     public function getAddress()
     {
@@ -49,10 +49,10 @@ class DayRequestBase extends AbstractStructBase
     }
     /**
      * Set address value
-     * @param \StructType\AddressMini $address
-     * @return \StructType\DayRequestBase
+     * @param \Dpd\StructType\AddressMini $address
+     * @return \Dpd\StructType\DayRequestBase
      */
-    public function setAddress(\StructType\AddressMini $address = null)
+    public function setAddress(\Dpd\StructType\AddressMini $address = null)
     {
         $this->address = $address;
         return $this;
@@ -68,7 +68,7 @@ class DayRequestBase extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\DayRequestBase
+     * @return \Dpd\StructType\DayRequestBase
      */
     public function setDate($date = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class Customer extends CustomerSmall
     /**
      * Set countrycode value
      * @param int $countrycode
-     * @return \StructType\Customer
+     * @return \Dpd\StructType\Customer
      */
     public function setCountrycode($countrycode = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ShipmentWithLabelsBc extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ShipmentBc
+     * @var \Dpd\StructType\ShipmentBc
      */
     public $Shipment;
     /**
@@ -23,17 +23,17 @@ class ShipmentWithLabelsBc extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfLabel
+     * @var \Dpd\ArrayType\ArrayOfLabel
      */
     public $Labels;
     /**
      * Constructor method for ShipmentWithLabelsBc
      * @uses ShipmentWithLabelsBc::setShipment()
      * @uses ShipmentWithLabelsBc::setLabels()
-     * @param \StructType\ShipmentBc $shipment
-     * @param \ArrayType\ArrayOfLabel $labels
+     * @param \Dpd\StructType\ShipmentBc $shipment
+     * @param \Dpd\ArrayType\ArrayOfLabel $labels
      */
-    public function __construct(\StructType\ShipmentBc $shipment = null, \ArrayType\ArrayOfLabel $labels = null)
+    public function __construct(\Dpd\StructType\ShipmentBc $shipment = null, \Dpd\ArrayType\ArrayOfLabel $labels = null)
     {
         $this
             ->setShipment($shipment)
@@ -41,7 +41,7 @@ class ShipmentWithLabelsBc extends AbstractStructBase
     }
     /**
      * Get Shipment value
-     * @return \StructType\ShipmentBc|null
+     * @return \Dpd\StructType\ShipmentBc|null
      */
     public function getShipment()
     {
@@ -49,17 +49,17 @@ class ShipmentWithLabelsBc extends AbstractStructBase
     }
     /**
      * Set Shipment value
-     * @param \StructType\ShipmentBc $shipment
-     * @return \StructType\ShipmentWithLabelsBc
+     * @param \Dpd\StructType\ShipmentBc $shipment
+     * @return \Dpd\StructType\ShipmentWithLabelsBc
      */
-    public function setShipment(\StructType\ShipmentBc $shipment = null)
+    public function setShipment(\Dpd\StructType\ShipmentBc $shipment = null)
     {
         $this->Shipment = $shipment;
         return $this;
     }
     /**
      * Get Labels value
-     * @return \ArrayType\ArrayOfLabel|null
+     * @return \Dpd\ArrayType\ArrayOfLabel|null
      */
     public function getLabels()
     {
@@ -67,10 +67,10 @@ class ShipmentWithLabelsBc extends AbstractStructBase
     }
     /**
      * Set Labels value
-     * @param \ArrayType\ArrayOfLabel $labels
-     * @return \StructType\ShipmentWithLabelsBc
+     * @param \Dpd\ArrayType\ArrayOfLabel $labels
+     * @return \Dpd\StructType\ShipmentWithLabelsBc
      */
-    public function setLabels(\ArrayType\ArrayOfLabel $labels = null)
+    public function setLabels(\Dpd\ArrayType\ArrayOfLabel $labels = null)
     {
         $this->Labels = $labels;
         return $this;

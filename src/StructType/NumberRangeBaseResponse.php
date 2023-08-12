@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -127,7 +127,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     /**
      * Set NumberRangeFrom value
      * @param int $numberRangeFrom
-     * @return \StructType\NumberRangeBaseResponse
+     * @return \Dpd\StructType\NumberRangeBaseResponse
      */
     public function setNumberRangeFrom($numberRangeFrom = null)
     {
@@ -149,7 +149,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     /**
      * Set NumberRangeTo value
      * @param int $numberRangeTo
-     * @return \StructType\NumberRangeBaseResponse
+     * @return \Dpd\StructType\NumberRangeBaseResponse
      */
     public function setNumberRangeTo($numberRangeTo = null)
     {
@@ -171,7 +171,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     /**
      * Set NumberRangeFree value
      * @param int $numberRangeFree
-     * @return \StructType\NumberRangeBaseResponse
+     * @return \Dpd\StructType\NumberRangeBaseResponse
      */
     public function setNumberRangeFree($numberRangeFree = null)
     {
@@ -193,7 +193,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     /**
      * Set CustomerCenterNumber value
      * @param int $customerCenterNumber
-     * @return \StructType\NumberRangeBaseResponse
+     * @return \Dpd\StructType\NumberRangeBaseResponse
      */
     public function setCustomerCenterNumber($customerCenterNumber = null)
     {
@@ -215,7 +215,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     /**
      * Set CustomerNumber value
      * @param int $customerNumber
-     * @return \StructType\NumberRangeBaseResponse
+     * @return \Dpd\StructType\NumberRangeBaseResponse
      */
     public function setCustomerNumber($customerNumber = null)
     {
@@ -237,7 +237,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     /**
      * Set NumberRangeType value
      * @param int $numberRangeType
-     * @return \StructType\NumberRangeBaseResponse
+     * @return \Dpd\StructType\NumberRangeBaseResponse
      */
     public function setNumberRangeType($numberRangeType = null)
     {
@@ -259,7 +259,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     /**
      * Set NumberType value
      * @param int $numberType
-     * @return \StructType\NumberRangeBaseResponse
+     * @return \Dpd\StructType\NumberRangeBaseResponse
      */
     public function setNumberType($numberType = null)
     {
@@ -281,7 +281,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     /**
      * Set ClientId value
      * @param string $clientId
-     * @return \StructType\NumberRangeBaseResponse
+     * @return \Dpd\StructType\NumberRangeBaseResponse
      */
     public function setClientId($clientId = null)
     {
@@ -303,7 +303,7 @@ abstract class NumberRangeBaseResponse extends AbstractStructBase
     /**
      * Set ValidUntil value
      * @param string $validUntil
-     * @return \StructType\NumberRangeBaseResponse
+     * @return \Dpd\StructType\NumberRangeBaseResponse
      */
     public function setValidUntil($validUntil = null)
     {

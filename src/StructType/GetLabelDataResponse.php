@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetLabelDataResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetLabelDataResponse
+     * @var \Dpd\StructType\GetLabelDataResponse
      */
     public $GetLabelDataResult;
     /**
@@ -23,7 +23,7 @@ class GetLabelDataResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\LabelData
+     * @var \Dpd\StructType\LabelData
      */
     public $Data;
     /**
@@ -31,7 +31,7 @@ class GetLabelDataResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfBarcodeData
+     * @var \Dpd\ArrayType\ArrayOfBarcodeData
      */
     public $BarcodeData;
     /**
@@ -39,11 +39,11 @@ class GetLabelDataResponse extends AbstractStructBase
      * @uses GetLabelDataResponse::setGetLabelDataResult()
      * @uses GetLabelDataResponse::setData()
      * @uses GetLabelDataResponse::setBarcodeData()
-     * @param \StructType\GetLabelDataResponse $getLabelDataResult
-     * @param \StructType\LabelData $data
-     * @param \ArrayType\ArrayOfBarcodeData $barcodeData
+     * @param \Dpd\StructType\GetLabelDataResponse $getLabelDataResult
+     * @param \Dpd\StructType\LabelData $data
+     * @param \Dpd\ArrayType\ArrayOfBarcodeData $barcodeData
      */
-    public function __construct(\StructType\GetLabelDataResponse $getLabelDataResult = null, \StructType\LabelData $data = null, \ArrayType\ArrayOfBarcodeData $barcodeData = null)
+    public function __construct(\Dpd\StructType\GetLabelDataResponse $getLabelDataResult = null, \Dpd\StructType\LabelData $data = null, \Dpd\ArrayType\ArrayOfBarcodeData $barcodeData = null)
     {
         $this
             ->setGetLabelDataResult($getLabelDataResult)
@@ -52,7 +52,7 @@ class GetLabelDataResponse extends AbstractStructBase
     }
     /**
      * Get GetLabelDataResult value
-     * @return \StructType\GetLabelDataResponse|null
+     * @return \Dpd\StructType\GetLabelDataResponse|null
      */
     public function getGetLabelDataResult()
     {
@@ -60,17 +60,17 @@ class GetLabelDataResponse extends AbstractStructBase
     }
     /**
      * Set GetLabelDataResult value
-     * @param \StructType\GetLabelDataResponse $getLabelDataResult
-     * @return \StructType\GetLabelDataResponse
+     * @param \Dpd\StructType\GetLabelDataResponse $getLabelDataResult
+     * @return \Dpd\StructType\GetLabelDataResponse
      */
-    public function setGetLabelDataResult(\StructType\GetLabelDataResponse $getLabelDataResult = null)
+    public function setGetLabelDataResult(\Dpd\StructType\GetLabelDataResponse $getLabelDataResult = null)
     {
         $this->GetLabelDataResult = $getLabelDataResult;
         return $this;
     }
     /**
      * Get Data value
-     * @return \StructType\LabelData|null
+     * @return \Dpd\StructType\LabelData|null
      */
     public function getData()
     {
@@ -78,17 +78,17 @@ class GetLabelDataResponse extends AbstractStructBase
     }
     /**
      * Set Data value
-     * @param \StructType\LabelData $data
-     * @return \StructType\GetLabelDataResponse
+     * @param \Dpd\StructType\LabelData $data
+     * @return \Dpd\StructType\GetLabelDataResponse
      */
-    public function setData(\StructType\LabelData $data = null)
+    public function setData(\Dpd\StructType\LabelData $data = null)
     {
         $this->Data = $data;
         return $this;
     }
     /**
      * Get BarcodeData value
-     * @return \ArrayType\ArrayOfBarcodeData|null
+     * @return \Dpd\ArrayType\ArrayOfBarcodeData|null
      */
     public function getBarcodeData()
     {
@@ -96,10 +96,10 @@ class GetLabelDataResponse extends AbstractStructBase
     }
     /**
      * Set BarcodeData value
-     * @param \ArrayType\ArrayOfBarcodeData $barcodeData
-     * @return \StructType\GetLabelDataResponse
+     * @param \Dpd\ArrayType\ArrayOfBarcodeData $barcodeData
+     * @return \Dpd\StructType\GetLabelDataResponse
      */
-    public function setBarcodeData(\ArrayType\ArrayOfBarcodeData $barcodeData = null)
+    public function setBarcodeData(\Dpd\ArrayType\ArrayOfBarcodeData $barcodeData = null)
     {
         $this->BarcodeData = $barcodeData;
         return $this;

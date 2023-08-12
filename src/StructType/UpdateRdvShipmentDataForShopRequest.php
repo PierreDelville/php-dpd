@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RdvEsnInfo
+     * @var \Dpd\StructType\RdvEsnInfo
      */
     public $EsnInfo;
     /**
@@ -51,9 +51,9 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
      * @param string $shopID
      * @param string $receiver_ContactName
      * @param string $deliveryDate
-     * @param \StructType\RdvEsnInfo $esnInfo
+     * @param \Dpd\StructType\RdvEsnInfo $esnInfo
      */
-    public function __construct($shopID = null, $receiver_ContactName = null, $deliveryDate = null, \StructType\RdvEsnInfo $esnInfo = null)
+    public function __construct($shopID = null, $receiver_ContactName = null, $deliveryDate = null, \Dpd\StructType\RdvEsnInfo $esnInfo = null)
     {
         $this
             ->setShopID($shopID)
@@ -72,7 +72,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     /**
      * Set ShopID value
      * @param string $shopID
-     * @return \StructType\UpdateRdvShipmentDataForShopRequest
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForShopRequest
      */
     public function setShopID($shopID = null)
     {
@@ -94,7 +94,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     /**
      * Set Receiver_ContactName value
      * @param string $receiver_ContactName
-     * @return \StructType\UpdateRdvShipmentDataForShopRequest
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForShopRequest
      */
     public function setReceiver_ContactName($receiver_ContactName = null)
     {
@@ -116,7 +116,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     /**
      * Set DeliveryDate value
      * @param string $deliveryDate
-     * @return \StructType\UpdateRdvShipmentDataForShopRequest
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForShopRequest
      */
     public function setDeliveryDate($deliveryDate = null)
     {
@@ -129,7 +129,7 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     }
     /**
      * Get EsnInfo value
-     * @return \StructType\RdvEsnInfo|null
+     * @return \Dpd\StructType\RdvEsnInfo|null
      */
     public function getEsnInfo()
     {
@@ -137,10 +137,10 @@ class UpdateRdvShipmentDataForShopRequest extends UpdateRdvShipmentData
     }
     /**
      * Set EsnInfo value
-     * @param \StructType\RdvEsnInfo $esnInfo
-     * @return \StructType\UpdateRdvShipmentDataForShopRequest
+     * @param \Dpd\StructType\RdvEsnInfo $esnInfo
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForShopRequest
      */
-    public function setEsnInfo(\StructType\RdvEsnInfo $esnInfo = null)
+    public function setEsnInfo(\Dpd\StructType\RdvEsnInfo $esnInfo = null)
     {
         $this->EsnInfo = $esnInfo;
         return $this;

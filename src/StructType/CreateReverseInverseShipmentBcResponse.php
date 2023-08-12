@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreateReverseInverseShipmentBcResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ShipmentBc
+     * @var \Dpd\StructType\ShipmentBc
      */
     public $CreateReverseInverseShipmentBcResult;
     /**
      * Constructor method for CreateReverseInverseShipmentBcResponse
      * @uses CreateReverseInverseShipmentBcResponse::setCreateReverseInverseShipmentBcResult()
-     * @param \StructType\ShipmentBc $createReverseInverseShipmentBcResult
+     * @param \Dpd\StructType\ShipmentBc $createReverseInverseShipmentBcResult
      */
-    public function __construct(\StructType\ShipmentBc $createReverseInverseShipmentBcResult = null)
+    public function __construct(\Dpd\StructType\ShipmentBc $createReverseInverseShipmentBcResult = null)
     {
         $this
             ->setCreateReverseInverseShipmentBcResult($createReverseInverseShipmentBcResult);
     }
     /**
      * Get CreateReverseInverseShipmentBcResult value
-     * @return \StructType\ShipmentBc|null
+     * @return \Dpd\StructType\ShipmentBc|null
      */
     public function getCreateReverseInverseShipmentBcResult()
     {
@@ -38,10 +38,10 @@ class CreateReverseInverseShipmentBcResponse extends AbstractStructBase
     }
     /**
      * Set CreateReverseInverseShipmentBcResult value
-     * @param \StructType\ShipmentBc $createReverseInverseShipmentBcResult
-     * @return \StructType\CreateReverseInverseShipmentBcResponse
+     * @param \Dpd\StructType\ShipmentBc $createReverseInverseShipmentBcResult
+     * @return \Dpd\StructType\CreateReverseInverseShipmentBcResponse
      */
-    public function setCreateReverseInverseShipmentBcResult(\StructType\ShipmentBc $createReverseInverseShipmentBcResult = null)
+    public function setCreateReverseInverseShipmentBcResult(\Dpd\StructType\ShipmentBc $createReverseInverseShipmentBcResult = null)
     {
         $this->CreateReverseInverseShipmentBcResult = $createReverseInverseShipmentBcResult;
         return $this;

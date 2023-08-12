@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class GetBic3Response extends AbstractStructBase
     /**
      * Set GetBic3Result value
      * @param int $getBic3Result
-     * @return \StructType\GetBic3Response
+     * @return \Dpd\StructType\GetBic3Response
      */
     public function setGetBic3Result($getBic3Result = null)
     {

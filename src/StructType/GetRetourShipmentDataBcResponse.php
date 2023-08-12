@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetRetourShipmentDataBcResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RetourShipmentDataBc
+     * @var \Dpd\StructType\RetourShipmentDataBc
      */
     public $GetRetourShipmentDataBcResult;
     /**
      * Constructor method for GetRetourShipmentDataBcResponse
      * @uses GetRetourShipmentDataBcResponse::setGetRetourShipmentDataBcResult()
-     * @param \StructType\RetourShipmentDataBc $getRetourShipmentDataBcResult
+     * @param \Dpd\StructType\RetourShipmentDataBc $getRetourShipmentDataBcResult
      */
-    public function __construct(\StructType\RetourShipmentDataBc $getRetourShipmentDataBcResult = null)
+    public function __construct(\Dpd\StructType\RetourShipmentDataBc $getRetourShipmentDataBcResult = null)
     {
         $this
             ->setGetRetourShipmentDataBcResult($getRetourShipmentDataBcResult);
     }
     /**
      * Get GetRetourShipmentDataBcResult value
-     * @return \StructType\RetourShipmentDataBc|null
+     * @return \Dpd\StructType\RetourShipmentDataBc|null
      */
     public function getGetRetourShipmentDataBcResult()
     {
@@ -38,10 +38,10 @@ class GetRetourShipmentDataBcResponse extends AbstractStructBase
     }
     /**
      * Set GetRetourShipmentDataBcResult value
-     * @param \StructType\RetourShipmentDataBc $getRetourShipmentDataBcResult
-     * @return \StructType\GetRetourShipmentDataBcResponse
+     * @param \Dpd\StructType\RetourShipmentDataBc $getRetourShipmentDataBcResult
+     * @return \Dpd\StructType\GetRetourShipmentDataBcResponse
      */
-    public function setGetRetourShipmentDataBcResult(\StructType\RetourShipmentDataBc $getRetourShipmentDataBcResult = null)
+    public function setGetRetourShipmentDataBcResult(\Dpd\StructType\RetourShipmentDataBc $getRetourShipmentDataBcResult = null)
     {
         $this->GetRetourShipmentDataBcResult = $getRetourShipmentDataBcResult;
         return $this;

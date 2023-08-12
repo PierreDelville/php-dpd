@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class RetourServices extends ServiceBaseList
     /**
      * Set expireOffset value
      * @param int $expireOffset
-     * @return \StructType\RetourServices
+     * @return \Dpd\StructType\RetourServices
      */
     public function setExpireOffset($expireOffset = null)
     {

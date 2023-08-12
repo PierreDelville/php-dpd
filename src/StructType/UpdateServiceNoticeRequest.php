@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -31,7 +31,7 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $address;
     /**
@@ -41,9 +41,9 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
      * @uses UpdateServiceNoticeRequest::setAddress()
      * @param int $answerID
      * @param string $text
-     * @param \StructType\Address $address
+     * @param \Dpd\StructType\Address $address
      */
-    public function __construct($answerID = null, $text = null, \StructType\Address $address = null)
+    public function __construct($answerID = null, $text = null, \Dpd\StructType\Address $address = null)
     {
         $this
             ->setAnswerID($answerID)
@@ -61,7 +61,7 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
     /**
      * Set answerID value
      * @param int $answerID
-     * @return \StructType\UpdateServiceNoticeRequest
+     * @return \Dpd\StructType\UpdateServiceNoticeRequest
      */
     public function setAnswerID($answerID = null)
     {
@@ -83,7 +83,7 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
     /**
      * Set text value
      * @param string $text
-     * @return \StructType\UpdateServiceNoticeRequest
+     * @return \Dpd\StructType\UpdateServiceNoticeRequest
      */
     public function setText($text = null)
     {
@@ -96,7 +96,7 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
     }
     /**
      * Get address value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getAddress()
     {
@@ -104,10 +104,10 @@ class UpdateServiceNoticeRequest extends UpdateServiceNoticeRequestBase
     }
     /**
      * Set address value
-     * @param \StructType\Address $address
-     * @return \StructType\UpdateServiceNoticeRequest
+     * @param \Dpd\StructType\Address $address
+     * @return \Dpd\StructType\UpdateServiceNoticeRequest
      */
-    public function setAddress(\StructType\Address $address = null)
+    public function setAddress(\Dpd\StructType\Address $address = null)
     {
         $this->address = $address;
         return $this;

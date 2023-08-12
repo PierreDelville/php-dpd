@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetPropertiesResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetPropertiesResponse
+     * @var \Dpd\StructType\GetPropertiesResponse
      */
     public $GetPropertiesResult;
     /**
@@ -23,17 +23,17 @@ class GetPropertiesResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfPropertyDefinition
+     * @var \Dpd\ArrayType\ArrayOfPropertyDefinition
      */
     public $Properties;
     /**
      * Constructor method for GetPropertiesResponse
      * @uses GetPropertiesResponse::setGetPropertiesResult()
      * @uses GetPropertiesResponse::setProperties()
-     * @param \StructType\GetPropertiesResponse $getPropertiesResult
-     * @param \ArrayType\ArrayOfPropertyDefinition $properties
+     * @param \Dpd\StructType\GetPropertiesResponse $getPropertiesResult
+     * @param \Dpd\ArrayType\ArrayOfPropertyDefinition $properties
      */
-    public function __construct(\StructType\GetPropertiesResponse $getPropertiesResult = null, \ArrayType\ArrayOfPropertyDefinition $properties = null)
+    public function __construct(\Dpd\StructType\GetPropertiesResponse $getPropertiesResult = null, \Dpd\ArrayType\ArrayOfPropertyDefinition $properties = null)
     {
         $this
             ->setGetPropertiesResult($getPropertiesResult)
@@ -41,7 +41,7 @@ class GetPropertiesResponse extends AbstractStructBase
     }
     /**
      * Get GetPropertiesResult value
-     * @return \StructType\GetPropertiesResponse|null
+     * @return \Dpd\StructType\GetPropertiesResponse|null
      */
     public function getGetPropertiesResult()
     {
@@ -49,17 +49,17 @@ class GetPropertiesResponse extends AbstractStructBase
     }
     /**
      * Set GetPropertiesResult value
-     * @param \StructType\GetPropertiesResponse $getPropertiesResult
-     * @return \StructType\GetPropertiesResponse
+     * @param \Dpd\StructType\GetPropertiesResponse $getPropertiesResult
+     * @return \Dpd\StructType\GetPropertiesResponse
      */
-    public function setGetPropertiesResult(\StructType\GetPropertiesResponse $getPropertiesResult = null)
+    public function setGetPropertiesResult(\Dpd\StructType\GetPropertiesResponse $getPropertiesResult = null)
     {
         $this->GetPropertiesResult = $getPropertiesResult;
         return $this;
     }
     /**
      * Get Properties value
-     * @return \ArrayType\ArrayOfPropertyDefinition|null
+     * @return \Dpd\ArrayType\ArrayOfPropertyDefinition|null
      */
     public function getProperties()
     {
@@ -67,10 +67,10 @@ class GetPropertiesResponse extends AbstractStructBase
     }
     /**
      * Set Properties value
-     * @param \ArrayType\ArrayOfPropertyDefinition $properties
-     * @return \StructType\GetPropertiesResponse
+     * @param \Dpd\ArrayType\ArrayOfPropertyDefinition $properties
+     * @return \Dpd\StructType\GetPropertiesResponse
      */
-    public function setProperties(\ArrayType\ArrayOfPropertyDefinition $properties = null)
+    public function setProperties(\Dpd\ArrayType\ArrayOfPropertyDefinition $properties = null)
     {
         $this->Properties = $properties;
         return $this;

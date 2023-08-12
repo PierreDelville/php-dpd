@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class PickupAtCustomerResponse extends AbstractStructBase
     /**
      * Set Sin value
      * @param int $sin
-     * @return \StructType\PickupAtCustomerResponse
+     * @return \Dpd\StructType\PickupAtCustomerResponse
      */
     public function setSin($sin = null)
     {

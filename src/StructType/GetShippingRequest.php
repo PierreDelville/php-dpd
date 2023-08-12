@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class GetShippingRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $customer;
     /**
@@ -31,9 +31,9 @@ class GetShippingRequest extends AbstractStructBase
      * @uses GetShippingRequest::setDate()
      * @uses GetShippingRequest::setCustomer()
      * @param string $date
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      */
-    public function __construct($date = null, \StructType\Customer $customer = null)
+    public function __construct($date = null, \Dpd\StructType\Customer $customer = null)
     {
         $this
             ->setDate($date)
@@ -50,7 +50,7 @@ class GetShippingRequest extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\GetShippingRequest
+     * @return \Dpd\StructType\GetShippingRequest
      */
     public function setDate($date = null)
     {
@@ -63,7 +63,7 @@ class GetShippingRequest extends AbstractStructBase
     }
     /**
      * Get customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -71,10 +71,10 @@ class GetShippingRequest extends AbstractStructBase
     }
     /**
      * Set customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\GetShippingRequest
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\GetShippingRequest
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->customer = $customer;
         return $this;

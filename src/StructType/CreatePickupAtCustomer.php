@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreatePickupAtCustomer extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\PickupAtCustomerRequest
+     * @var \Dpd\StructType\PickupAtCustomerRequest
      */
     public $request;
     /**
      * Constructor method for CreatePickupAtCustomer
      * @uses CreatePickupAtCustomer::setRequest()
-     * @param \StructType\PickupAtCustomerRequest $request
+     * @param \Dpd\StructType\PickupAtCustomerRequest $request
      */
-    public function __construct(\StructType\PickupAtCustomerRequest $request = null)
+    public function __construct(\Dpd\StructType\PickupAtCustomerRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\PickupAtCustomerRequest|null
+     * @return \Dpd\StructType\PickupAtCustomerRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class CreatePickupAtCustomer extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\PickupAtCustomerRequest $request
-     * @return \StructType\CreatePickupAtCustomer
+     * @param \Dpd\StructType\PickupAtCustomerRequest $request
+     * @return \Dpd\StructType\CreatePickupAtCustomer
      */
-    public function setRequest(\StructType\PickupAtCustomerRequest $request = null)
+    public function setRequest(\Dpd\StructType\PickupAtCustomerRequest $request = null)
     {
         $this->request = $request;
         return $this;

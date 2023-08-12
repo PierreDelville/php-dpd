@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -72,7 +72,7 @@ class SdgiData extends AbstractStructBase
     /**
      * Set StartDate value
      * @param string $startDate
-     * @return \StructType\SdgiData
+     * @return \Dpd\StructType\SdgiData
      */
     public function setStartDate($startDate = null)
     {
@@ -94,7 +94,7 @@ class SdgiData extends AbstractStructBase
     /**
      * Set EndDate value
      * @param string $endDate
-     * @return \StructType\SdgiData
+     * @return \Dpd\StructType\SdgiData
      */
     public function setEndDate($endDate = null)
     {
@@ -116,7 +116,7 @@ class SdgiData extends AbstractStructBase
     /**
      * Set StartTime value
      * @param string $startTime
-     * @return \StructType\SdgiData
+     * @return \Dpd\StructType\SdgiData
      */
     public function setStartTime($startTime = null)
     {
@@ -138,7 +138,7 @@ class SdgiData extends AbstractStructBase
     /**
      * Set EndTime value
      * @param string $endTime
-     * @return \StructType\SdgiData
+     * @return \Dpd\StructType\SdgiData
      */
     public function setEndTime($endTime = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class ShipmentRequest extends GetShipmentRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Parcel
+     * @var \Dpd\StructType\Parcel
      */
     public $parcel;
     /**
      * Constructor method for ShipmentRequest
      * @uses ShipmentRequest::setParcel()
-     * @param \StructType\Parcel $parcel
+     * @param \Dpd\StructType\Parcel $parcel
      */
-    public function __construct(\StructType\Parcel $parcel = null)
+    public function __construct(\Dpd\StructType\Parcel $parcel = null)
     {
         $this
             ->setParcel($parcel);
     }
     /**
      * Get parcel value
-     * @return \StructType\Parcel|null
+     * @return \Dpd\StructType\Parcel|null
      */
     public function getParcel()
     {
@@ -38,10 +38,10 @@ class ShipmentRequest extends GetShipmentRequestBase
     }
     /**
      * Set parcel value
-     * @param \StructType\Parcel $parcel
-     * @return \StructType\ShipmentRequest
+     * @param \Dpd\StructType\Parcel $parcel
+     * @return \Dpd\StructType\ShipmentRequest
      */
-    public function setParcel(\StructType\Parcel $parcel = null)
+    public function setParcel(\Dpd\StructType\Parcel $parcel = null)
     {
         $this->parcel = $parcel;
         return $this;

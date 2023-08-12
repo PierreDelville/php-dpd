@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -56,7 +56,7 @@ class CollectionRequestRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $receiveraddress;
     /**
@@ -64,7 +64,7 @@ class CollectionRequestRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $shipperaddress;
     /**
@@ -152,7 +152,7 @@ class CollectionRequestRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CollectionRequestServices
+     * @var \Dpd\StructType\CollectionRequestServices
      */
     public $services;
     /**
@@ -180,8 +180,8 @@ class CollectionRequestRequest extends AbstractStructBase
      * @param int $customer_number
      * @param int $parcel_count
      * @param bool $dayCheckDone
-     * @param \StructType\Address $receiveraddress
-     * @param \StructType\Address $shipperaddress
+     * @param \Dpd\StructType\Address $receiveraddress
+     * @param \Dpd\StructType\Address $shipperaddress
      * @param string $pick_date
      * @param string $time_from
      * @param string $time_to
@@ -192,9 +192,9 @@ class CollectionRequestRequest extends AbstractStructBase
      * @param string $reference2
      * @param string $reference3
      * @param string $reference4
-     * @param \StructType\CollectionRequestServices $services
+     * @param \Dpd\StructType\CollectionRequestServices $services
      */
-    public function __construct($customer_countrycode = null, $customer_centernumber = null, $customer_number = null, $parcel_count = null, $dayCheckDone = null, \StructType\Address $receiveraddress = null, \StructType\Address $shipperaddress = null, $pick_date = null, $time_from = null, $time_to = null, $remark = null, $pick_remark = null, $delivery_remark = null, $referencenumber = null, $reference2 = null, $reference3 = null, $reference4 = null, \StructType\CollectionRequestServices $services = null)
+    public function __construct($customer_countrycode = null, $customer_centernumber = null, $customer_number = null, $parcel_count = null, $dayCheckDone = null, \Dpd\StructType\Address $receiveraddress = null, \Dpd\StructType\Address $shipperaddress = null, $pick_date = null, $time_from = null, $time_to = null, $remark = null, $pick_remark = null, $delivery_remark = null, $referencenumber = null, $reference2 = null, $reference3 = null, $reference4 = null, \Dpd\StructType\CollectionRequestServices $services = null)
     {
         $this
             ->setCustomer_countrycode($customer_countrycode)
@@ -227,7 +227,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set customer_countrycode value
      * @param int $customer_countrycode
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setCustomer_countrycode($customer_countrycode = null)
     {
@@ -249,7 +249,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set customer_centernumber value
      * @param int $customer_centernumber
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setCustomer_centernumber($customer_centernumber = null)
     {
@@ -271,7 +271,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set customer_number value
      * @param int $customer_number
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setCustomer_number($customer_number = null)
     {
@@ -293,7 +293,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set parcel_count value
      * @param int $parcel_count
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setParcel_count($parcel_count = null)
     {
@@ -315,7 +315,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set dayCheckDone value
      * @param bool $dayCheckDone
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setDayCheckDone($dayCheckDone = null)
     {
@@ -328,7 +328,7 @@ class CollectionRequestRequest extends AbstractStructBase
     }
     /**
      * Get receiveraddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getReceiveraddress()
     {
@@ -336,17 +336,17 @@ class CollectionRequestRequest extends AbstractStructBase
     }
     /**
      * Set receiveraddress value
-     * @param \StructType\Address $receiveraddress
-     * @return \StructType\CollectionRequestRequest
+     * @param \Dpd\StructType\Address $receiveraddress
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
-    public function setReceiveraddress(\StructType\Address $receiveraddress = null)
+    public function setReceiveraddress(\Dpd\StructType\Address $receiveraddress = null)
     {
         $this->receiveraddress = $receiveraddress;
         return $this;
     }
     /**
      * Get shipperaddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getShipperaddress()
     {
@@ -354,10 +354,10 @@ class CollectionRequestRequest extends AbstractStructBase
     }
     /**
      * Set shipperaddress value
-     * @param \StructType\Address $shipperaddress
-     * @return \StructType\CollectionRequestRequest
+     * @param \Dpd\StructType\Address $shipperaddress
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
-    public function setShipperaddress(\StructType\Address $shipperaddress = null)
+    public function setShipperaddress(\Dpd\StructType\Address $shipperaddress = null)
     {
         $this->shipperaddress = $shipperaddress;
         return $this;
@@ -373,7 +373,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set pick_date value
      * @param string $pick_date
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setPick_date($pick_date = null)
     {
@@ -395,7 +395,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set time_from value
      * @param string $time_from
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setTime_from($time_from = null)
     {
@@ -417,7 +417,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set time_to value
      * @param string $time_to
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setTime_to($time_to = null)
     {
@@ -439,7 +439,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set remark value
      * @param string $remark
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setRemark($remark = null)
     {
@@ -461,7 +461,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set pick_remark value
      * @param string $pick_remark
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setPick_remark($pick_remark = null)
     {
@@ -483,7 +483,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set delivery_remark value
      * @param string $delivery_remark
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setDelivery_remark($delivery_remark = null)
     {
@@ -505,7 +505,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set referencenumber value
      * @param string $referencenumber
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setReferencenumber($referencenumber = null)
     {
@@ -527,7 +527,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set reference2 value
      * @param string $reference2
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setReference2($reference2 = null)
     {
@@ -549,7 +549,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set reference3 value
      * @param string $reference3
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setReference3($reference3 = null)
     {
@@ -571,7 +571,7 @@ class CollectionRequestRequest extends AbstractStructBase
     /**
      * Set reference4 value
      * @param string $reference4
-     * @return \StructType\CollectionRequestRequest
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
     public function setReference4($reference4 = null)
     {
@@ -584,7 +584,7 @@ class CollectionRequestRequest extends AbstractStructBase
     }
     /**
      * Get services value
-     * @return \StructType\CollectionRequestServices|null
+     * @return \Dpd\StructType\CollectionRequestServices|null
      */
     public function getServices()
     {
@@ -592,10 +592,10 @@ class CollectionRequestRequest extends AbstractStructBase
     }
     /**
      * Set services value
-     * @param \StructType\CollectionRequestServices $services
-     * @return \StructType\CollectionRequestRequest
+     * @param \Dpd\StructType\CollectionRequestServices $services
+     * @return \Dpd\StructType\CollectionRequestRequest
      */
-    public function setServices(\StructType\CollectionRequestServices $services = null)
+    public function setServices(\Dpd\StructType\CollectionRequestServices $services = null)
     {
         $this->services = $services;
         return $this;

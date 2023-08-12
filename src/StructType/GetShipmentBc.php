@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetShipmentBc extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ShipmentRequestBc
+     * @var \Dpd\StructType\ShipmentRequestBc
      */
     public $request;
     /**
      * Constructor method for GetShipmentBc
      * @uses GetShipmentBc::setRequest()
-     * @param \StructType\ShipmentRequestBc $request
+     * @param \Dpd\StructType\ShipmentRequestBc $request
      */
-    public function __construct(\StructType\ShipmentRequestBc $request = null)
+    public function __construct(\Dpd\StructType\ShipmentRequestBc $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\ShipmentRequestBc|null
+     * @return \Dpd\StructType\ShipmentRequestBc|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetShipmentBc extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\ShipmentRequestBc $request
-     * @return \StructType\GetShipmentBc
+     * @param \Dpd\StructType\ShipmentRequestBc $request
+     * @return \Dpd\StructType\GetShipmentBc
      */
-    public function setRequest(\StructType\ShipmentRequestBc $request = null)
+    public function setRequest(\Dpd\StructType\ShipmentRequestBc $request = null)
     {
         $this->request = $request;
         return $this;

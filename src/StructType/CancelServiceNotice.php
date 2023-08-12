@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CancelServiceNotice extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CancelServiceNoticeRequest
+     * @var \Dpd\StructType\CancelServiceNoticeRequest
      */
     public $request;
     /**
      * Constructor method for CancelServiceNotice
      * @uses CancelServiceNotice::setRequest()
-     * @param \StructType\CancelServiceNoticeRequest $request
+     * @param \Dpd\StructType\CancelServiceNoticeRequest $request
      */
-    public function __construct(\StructType\CancelServiceNoticeRequest $request = null)
+    public function __construct(\Dpd\StructType\CancelServiceNoticeRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\CancelServiceNoticeRequest|null
+     * @return \Dpd\StructType\CancelServiceNoticeRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class CancelServiceNotice extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\CancelServiceNoticeRequest $request
-     * @return \StructType\CancelServiceNotice
+     * @param \Dpd\StructType\CancelServiceNoticeRequest $request
+     * @return \Dpd\StructType\CancelServiceNotice
      */
-    public function setRequest(\StructType\CancelServiceNoticeRequest $request = null)
+    public function setRequest(\Dpd\StructType\CancelServiceNoticeRequest $request = null)
     {
         $this->request = $request;
         return $this;

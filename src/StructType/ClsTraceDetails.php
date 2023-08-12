@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class ClsTraceDetails extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\ClsTraceDetails
+     * @return \Dpd\StructType\ClsTraceDetails
      */
     public function setID($iD = null)
     {
@@ -83,7 +83,7 @@ class ClsTraceDetails extends AbstractStructBase
     /**
      * Set Text value
      * @param string $text
-     * @return \StructType\ClsTraceDetails
+     * @return \Dpd\StructType\ClsTraceDetails
      */
     public function setText($text = null)
     {
@@ -105,7 +105,7 @@ class ClsTraceDetails extends AbstractStructBase
     /**
      * Set Data value
      * @param string $data
-     * @return \StructType\ClsTraceDetails
+     * @return \Dpd\StructType\ClsTraceDetails
      */
     public function setData($data = null)
     {

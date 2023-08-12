@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -87,7 +87,7 @@ class Task extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfCNOTParcel
+     * @var \Dpd\ArrayType\ArrayOfCNOTParcel
      */
     public $Parcels;
     /**
@@ -103,7 +103,7 @@ class Task extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Location
+     * @var \Dpd\StructType\Location
      */
     public $Location;
     /**
@@ -111,7 +111,7 @@ class Task extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Rendezvous
+     * @var \Dpd\StructType\Rendezvous
      */
     public $Rendezvous;
     /**
@@ -119,7 +119,7 @@ class Task extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfPhoneCall
+     * @var \Dpd\ArrayType\ArrayOfPhoneCall
      */
     public $PhoneCalls;
     /**
@@ -147,13 +147,13 @@ class Task extends AbstractStructBase
      * @param int $taskId
      * @param bool $isB2C
      * @param string $type
-     * @param \ArrayType\ArrayOfCNOTParcel $parcels
+     * @param \Dpd\ArrayType\ArrayOfCNOTParcel $parcels
      * @param string $contactName
-     * @param \StructType\Location $location
-     * @param \StructType\Rendezvous $rendezvous
-     * @param \ArrayType\ArrayOfPhoneCall $phoneCalls
+     * @param \Dpd\StructType\Location $location
+     * @param \Dpd\StructType\Rendezvous $rendezvous
+     * @param \Dpd\ArrayType\ArrayOfPhoneCall $phoneCalls
      */
-    public function __construct($notProcessed = null, $finished = null, $createdAt = null, $onPositionAt = null, $finishedAt = null, $visitCounter = null, $taskId = null, $isB2C = null, $type = null, \ArrayType\ArrayOfCNOTParcel $parcels = null, $contactName = null, \StructType\Location $location = null, \StructType\Rendezvous $rendezvous = null, \ArrayType\ArrayOfPhoneCall $phoneCalls = null)
+    public function __construct($notProcessed = null, $finished = null, $createdAt = null, $onPositionAt = null, $finishedAt = null, $visitCounter = null, $taskId = null, $isB2C = null, $type = null, \Dpd\ArrayType\ArrayOfCNOTParcel $parcels = null, $contactName = null, \Dpd\StructType\Location $location = null, \Dpd\StructType\Rendezvous $rendezvous = null, \Dpd\ArrayType\ArrayOfPhoneCall $phoneCalls = null)
     {
         $this
             ->setNotProcessed($notProcessed)
@@ -182,7 +182,7 @@ class Task extends AbstractStructBase
     /**
      * Set NotProcessed value
      * @param bool $notProcessed
-     * @return \StructType\Task
+     * @return \Dpd\StructType\Task
      */
     public function setNotProcessed($notProcessed = null)
     {
@@ -204,7 +204,7 @@ class Task extends AbstractStructBase
     /**
      * Set Finished value
      * @param bool $finished
-     * @return \StructType\Task
+     * @return \Dpd\StructType\Task
      */
     public function setFinished($finished = null)
     {
@@ -226,7 +226,7 @@ class Task extends AbstractStructBase
     /**
      * Set CreatedAt value
      * @param string $createdAt
-     * @return \StructType\Task
+     * @return \Dpd\StructType\Task
      */
     public function setCreatedAt($createdAt = null)
     {
@@ -248,7 +248,7 @@ class Task extends AbstractStructBase
     /**
      * Set OnPositionAt value
      * @param string $onPositionAt
-     * @return \StructType\Task
+     * @return \Dpd\StructType\Task
      */
     public function setOnPositionAt($onPositionAt = null)
     {
@@ -270,7 +270,7 @@ class Task extends AbstractStructBase
     /**
      * Set FinishedAt value
      * @param string $finishedAt
-     * @return \StructType\Task
+     * @return \Dpd\StructType\Task
      */
     public function setFinishedAt($finishedAt = null)
     {
@@ -292,7 +292,7 @@ class Task extends AbstractStructBase
     /**
      * Set VisitCounter value
      * @param int $visitCounter
-     * @return \StructType\Task
+     * @return \Dpd\StructType\Task
      */
     public function setVisitCounter($visitCounter = null)
     {
@@ -314,7 +314,7 @@ class Task extends AbstractStructBase
     /**
      * Set TaskId value
      * @param int $taskId
-     * @return \StructType\Task
+     * @return \Dpd\StructType\Task
      */
     public function setTaskId($taskId = null)
     {
@@ -336,7 +336,7 @@ class Task extends AbstractStructBase
     /**
      * Set IsB2C value
      * @param bool $isB2C
-     * @return \StructType\Task
+     * @return \Dpd\StructType\Task
      */
     public function setIsB2C($isB2C = null)
     {
@@ -358,7 +358,7 @@ class Task extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\Task
+     * @return \Dpd\StructType\Task
      */
     public function setType($type = null)
     {
@@ -371,7 +371,7 @@ class Task extends AbstractStructBase
     }
     /**
      * Get Parcels value
-     * @return \ArrayType\ArrayOfCNOTParcel|null
+     * @return \Dpd\ArrayType\ArrayOfCNOTParcel|null
      */
     public function getParcels()
     {
@@ -379,10 +379,10 @@ class Task extends AbstractStructBase
     }
     /**
      * Set Parcels value
-     * @param \ArrayType\ArrayOfCNOTParcel $parcels
-     * @return \StructType\Task
+     * @param \Dpd\ArrayType\ArrayOfCNOTParcel $parcels
+     * @return \Dpd\StructType\Task
      */
-    public function setParcels(\ArrayType\ArrayOfCNOTParcel $parcels = null)
+    public function setParcels(\Dpd\ArrayType\ArrayOfCNOTParcel $parcels = null)
     {
         $this->Parcels = $parcels;
         return $this;
@@ -398,7 +398,7 @@ class Task extends AbstractStructBase
     /**
      * Set ContactName value
      * @param string $contactName
-     * @return \StructType\Task
+     * @return \Dpd\StructType\Task
      */
     public function setContactName($contactName = null)
     {
@@ -411,7 +411,7 @@ class Task extends AbstractStructBase
     }
     /**
      * Get Location value
-     * @return \StructType\Location|null
+     * @return \Dpd\StructType\Location|null
      */
     public function getLocation()
     {
@@ -419,17 +419,17 @@ class Task extends AbstractStructBase
     }
     /**
      * Set Location value
-     * @param \StructType\Location $location
-     * @return \StructType\Task
+     * @param \Dpd\StructType\Location $location
+     * @return \Dpd\StructType\Task
      */
-    public function setLocation(\StructType\Location $location = null)
+    public function setLocation(\Dpd\StructType\Location $location = null)
     {
         $this->Location = $location;
         return $this;
     }
     /**
      * Get Rendezvous value
-     * @return \StructType\Rendezvous|null
+     * @return \Dpd\StructType\Rendezvous|null
      */
     public function getRendezvous()
     {
@@ -437,17 +437,17 @@ class Task extends AbstractStructBase
     }
     /**
      * Set Rendezvous value
-     * @param \StructType\Rendezvous $rendezvous
-     * @return \StructType\Task
+     * @param \Dpd\StructType\Rendezvous $rendezvous
+     * @return \Dpd\StructType\Task
      */
-    public function setRendezvous(\StructType\Rendezvous $rendezvous = null)
+    public function setRendezvous(\Dpd\StructType\Rendezvous $rendezvous = null)
     {
         $this->Rendezvous = $rendezvous;
         return $this;
     }
     /**
      * Get PhoneCalls value
-     * @return \ArrayType\ArrayOfPhoneCall|null
+     * @return \Dpd\ArrayType\ArrayOfPhoneCall|null
      */
     public function getPhoneCalls()
     {
@@ -455,10 +455,10 @@ class Task extends AbstractStructBase
     }
     /**
      * Set PhoneCalls value
-     * @param \ArrayType\ArrayOfPhoneCall $phoneCalls
-     * @return \StructType\Task
+     * @param \Dpd\ArrayType\ArrayOfPhoneCall $phoneCalls
+     * @return \Dpd\StructType\Task
      */
-    public function setPhoneCalls(\ArrayType\ArrayOfPhoneCall $phoneCalls = null)
+    public function setPhoneCalls(\Dpd\ArrayType\ArrayOfPhoneCall $phoneCalls = null)
     {
         $this->PhoneCalls = $phoneCalls;
         return $this;

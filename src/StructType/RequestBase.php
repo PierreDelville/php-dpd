@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class RequestBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $Customer;
     /**
@@ -30,10 +30,10 @@ class RequestBase extends AbstractStructBase
      * Constructor method for RequestBase
      * @uses RequestBase::setCustomer()
      * @uses RequestBase::setLanguage()
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      * @param string $language
      */
-    public function __construct(\StructType\Customer $customer = null, $language = null)
+    public function __construct(\Dpd\StructType\Customer $customer = null, $language = null)
     {
         $this
             ->setCustomer($customer)
@@ -41,7 +41,7 @@ class RequestBase extends AbstractStructBase
     }
     /**
      * Get Customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -49,10 +49,10 @@ class RequestBase extends AbstractStructBase
     }
     /**
      * Set Customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\RequestBase
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\RequestBase
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->Customer = $customer;
         return $this;
@@ -68,7 +68,7 @@ class RequestBase extends AbstractStructBase
     /**
      * Set Language value
      * @param string $language
-     * @return \StructType\RequestBase
+     * @return \Dpd\StructType\RequestBase
      */
     public function setLanguage($language = null)
     {

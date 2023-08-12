@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class CustomerSmall extends AbstractStructBase
     /**
      * Set centernumber value
      * @param int $centernumber
-     * @return \StructType\CustomerSmall
+     * @return \Dpd\StructType\CustomerSmall
      */
     public function setCenternumber($centernumber = null)
     {
@@ -72,7 +72,7 @@ class CustomerSmall extends AbstractStructBase
     /**
      * Set number value
      * @param int $number
-     * @return \StructType\CustomerSmall
+     * @return \Dpd\StructType\CustomerSmall
      */
     public function setNumber($number = null)
     {

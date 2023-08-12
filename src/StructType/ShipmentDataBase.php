@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -31,7 +31,7 @@ class ShipmentDataBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $shipperaddress;
     /**
@@ -39,7 +39,7 @@ class ShipmentDataBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $customeraddress;
     /**
@@ -47,7 +47,7 @@ class ShipmentDataBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Address
+     * @var \Dpd\StructType\Address
      */
     public $receiveraddress;
     /**
@@ -59,11 +59,11 @@ class ShipmentDataBase extends AbstractStructBase
      * @uses ShipmentDataBase::setReceiveraddress()
      * @param string $customer_centernumber
      * @param string $customernumber
-     * @param \StructType\Address $shipperaddress
-     * @param \StructType\Address $customeraddress
-     * @param \StructType\Address $receiveraddress
+     * @param \Dpd\StructType\Address $shipperaddress
+     * @param \Dpd\StructType\Address $customeraddress
+     * @param \Dpd\StructType\Address $receiveraddress
      */
-    public function __construct($customer_centernumber = null, $customernumber = null, \StructType\Address $shipperaddress = null, \StructType\Address $customeraddress = null, \StructType\Address $receiveraddress = null)
+    public function __construct($customer_centernumber = null, $customernumber = null, \Dpd\StructType\Address $shipperaddress = null, \Dpd\StructType\Address $customeraddress = null, \Dpd\StructType\Address $receiveraddress = null)
     {
         $this
             ->setCustomer_centernumber($customer_centernumber)
@@ -83,7 +83,7 @@ class ShipmentDataBase extends AbstractStructBase
     /**
      * Set customer_centernumber value
      * @param string $customer_centernumber
-     * @return \StructType\ShipmentDataBase
+     * @return \Dpd\StructType\ShipmentDataBase
      */
     public function setCustomer_centernumber($customer_centernumber = null)
     {
@@ -105,7 +105,7 @@ class ShipmentDataBase extends AbstractStructBase
     /**
      * Set customernumber value
      * @param string $customernumber
-     * @return \StructType\ShipmentDataBase
+     * @return \Dpd\StructType\ShipmentDataBase
      */
     public function setCustomernumber($customernumber = null)
     {
@@ -118,7 +118,7 @@ class ShipmentDataBase extends AbstractStructBase
     }
     /**
      * Get shipperaddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getShipperaddress()
     {
@@ -126,17 +126,17 @@ class ShipmentDataBase extends AbstractStructBase
     }
     /**
      * Set shipperaddress value
-     * @param \StructType\Address $shipperaddress
-     * @return \StructType\ShipmentDataBase
+     * @param \Dpd\StructType\Address $shipperaddress
+     * @return \Dpd\StructType\ShipmentDataBase
      */
-    public function setShipperaddress(\StructType\Address $shipperaddress = null)
+    public function setShipperaddress(\Dpd\StructType\Address $shipperaddress = null)
     {
         $this->shipperaddress = $shipperaddress;
         return $this;
     }
     /**
      * Get customeraddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getCustomeraddress()
     {
@@ -144,17 +144,17 @@ class ShipmentDataBase extends AbstractStructBase
     }
     /**
      * Set customeraddress value
-     * @param \StructType\Address $customeraddress
-     * @return \StructType\ShipmentDataBase
+     * @param \Dpd\StructType\Address $customeraddress
+     * @return \Dpd\StructType\ShipmentDataBase
      */
-    public function setCustomeraddress(\StructType\Address $customeraddress = null)
+    public function setCustomeraddress(\Dpd\StructType\Address $customeraddress = null)
     {
         $this->customeraddress = $customeraddress;
         return $this;
     }
     /**
      * Get receiveraddress value
-     * @return \StructType\Address|null
+     * @return \Dpd\StructType\Address|null
      */
     public function getReceiveraddress()
     {
@@ -162,10 +162,10 @@ class ShipmentDataBase extends AbstractStructBase
     }
     /**
      * Set receiveraddress value
-     * @param \StructType\Address $receiveraddress
-     * @return \StructType\ShipmentDataBase
+     * @param \Dpd\StructType\Address $receiveraddress
+     * @return \Dpd\StructType\ShipmentDataBase
      */
-    public function setReceiveraddress(\StructType\Address $receiveraddress = null)
+    public function setReceiveraddress(\Dpd\StructType\Address $receiveraddress = null)
     {
         $this->receiveraddress = $receiveraddress;
         return $this;

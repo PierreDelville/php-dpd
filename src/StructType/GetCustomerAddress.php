@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetCustomerAddress extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $customer;
     /**
      * Constructor method for GetCustomerAddress
      * @uses GetCustomerAddress::setCustomer()
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      */
-    public function __construct(\StructType\Customer $customer = null)
+    public function __construct(\Dpd\StructType\Customer $customer = null)
     {
         $this
             ->setCustomer($customer);
     }
     /**
      * Get customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -38,10 +38,10 @@ class GetCustomerAddress extends AbstractStructBase
     }
     /**
      * Set customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\GetCustomerAddress
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\GetCustomerAddress
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->customer = $customer;
         return $this;

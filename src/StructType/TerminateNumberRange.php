@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class TerminateNumberRange extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\TerminateNumberRangeRequest
+     * @var \Dpd\StructType\TerminateNumberRangeRequest
      */
     public $request;
     /**
      * Constructor method for TerminateNumberRange
      * @uses TerminateNumberRange::setRequest()
-     * @param \StructType\TerminateNumberRangeRequest $request
+     * @param \Dpd\StructType\TerminateNumberRangeRequest $request
      */
-    public function __construct(\StructType\TerminateNumberRangeRequest $request = null)
+    public function __construct(\Dpd\StructType\TerminateNumberRangeRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\TerminateNumberRangeRequest|null
+     * @return \Dpd\StructType\TerminateNumberRangeRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class TerminateNumberRange extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\TerminateNumberRangeRequest $request
-     * @return \StructType\TerminateNumberRange
+     * @param \Dpd\StructType\TerminateNumberRangeRequest $request
+     * @return \Dpd\StructType\TerminateNumberRange
      */
-    public function setRequest(\StructType\TerminateNumberRangeRequest $request = null)
+    public function setRequest(\Dpd\StructType\TerminateNumberRangeRequest $request = null)
     {
         $this->request = $request;
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class Reason extends AbstractStructBase
     /**
      * Set Language value
      * @param string $language
-     * @return \StructType\Reason
+     * @return \Dpd\StructType\Reason
      */
     public function setLanguage($language = null)
     {
@@ -72,7 +72,7 @@ class Reason extends AbstractStructBase
     /**
      * Set Text value
      * @param string $text
-     * @return \StructType\Reason
+     * @return \Dpd\StructType\Reason
      */
     public function setText($text = null)
     {

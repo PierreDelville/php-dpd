@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -83,7 +83,7 @@ class Address extends AddressMini
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\Address
+     * @return \Dpd\StructType\Address
      */
     public function setName($name = null)
     {
@@ -105,7 +105,7 @@ class Address extends AddressMini
     /**
      * Set phoneNumber value
      * @param string $phoneNumber
-     * @return \StructType\Address
+     * @return \Dpd\StructType\Address
      */
     public function setPhoneNumber($phoneNumber = null)
     {
@@ -127,7 +127,7 @@ class Address extends AddressMini
     /**
      * Set faxNumber value
      * @param string $faxNumber
-     * @return \StructType\Address
+     * @return \Dpd\StructType\Address
      */
     public function setFaxNumber($faxNumber = null)
     {
@@ -149,7 +149,7 @@ class Address extends AddressMini
     /**
      * Set geoX value
      * @param string $geoX
-     * @return \StructType\Address
+     * @return \Dpd\StructType\Address
      */
     public function setGeoX($geoX = null)
     {
@@ -171,7 +171,7 @@ class Address extends AddressMini
     /**
      * Set geoY value
      * @param string $geoY
-     * @return \StructType\Address
+     * @return \Dpd\StructType\Address
      */
     public function setGeoY($geoY = null)
     {

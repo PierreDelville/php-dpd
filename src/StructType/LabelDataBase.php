@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -83,7 +83,7 @@ class LabelDataBase extends AbstractStructBase
     /**
      * Set ServiceCode value
      * @param string $serviceCode
-     * @return \StructType\LabelDataBase
+     * @return \Dpd\StructType\LabelDataBase
      */
     public function setServiceCode($serviceCode = null)
     {
@@ -105,7 +105,7 @@ class LabelDataBase extends AbstractStructBase
     /**
      * Set SSort value
      * @param string $sSort
-     * @return \StructType\LabelDataBase
+     * @return \Dpd\StructType\LabelDataBase
      */
     public function setSSort($sSort = null)
     {
@@ -127,7 +127,7 @@ class LabelDataBase extends AbstractStructBase
     /**
      * Set OSort value
      * @param string $oSort
-     * @return \StructType\LabelDataBase
+     * @return \Dpd\StructType\LabelDataBase
      */
     public function setOSort($oSort = null)
     {
@@ -149,7 +149,7 @@ class LabelDataBase extends AbstractStructBase
     /**
      * Set OSort2 value
      * @param string $oSort2
-     * @return \StructType\LabelDataBase
+     * @return \Dpd\StructType\LabelDataBase
      */
     public function setOSort2($oSort2 = null)
     {
@@ -171,7 +171,7 @@ class LabelDataBase extends AbstractStructBase
     /**
      * Set DSort value
      * @param string $dSort
-     * @return \StructType\LabelDataBase
+     * @return \Dpd\StructType\LabelDataBase
      */
     public function setDSort($dSort = null)
     {

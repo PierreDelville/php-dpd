@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class RunActionRequest extends AbstractStructBase
     /**
      * Set Action value
      * @param string $action
-     * @return \StructType\RunActionRequest
+     * @return \Dpd\StructType\RunActionRequest
      */
     public function setAction($action = null)
     {

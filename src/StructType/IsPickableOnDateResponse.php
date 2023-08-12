@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class IsPickableOnDateResponse extends AbstractStructBase
     /**
      * Set IsPickableOnDateResult value
      * @param bool $isPickableOnDateResult
-     * @return \StructType\IsPickableOnDateResponse
+     * @return \Dpd\StructType\IsPickableOnDateResponse
      */
     public function setIsPickableOnDateResult($isPickableOnDateResult = null)
     {

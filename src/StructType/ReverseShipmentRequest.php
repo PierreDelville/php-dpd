@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ReverseInverseServices
+     * @var \Dpd\StructType\ReverseInverseServices
      */
     public $services;
     /**
@@ -51,9 +51,9 @@ class ReverseShipmentRequest extends ShipmentRequestBase
      * @param int $expire_offset
      * @param string $weight
      * @param string $referencenumber
-     * @param \StructType\ReverseInverseServices $services
+     * @param \Dpd\StructType\ReverseInverseServices $services
      */
-    public function __construct($expire_offset = null, $weight = null, $referencenumber = null, \StructType\ReverseInverseServices $services = null)
+    public function __construct($expire_offset = null, $weight = null, $referencenumber = null, \Dpd\StructType\ReverseInverseServices $services = null)
     {
         $this
             ->setExpire_offset($expire_offset)
@@ -72,7 +72,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     /**
      * Set expire_offset value
      * @param int $expire_offset
-     * @return \StructType\ReverseShipmentRequest
+     * @return \Dpd\StructType\ReverseShipmentRequest
      */
     public function setExpire_offset($expire_offset = null)
     {
@@ -94,7 +94,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     /**
      * Set weight value
      * @param string $weight
-     * @return \StructType\ReverseShipmentRequest
+     * @return \Dpd\StructType\ReverseShipmentRequest
      */
     public function setWeight($weight = null)
     {
@@ -116,7 +116,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     /**
      * Set referencenumber value
      * @param string $referencenumber
-     * @return \StructType\ReverseShipmentRequest
+     * @return \Dpd\StructType\ReverseShipmentRequest
      */
     public function setReferencenumber($referencenumber = null)
     {
@@ -129,7 +129,7 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     }
     /**
      * Get services value
-     * @return \StructType\ReverseInverseServices|null
+     * @return \Dpd\StructType\ReverseInverseServices|null
      */
     public function getServices()
     {
@@ -137,10 +137,10 @@ class ReverseShipmentRequest extends ShipmentRequestBase
     }
     /**
      * Set services value
-     * @param \StructType\ReverseInverseServices $services
-     * @return \StructType\ReverseShipmentRequest
+     * @param \Dpd\StructType\ReverseInverseServices $services
+     * @return \Dpd\StructType\ReverseShipmentRequest
      */
-    public function setServices(\StructType\ReverseInverseServices $services = null)
+    public function setServices(\Dpd\StructType\ReverseInverseServices $services = null)
     {
         $this->services = $services;
         return $this;

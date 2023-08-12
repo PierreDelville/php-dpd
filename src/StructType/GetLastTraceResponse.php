@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetLastTraceResponse extends GetLastTraceBaseResponse
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfGetLastTraceResponse
+     * @var \Dpd\ArrayType\ArrayOfGetLastTraceResponse
      */
     public $GetLastTraceResult;
     /**
@@ -23,17 +23,17 @@ class GetLastTraceResponse extends GetLastTraceBaseResponse
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Parcel
+     * @var \Dpd\StructType\Parcel
      */
     public $Parcel;
     /**
      * Constructor method for GetLastTraceResponse
      * @uses GetLastTraceResponse::setGetLastTraceResult()
      * @uses GetLastTraceResponse::setParcel()
-     * @param \ArrayType\ArrayOfGetLastTraceResponse $getLastTraceResult
-     * @param \StructType\Parcel $parcel
+     * @param \Dpd\ArrayType\ArrayOfGetLastTraceResponse $getLastTraceResult
+     * @param \Dpd\StructType\Parcel $parcel
      */
-    public function __construct(\ArrayType\ArrayOfGetLastTraceResponse $getLastTraceResult = null, \StructType\Parcel $parcel = null)
+    public function __construct(\Dpd\ArrayType\ArrayOfGetLastTraceResponse $getLastTraceResult = null, \Dpd\StructType\Parcel $parcel = null)
     {
         $this
             ->setGetLastTraceResult($getLastTraceResult)
@@ -41,7 +41,7 @@ class GetLastTraceResponse extends GetLastTraceBaseResponse
     }
     /**
      * Get GetLastTraceResult value
-     * @return \ArrayType\ArrayOfGetLastTraceResponse|null
+     * @return \Dpd\ArrayType\ArrayOfGetLastTraceResponse|null
      */
     public function getGetLastTraceResult()
     {
@@ -49,17 +49,17 @@ class GetLastTraceResponse extends GetLastTraceBaseResponse
     }
     /**
      * Set GetLastTraceResult value
-     * @param \ArrayType\ArrayOfGetLastTraceResponse $getLastTraceResult
-     * @return \StructType\GetLastTraceResponse
+     * @param \Dpd\ArrayType\ArrayOfGetLastTraceResponse $getLastTraceResult
+     * @return \Dpd\StructType\GetLastTraceResponse
      */
-    public function setGetLastTraceResult(\ArrayType\ArrayOfGetLastTraceResponse $getLastTraceResult = null)
+    public function setGetLastTraceResult(\Dpd\ArrayType\ArrayOfGetLastTraceResponse $getLastTraceResult = null)
     {
         $this->GetLastTraceResult = $getLastTraceResult;
         return $this;
     }
     /**
      * Get Parcel value
-     * @return \StructType\Parcel|null
+     * @return \Dpd\StructType\Parcel|null
      */
     public function getParcel()
     {
@@ -67,10 +67,10 @@ class GetLastTraceResponse extends GetLastTraceBaseResponse
     }
     /**
      * Set Parcel value
-     * @param \StructType\Parcel $parcel
-     * @return \StructType\GetLastTraceResponse
+     * @param \Dpd\StructType\Parcel $parcel
+     * @return \Dpd\StructType\GetLastTraceResponse
      */
-    public function setParcel(\StructType\Parcel $parcel = null)
+    public function setParcel(\Dpd\StructType\Parcel $parcel = null)
     {
         $this->Parcel = $parcel;
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class UserCredentials extends AbstractStructBase
     /**
      * Set userid value
      * @param string $userid
-     * @return \StructType\UserCredentials
+     * @return \Dpd\StructType\UserCredentials
      */
     public function setUserid($userid = null)
     {
@@ -74,7 +74,7 @@ class UserCredentials extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\UserCredentials
+     * @return \Dpd\StructType\UserCredentials
      */
     public function setPassword($password = null)
     {

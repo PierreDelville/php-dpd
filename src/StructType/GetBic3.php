@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetBic3 extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetBic3Request
+     * @var \Dpd\StructType\GetBic3Request
      */
     public $request;
     /**
      * Constructor method for GetBic3
      * @uses GetBic3::setRequest()
-     * @param \StructType\GetBic3Request $request
+     * @param \Dpd\StructType\GetBic3Request $request
      */
-    public function __construct(\StructType\GetBic3Request $request = null)
+    public function __construct(\Dpd\StructType\GetBic3Request $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetBic3Request|null
+     * @return \Dpd\StructType\GetBic3Request|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetBic3 extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetBic3Request $request
-     * @return \StructType\GetBic3
+     * @param \Dpd\StructType\GetBic3Request $request
+     * @return \Dpd\StructType\GetBic3
      */
-    public function setRequest(\StructType\GetBic3Request $request = null)
+    public function setRequest(\Dpd\StructType\GetBic3Request $request = null)
     {
         $this->request = $request;
         return $this;

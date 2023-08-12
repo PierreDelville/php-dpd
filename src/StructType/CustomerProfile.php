@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class CustomerProfile extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $Customer;
     /**
@@ -31,7 +31,7 @@ class CustomerProfile extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfProfileAddress
+     * @var \Dpd\ArrayType\ArrayOfProfileAddress
      */
     public $Addresses;
     /**
@@ -39,7 +39,7 @@ class CustomerProfile extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfCustomerService
+     * @var \Dpd\ArrayType\ArrayOfCustomerService
      */
     public $Services;
     /**
@@ -49,11 +49,11 @@ class CustomerProfile extends AbstractStructBase
      * @uses CustomerProfile::setAddresses()
      * @uses CustomerProfile::setServices()
      * @param bool $locked
-     * @param \StructType\Customer $customer
-     * @param \ArrayType\ArrayOfProfileAddress $addresses
-     * @param \ArrayType\ArrayOfCustomerService $services
+     * @param \Dpd\StructType\Customer $customer
+     * @param \Dpd\ArrayType\ArrayOfProfileAddress $addresses
+     * @param \Dpd\ArrayType\ArrayOfCustomerService $services
      */
-    public function __construct($locked = null, \StructType\Customer $customer = null, \ArrayType\ArrayOfProfileAddress $addresses = null, \ArrayType\ArrayOfCustomerService $services = null)
+    public function __construct($locked = null, \Dpd\StructType\Customer $customer = null, \Dpd\ArrayType\ArrayOfProfileAddress $addresses = null, \Dpd\ArrayType\ArrayOfCustomerService $services = null)
     {
         $this
             ->setLocked($locked)
@@ -72,7 +72,7 @@ class CustomerProfile extends AbstractStructBase
     /**
      * Set Locked value
      * @param bool $locked
-     * @return \StructType\CustomerProfile
+     * @return \Dpd\StructType\CustomerProfile
      */
     public function setLocked($locked = null)
     {
@@ -85,7 +85,7 @@ class CustomerProfile extends AbstractStructBase
     }
     /**
      * Get Customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -93,17 +93,17 @@ class CustomerProfile extends AbstractStructBase
     }
     /**
      * Set Customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\CustomerProfile
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\CustomerProfile
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->Customer = $customer;
         return $this;
     }
     /**
      * Get Addresses value
-     * @return \ArrayType\ArrayOfProfileAddress|null
+     * @return \Dpd\ArrayType\ArrayOfProfileAddress|null
      */
     public function getAddresses()
     {
@@ -111,17 +111,17 @@ class CustomerProfile extends AbstractStructBase
     }
     /**
      * Set Addresses value
-     * @param \ArrayType\ArrayOfProfileAddress $addresses
-     * @return \StructType\CustomerProfile
+     * @param \Dpd\ArrayType\ArrayOfProfileAddress $addresses
+     * @return \Dpd\StructType\CustomerProfile
      */
-    public function setAddresses(\ArrayType\ArrayOfProfileAddress $addresses = null)
+    public function setAddresses(\Dpd\ArrayType\ArrayOfProfileAddress $addresses = null)
     {
         $this->Addresses = $addresses;
         return $this;
     }
     /**
      * Get Services value
-     * @return \ArrayType\ArrayOfCustomerService|null
+     * @return \Dpd\ArrayType\ArrayOfCustomerService|null
      */
     public function getServices()
     {
@@ -129,10 +129,10 @@ class CustomerProfile extends AbstractStructBase
     }
     /**
      * Set Services value
-     * @param \ArrayType\ArrayOfCustomerService $services
-     * @return \StructType\CustomerProfile
+     * @param \Dpd\ArrayType\ArrayOfCustomerService $services
+     * @return \Dpd\StructType\CustomerProfile
      */
-    public function setServices(\ArrayType\ArrayOfCustomerService $services = null)
+    public function setServices(\Dpd\ArrayType\ArrayOfCustomerService $services = null)
     {
         $this->Services = $services;
         return $this;

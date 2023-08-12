@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetCustomerProfileResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetCustomerProfileResponse
+     * @var \Dpd\StructType\GetCustomerProfileResponse
      */
     public $GetCustomerProfileResult;
     /**
@@ -23,17 +23,17 @@ class GetCustomerProfileResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfCustomerProfile
+     * @var \Dpd\ArrayType\ArrayOfCustomerProfile
      */
     public $CustomerProfiles;
     /**
      * Constructor method for GetCustomerProfileResponse
      * @uses GetCustomerProfileResponse::setGetCustomerProfileResult()
      * @uses GetCustomerProfileResponse::setCustomerProfiles()
-     * @param \StructType\GetCustomerProfileResponse $getCustomerProfileResult
-     * @param \ArrayType\ArrayOfCustomerProfile $customerProfiles
+     * @param \Dpd\StructType\GetCustomerProfileResponse $getCustomerProfileResult
+     * @param \Dpd\ArrayType\ArrayOfCustomerProfile $customerProfiles
      */
-    public function __construct(\StructType\GetCustomerProfileResponse $getCustomerProfileResult = null, \ArrayType\ArrayOfCustomerProfile $customerProfiles = null)
+    public function __construct(\Dpd\StructType\GetCustomerProfileResponse $getCustomerProfileResult = null, \Dpd\ArrayType\ArrayOfCustomerProfile $customerProfiles = null)
     {
         $this
             ->setGetCustomerProfileResult($getCustomerProfileResult)
@@ -41,7 +41,7 @@ class GetCustomerProfileResponse extends AbstractStructBase
     }
     /**
      * Get GetCustomerProfileResult value
-     * @return \StructType\GetCustomerProfileResponse|null
+     * @return \Dpd\StructType\GetCustomerProfileResponse|null
      */
     public function getGetCustomerProfileResult()
     {
@@ -49,17 +49,17 @@ class GetCustomerProfileResponse extends AbstractStructBase
     }
     /**
      * Set GetCustomerProfileResult value
-     * @param \StructType\GetCustomerProfileResponse $getCustomerProfileResult
-     * @return \StructType\GetCustomerProfileResponse
+     * @param \Dpd\StructType\GetCustomerProfileResponse $getCustomerProfileResult
+     * @return \Dpd\StructType\GetCustomerProfileResponse
      */
-    public function setGetCustomerProfileResult(\StructType\GetCustomerProfileResponse $getCustomerProfileResult = null)
+    public function setGetCustomerProfileResult(\Dpd\StructType\GetCustomerProfileResponse $getCustomerProfileResult = null)
     {
         $this->GetCustomerProfileResult = $getCustomerProfileResult;
         return $this;
     }
     /**
      * Get CustomerProfiles value
-     * @return \ArrayType\ArrayOfCustomerProfile|null
+     * @return \Dpd\ArrayType\ArrayOfCustomerProfile|null
      */
     public function getCustomerProfiles()
     {
@@ -67,10 +67,10 @@ class GetCustomerProfileResponse extends AbstractStructBase
     }
     /**
      * Set CustomerProfiles value
-     * @param \ArrayType\ArrayOfCustomerProfile $customerProfiles
-     * @return \StructType\GetCustomerProfileResponse
+     * @param \Dpd\ArrayType\ArrayOfCustomerProfile $customerProfiles
+     * @return \Dpd\StructType\GetCustomerProfileResponse
      */
-    public function setCustomerProfiles(\ArrayType\ArrayOfCustomerProfile $customerProfiles = null)
+    public function setCustomerProfiles(\Dpd\ArrayType\ArrayOfCustomerProfile $customerProfiles = null)
     {
         $this->CustomerProfiles = $customerProfiles;
         return $this;

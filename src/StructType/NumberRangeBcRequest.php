@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class NumberRangeBcRequest extends NumberRangeBcBaseRequest
     /**
      * Set NumberType value
      * @param string $numberType
-     * @return \StructType\NumberRangeBcRequest
+     * @return \Dpd\StructType\NumberRangeBcRequest
      */
     public function setNumberType($numberType = null)
     {

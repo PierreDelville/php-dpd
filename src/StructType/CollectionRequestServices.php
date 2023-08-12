@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class CollectionRequestServices extends ServiceBaseList
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ExtraInsurance
+     * @var \Dpd\StructType\ExtraInsurance
      */
     public $extraInsurance;
     /**
@@ -23,17 +23,17 @@ class CollectionRequestServices extends ServiceBaseList
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ContactCollectionRequest
+     * @var \Dpd\StructType\ContactCollectionRequest
      */
     public $contact;
     /**
      * Constructor method for CollectionRequestServices
      * @uses CollectionRequestServices::setExtraInsurance()
      * @uses CollectionRequestServices::setContact()
-     * @param \StructType\ExtraInsurance $extraInsurance
-     * @param \StructType\ContactCollectionRequest $contact
+     * @param \Dpd\StructType\ExtraInsurance $extraInsurance
+     * @param \Dpd\StructType\ContactCollectionRequest $contact
      */
-    public function __construct(\StructType\ExtraInsurance $extraInsurance = null, \StructType\ContactCollectionRequest $contact = null)
+    public function __construct(\Dpd\StructType\ExtraInsurance $extraInsurance = null, \Dpd\StructType\ContactCollectionRequest $contact = null)
     {
         $this
             ->setExtraInsurance($extraInsurance)
@@ -41,7 +41,7 @@ class CollectionRequestServices extends ServiceBaseList
     }
     /**
      * Get extraInsurance value
-     * @return \StructType\ExtraInsurance|null
+     * @return \Dpd\StructType\ExtraInsurance|null
      */
     public function getExtraInsurance()
     {
@@ -49,17 +49,17 @@ class CollectionRequestServices extends ServiceBaseList
     }
     /**
      * Set extraInsurance value
-     * @param \StructType\ExtraInsurance $extraInsurance
-     * @return \StructType\CollectionRequestServices
+     * @param \Dpd\StructType\ExtraInsurance $extraInsurance
+     * @return \Dpd\StructType\CollectionRequestServices
      */
-    public function setExtraInsurance(\StructType\ExtraInsurance $extraInsurance = null)
+    public function setExtraInsurance(\Dpd\StructType\ExtraInsurance $extraInsurance = null)
     {
         $this->extraInsurance = $extraInsurance;
         return $this;
     }
     /**
      * Get contact value
-     * @return \StructType\ContactCollectionRequest|null
+     * @return \Dpd\StructType\ContactCollectionRequest|null
      */
     public function getContact()
     {
@@ -67,10 +67,10 @@ class CollectionRequestServices extends ServiceBaseList
     }
     /**
      * Set contact value
-     * @param \StructType\ContactCollectionRequest $contact
-     * @return \StructType\CollectionRequestServices
+     * @param \Dpd\StructType\ContactCollectionRequest $contact
+     * @return \Dpd\StructType\CollectionRequestServices
      */
-    public function setContact(\StructType\ContactCollectionRequest $contact = null)
+    public function setContact(\Dpd\StructType\ContactCollectionRequest $contact = null)
     {
         $this->contact = $contact;
         return $this;

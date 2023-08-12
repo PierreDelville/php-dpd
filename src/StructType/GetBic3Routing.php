@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetBic3Routing extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\GetBic3RoutingRequest
+     * @var \Dpd\StructType\GetBic3RoutingRequest
      */
     public $request;
     /**
      * Constructor method for GetBic3Routing
      * @uses GetBic3Routing::setRequest()
-     * @param \StructType\GetBic3RoutingRequest $request
+     * @param \Dpd\StructType\GetBic3RoutingRequest $request
      */
-    public function __construct(\StructType\GetBic3RoutingRequest $request = null)
+    public function __construct(\Dpd\StructType\GetBic3RoutingRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\GetBic3RoutingRequest|null
+     * @return \Dpd\StructType\GetBic3RoutingRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class GetBic3Routing extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\GetBic3RoutingRequest $request
-     * @return \StructType\GetBic3Routing
+     * @param \Dpd\StructType\GetBic3RoutingRequest $request
+     * @return \Dpd\StructType\GetBic3Routing
      */
-    public function setRequest(\StructType\GetBic3RoutingRequest $request = null)
+    public function setRequest(\Dpd\StructType\GetBic3RoutingRequest $request = null)
     {
         $this->request = $request;
         return $this;

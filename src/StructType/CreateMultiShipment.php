@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreateMultiShipment extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\MultiShipmentRequest
+     * @var \Dpd\StructType\MultiShipmentRequest
      */
     public $request;
     /**
      * Constructor method for CreateMultiShipment
      * @uses CreateMultiShipment::setRequest()
-     * @param \StructType\MultiShipmentRequest $request
+     * @param \Dpd\StructType\MultiShipmentRequest $request
      */
-    public function __construct(\StructType\MultiShipmentRequest $request = null)
+    public function __construct(\Dpd\StructType\MultiShipmentRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\MultiShipmentRequest|null
+     * @return \Dpd\StructType\MultiShipmentRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class CreateMultiShipment extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\MultiShipmentRequest $request
-     * @return \StructType\CreateMultiShipment
+     * @param \Dpd\StructType\MultiShipmentRequest $request
+     * @return \Dpd\StructType\CreateMultiShipment
      */
-    public function setRequest(\StructType\MultiShipmentRequest $request = null)
+    public function setRequest(\Dpd\StructType\MultiShipmentRequest $request = null)
     {
         $this->request = $request;
         return $this;

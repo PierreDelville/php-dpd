@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -72,7 +72,7 @@ class PhoneCall extends AbstractStructBase
     /**
      * Set DurationSec value
      * @param int $durationSec
-     * @return \StructType\PhoneCall
+     * @return \Dpd\StructType\PhoneCall
      */
     public function setDurationSec($durationSec = null)
     {
@@ -94,7 +94,7 @@ class PhoneCall extends AbstractStructBase
     /**
      * Set Date value
      * @param string $date
-     * @return \StructType\PhoneCall
+     * @return \Dpd\StructType\PhoneCall
      */
     public function setDate($date = null)
     {
@@ -116,7 +116,7 @@ class PhoneCall extends AbstractStructBase
     /**
      * Set Number value
      * @param string $number
-     * @return \StructType\PhoneCall
+     * @return \Dpd\StructType\PhoneCall
      */
     public function setNumber($number = null)
     {
@@ -138,7 +138,7 @@ class PhoneCall extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\PhoneCall
+     * @return \Dpd\StructType\PhoneCall
      */
     public function setType($type = null)
     {

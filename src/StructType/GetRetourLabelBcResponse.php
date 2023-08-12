@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetRetourLabelBcResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\LabelResponse
+     * @var \Dpd\StructType\LabelResponse
      */
     public $GetRetourLabelBcResult;
     /**
      * Constructor method for GetRetourLabelBcResponse
      * @uses GetRetourLabelBcResponse::setGetRetourLabelBcResult()
-     * @param \StructType\LabelResponse $getRetourLabelBcResult
+     * @param \Dpd\StructType\LabelResponse $getRetourLabelBcResult
      */
-    public function __construct(\StructType\LabelResponse $getRetourLabelBcResult = null)
+    public function __construct(\Dpd\StructType\LabelResponse $getRetourLabelBcResult = null)
     {
         $this
             ->setGetRetourLabelBcResult($getRetourLabelBcResult);
     }
     /**
      * Get GetRetourLabelBcResult value
-     * @return \StructType\LabelResponse|null
+     * @return \Dpd\StructType\LabelResponse|null
      */
     public function getGetRetourLabelBcResult()
     {
@@ -38,10 +38,10 @@ class GetRetourLabelBcResponse extends AbstractStructBase
     }
     /**
      * Set GetRetourLabelBcResult value
-     * @param \StructType\LabelResponse $getRetourLabelBcResult
-     * @return \StructType\GetRetourLabelBcResponse
+     * @param \Dpd\StructType\LabelResponse $getRetourLabelBcResult
+     * @return \Dpd\StructType\GetRetourLabelBcResponse
      */
-    public function setGetRetourLabelBcResult(\StructType\LabelResponse $getRetourLabelBcResult = null)
+    public function setGetRetourLabelBcResult(\Dpd\StructType\LabelResponse $getRetourLabelBcResult = null)
     {
         $this->GetRetourLabelBcResult = $getRetourLabelBcResult;
         return $this;

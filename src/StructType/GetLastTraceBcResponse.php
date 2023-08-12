@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetLastTraceBcResponse extends GetLastTraceBaseResponse
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfGetLastTraceBcResponse
+     * @var \Dpd\ArrayType\ArrayOfGetLastTraceBcResponse
      */
     public $GetLastTraceBcResult;
     /**
@@ -30,10 +30,10 @@ class GetLastTraceBcResponse extends GetLastTraceBaseResponse
      * Constructor method for GetLastTraceBcResponse
      * @uses GetLastTraceBcResponse::setGetLastTraceBcResult()
      * @uses GetLastTraceBcResponse::setShipmentNumber()
-     * @param \ArrayType\ArrayOfGetLastTraceBcResponse $getLastTraceBcResult
+     * @param \Dpd\ArrayType\ArrayOfGetLastTraceBcResponse $getLastTraceBcResult
      * @param string $shipmentNumber
      */
-    public function __construct(\ArrayType\ArrayOfGetLastTraceBcResponse $getLastTraceBcResult = null, $shipmentNumber = null)
+    public function __construct(\Dpd\ArrayType\ArrayOfGetLastTraceBcResponse $getLastTraceBcResult = null, $shipmentNumber = null)
     {
         $this
             ->setGetLastTraceBcResult($getLastTraceBcResult)
@@ -41,7 +41,7 @@ class GetLastTraceBcResponse extends GetLastTraceBaseResponse
     }
     /**
      * Get GetLastTraceBcResult value
-     * @return \ArrayType\ArrayOfGetLastTraceBcResponse|null
+     * @return \Dpd\ArrayType\ArrayOfGetLastTraceBcResponse|null
      */
     public function getGetLastTraceBcResult()
     {
@@ -49,10 +49,10 @@ class GetLastTraceBcResponse extends GetLastTraceBaseResponse
     }
     /**
      * Set GetLastTraceBcResult value
-     * @param \ArrayType\ArrayOfGetLastTraceBcResponse $getLastTraceBcResult
-     * @return \StructType\GetLastTraceBcResponse
+     * @param \Dpd\ArrayType\ArrayOfGetLastTraceBcResponse $getLastTraceBcResult
+     * @return \Dpd\StructType\GetLastTraceBcResponse
      */
-    public function setGetLastTraceBcResult(\ArrayType\ArrayOfGetLastTraceBcResponse $getLastTraceBcResult = null)
+    public function setGetLastTraceBcResult(\Dpd\ArrayType\ArrayOfGetLastTraceBcResponse $getLastTraceBcResult = null)
     {
         $this->GetLastTraceBcResult = $getLastTraceBcResult;
         return $this;
@@ -68,7 +68,7 @@ class GetLastTraceBcResponse extends GetLastTraceBaseResponse
     /**
      * Set ShipmentNumber value
      * @param string $shipmentNumber
-     * @return \StructType\GetLastTraceBcResponse
+     * @return \Dpd\StructType\GetLastTraceBcResponse
      */
     public function setShipmentNumber($shipmentNumber = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class UpdateRdvShipmentDataForPredict extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\UpdateRdvShipmentDataPredictRequest
+     * @var \Dpd\StructType\UpdateRdvShipmentDataPredictRequest
      */
     public $request;
     /**
      * Constructor method for UpdateRdvShipmentDataForPredict
      * @uses UpdateRdvShipmentDataForPredict::setRequest()
-     * @param \StructType\UpdateRdvShipmentDataPredictRequest $request
+     * @param \Dpd\StructType\UpdateRdvShipmentDataPredictRequest $request
      */
-    public function __construct(\StructType\UpdateRdvShipmentDataPredictRequest $request = null)
+    public function __construct(\Dpd\StructType\UpdateRdvShipmentDataPredictRequest $request = null)
     {
         $this
             ->setRequest($request);
     }
     /**
      * Get request value
-     * @return \StructType\UpdateRdvShipmentDataPredictRequest|null
+     * @return \Dpd\StructType\UpdateRdvShipmentDataPredictRequest|null
      */
     public function getRequest()
     {
@@ -38,10 +38,10 @@ class UpdateRdvShipmentDataForPredict extends AbstractStructBase
     }
     /**
      * Set request value
-     * @param \StructType\UpdateRdvShipmentDataPredictRequest $request
-     * @return \StructType\UpdateRdvShipmentDataForPredict
+     * @param \Dpd\StructType\UpdateRdvShipmentDataPredictRequest $request
+     * @return \Dpd\StructType\UpdateRdvShipmentDataForPredict
      */
-    public function setRequest(\StructType\UpdateRdvShipmentDataPredictRequest $request = null)
+    public function setRequest(\Dpd\StructType\UpdateRdvShipmentDataPredictRequest $request = null)
     {
         $this->request = $request;
         return $this;

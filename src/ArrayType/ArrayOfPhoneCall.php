@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\PhoneCall[]
+     * @var \Dpd\StructType\PhoneCall[]
      */
     public $PhoneCall;
     /**
      * Constructor method for ArrayOfPhoneCall
      * @uses ArrayOfPhoneCall::setPhoneCall()
-     * @param \StructType\PhoneCall[] $phoneCall
+     * @param \Dpd\StructType\PhoneCall[] $phoneCall
      */
     public function __construct(array $phoneCall = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\PhoneCall[]|null
+     * @return \Dpd\StructType\PhoneCall[]|null
      */
     public function getPhoneCall()
     {
@@ -52,12 +52,12 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfPhoneCallPhoneCallItem) {
             // validation for constraint: itemType
-            if (!$arrayOfPhoneCallPhoneCallItem instanceof \StructType\PhoneCall) {
+            if (!$arrayOfPhoneCallPhoneCallItem instanceof \Dpd\StructType\PhoneCall) {
                 $invalidValues[] = is_object($arrayOfPhoneCallPhoneCallItem) ? get_class($arrayOfPhoneCallPhoneCallItem) : sprintf('%s(%s)', gettype($arrayOfPhoneCallPhoneCallItem), var_export($arrayOfPhoneCallPhoneCallItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The PhoneCall property can only contain items of type \StructType\PhoneCall, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The PhoneCall property can only contain items of type \Dpd\StructType\PhoneCall, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\PhoneCall[] $phoneCall
-     * @return \ArrayType\ArrayOfPhoneCall
+     * @param \Dpd\StructType\PhoneCall[] $phoneCall
+     * @return \Dpd\ArrayType\ArrayOfPhoneCall
      */
     public function setPhoneCall(array $phoneCall = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
     /**
      * Add item to PhoneCall value
      * @throws \InvalidArgumentException
-     * @param \StructType\PhoneCall $item
-     * @return \ArrayType\ArrayOfPhoneCall
+     * @param \Dpd\StructType\PhoneCall $item
+     * @return \Dpd\ArrayType\ArrayOfPhoneCall
      */
-    public function addToPhoneCall(\StructType\PhoneCall $item)
+    public function addToPhoneCall(\Dpd\StructType\PhoneCall $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\PhoneCall) {
-            throw new \InvalidArgumentException(sprintf('The PhoneCall property can only contain items of type \StructType\PhoneCall, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\PhoneCall) {
+            throw new \InvalidArgumentException(sprintf('The PhoneCall property can only contain items of type \Dpd\StructType\PhoneCall, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->PhoneCall[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\PhoneCall|null
+     * @return \Dpd\StructType\PhoneCall|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\PhoneCall|null
+     * @return \Dpd\StructType\PhoneCall|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\PhoneCall|null
+     * @return \Dpd\StructType\PhoneCall|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\PhoneCall|null
+     * @return \Dpd\StructType\PhoneCall|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\PhoneCall|null
+     * @return \Dpd\StructType\PhoneCall|null
      */
     public function offsetGet($offset)
     {

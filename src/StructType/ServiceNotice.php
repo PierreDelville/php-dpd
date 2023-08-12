@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class ServiceNotice extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $customer;
     /**
@@ -105,7 +105,7 @@ class ServiceNotice extends AbstractStructBase
      * @param string $type
      * @param string $barcodeId
      * @param string $barcodeSource
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      * @param string $reason
      * @param string $date
      * @param string $status
@@ -113,7 +113,7 @@ class ServiceNotice extends AbstractStructBase
      * @param string $info
      * @param string $counterquestion
      */
-    public function __construct($type = null, $barcodeId = null, $barcodeSource = null, \StructType\Customer $customer = null, $reason = null, $date = null, $status = null, $weight = null, $info = null, $counterquestion = null)
+    public function __construct($type = null, $barcodeId = null, $barcodeSource = null, \Dpd\StructType\Customer $customer = null, $reason = null, $date = null, $status = null, $weight = null, $info = null, $counterquestion = null)
     {
         $this
             ->setType($type)
@@ -137,17 +137,17 @@ class ServiceNotice extends AbstractStructBase
     }
     /**
      * Set type value
-     * @uses \EnumType\ServiceNoticeType::valueIsValid()
-     * @uses \EnumType\ServiceNoticeType::getValidValues()
+     * @uses \Dpd\EnumType\ServiceNoticeType::valueIsValid()
+     * @uses \Dpd\EnumType\ServiceNoticeType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $type
-     * @return \StructType\ServiceNotice
+     * @return \Dpd\StructType\ServiceNotice
      */
     public function setType($type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ServiceNoticeType::valueIsValid($type)) {
-            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \EnumType\ServiceNoticeType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \EnumType\ServiceNoticeType::getValidValues())), __LINE__);
+        if (!\Dpd\EnumType\ServiceNoticeType::valueIsValid($type)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Dpd\EnumType\ServiceNoticeType', is_array($type) ? implode(', ', $type) : var_export($type, true), implode(', ', \Dpd\EnumType\ServiceNoticeType::getValidValues())), __LINE__);
         }
         $this->type = $type;
         return $this;
@@ -163,7 +163,7 @@ class ServiceNotice extends AbstractStructBase
     /**
      * Set BarcodeId value
      * @param string $barcodeId
-     * @return \StructType\ServiceNotice
+     * @return \Dpd\StructType\ServiceNotice
      */
     public function setBarcodeId($barcodeId = null)
     {
@@ -185,7 +185,7 @@ class ServiceNotice extends AbstractStructBase
     /**
      * Set BarcodeSource value
      * @param string $barcodeSource
-     * @return \StructType\ServiceNotice
+     * @return \Dpd\StructType\ServiceNotice
      */
     public function setBarcodeSource($barcodeSource = null)
     {
@@ -198,7 +198,7 @@ class ServiceNotice extends AbstractStructBase
     }
     /**
      * Get customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -206,10 +206,10 @@ class ServiceNotice extends AbstractStructBase
     }
     /**
      * Set customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\ServiceNotice
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\ServiceNotice
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->customer = $customer;
         return $this;
@@ -225,7 +225,7 @@ class ServiceNotice extends AbstractStructBase
     /**
      * Set reason value
      * @param string $reason
-     * @return \StructType\ServiceNotice
+     * @return \Dpd\StructType\ServiceNotice
      */
     public function setReason($reason = null)
     {
@@ -247,7 +247,7 @@ class ServiceNotice extends AbstractStructBase
     /**
      * Set date value
      * @param string $date
-     * @return \StructType\ServiceNotice
+     * @return \Dpd\StructType\ServiceNotice
      */
     public function setDate($date = null)
     {
@@ -269,7 +269,7 @@ class ServiceNotice extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \StructType\ServiceNotice
+     * @return \Dpd\StructType\ServiceNotice
      */
     public function setStatus($status = null)
     {
@@ -291,7 +291,7 @@ class ServiceNotice extends AbstractStructBase
     /**
      * Set weight value
      * @param string $weight
-     * @return \StructType\ServiceNotice
+     * @return \Dpd\StructType\ServiceNotice
      */
     public function setWeight($weight = null)
     {
@@ -313,7 +313,7 @@ class ServiceNotice extends AbstractStructBase
     /**
      * Set info value
      * @param string $info
-     * @return \StructType\ServiceNotice
+     * @return \Dpd\StructType\ServiceNotice
      */
     public function setInfo($info = null)
     {
@@ -335,7 +335,7 @@ class ServiceNotice extends AbstractStructBase
     /**
      * Set counterquestion value
      * @param string $counterquestion
-     * @return \StructType\ServiceNotice
+     * @return \Dpd\StructType\ServiceNotice
      */
     public function setCounterquestion($counterquestion = null)
     {

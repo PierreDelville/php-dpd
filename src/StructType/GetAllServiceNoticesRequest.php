@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $Customer;
     /**
@@ -23,7 +23,7 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfString
+     * @var \Dpd\ArrayType\ArrayOfString
      */
     public $Languages;
     /**
@@ -39,11 +39,11 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
      * @uses GetAllServiceNoticesRequest::setCustomer()
      * @uses GetAllServiceNoticesRequest::setLanguages()
      * @uses GetAllServiceNoticesRequest::setLastKey()
-     * @param \StructType\Customer $customer
-     * @param \ArrayType\ArrayOfString $languages
+     * @param \Dpd\StructType\Customer $customer
+     * @param \Dpd\ArrayType\ArrayOfString $languages
      * @param string $lastKey
      */
-    public function __construct(\StructType\Customer $customer = null, \ArrayType\ArrayOfString $languages = null, $lastKey = null)
+    public function __construct(\Dpd\StructType\Customer $customer = null, \Dpd\ArrayType\ArrayOfString $languages = null, $lastKey = null)
     {
         $this
             ->setCustomer($customer)
@@ -52,7 +52,7 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
     }
     /**
      * Get Customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -60,17 +60,17 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
     }
     /**
      * Set Customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\GetAllServiceNoticesRequest
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\GetAllServiceNoticesRequest
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->Customer = $customer;
         return $this;
     }
     /**
      * Get Languages value
-     * @return \ArrayType\ArrayOfString|null
+     * @return \Dpd\ArrayType\ArrayOfString|null
      */
     public function getLanguages()
     {
@@ -78,10 +78,10 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
     }
     /**
      * Set Languages value
-     * @param \ArrayType\ArrayOfString $languages
-     * @return \StructType\GetAllServiceNoticesRequest
+     * @param \Dpd\ArrayType\ArrayOfString $languages
+     * @return \Dpd\StructType\GetAllServiceNoticesRequest
      */
-    public function setLanguages(\ArrayType\ArrayOfString $languages = null)
+    public function setLanguages(\Dpd\ArrayType\ArrayOfString $languages = null)
     {
         $this->Languages = $languages;
         return $this;
@@ -97,7 +97,7 @@ class GetAllServiceNoticesRequest extends AbstractStructBase
     /**
      * Set LastKey value
      * @param string $lastKey
-     * @return \StructType\GetAllServiceNoticesRequest
+     * @return \Dpd\StructType\GetAllServiceNoticesRequest
      */
     public function setLastKey($lastKey = null)
     {

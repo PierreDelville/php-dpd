@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreateCollectionRequestResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfShipment
+     * @var \Dpd\ArrayType\ArrayOfShipment
      */
     public $CreateCollectionRequestResult;
     /**
      * Constructor method for CreateCollectionRequestResponse
      * @uses CreateCollectionRequestResponse::setCreateCollectionRequestResult()
-     * @param \ArrayType\ArrayOfShipment $createCollectionRequestResult
+     * @param \Dpd\ArrayType\ArrayOfShipment $createCollectionRequestResult
      */
-    public function __construct(\ArrayType\ArrayOfShipment $createCollectionRequestResult = null)
+    public function __construct(\Dpd\ArrayType\ArrayOfShipment $createCollectionRequestResult = null)
     {
         $this
             ->setCreateCollectionRequestResult($createCollectionRequestResult);
     }
     /**
      * Get CreateCollectionRequestResult value
-     * @return \ArrayType\ArrayOfShipment|null
+     * @return \Dpd\ArrayType\ArrayOfShipment|null
      */
     public function getCreateCollectionRequestResult()
     {
@@ -38,10 +38,10 @@ class CreateCollectionRequestResponse extends AbstractStructBase
     }
     /**
      * Set CreateCollectionRequestResult value
-     * @param \ArrayType\ArrayOfShipment $createCollectionRequestResult
-     * @return \StructType\CreateCollectionRequestResponse
+     * @param \Dpd\ArrayType\ArrayOfShipment $createCollectionRequestResult
+     * @return \Dpd\StructType\CreateCollectionRequestResponse
      */
-    public function setCreateCollectionRequestResult(\ArrayType\ArrayOfShipment $createCollectionRequestResult = null)
+    public function setCreateCollectionRequestResult(\Dpd\ArrayType\ArrayOfShipment $createCollectionRequestResult = null)
     {
         $this->CreateCollectionRequestResult = $createCollectionRequestResult;
         return $this;

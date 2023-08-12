@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CreatePickupAtCustomerResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Parcel
+     * @var \Dpd\StructType\Parcel
      */
     public $CreatePickupAtCustomerResult;
     /**
      * Constructor method for CreatePickupAtCustomerResponse
      * @uses CreatePickupAtCustomerResponse::setCreatePickupAtCustomerResult()
-     * @param \StructType\Parcel $createPickupAtCustomerResult
+     * @param \Dpd\StructType\Parcel $createPickupAtCustomerResult
      */
-    public function __construct(\StructType\Parcel $createPickupAtCustomerResult = null)
+    public function __construct(\Dpd\StructType\Parcel $createPickupAtCustomerResult = null)
     {
         $this
             ->setCreatePickupAtCustomerResult($createPickupAtCustomerResult);
     }
     /**
      * Get CreatePickupAtCustomerResult value
-     * @return \StructType\Parcel|null
+     * @return \Dpd\StructType\Parcel|null
      */
     public function getCreatePickupAtCustomerResult()
     {
@@ -38,10 +38,10 @@ class CreatePickupAtCustomerResponse extends AbstractStructBase
     }
     /**
      * Set CreatePickupAtCustomerResult value
-     * @param \StructType\Parcel $createPickupAtCustomerResult
-     * @return \StructType\CreatePickupAtCustomerResponse
+     * @param \Dpd\StructType\Parcel $createPickupAtCustomerResult
+     * @return \Dpd\StructType\CreatePickupAtCustomerResponse
      */
-    public function setCreatePickupAtCustomerResult(\StructType\Parcel $createPickupAtCustomerResult = null)
+    public function setCreatePickupAtCustomerResult(\Dpd\StructType\Parcel $createPickupAtCustomerResult = null)
     {
         $this->CreatePickupAtCustomerResult = $createPickupAtCustomerResult;
         return $this;

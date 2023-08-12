@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class GetInfoResponse extends AbstractStructBase
     /**
      * Set getInfoResult value
      * @param string $getInfoResult
-     * @return \StructType\GetInfoResponse
+     * @return \Dpd\StructType\GetInfoResponse
      */
     public function setGetInfoResult($getInfoResult = null)
     {

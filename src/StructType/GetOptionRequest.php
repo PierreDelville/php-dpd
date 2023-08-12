@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetOptionRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $Customer;
     /**
@@ -57,13 +57,13 @@ class GetOptionRequest extends AbstractStructBase
      * @uses GetOptionRequest::setHardwareId()
      * @uses GetOptionRequest::setOption()
      * @uses GetOptionRequest::setGroup()
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      * @param string $productType
      * @param string $hardwareId
      * @param string $option
      * @param string $group
      */
-    public function __construct(\StructType\Customer $customer = null, $productType = null, $hardwareId = null, $option = null, $group = null)
+    public function __construct(\Dpd\StructType\Customer $customer = null, $productType = null, $hardwareId = null, $option = null, $group = null)
     {
         $this
             ->setCustomer($customer)
@@ -74,7 +74,7 @@ class GetOptionRequest extends AbstractStructBase
     }
     /**
      * Get Customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -82,10 +82,10 @@ class GetOptionRequest extends AbstractStructBase
     }
     /**
      * Set Customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\GetOptionRequest
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\GetOptionRequest
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->Customer = $customer;
         return $this;
@@ -101,7 +101,7 @@ class GetOptionRequest extends AbstractStructBase
     /**
      * Set ProductType value
      * @param string $productType
-     * @return \StructType\GetOptionRequest
+     * @return \Dpd\StructType\GetOptionRequest
      */
     public function setProductType($productType = null)
     {
@@ -123,7 +123,7 @@ class GetOptionRequest extends AbstractStructBase
     /**
      * Set HardwareId value
      * @param string $hardwareId
-     * @return \StructType\GetOptionRequest
+     * @return \Dpd\StructType\GetOptionRequest
      */
     public function setHardwareId($hardwareId = null)
     {
@@ -145,7 +145,7 @@ class GetOptionRequest extends AbstractStructBase
     /**
      * Set Option value
      * @param string $option
-     * @return \StructType\GetOptionRequest
+     * @return \Dpd\StructType\GetOptionRequest
      */
     public function setOption($option = null)
     {
@@ -167,7 +167,7 @@ class GetOptionRequest extends AbstractStructBase
     /**
      * Set Group value
      * @param string $group
-     * @return \StructType\GetOptionRequest
+     * @return \Dpd\StructType\GetOptionRequest
      */
     public function setGroup($group = null)
     {

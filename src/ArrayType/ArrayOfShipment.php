@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfShipment extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Shipment[]
+     * @var \Dpd\StructType\Shipment[]
      */
     public $Shipment;
     /**
      * Constructor method for ArrayOfShipment
      * @uses ArrayOfShipment::setShipment()
-     * @param \StructType\Shipment[] $shipment
+     * @param \Dpd\StructType\Shipment[] $shipment
      */
     public function __construct(array $shipment = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfShipment extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Shipment[]|null
+     * @return \Dpd\StructType\Shipment[]|null
      */
     public function getShipment()
     {
@@ -52,12 +52,12 @@ class ArrayOfShipment extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfShipmentShipmentItem) {
             // validation for constraint: itemType
-            if (!$arrayOfShipmentShipmentItem instanceof \StructType\Shipment) {
+            if (!$arrayOfShipmentShipmentItem instanceof \Dpd\StructType\Shipment) {
                 $invalidValues[] = is_object($arrayOfShipmentShipmentItem) ? get_class($arrayOfShipmentShipmentItem) : sprintf('%s(%s)', gettype($arrayOfShipmentShipmentItem), var_export($arrayOfShipmentShipmentItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Shipment property can only contain items of type \StructType\Shipment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Shipment property can only contain items of type \Dpd\StructType\Shipment, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfShipment extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\Shipment[] $shipment
-     * @return \ArrayType\ArrayOfShipment
+     * @param \Dpd\StructType\Shipment[] $shipment
+     * @return \Dpd\ArrayType\ArrayOfShipment
      */
     public function setShipment(array $shipment = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfShipment extends AbstractStructArrayBase
     /**
      * Add item to Shipment value
      * @throws \InvalidArgumentException
-     * @param \StructType\Shipment $item
-     * @return \ArrayType\ArrayOfShipment
+     * @param \Dpd\StructType\Shipment $item
+     * @return \Dpd\ArrayType\ArrayOfShipment
      */
-    public function addToShipment(\StructType\Shipment $item)
+    public function addToShipment(\Dpd\StructType\Shipment $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Shipment) {
-            throw new \InvalidArgumentException(sprintf('The Shipment property can only contain items of type \StructType\Shipment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\Shipment) {
+            throw new \InvalidArgumentException(sprintf('The Shipment property can only contain items of type \Dpd\StructType\Shipment, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Shipment[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfShipment extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\Shipment|null
+     * @return \Dpd\StructType\Shipment|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfShipment extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\Shipment|null
+     * @return \Dpd\StructType\Shipment|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfShipment extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\Shipment|null
+     * @return \Dpd\StructType\Shipment|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfShipment extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\Shipment|null
+     * @return \Dpd\StructType\Shipment|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfShipment extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\Shipment|null
+     * @return \Dpd\StructType\Shipment|null
      */
     public function offsetGet($offset)
     {

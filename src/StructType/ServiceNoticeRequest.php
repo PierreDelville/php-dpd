@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class ServiceNoticeRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $customer;
     /**
@@ -30,10 +30,10 @@ class ServiceNoticeRequest extends AbstractStructBase
      * Constructor method for ServiceNoticeRequest
      * @uses ServiceNoticeRequest::setCustomer()
      * @uses ServiceNoticeRequest::setLanguage()
-     * @param \StructType\Customer $customer
+     * @param \Dpd\StructType\Customer $customer
      * @param string $language
      */
-    public function __construct(\StructType\Customer $customer = null, $language = null)
+    public function __construct(\Dpd\StructType\Customer $customer = null, $language = null)
     {
         $this
             ->setCustomer($customer)
@@ -41,7 +41,7 @@ class ServiceNoticeRequest extends AbstractStructBase
     }
     /**
      * Get customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -49,10 +49,10 @@ class ServiceNoticeRequest extends AbstractStructBase
     }
     /**
      * Set customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\ServiceNoticeRequest
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\ServiceNoticeRequest
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->customer = $customer;
         return $this;
@@ -68,7 +68,7 @@ class ServiceNoticeRequest extends AbstractStructBase
     /**
      * Set language value
      * @param string $language
-     * @return \StructType\ServiceNoticeRequest
+     * @return \Dpd\StructType\ServiceNoticeRequest
      */
     public function setLanguage($language = null)
     {

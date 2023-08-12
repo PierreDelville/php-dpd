@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -74,7 +74,7 @@ class Entry extends AbstractStructBase
     /**
      * Set BarcodeSource value
      * @param int $barcodeSource
-     * @return \StructType\Entry
+     * @return \Dpd\StructType\Entry
      */
     public function setBarcodeSource($barcodeSource = null)
     {
@@ -96,7 +96,7 @@ class Entry extends AbstractStructBase
     /**
      * Set NumberFrom value
      * @param int $numberFrom
-     * @return \StructType\Entry
+     * @return \Dpd\StructType\Entry
      */
     public function setNumberFrom($numberFrom = null)
     {
@@ -118,7 +118,7 @@ class Entry extends AbstractStructBase
     /**
      * Set NumberTo value
      * @param int $numberTo
-     * @return \StructType\Entry
+     * @return \Dpd\StructType\Entry
      */
     public function setNumberTo($numberTo = null)
     {
@@ -140,7 +140,7 @@ class Entry extends AbstractStructBase
     /**
      * Set Domain value
      * @param string $domain
-     * @return \StructType\Entry
+     * @return \Dpd\StructType\Entry
      */
     public function setDomain($domain = null)
     {

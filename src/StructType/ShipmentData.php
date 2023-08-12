@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -94,7 +94,7 @@ class ShipmentData extends ShipmentDataBase
     /**
      * Set countrycode value
      * @param string $countrycode
-     * @return \StructType\ShipmentData
+     * @return \Dpd\StructType\ShipmentData
      */
     public function setCountrycode($countrycode = null)
     {
@@ -116,7 +116,7 @@ class ShipmentData extends ShipmentDataBase
     /**
      * Set centernumber value
      * @param string $centernumber
-     * @return \StructType\ShipmentData
+     * @return \Dpd\StructType\ShipmentData
      */
     public function setCenternumber($centernumber = null)
     {
@@ -138,7 +138,7 @@ class ShipmentData extends ShipmentDataBase
     /**
      * Set parcelnumber value
      * @param string $parcelnumber
-     * @return \StructType\ShipmentData
+     * @return \Dpd\StructType\ShipmentData
      */
     public function setParcelnumber($parcelnumber = null)
     {
@@ -160,7 +160,7 @@ class ShipmentData extends ShipmentDataBase
     /**
      * Set countrycode_retour value
      * @param string $countrycode_retour
-     * @return \StructType\ShipmentData
+     * @return \Dpd\StructType\ShipmentData
      */
     public function setCountrycode_retour($countrycode_retour = null)
     {
@@ -182,7 +182,7 @@ class ShipmentData extends ShipmentDataBase
     /**
      * Set centernumber_retour value
      * @param string $centernumber_retour
-     * @return \StructType\ShipmentData
+     * @return \Dpd\StructType\ShipmentData
      */
     public function setCenternumber_retour($centernumber_retour = null)
     {
@@ -204,7 +204,7 @@ class ShipmentData extends ShipmentDataBase
     /**
      * Set parcelnumber_retour value
      * @param string $parcelnumber_retour
-     * @return \StructType\ShipmentData
+     * @return \Dpd\StructType\ShipmentData
      */
     public function setParcelnumber_retour($parcelnumber_retour = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfRdvShipmentData extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\RdvShipmentData[]
+     * @var \Dpd\StructType\RdvShipmentData[]
      */
     public $RdvShipmentData;
     /**
      * Constructor method for ArrayOfRdvShipmentData
      * @uses ArrayOfRdvShipmentData::setRdvShipmentData()
-     * @param \StructType\RdvShipmentData[] $rdvShipmentData
+     * @param \Dpd\StructType\RdvShipmentData[] $rdvShipmentData
      */
     public function __construct(array $rdvShipmentData = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfRdvShipmentData extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\RdvShipmentData[]|null
+     * @return \Dpd\StructType\RdvShipmentData[]|null
      */
     public function getRdvShipmentData()
     {
@@ -52,12 +52,12 @@ class ArrayOfRdvShipmentData extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfRdvShipmentDataRdvShipmentDataItem) {
             // validation for constraint: itemType
-            if (!$arrayOfRdvShipmentDataRdvShipmentDataItem instanceof \StructType\RdvShipmentData) {
+            if (!$arrayOfRdvShipmentDataRdvShipmentDataItem instanceof \Dpd\StructType\RdvShipmentData) {
                 $invalidValues[] = is_object($arrayOfRdvShipmentDataRdvShipmentDataItem) ? get_class($arrayOfRdvShipmentDataRdvShipmentDataItem) : sprintf('%s(%s)', gettype($arrayOfRdvShipmentDataRdvShipmentDataItem), var_export($arrayOfRdvShipmentDataRdvShipmentDataItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The RdvShipmentData property can only contain items of type \StructType\RdvShipmentData, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The RdvShipmentData property can only contain items of type \Dpd\StructType\RdvShipmentData, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfRdvShipmentData extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\RdvShipmentData[] $rdvShipmentData
-     * @return \ArrayType\ArrayOfRdvShipmentData
+     * @param \Dpd\StructType\RdvShipmentData[] $rdvShipmentData
+     * @return \Dpd\ArrayType\ArrayOfRdvShipmentData
      */
     public function setRdvShipmentData(array $rdvShipmentData = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfRdvShipmentData extends AbstractStructArrayBase
     /**
      * Add item to RdvShipmentData value
      * @throws \InvalidArgumentException
-     * @param \StructType\RdvShipmentData $item
-     * @return \ArrayType\ArrayOfRdvShipmentData
+     * @param \Dpd\StructType\RdvShipmentData $item
+     * @return \Dpd\ArrayType\ArrayOfRdvShipmentData
      */
-    public function addToRdvShipmentData(\StructType\RdvShipmentData $item)
+    public function addToRdvShipmentData(\Dpd\StructType\RdvShipmentData $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RdvShipmentData) {
-            throw new \InvalidArgumentException(sprintf('The RdvShipmentData property can only contain items of type \StructType\RdvShipmentData, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\RdvShipmentData) {
+            throw new \InvalidArgumentException(sprintf('The RdvShipmentData property can only contain items of type \Dpd\StructType\RdvShipmentData, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->RdvShipmentData[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfRdvShipmentData extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\RdvShipmentData|null
+     * @return \Dpd\StructType\RdvShipmentData|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfRdvShipmentData extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\RdvShipmentData|null
+     * @return \Dpd\StructType\RdvShipmentData|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfRdvShipmentData extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\RdvShipmentData|null
+     * @return \Dpd\StructType\RdvShipmentData|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfRdvShipmentData extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\RdvShipmentData|null
+     * @return \Dpd\StructType\RdvShipmentData|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfRdvShipmentData extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\RdvShipmentData|null
+     * @return \Dpd\StructType\RdvShipmentData|null
      */
     public function offsetGet($offset)
     {

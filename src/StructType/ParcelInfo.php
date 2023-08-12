@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class ParcelInfo extends AbstractStructBase
     /**
      * Set BarcodeSource value
      * @param string $barcodeSource
-     * @return \StructType\ParcelInfo
+     * @return \Dpd\StructType\ParcelInfo
      */
     public function setBarcodeSource($barcodeSource = null)
     {
@@ -72,7 +72,7 @@ class ParcelInfo extends AbstractStructBase
     /**
      * Set BarcodeId value
      * @param string $barcodeId
-     * @return \StructType\ParcelInfo
+     * @return \Dpd\StructType\ParcelInfo
      */
     public function setBarcodeId($barcodeId = null)
     {

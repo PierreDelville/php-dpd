@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class GetShipmentResponse extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\ShipmentDataExtended
+     * @var \Dpd\StructType\ShipmentDataExtended
      */
     public $GetShipmentResult;
     /**
      * Constructor method for GetShipmentResponse
      * @uses GetShipmentResponse::setGetShipmentResult()
-     * @param \StructType\ShipmentDataExtended $getShipmentResult
+     * @param \Dpd\StructType\ShipmentDataExtended $getShipmentResult
      */
-    public function __construct(\StructType\ShipmentDataExtended $getShipmentResult = null)
+    public function __construct(\Dpd\StructType\ShipmentDataExtended $getShipmentResult = null)
     {
         $this
             ->setGetShipmentResult($getShipmentResult);
     }
     /**
      * Get GetShipmentResult value
-     * @return \StructType\ShipmentDataExtended|null
+     * @return \Dpd\StructType\ShipmentDataExtended|null
      */
     public function getGetShipmentResult()
     {
@@ -38,10 +38,10 @@ class GetShipmentResponse extends AbstractStructBase
     }
     /**
      * Set GetShipmentResult value
-     * @param \StructType\ShipmentDataExtended $getShipmentResult
-     * @return \StructType\GetShipmentResponse
+     * @param \Dpd\StructType\ShipmentDataExtended $getShipmentResult
+     * @return \Dpd\StructType\GetShipmentResponse
      */
-    public function setGetShipmentResult(\StructType\ShipmentDataExtended $getShipmentResult = null)
+    public function setGetShipmentResult(\Dpd\StructType\ShipmentDataExtended $getShipmentResult = null)
     {
         $this->GetShipmentResult = $getShipmentResult;
         return $this;

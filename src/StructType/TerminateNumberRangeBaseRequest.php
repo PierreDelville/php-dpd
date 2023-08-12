@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -83,7 +83,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     /**
      * Set NumberRangeFrom value
      * @param int $numberRangeFrom
-     * @return \StructType\TerminateNumberRangeBaseRequest
+     * @return \Dpd\StructType\TerminateNumberRangeBaseRequest
      */
     public function setNumberRangeFrom($numberRangeFrom = null)
     {
@@ -105,7 +105,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     /**
      * Set NumberRangeTo value
      * @param int $numberRangeTo
-     * @return \StructType\TerminateNumberRangeBaseRequest
+     * @return \Dpd\StructType\TerminateNumberRangeBaseRequest
      */
     public function setNumberRangeTo($numberRangeTo = null)
     {
@@ -127,7 +127,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     /**
      * Set CustomerCenterNumber value
      * @param int $customerCenterNumber
-     * @return \StructType\TerminateNumberRangeBaseRequest
+     * @return \Dpd\StructType\TerminateNumberRangeBaseRequest
      */
     public function setCustomerCenterNumber($customerCenterNumber = null)
     {
@@ -149,7 +149,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     /**
      * Set CustomerNumber value
      * @param int $customerNumber
-     * @return \StructType\TerminateNumberRangeBaseRequest
+     * @return \Dpd\StructType\TerminateNumberRangeBaseRequest
      */
     public function setCustomerNumber($customerNumber = null)
     {
@@ -171,7 +171,7 @@ abstract class TerminateNumberRangeBaseRequest extends AbstractStructBase
     /**
      * Set ClientID value
      * @param string $clientID
-     * @return \StructType\TerminateNumberRangeBaseRequest
+     * @return \Dpd\StructType\TerminateNumberRangeBaseRequest
      */
     public function setClientID($clientID = null)
     {

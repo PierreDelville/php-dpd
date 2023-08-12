@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class ReceiveLabelRequest extends ReceiveLabelRequestBase
     /**
      * Set countrycode value
      * @param string $countrycode
-     * @return \StructType\ReceiveLabelRequest
+     * @return \Dpd\StructType\ReceiveLabelRequest
      */
     public function setCountrycode($countrycode = null)
     {
@@ -83,7 +83,7 @@ class ReceiveLabelRequest extends ReceiveLabelRequestBase
     /**
      * Set centernumber value
      * @param string $centernumber
-     * @return \StructType\ReceiveLabelRequest
+     * @return \Dpd\StructType\ReceiveLabelRequest
      */
     public function setCenternumber($centernumber = null)
     {
@@ -105,7 +105,7 @@ class ReceiveLabelRequest extends ReceiveLabelRequestBase
     /**
      * Set parcelnumber value
      * @param string $parcelnumber
-     * @return \StructType\ReceiveLabelRequest
+     * @return \Dpd\StructType\ReceiveLabelRequest
      */
     public function setParcelnumber($parcelnumber = null)
     {

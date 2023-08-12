@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -72,7 +72,7 @@ class AddressMini extends AbstractStructBase
     /**
      * Set countryPrefix value
      * @param string $countryPrefix
-     * @return \StructType\AddressMini
+     * @return \Dpd\StructType\AddressMini
      */
     public function setCountryPrefix($countryPrefix = null)
     {
@@ -94,7 +94,7 @@ class AddressMini extends AbstractStructBase
     /**
      * Set zipCode value
      * @param string $zipCode
-     * @return \StructType\AddressMini
+     * @return \Dpd\StructType\AddressMini
      */
     public function setZipCode($zipCode = null)
     {
@@ -116,7 +116,7 @@ class AddressMini extends AbstractStructBase
     /**
      * Set city value
      * @param string $city
-     * @return \StructType\AddressMini
+     * @return \Dpd\StructType\AddressMini
      */
     public function setCity($city = null)
     {
@@ -138,7 +138,7 @@ class AddressMini extends AbstractStructBase
     /**
      * Set street value
      * @param string $street
-     * @return \StructType\AddressMini
+     * @return \Dpd\StructType\AddressMini
      */
     public function setStreet($street = null)
     {

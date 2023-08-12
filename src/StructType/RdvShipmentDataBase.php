@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -119,7 +119,7 @@ class RdvShipmentDataBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RdvAddress
+     * @var \Dpd\StructType\RdvAddress
      */
     public $ReceiverAddress;
     /**
@@ -151,7 +151,7 @@ class RdvShipmentDataBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RdvDeliveryInfo
+     * @var \Dpd\StructType\RdvDeliveryInfo
      */
     public $ShipperInfo;
     /**
@@ -159,7 +159,7 @@ class RdvShipmentDataBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RdvDeliveryInfo
+     * @var \Dpd\StructType\RdvDeliveryInfo
      */
     public $RdvInfo;
     /**
@@ -167,7 +167,7 @@ class RdvShipmentDataBase extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRdvService
+     * @var \Dpd\ArrayType\ArrayOfRdvService
      */
     public $Services;
     /**
@@ -205,15 +205,15 @@ class RdvShipmentDataBase extends AbstractStructBase
      * @param string $shippingDate
      * @param string $predictCutOffDate
      * @param string $shipperName
-     * @param \StructType\RdvAddress $receiverAddress
+     * @param \Dpd\StructType\RdvAddress $receiverAddress
      * @param string $receiverEmailAddress
      * @param string $receiverMobileNumber
      * @param string $receiverAltZipCode
-     * @param \StructType\RdvDeliveryInfo $shipperInfo
-     * @param \StructType\RdvDeliveryInfo $rdvInfo
-     * @param \ArrayType\ArrayOfRdvService $services
+     * @param \Dpd\StructType\RdvDeliveryInfo $shipperInfo
+     * @param \Dpd\StructType\RdvDeliveryInfo $rdvInfo
+     * @param \Dpd\ArrayType\ArrayOfRdvService $services
      */
-    public function __construct($parcelOptional = null, $sC_CenterNumber = null, $rC_CenterNumber = null, $weight = null, $numberOfParcelsReal = null, $customerRDVProfile = null, $savePlaceRDVAllowed = null, $rDVServiceAllowed = null, $predict = null, $rdvUpdateable = null, $shippingDate = null, $predictCutOffDate = null, $shipperName = null, \StructType\RdvAddress $receiverAddress = null, $receiverEmailAddress = null, $receiverMobileNumber = null, $receiverAltZipCode = null, \StructType\RdvDeliveryInfo $shipperInfo = null, \StructType\RdvDeliveryInfo $rdvInfo = null, \ArrayType\ArrayOfRdvService $services = null)
+    public function __construct($parcelOptional = null, $sC_CenterNumber = null, $rC_CenterNumber = null, $weight = null, $numberOfParcelsReal = null, $customerRDVProfile = null, $savePlaceRDVAllowed = null, $rDVServiceAllowed = null, $predict = null, $rdvUpdateable = null, $shippingDate = null, $predictCutOffDate = null, $shipperName = null, \Dpd\StructType\RdvAddress $receiverAddress = null, $receiverEmailAddress = null, $receiverMobileNumber = null, $receiverAltZipCode = null, \Dpd\StructType\RdvDeliveryInfo $shipperInfo = null, \Dpd\StructType\RdvDeliveryInfo $rdvInfo = null, \Dpd\ArrayType\ArrayOfRdvService $services = null)
     {
         $this
             ->setParcelOptional($parcelOptional)
@@ -248,7 +248,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set ParcelOptional value
      * @param bool $parcelOptional
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setParcelOptional($parcelOptional = null)
     {
@@ -270,7 +270,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set SC_CenterNumber value
      * @param int $sC_CenterNumber
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setSC_CenterNumber($sC_CenterNumber = null)
     {
@@ -292,7 +292,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set RC_CenterNumber value
      * @param int $rC_CenterNumber
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setRC_CenterNumber($rC_CenterNumber = null)
     {
@@ -314,7 +314,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set Weight value
      * @param float $weight
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setWeight($weight = null)
     {
@@ -336,7 +336,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set NumberOfParcelsReal value
      * @param int $numberOfParcelsReal
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setNumberOfParcelsReal($numberOfParcelsReal = null)
     {
@@ -358,7 +358,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set CustomerRDVProfile value
      * @param bool $customerRDVProfile
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setCustomerRDVProfile($customerRDVProfile = null)
     {
@@ -380,7 +380,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set SavePlaceRDVAllowed value
      * @param bool $savePlaceRDVAllowed
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setSavePlaceRDVAllowed($savePlaceRDVAllowed = null)
     {
@@ -402,7 +402,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set RDVServiceAllowed value
      * @param bool $rDVServiceAllowed
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setRDVServiceAllowed($rDVServiceAllowed = null)
     {
@@ -424,7 +424,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set Predict value
      * @param bool $predict
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setPredict($predict = null)
     {
@@ -446,7 +446,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set RdvUpdateable value
      * @param bool $rdvUpdateable
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setRdvUpdateable($rdvUpdateable = null)
     {
@@ -468,7 +468,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set ShippingDate value
      * @param string $shippingDate
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setShippingDate($shippingDate = null)
     {
@@ -490,7 +490,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set PredictCutOffDate value
      * @param string $predictCutOffDate
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setPredictCutOffDate($predictCutOffDate = null)
     {
@@ -512,7 +512,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set ShipperName value
      * @param string $shipperName
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setShipperName($shipperName = null)
     {
@@ -525,7 +525,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
     /**
      * Get ReceiverAddress value
-     * @return \StructType\RdvAddress|null
+     * @return \Dpd\StructType\RdvAddress|null
      */
     public function getReceiverAddress()
     {
@@ -533,10 +533,10 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
     /**
      * Set ReceiverAddress value
-     * @param \StructType\RdvAddress $receiverAddress
-     * @return \StructType\RdvShipmentDataBase
+     * @param \Dpd\StructType\RdvAddress $receiverAddress
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
-    public function setReceiverAddress(\StructType\RdvAddress $receiverAddress = null)
+    public function setReceiverAddress(\Dpd\StructType\RdvAddress $receiverAddress = null)
     {
         $this->ReceiverAddress = $receiverAddress;
         return $this;
@@ -552,7 +552,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set ReceiverEmailAddress value
      * @param string $receiverEmailAddress
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setReceiverEmailAddress($receiverEmailAddress = null)
     {
@@ -574,7 +574,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set ReceiverMobileNumber value
      * @param string $receiverMobileNumber
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setReceiverMobileNumber($receiverMobileNumber = null)
     {
@@ -596,7 +596,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     /**
      * Set ReceiverAltZipCode value
      * @param string $receiverAltZipCode
-     * @return \StructType\RdvShipmentDataBase
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
     public function setReceiverAltZipCode($receiverAltZipCode = null)
     {
@@ -609,7 +609,7 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
     /**
      * Get ShipperInfo value
-     * @return \StructType\RdvDeliveryInfo|null
+     * @return \Dpd\StructType\RdvDeliveryInfo|null
      */
     public function getShipperInfo()
     {
@@ -617,17 +617,17 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
     /**
      * Set ShipperInfo value
-     * @param \StructType\RdvDeliveryInfo $shipperInfo
-     * @return \StructType\RdvShipmentDataBase
+     * @param \Dpd\StructType\RdvDeliveryInfo $shipperInfo
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
-    public function setShipperInfo(\StructType\RdvDeliveryInfo $shipperInfo = null)
+    public function setShipperInfo(\Dpd\StructType\RdvDeliveryInfo $shipperInfo = null)
     {
         $this->ShipperInfo = $shipperInfo;
         return $this;
     }
     /**
      * Get RdvInfo value
-     * @return \StructType\RdvDeliveryInfo|null
+     * @return \Dpd\StructType\RdvDeliveryInfo|null
      */
     public function getRdvInfo()
     {
@@ -635,17 +635,17 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
     /**
      * Set RdvInfo value
-     * @param \StructType\RdvDeliveryInfo $rdvInfo
-     * @return \StructType\RdvShipmentDataBase
+     * @param \Dpd\StructType\RdvDeliveryInfo $rdvInfo
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
-    public function setRdvInfo(\StructType\RdvDeliveryInfo $rdvInfo = null)
+    public function setRdvInfo(\Dpd\StructType\RdvDeliveryInfo $rdvInfo = null)
     {
         $this->RdvInfo = $rdvInfo;
         return $this;
     }
     /**
      * Get Services value
-     * @return \ArrayType\ArrayOfRdvService|null
+     * @return \Dpd\ArrayType\ArrayOfRdvService|null
      */
     public function getServices()
     {
@@ -653,10 +653,10 @@ class RdvShipmentDataBase extends AbstractStructBase
     }
     /**
      * Set Services value
-     * @param \ArrayType\ArrayOfRdvService $services
-     * @return \StructType\RdvShipmentDataBase
+     * @param \Dpd\ArrayType\ArrayOfRdvService $services
+     * @return \Dpd\StructType\RdvShipmentDataBase
      */
-    public function setServices(\ArrayType\ArrayOfRdvService $services = null)
+    public function setServices(\Dpd\ArrayType\ArrayOfRdvService $services = null)
     {
         $this->Services = $services;
         return $this;

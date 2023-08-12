@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -55,7 +55,7 @@ class SlaveRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\SlaveServices
+     * @var \Dpd\StructType\SlaveServices
      */
     public $services;
     /**
@@ -71,9 +71,9 @@ class SlaveRequest extends AbstractStructBase
      * @param string $reference2
      * @param string $reference3
      * @param string $reference4
-     * @param \StructType\SlaveServices $services
+     * @param \Dpd\StructType\SlaveServices $services
      */
-    public function __construct($weight = null, $referencenumber = null, $reference2 = null, $reference3 = null, $reference4 = null, \StructType\SlaveServices $services = null)
+    public function __construct($weight = null, $referencenumber = null, $reference2 = null, $reference3 = null, $reference4 = null, \Dpd\StructType\SlaveServices $services = null)
     {
         $this
             ->setWeight($weight)
@@ -94,7 +94,7 @@ class SlaveRequest extends AbstractStructBase
     /**
      * Set weight value
      * @param string $weight
-     * @return \StructType\SlaveRequest
+     * @return \Dpd\StructType\SlaveRequest
      */
     public function setWeight($weight = null)
     {
@@ -116,7 +116,7 @@ class SlaveRequest extends AbstractStructBase
     /**
      * Set referencenumber value
      * @param string $referencenumber
-     * @return \StructType\SlaveRequest
+     * @return \Dpd\StructType\SlaveRequest
      */
     public function setReferencenumber($referencenumber = null)
     {
@@ -138,7 +138,7 @@ class SlaveRequest extends AbstractStructBase
     /**
      * Set reference2 value
      * @param string $reference2
-     * @return \StructType\SlaveRequest
+     * @return \Dpd\StructType\SlaveRequest
      */
     public function setReference2($reference2 = null)
     {
@@ -160,7 +160,7 @@ class SlaveRequest extends AbstractStructBase
     /**
      * Set reference3 value
      * @param string $reference3
-     * @return \StructType\SlaveRequest
+     * @return \Dpd\StructType\SlaveRequest
      */
     public function setReference3($reference3 = null)
     {
@@ -182,7 +182,7 @@ class SlaveRequest extends AbstractStructBase
     /**
      * Set reference4 value
      * @param string $reference4
-     * @return \StructType\SlaveRequest
+     * @return \Dpd\StructType\SlaveRequest
      */
     public function setReference4($reference4 = null)
     {
@@ -195,7 +195,7 @@ class SlaveRequest extends AbstractStructBase
     }
     /**
      * Get services value
-     * @return \StructType\SlaveServices|null
+     * @return \Dpd\StructType\SlaveServices|null
      */
     public function getServices()
     {
@@ -203,10 +203,10 @@ class SlaveRequest extends AbstractStructBase
     }
     /**
      * Set services value
-     * @param \StructType\SlaveServices $services
-     * @return \StructType\SlaveRequest
+     * @param \Dpd\StructType\SlaveServices $services
+     * @return \Dpd\StructType\SlaveRequest
      */
-    public function setServices(\StructType\SlaveServices $services = null)
+    public function setServices(\Dpd\StructType\SlaveServices $services = null)
     {
         $this->services = $services;
         return $this;

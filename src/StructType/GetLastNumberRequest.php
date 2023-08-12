@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class GetLastNumberRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Customer
+     * @var \Dpd\StructType\Customer
      */
     public $Customer;
     /**
@@ -23,17 +23,17 @@ class GetLastNumberRequest extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfEntry
+     * @var \Dpd\ArrayType\ArrayOfEntry
      */
     public $Entries;
     /**
      * Constructor method for GetLastNumberRequest
      * @uses GetLastNumberRequest::setCustomer()
      * @uses GetLastNumberRequest::setEntries()
-     * @param \StructType\Customer $customer
-     * @param \ArrayType\ArrayOfEntry $entries
+     * @param \Dpd\StructType\Customer $customer
+     * @param \Dpd\ArrayType\ArrayOfEntry $entries
      */
-    public function __construct(\StructType\Customer $customer = null, \ArrayType\ArrayOfEntry $entries = null)
+    public function __construct(\Dpd\StructType\Customer $customer = null, \Dpd\ArrayType\ArrayOfEntry $entries = null)
     {
         $this
             ->setCustomer($customer)
@@ -41,7 +41,7 @@ class GetLastNumberRequest extends AbstractStructBase
     }
     /**
      * Get Customer value
-     * @return \StructType\Customer|null
+     * @return \Dpd\StructType\Customer|null
      */
     public function getCustomer()
     {
@@ -49,17 +49,17 @@ class GetLastNumberRequest extends AbstractStructBase
     }
     /**
      * Set Customer value
-     * @param \StructType\Customer $customer
-     * @return \StructType\GetLastNumberRequest
+     * @param \Dpd\StructType\Customer $customer
+     * @return \Dpd\StructType\GetLastNumberRequest
      */
-    public function setCustomer(\StructType\Customer $customer = null)
+    public function setCustomer(\Dpd\StructType\Customer $customer = null)
     {
         $this->Customer = $customer;
         return $this;
     }
     /**
      * Get Entries value
-     * @return \ArrayType\ArrayOfEntry|null
+     * @return \Dpd\ArrayType\ArrayOfEntry|null
      */
     public function getEntries()
     {
@@ -67,10 +67,10 @@ class GetLastNumberRequest extends AbstractStructBase
     }
     /**
      * Set Entries value
-     * @param \ArrayType\ArrayOfEntry $entries
-     * @return \StructType\GetLastNumberRequest
+     * @param \Dpd\ArrayType\ArrayOfEntry $entries
+     * @return \Dpd\StructType\GetLastNumberRequest
      */
-    public function setEntries(\ArrayType\ArrayOfEntry $entries = null)
+    public function setEntries(\Dpd\ArrayType\ArrayOfEntry $entries = null)
     {
         $this->Entries = $entries;
         return $this;

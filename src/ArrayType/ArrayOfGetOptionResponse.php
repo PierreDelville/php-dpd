@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Dpd\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfGetOptionResponse extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\GetOptionResponse[]
+     * @var \Dpd\StructType\GetOptionResponse[]
      */
     public $GetOptionResponse;
     /**
      * Constructor method for ArrayOfGetOptionResponse
      * @uses ArrayOfGetOptionResponse::setGetOptionResponse()
-     * @param \StructType\GetOptionResponse[] $getOptionResponse
+     * @param \Dpd\StructType\GetOptionResponse[] $getOptionResponse
      */
     public function __construct(array $getOptionResponse = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfGetOptionResponse extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\GetOptionResponse[]|null
+     * @return \Dpd\StructType\GetOptionResponse[]|null
      */
     public function getGetOptionResponse()
     {
@@ -52,12 +52,12 @@ class ArrayOfGetOptionResponse extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfGetOptionResponseGetOptionResponseItem) {
             // validation for constraint: itemType
-            if (!$arrayOfGetOptionResponseGetOptionResponseItem instanceof \StructType\GetOptionResponse) {
+            if (!$arrayOfGetOptionResponseGetOptionResponseItem instanceof \Dpd\StructType\GetOptionResponse) {
                 $invalidValues[] = is_object($arrayOfGetOptionResponseGetOptionResponseItem) ? get_class($arrayOfGetOptionResponseGetOptionResponseItem) : sprintf('%s(%s)', gettype($arrayOfGetOptionResponseGetOptionResponseItem), var_export($arrayOfGetOptionResponseGetOptionResponseItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The GetOptionResponse property can only contain items of type \StructType\GetOptionResponse, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The GetOptionResponse property can only contain items of type \Dpd\StructType\GetOptionResponse, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         return $message;
@@ -67,8 +67,8 @@ class ArrayOfGetOptionResponse extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\GetOptionResponse[] $getOptionResponse
-     * @return \ArrayType\ArrayOfGetOptionResponse
+     * @param \Dpd\StructType\GetOptionResponse[] $getOptionResponse
+     * @return \Dpd\ArrayType\ArrayOfGetOptionResponse
      */
     public function setGetOptionResponse(array $getOptionResponse = array())
     {
@@ -86,14 +86,14 @@ class ArrayOfGetOptionResponse extends AbstractStructArrayBase
     /**
      * Add item to GetOptionResponse value
      * @throws \InvalidArgumentException
-     * @param \StructType\GetOptionResponse $item
-     * @return \ArrayType\ArrayOfGetOptionResponse
+     * @param \Dpd\StructType\GetOptionResponse $item
+     * @return \Dpd\ArrayType\ArrayOfGetOptionResponse
      */
-    public function addToGetOptionResponse(\StructType\GetOptionResponse $item)
+    public function addToGetOptionResponse(\Dpd\StructType\GetOptionResponse $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\GetOptionResponse) {
-            throw new \InvalidArgumentException(sprintf('The GetOptionResponse property can only contain items of type \StructType\GetOptionResponse, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Dpd\StructType\GetOptionResponse) {
+            throw new \InvalidArgumentException(sprintf('The GetOptionResponse property can only contain items of type \Dpd\StructType\GetOptionResponse, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->GetOptionResponse[] = $item;
         return $this;
@@ -101,7 +101,7 @@ class ArrayOfGetOptionResponse extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\GetOptionResponse|null
+     * @return \Dpd\StructType\GetOptionResponse|null
      */
     public function current()
     {
@@ -111,7 +111,7 @@ class ArrayOfGetOptionResponse extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\GetOptionResponse|null
+     * @return \Dpd\StructType\GetOptionResponse|null
      */
     public function item($index)
     {
@@ -120,7 +120,7 @@ class ArrayOfGetOptionResponse extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\GetOptionResponse|null
+     * @return \Dpd\StructType\GetOptionResponse|null
      */
     public function first()
     {
@@ -129,7 +129,7 @@ class ArrayOfGetOptionResponse extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\GetOptionResponse|null
+     * @return \Dpd\StructType\GetOptionResponse|null
      */
     public function last()
     {
@@ -139,7 +139,7 @@ class ArrayOfGetOptionResponse extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\GetOptionResponse|null
+     * @return \Dpd\StructType\GetOptionResponse|null
      */
     public function offsetGet($offset)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Dpd\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -72,7 +72,7 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
     /**
      * Set CustomerCenterNumber value
      * @param int $customerCenterNumber
-     * @return \StructType\NumberRangeBaseRequest
+     * @return \Dpd\StructType\NumberRangeBaseRequest
      */
     public function setCustomerCenterNumber($customerCenterNumber = null)
     {
@@ -94,7 +94,7 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
     /**
      * Set CustomerNumber value
      * @param int $customerNumber
-     * @return \StructType\NumberRangeBaseRequest
+     * @return \Dpd\StructType\NumberRangeBaseRequest
      */
     public function setCustomerNumber($customerNumber = null)
     {
@@ -116,7 +116,7 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
     /**
      * Set ClientID value
      * @param string $clientID
-     * @return \StructType\NumberRangeBaseRequest
+     * @return \Dpd\StructType\NumberRangeBaseRequest
      */
     public function setClientID($clientID = null)
     {
@@ -138,7 +138,7 @@ abstract class NumberRangeBaseRequest extends AbstractStructBase
     /**
      * Set NumberRangeType value
      * @param string $numberRangeType
-     * @return \StructType\NumberRangeBaseRequest
+     * @return \Dpd\StructType\NumberRangeBaseRequest
      */
     public function setNumberRangeType($numberRangeType = null)
     {
