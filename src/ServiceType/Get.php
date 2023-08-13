@@ -748,6 +748,126 @@ class Get extends AbstractSoapClientBase
      * @see AbstractSoapClientBase::getResult()
      * @return \Dpd\StructType\GetAllServiceNoticesResponse|\Dpd\StructType\GetBic3Response|\Dpd\StructType\GetBic3RoutingResponse|\Dpd\StructType\GetCustomerAddressResponse|\Dpd\StructType\GetCustomerProfileResponse|\Dpd\StructType\GetGeoRoutingResponse|\Dpd\StructType\GetInfoResponse|\Dpd\StructType\GetLabelBcResponse|\Dpd\StructType\GetLabelDataResponse|\Dpd\StructType\GetLabelResponse|\Dpd\StructType\GetLastNumberResponse|\Dpd\StructType\GetNationalTransitTimeResponse|\Dpd\StructType\GetNumberRangeBcResponse|\Dpd\StructType\GetNumberRangeResponse|\Dpd\StructType\GetOptionValueResponse|\Dpd\StructType\GetOptionValuesResponse|\Dpd\StructType\GetPropertiesResponse|\Dpd\StructType\GetRdvShipmentDataResponse|\Dpd\StructType\GetRetourLabelBcResponse|\Dpd\StructType\GetRetourLabelResponse|\Dpd\StructType\GetRetourShipmentDataBcResponse|\Dpd\StructType\GetRetourShipmentDataResponse|\Dpd\StructType\GetReverseOnDemandModeResponse|\Dpd\StructType\GetSafePlaceDataResponse|\Dpd\StructType\GetServiceNoticeAnswersResponse|\Dpd\StructType\GetServiceNoticesResponse|\Dpd\StructType\GetShipmentBcMultiResponse|\Dpd\StructType\GetShipmentBcResponse|\Dpd\StructType\GetShipmentResponse|\Dpd\StructType\GetShippingResponse
      */
+    /**
+     * Method to call the operation originally named GetShipmentTraceSingle
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: UserCredentials
+     * - SOAPHeaderNamespaces: http://www.cargonet.software/
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::getResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Dpd\StructType\GetShipmentTraceSingle $parameters
+     * @return \Dpd\StructType\GetShipmentTraceSingleResponse|bool
+     */
+    public function GetShipmentTraceSingle(\Dpd\StructType\GetShipmentTraceSingle $parameters)
+    {
+        try {
+            $this->setResult($this->getSoapClient()->GetShipmentTraceSingle($parameters));
+            return $this->getResult();
+        } catch (\SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named GetShipmentTrace
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: UserCredentials
+     * - SOAPHeaderNamespaces: http://www.cargonet.software/
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::getResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Dpd\StructType\GetShipmentTrace $parameters
+     * @return \Dpd\StructType\GetShipmentTraceResponse|bool
+     */
+    public function GetShipmentTrace(\Dpd\StructType\GetShipmentTrace $parameters)
+    {
+        try {
+            $this->setResult($this->getSoapClient()->GetShipmentTrace($parameters));
+            return $this->getResult();
+        } catch (\SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named GetShipmentTraceByReference
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: UserCredentials
+     * - SOAPHeaderNamespaces: http://www.cargonet.software/
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::getResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Dpd\StructType\GetShipmentTraceByReference $parameters
+     * @return \Dpd\StructType\GetShipmentTraceByReferenceResponse|bool
+     */
+    public function GetShipmentTraceByReference(\Dpd\StructType\GetShipmentTraceByReference $parameters)
+    {
+        try {
+            $this->setResult($this->getSoapClient()->GetShipmentTraceByReference($parameters));
+            return $this->getResult();
+        } catch (\SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named GetLastTrace
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: UserCredentials
+     * - SOAPHeaderNamespaces: http://www.cargonet.software/
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::getResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Dpd\StructType\GetLastTrace $parameters
+     * @return \Dpd\StructType\GetLastTraceResponse|bool
+     */
+    public function GetLastTrace(\Dpd\StructType\GetLastTrace $parameters)
+    {
+        try {
+            $this->setResult($this->getSoapClient()->GetLastTrace($parameters));
+            return $this->getResult();
+        } catch (\SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+            return false;
+        }
+    }
+    /**
+     * Method to call the operation originally named GetLastTraceBc
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: UserCredentials
+     * - SOAPHeaderNamespaces: http://www.cargonet.software/
+     * - SOAPHeaderTypes: \Dpd\StructType\UserCredentials
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::getResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Dpd\StructType\GetLastTraceBc $parameters
+     * @return \Dpd\StructType\GetLastTraceBcResponse|bool
+     */
+    public function GetLastTraceBc(\Dpd\StructType\GetLastTraceBc $parameters)
+    {
+        try {
+            $this->setResult($this->getSoapClient()->GetLastTraceBc($parameters));
+            return $this->getResult();
+        } catch (\SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+            return false;
+        }
+    }
     public function getResult()
     {
         return parent::getResult();
