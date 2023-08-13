@@ -38,7 +38,7 @@ class RdvShipmentDataSearchMode extends AbstractStructEnumBase
      * @uses self::VALUE_SEARCH_BY_BIC_3
      * @return string[]
      */
-    public static function getValidValues()
+    public static function getValidValues(): array
     {
         return array(
             self::VALUE_SEARCH_BY_PARCEL_NUMBER,

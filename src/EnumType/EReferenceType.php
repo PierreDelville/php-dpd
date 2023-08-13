@@ -38,7 +38,7 @@ class EReferenceType extends AbstractStructEnumBase
      * @uses self::VALUE_REFERENCE_4
      * @return string[]
      */
-    public static function getValidValues()
+    public static function getValidValues(): array
     {
         return array(
             self::VALUE_REFERENCENUMBER,

@@ -32,7 +32,7 @@ class AddressType extends AbstractStructEnumBase
      * @uses self::VALUE_RETURN_ADDRESS
      * @return string[]
      */
-    public static function getValidValues()
+    public static function getValidValues(): array
     {
         return array(
             self::VALUE_STANDARD_ADDRESS,

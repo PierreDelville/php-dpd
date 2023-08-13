@@ -32,7 +32,7 @@ class EBic3Mode extends AbstractStructEnumBase
      * @uses self::VALUE_ALL
      * @return string[]
      */
-    public static function getValidValues()
+    public static function getValidValues(): array
     {
         return array(
             self::VALUE_ONLY_STD_LABELS,

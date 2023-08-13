@@ -62,7 +62,7 @@ class ERendezvousType extends AbstractStructEnumBase
      * @uses self::VALUE_SAFE_PLACE
      * @return string[]
      */
-    public static function getValidValues()
+    public static function getValidValues(): array
     {
         return array(
             self::VALUE_MISSING_RENDEZVOUS,

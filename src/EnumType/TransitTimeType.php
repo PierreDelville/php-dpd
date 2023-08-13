@@ -26,7 +26,7 @@ class TransitTimeType extends AbstractStructEnumBase
      * @uses self::VALUE_TRANSIT_TIME_PREDICT
      * @return string[]
      */
-    public static function getValidValues()
+    public static function getValidValues(): array
     {
         return array(
             self::VALUE_TRANSIT_TIME_DEFAULT,

@@ -44,7 +44,7 @@ class ImageType extends AbstractStructEnumBase
      * @uses self::VALUE_PICKUP_SIGNATURE
      * @return string[]
      */
-    public static function getValidValues()
+    public static function getValidValues(): array
     {
         return array(
             self::VALUE_POD,

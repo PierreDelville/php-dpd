@@ -38,7 +38,7 @@ class EtypeContact extends AbstractStructEnumBase
      * @uses self::VALUE_AUTOMATIC_MAIL
      * @return string[]
      */
-    public static function getValidValues()
+    public static function getValidValues(): array
     {
         return array(
             self::VALUE_NO,

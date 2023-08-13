@@ -68,7 +68,7 @@ class Etype extends AbstractStructEnumBase
      * @uses self::VALUE_PROOFBIC_3
      * @return string[]
      */
-    public static function getValidValues()
+    public static function getValidValues(): array
     {
         return array(
             self::VALUE_REVERSE,

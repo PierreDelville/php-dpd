@@ -26,7 +26,7 @@ class ExpandContainerModeType extends AbstractStructEnumBase
      * @uses self::VALUE_MASTER_AND_SLAVE
      * @return string[]
      */
-    public static function getValidValues()
+    public static function getValidValues(): array
     {
         return array(
             self::VALUE_MASTER_ONLY,
