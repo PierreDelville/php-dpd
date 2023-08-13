@@ -150,7 +150,7 @@ class ArrayOfServiceNoticeEntry extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string ServiceNoticeEntry
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'ServiceNoticeEntry';
     }

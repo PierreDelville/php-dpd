@@ -150,7 +150,7 @@ class ArrayOfPropertyDefinition extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string PropertyDefinition
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'PropertyDefinition';
     }

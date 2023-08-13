@@ -150,7 +150,7 @@ class ArrayOfCustomer extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string Customer
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'Customer';
     }

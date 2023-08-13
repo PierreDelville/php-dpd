@@ -150,7 +150,7 @@ class ArrayOfGetOptionResponse extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string GetOptionResponse
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'GetOptionResponse';
     }

@@ -150,7 +150,7 @@ class ArrayOfEntry extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string Entry
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'Entry';
     }

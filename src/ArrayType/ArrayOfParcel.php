@@ -150,7 +150,7 @@ class ArrayOfParcel extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string Parcel
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'Parcel';
     }

@@ -150,7 +150,7 @@ class ArrayOfClsTrace extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string clsTrace
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'clsTrace';
     }

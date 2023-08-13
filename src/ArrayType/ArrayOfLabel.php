@@ -150,7 +150,7 @@ class ArrayOfLabel extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string Label
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'Label';
     }

@@ -150,7 +150,7 @@ class ArrayOfProfileAddress extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string ProfileAddress
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'ProfileAddress';
     }

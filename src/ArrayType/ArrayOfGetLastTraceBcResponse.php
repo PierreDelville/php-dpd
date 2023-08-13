@@ -150,7 +150,7 @@ class ArrayOfGetLastTraceBcResponse extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string GetLastTraceBcResponse
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'GetLastTraceBcResponse';
     }

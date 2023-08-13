@@ -140,7 +140,7 @@ class ArrayOfLong extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string long
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'long';
     }

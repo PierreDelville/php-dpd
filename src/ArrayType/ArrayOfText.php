@@ -150,7 +150,7 @@ class ArrayOfText extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string Text
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'Text';
     }

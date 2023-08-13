@@ -150,7 +150,7 @@ class ArrayOfShipping extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string Shipping
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'Shipping';
     }

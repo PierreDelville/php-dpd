@@ -150,7 +150,7 @@ class ArrayOfBase64Binary extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string base64Binary
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'base64Binary';
     }

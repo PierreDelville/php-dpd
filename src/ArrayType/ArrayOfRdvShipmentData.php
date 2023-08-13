@@ -150,7 +150,7 @@ class ArrayOfRdvShipmentData extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string RdvShipmentData
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'RdvShipmentData';
     }

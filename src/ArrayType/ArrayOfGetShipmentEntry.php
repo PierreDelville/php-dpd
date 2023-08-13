@@ -150,7 +150,7 @@ class ArrayOfGetShipmentEntry extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string GetShipmentEntry
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'GetShipmentEntry';
     }

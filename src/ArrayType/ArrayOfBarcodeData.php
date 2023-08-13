@@ -150,7 +150,7 @@ class ArrayOfBarcodeData extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string BarcodeData
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'BarcodeData';
     }

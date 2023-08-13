@@ -150,7 +150,7 @@ class ArrayOfServiceEntry extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string ServiceEntry
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'ServiceEntry';
     }

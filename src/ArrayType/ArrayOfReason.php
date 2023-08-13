@@ -150,7 +150,7 @@ class ArrayOfReason extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string Reason
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'Reason';
     }

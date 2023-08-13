@@ -150,7 +150,7 @@ class ArrayOfPhoneCall extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string PhoneCall
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'PhoneCall';
     }

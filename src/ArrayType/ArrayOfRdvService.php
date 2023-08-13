@@ -150,7 +150,7 @@ class ArrayOfRdvService extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string RdvService
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'RdvService';
     }
