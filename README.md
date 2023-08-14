@@ -11,3 +11,9 @@ This package has been generated from the [DPD Postage Web Services](https://e-st
 
 ## Learn from the tutorial
 Start looking into the auto-generated [tutorial.php](tutorial.php) file. This file contains the starting code to use this package. In addition, it contains all the operations provided by the Exchange Web Services and the way to call them.
+
+## Start from the examples
+Example script is available under the [examples](examples) folder:
+
+- [CreateShipmentWithLabels](examples/CreateShipmentWithLabels.php)
+- [GetShipmentTraceSingle](examples/GetShipmentTraceSingle.php)
