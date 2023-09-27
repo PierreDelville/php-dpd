@@ -1,6 +1,6 @@
 {
     "name": "weblinko/php-dpd",
-    "description": "Package generated from https://e-station.cargonet.software/dpd-eprintwebservice/eprintwebservice.asmx?WSDL using wsdltophp/packagegenerator",
+    "description": "Package generated from https://e-station.cargonet.software/dpd-eprintwebservice/eprintwebservice.asmx?WSDL",
     "require": {
         "php": ">=7.4",
         "ext-mbstring": "*",
