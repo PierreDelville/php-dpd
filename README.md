@@ -3,7 +3,7 @@
 [![License](https://poser.pugx.org/weblinko/php-dpd/license.svg)](https://github.com/weblinko/php-dpd/blob/master/LICENSE)
 
 # php-dpd
-This package has been generated from the [DPD Postage Web Services](https://e-station.cargonet.software/dpd-eprintwebservice/eprintwebservice.asmx?WSDL) and [DPD Tracing Web Services](https://webtrace.dpd.fr/trace-service/Webtrace_Service.asmx?WSDL) WSDL using the [PackageGenerator](https://github.com/WsdlToPhp/PackageGenerator) project.
+This package has been generated from the [DPD Postage Web Services](https://e-station.cargonet.software/dpd-eprintwebservice/eprintwebservice.asmx?WSDL) and [DPD Tracing Web Services](https://webtrace.dpd.fr/trace-service/Webtrace_Service.asmx?WSDL) WSDL.
 
 ## How to install ?
 
