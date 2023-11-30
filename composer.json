@@ -2,7 +2,7 @@
     "name": "weblinko/php-dpd",
     "description": "Package generated from https://e-station.cargonet.software/dpd-eprintwebservice/eprintwebservice.asmx?WSDL",
     "require": {
-        "php": ">=7.4",
+        "php": ">=7.3",
         "ext-mbstring": "*",
         "ext-soap": "*",
         "wsdltophp/packagebase": "~5.0"
