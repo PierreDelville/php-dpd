@@ -2,7 +2,7 @@
 
 namespace Dpd;
 
-abstract class AbstractEnumStructBase
+abstract class AbstractStructEnumBase
 {
 
     public static function valueIsValid($value): bool
