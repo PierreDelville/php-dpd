@@ -2,7 +2,7 @@
 
 namespace Dpd\EnumType;
 
-use \Dpd\AbstractEnumStructBase;
+use \Dpd\AbstractStructEnumBase;
 
 /**
  * This class stands for etypeConsolidation EnumType
