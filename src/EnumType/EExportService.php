@@ -2,7 +2,7 @@
 
 namespace Dpd\EnumType;
 
-use \WsdlToPhp\PackageBase\AbstractStructEnumBase;
+use \Dpd\AbstractEnumStructBase;
 
 /**
  * This class stands for eExportService EnumType
